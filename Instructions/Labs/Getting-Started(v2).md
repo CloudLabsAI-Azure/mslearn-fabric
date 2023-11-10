@@ -28,13 +28,13 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
  
-   ![Manage Your Virtual Machine](../Images/res.png)
+   ![Manage Your Virtual Machine](../Images/gs/res.png)
  
 ## Let's Get Started with Azure Portal
  
 1. On your virtual machine, click on the Azure Portal icon as shown below:
  
-    ![Launch Azure Portal](../Images/azure.png)
+    ![Launch Azure Portal](../Images/gs/azure.png)
 
 1. On **Sign into Microsoft Azure** tab you will see login screen, in that enter following email/username and then click on **Next**. 
    * Email/Username: <inject key="AzureAdUserEmail"></inject>
