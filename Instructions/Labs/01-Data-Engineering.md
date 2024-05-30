@@ -59,14 +59,15 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
    ![Screenshot of the Choose data source page.](./Images/01/copy-data.png)
 
-5. Select **Create new connection** and enter the following settings for the connection to your data source:
+5. Enter the following settings for the connection to your data source:
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv` (1)
     - **Connection**: Create a new connection (2)
     - **Connection name**: *Specify a unique name* (3)
-    - **Authentication kind**: Basic (*Leave the username and password blank*) (4)
-    -  Click on **Next** (5)
+    - **Data gateway**: (none) (4)
+    - **Authentication kind**: Anonymous (5)
+    -  Click on **Next** (6)
   
-    ![04](./Images/01/04.png)
+    ![04](./Images/01/connect-data-source.png)
     
 6. Ensure the following settings are selected and select **Next (1)**:
     - **Relative URL**: *Leave blank*
