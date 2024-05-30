@@ -53,7 +53,7 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
    
 3. Click on the **Copy Data** wizard doesn't open automatically, select **Copy Data Assistant(1)** in the pipeline editor page.
 
-   ![03](./Images/01/pipeline01.png.png)
+   ![03](./Images/01/pipeline01.png)
 
 4. In the **Copy Data** wizard, on the **Choose a data source** page, in the **data sources** section, select the **Generic protocol (1)** tab and then select **HTTP (2)**, click on **Next (3)**.
 
