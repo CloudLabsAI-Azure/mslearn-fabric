@@ -55,9 +55,9 @@ A simple way to ingest data is to use a **Copy Data** activity in a pipeline to 
 
    ![03](./Images/01/pipeline01.png)
 
-4. In the **Copy Data** wizard, on the **Choose a data source** page, in the **data sources** section, select the **Generic protocol (1)** tab and then select **HTTP (2)**, click on **Next (3)**.
+4. In the **Copy Data** wizard, on the **Choose a data source** page, in the **data sources** section, search for **http (1)** tab and then click on **HTTP (2)**.
 
-   ![Screenshot of the Choose data source page.](./Images/01/Pg3-TCreatePipeline-S3.png)
+   ![Screenshot of the Choose data source page.](./Images/01/copy-data.png)
 
 5. Select **Create new connection** and enter the following settings for the connection to your data source:
     - **URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv` (1)
