@@ -6,7 +6,7 @@
 
    ![Navigate-To-AAD](./Images/ws/entra01.png)
 
-2. Navigate to **Roles and administrators**:
+2. Navigate to **Roles and administrators** under manage section:
 
    ![Roles-and-Administrator](./Images/f-1.png)
 
