@@ -10,21 +10,21 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
 Kusto query language (KQL) is used to query static or streaming data in a table that is defined in a KQL database. To analyze the sales data, you must create a table in a KQL database and ingest the data from the file.
 
-1. In the **Microsoft Fabric** https://app.fabric.microsoft.com/ experience portal , select the **Real-Time Intelligence** experience image as shown here:
-    
-     ![00](./Images/03/real-time-intelligence.png)
+1. In the **Microsoft Fabric** experience portal, select the **Synapse Real-Time Analytics** experience image as shown here:
 
-2. On the **Home** page for the **Real-Time Analytics** experience, select **KQL database** and create a new database.
-   
-     ![00](./Images/03/kql.png)
+    ![Screenshot of selected Fabric Experience home with RTA selected](./Images/fabric-experience-home.png)
 
-   >**Note:** Make sure the fabric workspace is selected before Creating KQL database.
-   
-   - **Name:** Enter **KQL-Database-<inject key="DeploymentID" enableCopy="false"/>**
+2. On the **Home** page for the **Real-Time Analytics** experience, select **Event House** and create a Event House.
 
-    ![00](./Images/03/createkql.png)
-      
-3. Click on **Get Data (1)** and select **Local File (2)**.
+   - **Name:** Enter **Eventhouse-<inject key="DeploymentID" enableCopy="false"/> (1)**.
+
+   - Click on **Create (2)**.
+
+     ![](./Images/event-house.png)
+
+3. When the new event house has been created, select **Eventhouse-<inject key="DeploymentID" enableCopy="false"/>** from the left side pane under KQL database.
+
+3. Select the option to **Get data (1)** from **Local file (2)**.
 
    ![01](./Images/03/01.png)
 
@@ -52,10 +52,8 @@ Kusto query language (KQL) is used to query static or streaming data in a table 
 
 Now that you have a table of data in your database, you can use KQL code to query it.
 
-1. Make sure you have the **sales** table highlighted. From the menu bar, select the **Query table** drop-down, and from there select **Show any 100 records** .
+1. Make sure you have the **sales** table highlighted. From the menu bar, select the **Query table** drop-down, and from there select **Show any 100 records**.
 
-    ![01](./Images/f-16.png)
-    
 2. A new pane will open with the query and its result. 
 
 3. Modify the query as follows:
@@ -88,7 +86,7 @@ Now that you have a table of data in your database, you can use KQL code to quer
 
 8. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020 in ascending order of product name.
 
-9. Select **Save as KQL queryset** and save the query as **Revenue by Product**.
+9. Select **Save as KQL queryset** and save the query as **Revenue by Product** and click on **Create**.
 
 ## Create a Power BI report from a KQL Queryset
 
@@ -98,13 +96,13 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
 2. Select **Build Power BI report** and wait for the report editor to open.
 
-3. In the report editor, in the **Data** pane, expand **Kusto Query Result** and select the **Item** and **TotalRevenue** fields.
+3. In the report editor, in the **Data** pane, expand **Kusto Query Result** and select the **Item** and **SalesOrderLine...** fields.
 
 4. On the report design canvas, select the table visualization that has been added and then in the **Visualizations** pane, select **Clustered bar chart**.
 
-    ![Screenshot of a report from a KQL query.](./Images/kql-report1.png)
+    ![Screenshot of a report from a KQL query.](./Images/37.png)
 
-5. In the **Power BI** window, in the **File** menu, select **Save**. Then save the report as **Revenue by Item.pbix** in the workspace where your lakehouse and KQL database are defined using a **Non-Business** sensitivity label.
+5. In the **Power BI** window, in the **File** menu, select **Save**. Then save the report as **Revenue by Item** in the workspace where your lakehouse and KQL database are defined using a **Non-Business** sensitivity label.
 
 6. Close the **Power BI** window, and in the bar on the left, select the icon for your workspace.
 
@@ -114,7 +112,7 @@ You can use your KQL Queryset as the basis for a Power BI report.
 
 ## Use delta tables for streaming data
 
-Delta lake supports streaming data. Delta tables can be a *sink* or a *source* for data streams created using the Spark Structured Streaming API. In this example, you'll use a delta table as a sink for some streaming data in a simulated internet of things (IoT) scenario.
+Delta Lake supports streaming data. Delta tables can be a *sink* or a *source* for data streams created using the Spark Structured Streaming API. In this example, you'll use a delta table as a sink for some streaming data in a simulated Internet of Things (IoT) scenario.
 
 1. Navigate back to your workspace and open **Load Sales Notebook**. Add a new code cell in the notebook. Then, in the new cell, add the following code and run it:
 
@@ -160,11 +158,11 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
    print("Streaming to delta sink...")
     ```
 
-    This code writes the streaming device data in delta format to a folder named **iotdevicedata**. Because the path for the folder location in the **Tables** folder, a table will automatically be created for it.
+    This code writes the streaming device data in delta format to a folder named **iotdevicedata**. Because the path for the folder location is in the **Tables** folder, a table will automatically be created for it.
 
 3. In a new code cell, add and run the following code:
 
-    ```sql
+    ```SQL
    %%sql
 
    SELECT * FROM IotDeviceData;
@@ -191,7 +189,7 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
 5. Re-run the cell containing the following code:
 
-    ```sql
+    ```SQL
    %%sql
 
    SELECT * FROM IotDeviceData;
@@ -207,9 +205,10 @@ Delta lake supports streaming data. Delta tables can be a *sink* or a *source* f
 
     This code stops the stream.
 
-## Review
+
+---
 
 In this exercise, you have created a lakehouse, a KQL database to analyze the data uploaded into the lakehouse. You used KQL to query the data and create a query set, which was then used to create a Power BI report.
 
-
-## Proceed to next exercise
+---
+Continue to page 6 ...
