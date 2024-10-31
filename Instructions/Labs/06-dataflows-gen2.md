@@ -26,7 +26,7 @@ Microsoft Fabric では、Dataflows (Gen2) を使用してさまざまなデー�
 
 2. **Text ファイルまたは CSV ファイルからインポート** を選択します。
 
-    ![新しいデータフロー。](./Images/new-dataflow1.png)
+    ![新しいデータフロー。](./Images/06/new-dataflow1.png)
 
 3. 設定で新しいデータ ソースを作成します。
  - **ファイルへのリンク**: *選択済み*

@@ -1,146 +1,145 @@
-# Exercise 6: Data Engineering Ingest Data in Fabric with Fabric Copilot
+# 演習 06: Fabric Copilot を使用したデータエンジニアリング、データ取り込み
 
-### Estimated Duration: 30 minutes
- In the labs, you'll create a simple data pipeline to bring in customer sales data. You are using the KiZAN Fabric Tenant - where we have Copilot enabled, demonstrate doing the same thing, but by using a new Data Flow Gen2 And leveraging the native integration of Copilot to use natural language to ingest and transform your data.
+### 所要時間: 30分
 
-## Lab objectives
+このラボでは、顧客の売上データを取り込むためのシンプルなデータパイプラインを作成します。KiZAN Fabric テナントを使用し、Copilot が有効になっている環境で、新しい Data Flow Gen2 を使用して、自然言語を利用してデータを取り込み、変換する方法を示します。
 
-You will be able to complete the following tasks:
+## ラボの目的
 
-- Connect to Data Sources  
-- Configure Ingestion Settings  
-- Ingest Data into Fabric  
-- Monitor Ingestion Process  
-- Validate Ingested Data  
-- Document the Ingestion Process
+次のタスクを完了できるようになります:
+
+- データソースへの接続  
+- 取り込み設定の構成  
+- Fabric へのデータ取り込み  
+- 取り込みプロセスの監視  
+- 取り込んだデータの検証  
+- 取り込みプロセスの言語化
    
-# Create New - Dataflow Gen2
+# 新規作成 - Dataflow Gen2
 
-1. Select the workspace **fabric-<inject key="DeploymentID" enableCopy="false"/>** (this is the workspace that mimics the lab environment)
+1. ワークスペース **fabric-<inject key="DeploymentID" enableCopy="false"/>** を選択します（これはラボ環境を模倣するワークスペースです）
 
-   ![New dataflow.](./Images/26.png)
+   ![新しいデータフロー。](./Images/07/26.png)
 
-1. Select **Data Factory** Object in the workspace.
+1. ワークスペース内の **Data Factory** オブジェクトを選択します。
 
-    ![New dataflow.](./Images/27.png)
+   ![新しいデータフロー。](./Images/07/27.png)
 
-1. In the home page for your workspace, select **New Dataflow Gen2**. 
+2. ワークスペースのホームページで **データフロー Gen2** を選択します。
 
-   ![New dataflow.](./Images/28.png)
+   ![新しいデータフロー。](./Images/07/28.png)
 
-1. After a few seconds, the Power Query editor for your new dataflow opens as shown here.
+3. 数秒後、新しいデータフローの Power Query エディターが開きます。
 
-   ![New dataflow.](./Images/new-dataflow.png)
+   ![新しいデータフロー。](./Images/07/new-dataflow.png)
 
-1. Select **Import from a Text/CSV file**, and create a new data source with the following settings:
+4. **Import from a Text/CSV file** を選択し、次の設定で新しいデータソースを作成します:
 
-    - **Create new connection**
-    - **Link to file**: *Selected*
-    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
-    - **Connection**: Create new connection
-    - **data gateway**: (none)
-    - **Authentication kind**: Anonymous
-    - Click on **Next**.
+   - **新しい接続を作成**
+   - **ファイルへのリンク**: *選択*
+   - **ファイルパスまたは URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv`
+   - **接続**: 新しい接続を作成
+   - **データゲートウェイ**: (なし)
+   - **認証の種類**: 匿名
+   - **次へ** をクリック。
 
-      ![New dataflow.](./Images/29.png)
+     ![新しいデータフロー。](./Images/07/29.png)
 
-1. On **Preview file data** page, Click on **Create**.
+5. **ファイルデータのプレビュー** ページで **作成** をクリック。
 
-   ![New dataflow.](./Images/30.png)
+   ![新しいデータフロー。](./Images/07/30.png)
 
-1. Click **Copilot** button on Ribbon. 
+6. リボンの **Copilot** ボタンをクリック。
 
-    ![New dataflow.](./Images/31.png)
+   ![新しいデータフロー。](./Images/07/31.png)
 
-1. To better illustrate all that Copilot is doing for you, let me expand the UI a little to see what's going on behind the scenes.
+7. Copilot が行っているすべてのことをよりよく示すために、UI を少し拡張して、背後で何が起こっているかを確認します。
 
-1. Expand **Query Settings** (these are the steps in the query that bring in the data)
+8. **クエリ設定** を展開します（これはデータを取り込むクエリのステップです）
 
-1. **View menu**: Look for the option or menu labeled "View" in the toolbar or menu bar. Click on it to reveal a dropdown menu.
+    ![alt text](./Images/07/32.png)
 
-1. **Diagram View**: From the dropdown menu, select "Diagram View." This will switch your view to a visual representation of your code.
+9.  **表示メニュー**: ツールバーまたはメニューバーにある「表示」ラベルのオプションまたはメニューを探します。クリックしてドロップダウンメニューを表示します。
 
-1. **Script View**: Once you're in Script View, you should be able to see the M-Code that Copilot has generated. This is the underlying code representation of the actions or commands depicted in the Diagram View.
+10. **ダイアグラムビュー**: ドロップダウンメニューから「ダイアグラムビュー」を選択します。これにより、コードの視覚的な表現に切り替わります。
 
-   ![New dataflow.](./Images/1.png)
+11. **スクリプトビュー**: スクリプトビューに切り替えると、Copilot が生成した M コードが表示されます。これは、ダイアグラムビューで示されたアクションやコマンドの基礎となるコード表現です。
 
-1. Looking at the data… Notice the Item Column.
+   ![新しいデータフロー。](./Images/07/1.png)
 
-1. This is really three different fields -- It contains a short description of the item, a color and a size.
+12. データを見てみましょう… アイテム列に注目してください。
 
-1.	The fields are not consistently delimited (' ' and then ',')
+    ![alt text](./Images/07/33.png)
 
-1. Let's use Copilot to clean this up:
+13. これは実際には 3 つの異なるフィールドです -- アイテムの短い説明、色、サイズが含まれています。
 
-    ```
-   	Add a step that
-    ```
-    ![New dataflow.](./Images/3.png)
+14. フィールド内で区切り文字が一貫していません（' ' と ','）
 
-1. Type the following into Copilot:
- 
-    ```
-    In the Item column, remove the ','
-    ```
- 
-1. The Item column now consistently has a delimiter of **' '**.
+15. これを整理するために Copilot を使用しましょう。**次の手順を追加** します:
 
-   ![New dataflow.](./Images/4.png)
+   ![新しいデータフロー。](./Images/07/3.png)
 
-1. Show the m-code and new query step that the copilot generated.
+16. 続けて Copilot とのチャットボックスに次のように入力し、送信します:
  
    ```
-   Add a step that
+   アイテム列の ',' を ' 'に置き換え
    ```
-   ![New dataflow.](./Images/3.png)
+   ![alt text](./Images/07/34.png)
 
-1. Type the following into Copilot:
- 
-    ```
-    Split the Item column on the ' ', creating three new fields called Description, Color and Size
-    ```
- 
-1. Three new fields are now created to replace the Item Column.
+17. アイテム列は一貫して **' '** の区切り文字を持つようになりました。
 
-   ![New dataflow.](./Images/5.png)
- 
-1. Show the m-code and new query step that the copilot generated
- 
-   >**Note:** Copilot can do more than transform the table, we can actually change data as well.
+   ![新しいデータフロー。](./Images/07/4.png)
 
-1. Scenario: think Red bikes are going to be a big seller, so increase the quantity in Inventory
-Call out that the quantities for all items are 1.
+18. Copilot が生成した m コードと新しいクエリステップを表示します。
  
-1. Add a step to the query:
 
+   ![alt text](./Images/07/mcode.png)
+
+19. Copilot に次のように入力します:
+ 
    ```
-   Add a step that
+   アイテム列を ' ' で分割し、Description , Color , Sizeという 3 つの新しい列を作成
    ```
-   ![New dataflow.](./Images/3.png)
+   ![alt text](./Images/07/35.png)
 
-1. Type the following into Copilot:
+20. アイテム列を置き換えるために 3 つの新しいフィールドが作成されました。
+
+   ![新しいデータフロー。](./Images/07/5.png)
  
-    ```
-    Multiply the Quantity column by 10 for all rows where the Color column equals 'Red'. Make sure that the Color column is treated as text and the Quantity column as a number.
-    ```
+21. Copilot が生成した m コードと新しいクエリステップを表示します。
  
-1. Show that the quantity field for Red bikes is now 10 instead of 1.
+   >**注:** Copilot はテーブルの変換だけでなく、データの変更も行えます。
 
-   ![New dataflow.](./Images/6.png)
+   ![alt text](./Images/07/36.png)
+
+22. ここでシナリオを仮定し、赤い自転車が大ヒットすることを予期して在庫の数量を増やします。
+すべてのアイテムの数量が 1 であることを確認します。
  
-1. Here is a concise summary highlighting the impacts of Visual Query and M-Query/M-Code scripting:
+1. Copilot に次のように入力します:
+ 
+   ```
+   次の手順を追加します。 
+   Color 列が 'Red' のすべての行でQuantity 列を 10 倍にします。Color 列をテキストとして、Quantity列を数字として扱ってください
+   ```
+   ![alt text](./Images/07/37.png)
 
-1. Close the Report.
+2. 赤い自転車の数量フィールドが 1 から 10 に変更されたことを示します。
 
-1. **Visual Query**:
-   - **Streamlines data exploration**: Visual Query tools offer intuitive interfaces, enabling users to interact with data visually, and facilitating quicker insights without extensive coding.
-   - **Enhances accessibility**: With Visual Query, users with varying technical expertise can extract insights from data, reducing reliance on specialized programming skills and promoting broader data utilization across teams.
+   ![新しいデータフロー。](./Images/07/6.png)
+ 
+3. データフローを閉じます。
 
-2. **M-Query/M-Code scripting**:
-   - **Enables advanced data manipulation**: M-Query/M-Code scripting provides a robust framework for performing intricate data transformations and analysis, empowering users to tailor processes to specific requirements beyond the capabilities of visual tools.
-   - **Facilitates automation and customization**: Through M-Query/M-Code scripting, users can automate repetitive tasks, build custom functions, and create tailored solutions, increasing efficiency and flexibility in data workflows.
+## まとめ
 
-## Summary
-In this exercise, you have created a notebook and trained a machine-learning model. You used Scikit-Learn to train the model and MLflow to track its performance.
+この演習では、Fabric に含まれる Copilot を使用してデータ変換を作成し、ビジュアルクエリと M クエリ/M コードに関する特徴を確認しました。
 
-## You have successfully completed the lab. Click on Next >> to procced with next exercise.
+   - **ビジュアルクエリ**:
+     - **データ探索の効率化**: ビジュアルクエリツールは直感的なインターフェースを提供し、ユーザーが視覚的にデータと対話できるようにし、広範なコーディングなしで迅速な洞察を得ることができます。
+     - **アクセシビリティの向上**: ビジュアルクエリを使用すると、さまざまな技術的専門知識を持つユーザーがデータから洞察を引き出すことができ、専門的なプログラミングスキルへの依存を減らし、チーム全体でのデータ利用を促進します。
+
+   - **M クエリ/M コードによるコーディング**:
+     - **高度なデータ操作を可能にする**: M クエリ/M コードスクリプティングは、複雑なデータ変換と分析を実行するための強力なフレームワークを提供し、視覚的ツールの能力を超えた特定の要件にプロセスを適応させることができます。
+     - **自動化とカスタマイズを促進**: M クエリ/M コードスクリプティングを通じて、ユーザーは反復的なタスクを自動化し、カスタム関数を作成し、カスタマイズされたソリューションを構築することで、データワークフローの効率と柔軟性を向上させることができます。
+
+## ラボを正常に完了しました。次の演習に進むには、Next >> をクリックしてください。
+

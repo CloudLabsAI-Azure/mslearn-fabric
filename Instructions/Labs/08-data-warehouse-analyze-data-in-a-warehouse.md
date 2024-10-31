@@ -1,29 +1,29 @@
-# Exercise 7: Data Warehouse Analyze Data in a Warehouse with Fabric Copilot
+# 演習 07: Fabric Copilot を使用して データウェアハウス内のデータを分析する
 
-### Estimated Duration: 60 minutes
+### 所要時間: 60分
 
-In this lab, you will analyze data in a warehouse using Fabric Copilot by connecting to your data source, running queries, and visualizing insights to drive informed decision-making.
+このラボでは、Fabric Copilotを使用してデータウェアハウス内のデータを分析します。データソースに接続し、クエリを実行し、インサイトを視覚化して情報に基づいた意思決定を行います。
 
-## Lab objectives
+## ラボの目的
 
-You will be able to complete the following tasks:
+次のタスクを完了できるようになります：
 
-- Connect to the Data Warehouse  
-- Explore Data Sources  
-- Run Data Queries  
-- Visualize Data Insights  
-- Generate Reports  
-- Collaborate on Findings  
+- データウェアハウスへの接続  
+- データソースの探索  
+- データクエリの実行  
+- データインサイトの視覚化  
+- レポートの生成  
+- 調査結果の共有  
 
-1. Select the workspace **fabric-<inject key="DeploymentID" enableCopy="false"/>** (this is the workspace that mimics the lab environment)
+1. ワークスペース **fabric-<inject key="DeploymentID" enableCopy="false"/>** を選択します（これはラボ環境を模倣するワークスペースです）
 
-   ![New dataflow.](./Images/26.png)
+   ![New dataflow.](./Images/08/26.png)
  
-1. Select **Data Warehouse<inject key="DeploymentID" enableCopy="false"/>** from the list.
+1. リストから **Data Warehouse<inject key="DeploymentID" enableCopy="false"/>** を選択します。
 
-   ![New dataflow.](./Images/33.png)
+   ![New dataflow.](./Images/08/33.png)
 
-1. In the **Explorer** pane, verify that the **dbo** schema in the data warehouse contains the following four tables:
+1. **Explorer** ペインで、データウェアハウスの **dbo** スキーマに次の4つのテーブルが含まれていることを確認します：
    
     - **DimCustomer**
 
@@ -33,101 +33,109 @@ You will be able to complete the following tasks:
 
     - **FactSalesOrder**
 
-      ![01](./Images/02/Pg4-T2-S9.png)  
+      ![01](./Images/08/Pg4-T2-S9.png)  
 
-    > **Tip**: If the schema takes a while to load, just refresh the browser page.
+    > **ヒント**: スキーマの読み込みに時間がかかる場合は、ブラウザページをリフレッシュしてください。
  
-1. Clicking on the **Model** view allows you to view the relationships between different tables within the data warehouse.
+1. **モデルレイアウト** をクリックすると、データウェアハウス内の異なるテーブル間の関係を表示できます。
 
-    ![](./Images/pg-8.png)
+    ![](./Images/08/pg-8.png)
 
-1. When you click on the relationship between **FactSalesOrder** and **DimCustomer** and access its properties, you're essentially examining how these two tables are linked together. This relationship defines how data from these tables can be combined or related when querying or visualizing in Power BI.
+1. **FactSalesOrder** と **DimCustomer** のリレーションシップをクリックしてそのプロパティにアクセスすると、これら2つのテーブルがどのようにリンクされているかを調べることができます。この関係は、Power BIでクエリや視覚化を行う際に、これらのテーブルのデータをどのように組み合わせたり関連付けたりするかを定義します。
 
-     ![](./Images/10.png)
+     ![](./Images/08/10.png)
 
-    - This relationship indicates that each record in the "FactSalesOrder" table is associated with a specific customer represented in the "DimCustomer" table. For example, if we have a sales record in "FactSalesOrder" for a particular transaction, we can use this relationship to look up additional details about the corresponding customer from the "DimCustomer" table.
+    - このリレーションシップは、「FactSalesOrder」テーブルの各レコードが「DimCustomer」テーブルに表される特定の顧客に関連付けられていることを示しています。例えば、「FactSalesOrder」に特定の取引の販売記録がある場合、このリレーションシップを使用して対応する顧客の追加情報を「DimCustomer」テーブルから参照できます。
 
-    - This linkage is crucial for defining the Semantic Model used by Power BI. The Semantic Model essentially acts as a blueprint that outlines how data elements are interconnected and how they should be interpreted within Power BI. By establishing and defining relationships between tables, we're instructing Power BI on how to navigate and analyze the data effectively.
+    - リレーションシップは、Power BIで使用されるセマンティックモデルを定義するために重要です。セマンティックモデルは、データ要素がどのように相互に接続され、Power BI内でどのように解釈されるべきかを概説する設計図として機能します。テーブル間のリレーションシップを確立および定義することで、Power BIにデータを効果的にナビゲートおよび分析する方法を指示しています。
  
-1. Clicking on **New Report** from the **reporting tab** allows you to create a new report within Power BI. This report will utilize the Semantic Model defined by the relationships established in the data warehouse.
+1. **レポートタブ** から **新しいレポート** をクリックすると、Power BI内で新しいレポートを作成できます。このレポートは、データウェアハウスで定義されたセマンティックモデルを利用します。
  
-   ![](./Images/pg-08-1.png)
+   ![](./Images/08/pg-08-1.png)
+   
 
-1. The Semantic Model, as defined in the data warehouse, is reflected in the Power BI interface. This includes the tables and their respective fields visible in the Data Pane of Power BI, which you can use to build your reports.
+1. データウェアハウスで定義されたセマンティックモデルは、Power BIインターフェイスに反映されます。これには、レポート作成に使用できるデータペイン内のテーブルとそれぞれのフィールドが含まれます。
 
-1. Locate and click on the **Copilot** feature within the tool or platform you're using.
+2. メニュー内で **Copilot** ボタンを見つけてクリックします。
 
-   ![](./Images/13.png)
-
-1. If the pop-up titled **Welcome to Copilot in Power BI** appears, proceed by selecting **Get Started**.
-
-   ![](./Images/14.png)
-
-1. Locate the logo or icon associated with Copilot, then click on it to access its menu or interface.
-
-   ![](./Images/15.png)
-
-1. Recognize that Copilot offers functionalities such as providing suggestions, generating code snippets, and offering explanations. However, it's important to note its limitations, which may include the inability to create certain visualizations or directly modify page layouts.
-
-1. Selecting **What's in my data** prompts Copilot to analyze the semantic model or dataset currently in use.
-
-   ![](./Images/16.png)
-
-   - Copilot's analysis indicates that your dataset encompasses **sales performance**, **customer details**, **product information**, and **query performance**, offering a holistic view of your business operations. It suggests potential applications such as sales trend analysis, regional performance evaluation, customer segmentation, product evaluation, and query optimization. This highlights Copilot's adept understanding of dataset components and analytical techniques, providing valuable insights for strategic decision-making, customer engagement strategies, product refinement, and system enhancement.
+   ![](./Images/08/13.png)
     
-   - Copilot represents a significant advancement in AI utilization, showcasing its capability beyond just generating code or manipulating data. Its capacity to assist in analyzing datasets is particularly noteworthy, as it offers intelligent insights and suggestions that enhance the entire data analysis process. By leveraging Copilot, users can gain a deeper understanding and uncover valuable patterns within their datasets, ultimately empowering them to make informed decisions based on the insights derived. This highlights the transformative potential of AI in augmenting human capabilities and driving innovation in data analysis methodologies.
+
+1. **Welcome to Copilot in Power BI** というポップアップが表示されたら、**Get started** を選択して進みます。
+
+   ![](./Images/08/14.png)
+
+2. プロンプトガイドを見つけてクリックし、サンプルとなるプロンプトメニューにアクセスします。(必要に応じてブラウザの翻訳を使用してください。)
+
+   ![](./Images/08/15.png)
+
+3. Copilotが提案を提供したり、指示した内容のレポートを生成したり、説明を提供したりする機能を持っていることを確認します。ただし、特定の視覚化を作成したり、ページレイアウトを直接変更したりすることはできない場合があります。
+
+4. **What's in my data(データに何が含まれているか)** を選択すると、Copilotが現在使用しているセマンティックモデルまたはデータセットを分析します。
+
+   ![](./Images/08/16.png)
+    
+
+   - Copilotの分析によると、データセットには **販売パフォーマンス**、**顧客詳細**、**製品情報**、**クエリパフォーマンス** が含まれており、ビジネス運営の全体像を提供します。これにより、販売トレンド分析、地域パフォーマンス評価、顧客セグメンテーション、製品評価、クエリ最適化などの潜在的なアプリケーションが示唆されます。これは、データセットのコンポーネントと分析技術に対するCopilotの熟練した理解を示しており、戦略的意思決定、顧客エンゲージメント戦略、製品改良、システム強化のための貴重なインサイトを提供します。
+    
+   - Copilotは、コード生成やデータ操作を超えたAI利用の重要な進展を示しています。特にデータセットの分析を支援する能力は注目に値し、インテリジェントなインサイトと提案を提供してデータ分析プロセス全体を強化します。Copilotを活用することで、ユーザーはデータセット内の貴重なパターンを発見し、得られたインサイトに基づいて情報に基づいた意思決定を行うことができます。これは、AIが人間の能力を拡張し、データ分析手法に革新をもたらす変革の可能性を強調しています。
  
-1. Explore the capabilities of Copilot further by **clicking on its logo** within the text box. This will allow you to access additional features and functionalities that Copilot offers, providing a deeper understanding of its capabilities.
+5. 再度プロンプトガイドを見つけてクリックします。
   
-   ![](./Images/24.png)
+   ![](./Images/08/15.png)
 
-1. Click **Create a page that shows**.
+6. **Create a page that shows(～のレポートページを作成)** をクリックします。
 
-    ![](./Images/17.png)
-   
-1. At this time, you can only ask for a page or report to be created. You can't ask for specific visuals.
+    ![](./Images/08/17.png)
+    
+7. 現時点では、ページやレポートの作成を依頼することしかできません。特定の視覚化を依頼することはできません。
  
-1. Type the following command into Copilot:
+8. 次のコマンドをCopilotに入力します：
   
     ```
-    Create a page that shows "Total Sales by Product Category"
+    製品カテゴリ別の総売上を表示するページを作成してください
     ```
  
-1. **Execute the command** and let Copilot generate the report. Note that AI-generated results may vary, and you're never entirely sure what you'll get.
+9. **コマンドを実行** してCopilotにレポートを生成させます。AI生成の結果は異なる場合があり、何が得られるかは完全には予測できません。
 
-    ![](./Images/18.png)
+    ![](./Images/08/18.png)
 
-   - The report provides a comprehensive analysis of total sales across a spectrum of product categories, revealing a consistent pattern of total sales summing up to 19.59 million across all 39 categories. Similarly, the quantity sold uniformly stands at 25.98 thousand units for each category. With an average total sales figure of 4.55 thousand, it suggests an even distribution of sales performance across all categories. This uniformity underscores a balanced sales landscape across diverse product categories, thereby offering valuable insights for informed decision-making in subsequent business strategies.
+   - レポートは、製品カテゴリ全体の総売上の包括的な分析を提供し、39カテゴリ全体で総売上が19.59百万に達する一貫したパターンを示しています。同様に、各カテゴリの販売数量は25.98千ユニットで均一です。平均総売上は4.55千であり、すべてのカテゴリで均等な販売パフォーマンスの分布を示唆しています。この均一性は、多様な製品カテゴリ全体でバランスの取れた販売状況を強調しており、今後のビジネス戦略における情報に基づいた意思決定のための貴重なインサイトを提供します。
    
-1. Type the following command into Copilot
+10.  **Suggest Content for this Report (このレポートのコンテンツを提案してください)** という指示をCopilotに入力します：
 
-    ```
+   ```
     Suggest Content for this Report
-    ```
+   ```
  
-1. **Expand each suggestion** to see the text of the prompt and what will be created. This helps illustrate the range of suggestions Copilot can provide.
+   ![alt text](./Images/08/19.png)
+
+11. 各提案を展開して、プロンプトのテキストと作成される内容を確認します。これにより、Copilotが提供できる提案の範囲が示されます。
  
-1. Select the **Sales Performace Analysis** report as it's usually a decent report to work with. Note that the report generated can vary.
+12. 通常、作業に適したレポートである **Sales Performance by Product** レポートを選択します。生成されるレポートは異なる場合があります。
  
-   ![](./Images/22.png)
+   ![](./Images/08/22.png)
   
-    >**Note:** Click **Edit** to demonstrate that you can adjust the query and customize the report.
+    >**注:** **編集ボタン** をクリックして、指示を調整することができます。
+   
+   ![alt text](./Images/08/23.png)
+13. **Give me an executive summary (エグゼクティブサマリーをください)** を選択します：
 
-   ![](./Images/21.png)
-
-1. **Clear the input box** and select:
-
-    ```
+   ```
     Give me an executive summary
-    ```
-    ![](./Images/23.png)
+   ```
 
-1. Save the report as **Sample**.
+   ![](./Images/08/24.png)
 
-1. The summary provides an overview of sales revenue data from 2021 to 2022, highlighting increases year-over-year and identifying key months and regions driving revenue growth, with 2022 contributing significantly to total revenue, led by strong performance in the United States.
+   > **ヒント:** 直近のアップデートで末尾に「日本語で回答してください。」と付け加えると日本語で応答されるようになりました。
 
-## Summary
+14. サマリーは、2021年から2022年の売上収益データの概要を提供し、年々の増加を強調し、収益成長を牽引する主要な月と地域を特定します。2022年は、米国の強力なパフォーマンスにより、総収益に大きく貢献しています。
 
-In this lab, you connected to a data warehouse using Fabric Copilot and explored the available datasets. You ran queries to extract insights and created visualizations for effective analysis. Finally, you compiled your findings into reports and collaborated with team members on the results.
+15. レポートを **サンプル** として保存します。
 
-### You have successfully completed the lab. Click on Next >> to procced with next exercise.
+## まとめ
+
+このラボでは、Fabric Copilotを使用してデータウェアハウスに接続し、利用可能なデータセットを探索しました。インサイトを抽出するためにクエリを実行し、効果的な分析のために視覚化を作成しました。最後に、調査結果をレポートにまとめ、チームメンバーに共有できるように保存しました。
+
+### ラボを正常に完了しました。次の演習に進むには「次へ >>」をクリックしてください。
+
