@@ -1,6 +1,6 @@
 # Exercise 2: Create a Dataflow (Gen2) in Microsoft Fabric
 
-### Estimated Duration: 30 minutes
+### Estimated Duration: 50 minutes
 
 ## Overview
 
