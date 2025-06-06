@@ -65,7 +65,7 @@ In this task, you will create a notebook to facilitate model training and experi
 
 In this task, you will load data into a dataframe to prepare for model training. Dataframes in Spark, akin to Pandas dataframes in Python, offer a structured way to work with data in rows and columns, enabling efficient data manipulation and analysis.
 
-1. Click **Add data items (1)** and select **Exiting data source (2)** from the drop-down.
+1. Click **Add data items (1)** and select **Existing data source (2)** from the drop-down.
 
     ![](./Images/adddataitem.png)  
 
@@ -281,9 +281,11 @@ In this task, you will save the best-performing machine learning model after com
 
 In this task, you will save your notebook with a meaningful name to preserve your work after training and evaluating the models. Additionally, you will end the Spark session to free up resources and finalize your data processing environment.
 
-1. Select the notebook that you created. In the notebook menu bar, use the ⚙️ **Settings** icon to view the notebook settings.
+1. Select the notebook that you created. In the notebook menu bar.
+  ![](./Images/nb-1.png)
 
-1. Set the **Name** of the notebook to **Train and compare models notebook**, and then close the settings pane.
+2. Click on the ⚙️ **Settings** icon (1) to view the notebook settings, and Set the **Name** of the notebook to **Train and compare models notebook (2)**, and then close the settings pane.
+    ![](./Images/nb-2.png)
 
 1. On the notebook menu, select &#9645;**Stop session** to end the Spark session.
 

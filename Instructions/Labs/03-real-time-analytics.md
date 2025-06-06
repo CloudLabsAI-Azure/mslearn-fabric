@@ -108,7 +108,7 @@ In this task, you will use Kusto Query Language (KQL) to query the sales table i
 
 8. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st 2020 in ascending order of product name.
 
-9. From the top left corner select the KQL Queryset and save the query as **Revenue by Product** in your workspace.
+9. From the top left corner select the KQL Queryset (1) and save the query as **Revenue by Product (2)** in your workspace.
 
     ![](./Images/E4-T2-S9.png)
 

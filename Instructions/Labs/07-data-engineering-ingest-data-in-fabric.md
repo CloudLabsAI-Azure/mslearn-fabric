@@ -42,14 +42,19 @@ You will be able to complete the following tasks:
 1. Click **Copilot** button on Ribbon. 
 
     ![New dataflow.](./Images/E6T1S6.png)
+   > Note: If you are unable to locate Copilot, click Expand Ribbon in the top-right corner.
+   ![New dataflow.](./Images/cop-1.png)
 
 1. To give you a clearer view of everything Copilot is doing, expand the UI slightly to reveal what’s happening behind the scenes.
 
 1. Expand **Query Settings** (these are the steps in the query that bring in the data)
+   ![New dataflow.](./Images/cop-2.png)
 
 1. **View menu**: Look for the option or menu labeled "View" in the toolbar or menu bar. Click on it to reveal a dropdown menu.
+   ![New dataflow.](./Images/cop-3.png)
 
 1. **Diagram View**: From the dropdown menu, select "Diagram View." This will switch your view to a visual representation of your code.
+   ![New dataflow.](./Images/cop-4.png)
 
 1. **Script View**: Once you're in Script View, you should be able to see the M-Code that Copilot has generated. This is the underlying code representation of the actions or commands depicted in the Diagram View.
 

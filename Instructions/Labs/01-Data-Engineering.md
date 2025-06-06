@@ -64,6 +64,8 @@ In many scenarios, the data you need to work within your lakehouse may be stored
 
 2. View the available data source types for shortcuts. Then close the **New shortcut** dialog box without creating a shortcut.
 
+   ![](./Images/fab10.1.png)
+
 ### Task 3: Create a pipeline
 
 In this task, you will create a pipeline to automate data processing workflows. Youâ€™ll define the sequence of data transformation steps, configure the necessary components, and set up triggers for execution. This will streamline your data integration processes and improve efficiency in handling data tasks. A simple way to ingest data is to use a **Copy data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
@@ -246,9 +248,13 @@ In this task, you will create a notebook to document your data analysis process.
 
      ![.](./Images/fab-7.png)
  
-15. In the hub menu bar on the left, select your lakehouse.
+15. In the hub menu bar on the left, select your lakehouse.  
 
-16. In the **Explorer** pane, refresh the view. Then expand **Tables**, and select the **sales** table to see a preview of the data it contains.
+    ![.](./Images/newfab-1.png)
+
+16. In the **Explorer** pane, refresh the view (1). Then expand **Tables (2)**, and select the **sales** table (3) to see a preview of the data it contains.
+
+    ![.](./Images/newfab-2.png)
 
 ### Task 5: Use SQL to query tables
 
@@ -281,7 +287,7 @@ In this task, you will create a visual query in Power BI using Power Query. Youâ
 
     ![](./Images/E2-T6-S1.png)
 
-2. In the Lakehouse, navigate to Schemas, then to dbo, and select the **sales (1)** table. In the sales table click on **&#8230;** and select **Insert into Canvas (2)** it in the new visual query editor pane that opens to create a Power Query as shown here: 
+2. In the Lakehouse, navigate to Schemas, then to dbo, expand the tables folder and select the **sales (1)** table. In the sales table click on **&#8230;** and select **Insert into Canvas (2)** it in the new visual query editor pane that opens to create a Power Query as shown here: 
 
     ![Screenshot of a Visual query.](./Images/E2-T6-S2.png)
 

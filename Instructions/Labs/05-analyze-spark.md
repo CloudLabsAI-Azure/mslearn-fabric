@@ -410,21 +410,21 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
 2. Run the code and observe that it returns the data from the **salesorders** view you created previously.
 
-3. We need to change the view from table to chart in the results section beneath the cell. To do so we will first need to turn off the new visualization option. Click on **...** and then **New visualization** to turn it off. Then click on **Chart**.
+3. We need to change the view from table to chart in the results section beneath the cell.  Click on **+ New chart**.
 
-   ![](./Images/L6T9S3.png) 
+   ![](./Images/updated_chart.png) 
 
-4. Use the **Customize Chart** button at the top right of the chart to display the options pane for the chart. Then set the options as follows and select **Apply**.
+4. Use the **Build my own** button at the bottom of suggested charts. Then set the options as follows and select **Apply**.
     - **Chart type**: Bar chart
-    - **Key**: Item
-    - **Values**: Quantity
+    - **X-axis**: Item
+    - **Y-axis**: Quantity
     - **Series Group**: *leave blank*
     - **Aggregation**: Sum
     - **Stacked**: *Unselected*
 
 5. Verify that the chart looks similar to this:
 
-    ![Screenshot of a bar chart of products by total order quantiies](./Images/chart_final_1.png)
+    ![Screenshot of a bar chart of products by total order quantiies](./Images/updated_chart_1.png)
 
 #### Get started with **matplotlib**
 
