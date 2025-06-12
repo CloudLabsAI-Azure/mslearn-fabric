@@ -84,15 +84,15 @@ In Microsoft Fabric, the workflow begins with creating a Fabric workspace to man
 
 1. Once the environment is provisioned, a virtual machine (JumpVM) and lab guide will get loaded in your browser. Use this virtual machine throughout the workshop to perform the lab. You can see the number on the bottom of the **Lab guide** to switch to different exercises of the lab guide.
 
-   ![07](./Images/march-getting-started-1.png)
+   ![07](./Images/june-getting-started-1.png)
 
 1. To get the lab environment details, you can select the **Environment** tab. Additionally, the credentials will also be emailed to your registered email address.
 
-   ![08](./Images/march-getting-started-3.png)
+   ![08](./Images/june-getting-started-3.png)
 
 2. Utilizing the Split Window Feature: For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-   ![08](./Images/march-getting-started-2.png)
+   ![08](./Images/june-getting-started-2.png)
 
    > You will see the DeploymentID value on the **Environment** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
 
@@ -100,13 +100,13 @@ In Microsoft Fabric, the workflow begins with creating a Fabric workspace to man
 
 To adjust the zoom level for the environment page, click the A↕ : 100% icon located next to the timer in the lab environment.
 
-   ![08](./Images/march-getting-started-6.png)
+   ![08](./Images/june-getting-started-6.png)
 
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-   ![08](./Images/march-getting-started-5.png)
+   ![08](./Images/june-getting-started-5.png)
 
 ## Login to Azure Portal
 
