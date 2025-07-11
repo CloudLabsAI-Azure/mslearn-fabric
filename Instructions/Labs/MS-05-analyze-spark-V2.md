@@ -359,7 +359,11 @@ Tables in a Spark metastore are relational abstractions over files in the data l
 
     ![Screenshot of the salesorder table in Explorer.](./Images/table-view.png)
 
-4. In the **...** menu for the **salesorders** table, select **Load data** > **Spark**. A new code cell containing code similar to the following example is added to the notebook:
+4. In the **...** menu for the **salesorders** **(1)** table, select **Load data** **(2)** > **Spark** **(2)**. 
+
+   ![01](./Images/02/pg04-loadspark.png)
+
+5. A new code cell containing code similar to the following example is added to the notebook:
 
     ```Python
    df = spark.sql("SELECT * FROM [your_lakehouse].salesorders LIMIT 1000")
@@ -367,7 +371,7 @@ Tables in a Spark metastore are relational abstractions over files in the data l
     ```
      > **Note**: Ensure to replace the [your_lakehouse] with **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>**
      
-5. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
+6. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
 
 ### Run SQL code in a cell
 
@@ -409,21 +413,28 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
 2. Run the code and observe that it returns the data from the **salesorders** view you created previously.
 
-3. We need to change the view from table to chart in the results section beneath the cell. To do so we will first need to turn off the new visualization option. Click on **...** and then **New visualization** to turn it off. Then click on **Chart**.
+3. We need to change the view from table to chart in the results section beneath the cell. To do so click on **+ New chart** next to your result table tab.
 
-   ![](./Images/L6T9S3.png) 
+   ![01](./Images/02/pg07-addchart.png)
 
-4. Use the **Customize Chart** button at the top right of the chart to display the options pane for the chart. Then set the options as follows and select **Apply**.
+4. Click on **Start editing** under **Suggested charts** to customize chart visulaization. Then set the options as follows under **Basic** of **chat settings**.
+    - **Title**: Sales Order Visualization
+    - **Subtitle**: Overview of Item-wise Sales Order Quantities
     - **Chart type**: Bar chart
-    - **Key**: Item
-    - **Values**: Quantity
+    - **X-axis**: Item
+    - **Y-axis**: Quantity
+    - **Show Legend**: *Unslected*
     - **Series Group**: *leave blank*
     - **Aggregation**: Sum
     - **Stacked**: *Unselected*
 
+       ![01](./Images/02/pg07-basic01.png)
+
+       ![01](./Images/02/pg07-basic02.png)
+
 5. Verify that the chart looks similar to this:
 
-    ![Screenshot of a bar chart of products by total order quantiies](./Images/chart_final_1.png)
+   ![01](./Images/02/pg07-finalchart.png)
 
 ### Get started with **matplotlib**
 
@@ -463,6 +474,8 @@ In this task, you will visualize data using Spark to enhance understanding and i
     - At the core of the **matplotlib** library is the **pyplot** object. This is the foundation for most plotting functionality.
     - The default settings result in a usable chart, but there's considerable scope to customize it
 
+   ![01](./Images/02/pg07-Matplotresult01.png)
+
 1. Modify the code to plot the chart as follows:
 
     ```Python
@@ -486,6 +499,8 @@ In this task, you will visualize data using Spark to enhance understanding and i
     ```
 
 1. Re-run the code cell and view the results. The chart now includes a little more information.
+
+   ![01](./Images/02/pg07-Matplotresult02.png)
 
 1. A plot is technically contained within a **Figure**. In the previous examples, the figure was created implicitly for you, but you can create it explicitly.
 
@@ -546,6 +561,8 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
 1. Re-run the code cell and view the results. The figure contains the subplots specified in the code.
 
+   ![01](./Images/02/pg07-Matplotresult03.png)
+
     > **Note:** To learn more about plotting with matplotlib, see the [matplotlib documentation](https://matplotlib.org/).
 
 ### Use the **seaborn** library
@@ -599,6 +616,8 @@ While **matplotlib** enables you to create complex charts of multiple types, it 
     ```
 
 6. Run the modified code to view the yearly revenue as a line chart.
+
+   ![01](./Images/02/pg07-Seaborn01.png)
 
     > **Note**: To learn more about plotting with seaborn, see the [seaborn documentation](https://seaborn.pydata.org/index.html).
 
