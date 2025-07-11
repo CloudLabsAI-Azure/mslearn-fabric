@@ -118,7 +118,7 @@ In this task, you will create a pipeline to automate data processing workflows. 
 
    ![Account-manager-start](./Images/lab1-image13.png)
 
-9. On the **Choose data destination** page, click on **OneLake (1)** and select the lakehouse **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**.
+9. On the **Choose data destination** page, click on **OneLake catalog (1)** and select the lakehouse **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
    ![Account-manager-start](./Images/02/lakehouse-catalog.png)
 
