@@ -251,7 +251,7 @@ In this task, you will aggregate and group data within a dataframe to summarize 
 
 In this task, you will use Spark to transform data files into a desired format for analysis and processing. This involves ingesting data in specific structures and applying transformations, a common responsibility for data engineers, to prepare the data for downstream applications.
 
-#### Use dataframe methods and functions to transform data
+### Use dataframe methods and functions to transform data
 
 1. Add a new code cell to the notebook, and enter the following code in it:
 
@@ -285,7 +285,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
     > **Tip**: See the [Spark dataframe documentation](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html) to learn more about the methods of the Dataframe object.
 
-#### Save the transformed data
+### Save the transformed data
 
 1. Add a new cell with the following code to save the transformed dataframe in Parquet format (Overwriting the data if it already exists):
 
@@ -309,7 +309,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
 4. Run the cell and verify that the results show the order data that has been loaded from the parquet files.
 
-#### Save data in partitioned files
+### Save data in partitioned files
 
 1. Add a new cell with the following code; which saves the dataframe, partitioning the data by **Year** and **Month**:
 
@@ -337,7 +337,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
 As you've seen, the native methods of the dataframe object enable you to query and analyze data from a file quite effectively. However, many data analysts are more comfortable working with tables that they can query using SQL syntax. Spark provides a *metastore* in which you can define relational tables. The Spark SQL library that provides the dataframe object also supports the use of SQL statements to query tables in the metastore. By using these capabilities of Spark, you can combine the flexibility of a data lake with the structured data schema and SQL-based queries of a relational data warehouse - hence the term "data lakehouse".
 
-#### Create a table
+### Create a table
 
 Tables in a Spark metastore are relational abstractions over files in the data lake. tables can be *managed* (in which case the files are managed by the metastore) or *external* (in which case the table references a file location in the data lake that you manage independently of the metastore).
 
@@ -369,7 +369,7 @@ Tables in a Spark metastore are relational abstractions over files in the data l
      
 5. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
 
-#### Run SQL code in a cell
+### Run SQL code in a cell
 
 While it's useful to be able to embed SQL statements into a cell containing PySpark code, data analysts often just want to work directly in SQL.
 
@@ -398,7 +398,7 @@ While it's useful to be able to embed SQL statements into a cell containing PySp
 
 In this task, you will visualize data using Spark to enhance understanding and insights through graphical representation. While Fabric notebooks offer a basic chart view for data from dataframes or Spark SQL queries, you can utilize Python graphics libraries like **matplotlib** and **seaborn** for more comprehensive and customized charting.
 
-#### View results as a chart
+### View results as a chart
 
 1. Add a new code cell to the notebook, and enter the following code in it:
 
@@ -425,7 +425,7 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
     ![Screenshot of a bar chart of products by total order quantiies](./Images/chart_final_1.png)
 
-#### Get started with **matplotlib**
+### Get started with **matplotlib**
 
 1. Add a new code cell to the notebook, and enter the following code in it:
 
@@ -548,7 +548,7 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
     > **Note:** To learn more about plotting with matplotlib, see the [matplotlib documentation](https://matplotlib.org/).
 
-#### Use the **seaborn** library
+### Use the **seaborn** library
 
 While **matplotlib** enables you to create complex charts of multiple types, it can require some complex code to achieve the best results. For this reason, over the years, many new libraries have been built on the base of matplotlib to abstract its complexity and enhance its capabilities. One such library is **seaborn**.
 
