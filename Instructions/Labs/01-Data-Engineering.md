@@ -2,9 +2,7 @@
 
 ### Estimated Duration: 90 Minutes
 
-A data lakehouse is a common analytical data store for cloud-scale analytics solutions. One of the core tasks of a data engineer is to implement and manage the ingestion of data from multiple operational data sources into the lakehouse. In Microsoft Fabric, you can implement *extract, transform, and load* (ETL) or *extract, load, and transform* (ELT) solutions for data ingestion through the creation of *pipelines*.
-
-Fabric also supports Apache Spark, enabling you to write and run code to process data at scale. By combining the pipeline and Spark capabilities in Fabric, you can implement complex data ingestion logic that copies data from external sources into the OneLake storage on which the lakehouse is based and then uses Spark code to perform custom data transformations before loading it into tables for analysis.
+In this exercise, you'll ingest data into a Microsoft Fabric lakehouse using pipelines and Apache Spark. Pipelines allow you to extract data from external sources and load it into OneLake. Spark enables you to transform the data at scale before storing it in lakehouse tables for analysis. Ensure data is successfully loaded into OneLake before applying transformations.
 
 ## Lab objectives
 
@@ -41,7 +39,7 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
       
 ## Task 2: Create a workspace
 
-Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
+In this task, you will create a Fabric workspace. The workspace will contain all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
 
 1. On the left-hand pane of Power BI portal, select **Workspaces (1)** and Click on **+ New workspace (2)**
 
@@ -62,11 +60,7 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
 ## Task 3: Create a Lakehouse
 
-Large-scale data analytics solutions have traditionally been built around a *data warehouse*, in which data is stored in relational tables and queried using SQL. The growth in "big data" (characterized by high *volumes*, *variety*, and *velocity* of new data assets) together with the availability of low-cost storage and cloud-scale distributed computing technologies has led to an alternative approach to analytical data storage; the *data lake*. In a data lake, data is stored as files without imposing a fixed schema for storage. Increasingly, data engineers and analysts seek to benefit from the best features of both of these approaches by combining them in a *data lakehouse*; in which data is stored in files in a data lake and a relational schema is applied to it as a metadata layer so that it can be queried using traditional SQL semantics.
-
-In Microsoft Fabric, a lakehouse provides highly scalable file storage in a *OneLake* store (built on Azure Data Lake Store Gen2) with a metastore for relational objects such as tables and views based on the open source *Delta Lake* table format. Delta Lake enables you to define a schema of tables in your lakehouse that you can query using SQL.
-
-Now that you have created a workspace in the previous step, it's time to switch to the *Data engineering* experience in the portal and create a data lakehouse into which you will ingest data.
+In this task, switch to the Data engineering experience and create a new Lakehouse. You'll use it to ingest and manage data in the following steps.
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Fabric (2)** experience.
 
@@ -96,7 +90,7 @@ Now that you have created a workspace in the previous step, it's time to switch 
 
 ## Task 4: Create a pipeline
 
-In this task, you will create a pipeline to automate data processing workflows. You’ll define the sequence of data transformation steps, configure the necessary components, and set up triggers for execution. This will streamline your data integration processes and improve efficiency in handling data tasks. A simple way to ingest data is to use a **Copy data** activity in a pipeline to extract the data from a source and copy it to a file in the lakehouse.
+In this task, you'll create a pipeline to automate data workflows. Using the Copy data activity, you'll extract data from a source and copy it to a file in the lakehouse, streamlining the data ingestion process.
 
 1. In the left pane, navigate back to the workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (2)**.
 
@@ -183,9 +177,9 @@ In this task, you will create a pipeline to automate data processing workflows. 
 
     ![Account-manager-start](./Images/lab1-image16.png)
 
-## Task 5: Create a notebook
+## Task 5: Create a Notebook
 
-In this task, you will create a notebook to document your data analysis process. You’ll set up the notebook environment, import necessary libraries, and structure your code to include data exploration, visualization, and insights. This will help you organize your workflow and enhance reproducibility in your analysis.
+In this task, you'll create a Notebook to document your data analysis. You'll set up the environment, import libraries, and structure your code for exploration, visualization, and insights.
 
 1. From the left pane, select the workspace named **Fabric-<inject key="DeploymentID" enableCopy="false"/>**.
 
@@ -195,17 +189,17 @@ In this task, you will create a notebook to document your data analysis process.
 
     ![](./Images/E2-T4-S2.png) 
 
-1. After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+1. After a few seconds, a new notebook with a single cell opens. Each notebook consists of code or markdown cells used for running code or adding formatted text.
 
 1. Click **Add data items (1)** drop-down under explorer and select **Existing data source (2)** from the drop-down.
 
     ![](./Images/E2-T4-S4.png)  
 
-1. Select the lakehouse we created earlier **Lakehouse-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Continue (2)**.
+1. Select the previously created **Lakehouse-<inject key="DeploymentID" enableCopy="false"/> (1)** then click **Continue (2)**.
  
     ![](./Images/Lake17.png) 
 
-1. Select the existing cell in the notebook, which contains some simple code, and then replace the default code with the following variable declaration and click on **&#9655; Run**.
+1. Select the existing cell in the notebook, clear the default code, and replace it with the **variable declaration (1)** below. Then click **&#9655; Run (2)** to execute the cell.
 
     ```python
    table_name = "sales"
@@ -285,7 +279,7 @@ In this task, you will create a notebook to document your data analysis process.
 
 ## Task 6: Use SQL to query tables
 
-In this task, you will use SQL to query tables in a database. You'll write SQL statements to retrieve, filter, and manipulate data from specified tables, allowing you to analyze and extract meaningful insights from the dataset. This will enhance your understanding of data retrieval and improve your SQL skills.
+In this task, you'll use SQL to query tables in a database. You'll write statements to retrieve, filter, and manipulate data, helping you analyze the dataset and build your SQL skills.
 
 1. At the top-right of the Lakehouse page, switch from **Lakehouse** to **SQL analytics endpoint**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query its tables, as shown here:
 
@@ -308,7 +302,7 @@ In this task, you will use SQL to query tables in a database. You'll write SQL s
 
 ## Task 7: Create a visual query
 
-In this task, you will create a visual query in Power BI using Power Query. You’ll begin by adding the **sales** table to the query editor, select relevant columns, and apply a **Group by** transformation to count distinct line items for each sales order. Finally, you'll review the results to see the summarized data.
+In this task, you'll create a visual query in Power BI using Power Query. Start by adding the Sales table to the query editor, select the necessary columns, and apply a Group By transformation to count distinct line items per sales order. Then, review the summarized results.
 
 1. On the toolbar,under **New SQL query (1)** drop-down select **New visual query (2)**.
 
@@ -344,7 +338,7 @@ In this task, you will create a visual query in Power BI using Power Query. You�
 
 ## Task 8: Create a report
 
-In this task, you will create a report to visualize and present your data findings. You'll gather relevant data, select appropriate visualizations, and structure the report for clarity and insight. This process will help you effectively communicate your analysis and support data-driven decision-making.
+In this task, you'll create a report to visualize your data findings. You'll select relevant data, choose appropriate visuals, and organize the report to clearly present insights and support data-driven decisions.
 
 1. At the top of the SQL analytics endpoint page, select the **Model Layouts** tab.
     
