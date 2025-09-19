@@ -105,9 +105,9 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
     ![](./Images/Lake2.png)
 
-1. In the search box, search for **Data pipeline (1)** and select **Data pipeline (2)** from the list.
+1. In the search box, search for **Pipeline (1)** and select **Pipeline (2)** from the list.
 
-    ![](./Images/ex1t4p2.png)
+    ![](./Images/E1T4S2.png)
 
 1. Create a new data pipeline named **Ingest Sales Data Pipeline (1)** and click on **Create (2)**. 
     
