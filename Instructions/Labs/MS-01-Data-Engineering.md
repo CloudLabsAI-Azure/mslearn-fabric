@@ -23,15 +23,16 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
 
-     ![Account-manager-start](./Images/f1.png)
+     ![Account-manager-start](./Images/e1t1s1.png)
 
-1. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-      ![Account-manager-start](./Images/fabric-3.png)
+2. On the **Start 60-day free Pro trial** dialog box, click **Start trial** to activate the trial.  
 
-1. Click on **Stay on current page** when prompted.
+   ![](./Images/e1t1s2.png)
 
-      ![Account-manager-start](./Images/E1T1S3-1108.png)
+3. On the **Confirmation** dialog box, click **Got it** to complete the activation.  
+
+   ![](./Images/e1t1s3.png)
 
 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right again, and verify **Trial Status (2)**.
 
@@ -67,13 +68,13 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
    ![](./Images/E1T3S1.1-1108.png)
    
-1. In the left pane, navigate to your Workspace named as **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new lakehouse.
+1. In the left pane, navigate to **Workspaces** icon and select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, 
 
-    ![](./Images/E1T3S2-1108.png)
+    ![](./Images/e1t3s2.png)
 
-1. In the search box, search for **Lakehouse (1)** and select **Lakehouse (2)** from the list.
+1. Click on **+ New item (1)** to create a new lakehouse. In the search box, search for **Lakehouse (2)** and select **Lakehouse (3)** from the list.
 
-    ![](./Images/Lake1.png)
+    ![](./Images/e1t3s4.png)
 
 1. Enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and Click on **Create (2)**.
 
@@ -95,9 +96,9 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
     ![](./Images/E1T3S2-1108.png)
 
-1. In the search box, search for **Data pipeline (1)** and select **Data pipeline (2)** under **Get data** from the list.
+1. In the search box, search for **pipeline (1)** and select **pipeline (2)** under **Get data** from the list.
 
-    ![](./Images/E6T3S2-1208.png)
+    ![](./Images/e1t4s2.png)
 
 1. Create a new data pipeline named **Ingest Sales Data Pipeline (1)** and click on **Create (2)**. 
     
@@ -133,7 +134,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
    - After reviewing, close the preview and click **Next (5)**.
   
      
-      ![Account-manager-start](./Images/lab1-image12.png)
+      ![Account-manager-start](./Images/e1t4s8(1).png)
   
     
       ![Account-manager-start](./Images/E1T4S8.2-1108.png)
@@ -170,23 +171,26 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
 1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has been successfully updated.
 
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/01/Pg3-CpyOutput.png)
+    ![Screenshot of a pipeline with a Copy Data activity.](./Images/e1t4s14.png)
 
-1. In the left pane, click on the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** page, expand **Files (1)** and select the **new_data (2)** folder, refresh the page and verify that the **sales.csv (3)** file has been copied.
+1. On the **Workspaces** page, select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Lakehouse_... (2)** to open the lakehouse.  
 
-    ![Account-manager-start](./Images/lab1-image16.png)
+   ![](./Images/e1t4s15.png)
 
+1. In the **Explorer** pane, expand **new_data (1)** and select **sales.csv (2)** to open the file.  
+
+   ![](./Images/e1t4s15(01).png)
 ## Task 5: Create a Notebook
 
 In this task, you'll create a Notebook to document your data analysis. You'll set up the environment, import libraries, and structure your code for exploration, visualization, and insights.
 
-1. From the left navigation pane, select your **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, click on **+ New item (2)**. 
+1. Select Workspaces on left hand side and select **fabric-<inject key="DeploymentID" enableCopy="false"/>** .
 
-    ![](./Images/E1T3S2-1108.png)
+    ![](./Images/e1t5s1.png)
 
-1. In the New Item panel, search for **Notebook (1)** and select **Notebook (2)**.
+1. Click on **+ New item (1)** In the New Item panel, search for **Notebook (2)** and select **Notebook (3)**.
 
-    ![](./Images/E4T2S2-1208.png) 
+    ![](./Images/e1t5s2.png) 
 
 1. After a few seconds, a new notebook with a single cell opens. Each notebook consists of code or markdown cells used for running code or adding formatted text.
 
@@ -372,7 +376,7 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 
 9. On the **File (1)** menu, select **Save As (2)**. Then, name the Report as **Item Sales Report (3)** and click **Save (4)** in the workspace you created previously.
 
-   ![](./Images/Lake25.png)
+   ![](./Images/e1t8s9.png)
    
    ![](./Images/Lake26.png)
 

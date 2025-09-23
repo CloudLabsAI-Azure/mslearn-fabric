@@ -125,6 +125,10 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
 
    ![05](./Images/pbi-homepage.png)
 
+1. On the **Microsoft Fabric (Free) license assigned** dialog box, click **OK (1)** to confirm the license assignment.  
+
+   ![](./Images/GSpop.png)
+
 ## Support Contact
 
 The CloudLabs support team is available 24/7, 365 days a year, via email and live chat to ensure seamless assistance at any time. We offer dedicated support channels tailored specifically for both learners and instructors, ensuring that all your needs are promptly and efficiently addressed.

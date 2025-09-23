@@ -124,6 +124,8 @@ In this task, you will load data into a dataframe to prepare it for analysis. Da
 
     > **Note:** Since this is the first time you've run any Spark code, a Spark session must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
 
+    > **Note:** The Spark pool limit has been reached because there are existing jobs running. Wait a few minutes for the current jobs to complete, and then you can proceed.
+
 1. When the cell command has been completed, review the output below the cell, which should look similar to this:
 
     | Index | SO43701 | 11 | 2019-07-01 | Christy Zhu | christy12@adventure-works.com | Mountain-100 Silver, 44 | 16 | 3399.99 | 271.9992 |

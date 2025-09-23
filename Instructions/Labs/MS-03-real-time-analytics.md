@@ -57,16 +57,16 @@ In this task, you will create a KQL database to facilitate querying of static or
       - **Upload files:** Drag or Browse for the file from **C:\LabFiles\Files\sales.csv (2)**
       - Click **Next (3)**
 
-        ![01](./Images/E3T1S7.1-1208.png)
+        ![01](./Images/e3t1s7.png)
 
     - **Inspect:** Preview the data, enable **First row header (1)** and click on **Finish (2)**.
 
-        ![01](./Images/Real3.png)
+        ![01](./Images/e3t1s7.1.png)
        
    - **Summary:**
       - Review the preview of the table and close the wizard.
 
-        ![01](./Images/E3T1S7.3-1208.png)
+        ![01](./Images/e3t1s7.2.png)
     
     > **Note:** In this example, you imported a very small amount of static data from a file, which is fine for this exercise. In reality, you can use Kusto to analyze much larger volumes of data, including real-time data from a streaming source such as Azure Event Hubs.
 
