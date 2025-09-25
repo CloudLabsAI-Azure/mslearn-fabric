@@ -34,7 +34,7 @@ In this task, you will design and implement a data warehouse by organizing data 
 
     - Click on **Create (2)**
 
-      ![01](./Images/lab2-image2.png)
+      ![01](./Images/e2t1s3.png)
 
 
 ## Task 2: Create tables and insert data
@@ -66,6 +66,8 @@ In this task, you will create database tables by defining their structure with a
    ![](./Images/E2T2S3.png)
 
 1. On the **Home** menu tab, use the **New SQL Query** button and from the drop-down select **New SQL Query**  to create a new query, and enter the following INSERT statement:
+
+    ![](./Images/e2t1s4.png)
 
     ```SQL
    INSERT INTO dbo.DimProduct
@@ -126,6 +128,10 @@ In this task, you will create a relational data warehouse consisting of fact and
 1. Click on **Open semantic model**.
 
      ![](./Images/E1T8S4.png)
+
+1. On the **Viewing (1)** menu, select **Editing (2)** to enable edit mode.  
+
+   ![](./Images/e2t3s5.png)
 
 1. In the editing mode, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
@@ -203,7 +209,7 @@ In this task, you will query data warehouse tables using SQL to retrieve and ana
    ORDER BY CalendarYear, MonthOfYear, SalesRegion;
     ```
 
-   ![](./Images/02/Pg4-T3QF-S2.png)
+   ![](./Images/e2t4s3.png)
 
 4. Run the modified query and review the results, which now include Sales Revenue aggregated by Year, Month, and Sales Region.
 
@@ -246,7 +252,7 @@ In this task, you will create a visual query using the graphical query designer 
 
 1. On the **Home** menu, select **New visual query (2)** from the **New SQL Query (1)** drop-down.
 
-    ![](./Images/E2T6S1.png)
+    ![](./Images/e2t6s1.png)
 
 1. From Tables, drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
@@ -280,7 +286,15 @@ In this task, you will visualize your data from a single query or your data ware
 
     ![](./Images/E2T3S3.png)
 
-1. Switch to editing mode, hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model; it simply hides them from view on the report canvas.
+1. On the **Data Warehouse details** page, click **Open semantic model** to launch the semantic model editor.  
+
+   ![](./Images/e2t7s1.png)
+
+1. Switch to editing mode.
+
+    ![](./Images/e2t3s5.png)
+
+1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model; it simply hides them from view on the report canvas.
    
     - From FactSalesOrder
         - **SalesOrderDateKey**

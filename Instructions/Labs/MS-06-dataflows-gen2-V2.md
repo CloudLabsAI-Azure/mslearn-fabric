@@ -66,7 +66,16 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
    ![Query with a custom column step.](./Images/E6T1S8-1208.png)
 
-1. Duplicate the existing tab. From the left pane, go to the **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** Lakehouse, and then right-click on the **orders (2)** file and click on **Delete (3)**.
+
+3. On the **Power Query editor** page, click the **Close (1)** button at the top-right corner to exit the editor.  
+
+   ![](./Images/e6s12.png)
+
+4. On the **Close** confirmation dialog box, click **Yes (1)** to confirm and exit.  
+
+   ![](./Images/e6s13.png)
+
+1. From the left pane, go to the **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** Lakehouse, and then right-click on the **orders (2)** file and click on **Delete (3)**.
 
    ![](./Images/E6T1S9-1208.png)
 
