@@ -169,6 +169,10 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/E1T3S13.png)
 
+1. On the **pipeline canvas** page, locate the **Output** panel at the bottom of the screen and click the **collapse/expand arrow** at the below right to show the panel.
+
+   ![](./Images/444.png)
+
 1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has been successfully updated.
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/e1t4s14.png)
