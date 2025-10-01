@@ -107,7 +107,7 @@ In this task, you will create database tables by defining their structure with a
 
        ![01](./Images/E2T2S14-1108.png)
 
-> **Note:** If the schema takes a while to load, just refresh the browser page.
+        > **Note:** If the schema takes a while to load, just refresh the browser page.
 
 ## Task 3: Define a data model
 

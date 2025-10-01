@@ -23,20 +23,20 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
 
-     ![Account-manager-start](./Images/e1t1s1.png)
+    ![Account-manager-start](./Images/e1t1s1.png)
 
 
-2. On the **Start 60-day free Pro trial** dialog box, click **Start trial** to activate the trial.  
+1. On the **Start 60-day free Pro trial** dialog box, click **Start trial** to activate the trial.  
 
-   ![](./Images/e1t1s2.png)
+    ![](./Images/e1t1s2.png)
 
-3. On the **Confirmation** dialog box, click **Got it** to complete the activation.  
+1. On the **Confirmation** dialog box, click **Got it** to complete the activation.  
 
-   ![](./Images/e1t1s3.png)
+    ![](./Images/e1t1s3.png)
 
 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right again, and verify **Trial Status (2)**.
 
-      ![Account-manager-start](./Images/E1T1S4-1108.png)
+    ![Account-manager-start](./Images/E1T1S4-1108.png)
 
 ## Task 2: Create a workspace
 
@@ -184,6 +184,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 1. In the **Explorer** pane, expand **new_data (1)** and select **sales.csv (2)** to open the file.  
 
    ![](./Images/e1t4s15(01).png)
+
 ## Task 5: Create a Notebook
 
 In this task, you'll create a Notebook to document your data analysis. You'll set up the environment, import libraries, and structure your code for exploration, visualization, and insights.
