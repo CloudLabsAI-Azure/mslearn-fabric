@@ -23,7 +23,7 @@ In this task, you will create a lakehouse and upload files to facilitate data st
 
 1. From the left navigation pane, go to your **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace and select **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
-   ![](./Images/E4T1S1-1208.png)
+   ![](./Images/p5t1p1.png)
 
 1. In the Lakehouse, from the **Ellipsis ... (1)** menu for the **Files** node in the **Explorer** pane, select **Upload (2)** and **Upload files (3)**. 
 
@@ -55,7 +55,7 @@ In this task, you will create a notebook to facilitate model training and experi
 
 1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
 
-    ![](./Images/E5-T2-S3.png)
+    ![](./Images/p5t2p4.png)
 
 1. When the cell changes to a markdown cell, the text it contains is rendered.
 
@@ -89,7 +89,7 @@ In this task, you will load data into a dataframe to prepare for model training.
 
 1. Click on **Ellipsis ... (2)** for **churn.csv** file, and click on **Load data (3)** and then select **Pandas (4)**.
 
-    ![](./Images/E4T3S5-1208.png)
+    ![](./Images/p5t3p5.png)
 
 1.  A new code cell containing the following code should be added to the notebook:
 
@@ -247,6 +247,10 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 
 1. Select the `experiment-churn` experiment to open it.
 
+1. On the **Notebooks, Experiments, and ML models** pop-up window, click on **Skip for now**.
+
+    ![](./Images/p5t6p2.png)
+
 1. Perform the following steps on the experiment page:
    
    - Select the **View (1)** tab.
@@ -257,7 +261,7 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
       
    - Select the **&#128393;** **(Edit) (4)** button of the graph visualizing the accuracy for each run. 
 
-      ![](./Images/E4T6S6-1208.png)
+      ![](./Images/p5t6p3.png)
 
 1. In the Personalize pane, edit the following settings:
 
@@ -269,7 +273,9 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 
       ![](./Images/Note1.png)
 
-1. Do the same for the other two runs as well
+1. Do the same for the other two runs as well.
+
+    ![](./Images/p5t6p5.png)
 
 By plotting the accuracy per logged estimator, you can review which algorithm resulted in a better model.
 
@@ -290,15 +296,17 @@ In this task, you will save the best-performing machine learning model after com
 
 1. Select **Run details (1)**, and under **Save run as an ML model** box, select **Save (2)**.
 
-   ![](./Images/E4T7S2-1208.png)
+   ![](./Images/p5t7p2.png)
 
 1. Select **Create a new model (1)** in the newly opened pop-up window.
 
 1. Select the existing folder **Model (2)** and set the name to **model-churn (3)**, and select **Save (4)**. 
 
-    ![](./Images/Note3.png)
+    ![](./Images/p5t7p4.png)
 
-1. Select **View ML model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**. 
+1. Select **View ML model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**.
+
+    ![](./Images/p5t7p5.png)
 
    >**Note:** The model, the experiment, and the experiment run are linked, allowing you to review how the model is trained. 
 
@@ -316,9 +324,11 @@ In this task, you will save your notebook with a meaningful name to preserve you
 
 1. On the notebook menu, select &#9645;**Stop session** to end the Spark session.
 
+    ![](./Images/p5t8p3.png)
+
    >**Note:** If you can't see the **Stop Session** option, it means the Spark session has already ended.
 
-### Summary
+## Summary
 
 In this exercise, you:
 

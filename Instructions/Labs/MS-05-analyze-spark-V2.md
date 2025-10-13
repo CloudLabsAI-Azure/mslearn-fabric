@@ -14,16 +14,22 @@ In this exercise, you will be able to complete the following tasks:
 - Task 4: Explore data in a dataframe
 - Task 5: Aggregate and group data in a dataframe
 - Task 6: Use Spark to transform data files
+
   - Task 6.1: Use dataframe methods and functions to transform data
   - Task 6.2: Save the transformed data
   - Task 6.3: Save data in partitioned files
+
 - Task 7: Work with tables and SQL
+
   - Task 7.1: Create a table
   - Task 7.2: Run SQL code in a cell
+
 - Task 8: Visualize data with Spark
+
   - Task 8.1: View results as a chart
   - Task 8.2: Get started with **matplotlib**
   - Task 8.3: Use the **seaborn** library
+
 - Task 9: Save the notebook and end the Spark session
 
 ## Task 1: Create a lakehouse and upload files
@@ -32,7 +38,7 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
 1. From the left navigation pane, select your **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, click on **+ New item (2)** to create a new Lakehouse.
 
-    ![](./Images/E1T3S2-1108.png)
+    ![](./Images/p6t1p1.png)
 
 1. In the search box, search **Lakehouse (1)** and select **Lakehouse (2)**.
 
@@ -44,7 +50,7 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
    - Click on **Create (2)**
 
-     ![](./Images/Spark2.png)
+     ![](./Images/p6t1p3.png)
 
 1. Once you're in the lakehouse, navigate to the **Files** folder in the **Explorer** pane, click on the **Ellipses ... (1)** menu for **Files**, and select **Upload (2)** followed by **Upload folder (3)**.
 
@@ -52,7 +58,15 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
 1. On the Upload folder pane, click on the **Browse (1)** option. Go to the **C:\LabFiles\Files\ (2)** location, select the **orders (3)** folder, and click on **Upload (4)**. Click on Upload again to upload the folder. 
 
-    ![](./Images/E5T1S4.1-1208.png)
+    ![](./Images/p6t1p5.png)
+
+1. On the **Upload 3 files to this site?** pop-up, click on **Upload**.
+
+    ![](./Images/p6t1p6.png)
+
+1. Click on **Upload** after adding the `orders` folder.
+
+    ![](./Images/p6t1p7.png)
 
 1. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
 
@@ -74,7 +88,7 @@ In this task, you will create a notebook to work with data in Apache Spark. Note
 
 1. In the **Explorer** tab, click on **Data items (1)**, then select **Add data items (2)** drop-down and choose **Existing data sources (3)**.
 
-    ![.](./Images/E5T2S3.png)
+    ![.](./Images/p6t2p3.png)
 
 1. Select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** from the options and click on **Connect (2)**.
     
@@ -84,7 +98,7 @@ In this task, you will create a notebook to work with data in Apache Spark. Note
 
 1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a **Markdown** cell.
 
-    ![](./Images/E5-T2-S3.png)
+    ![.](./Images/p6t2p5.png)
 
 1. Use the **&#128393;** **(Edit)** button to switch the cell to editing mode, then modify the markdown as follows:
 
@@ -104,7 +118,7 @@ In this task, you will load data into a dataframe to prepare it for analysis. Da
 
 1. With the notebook open, expand the **Files (1)** list and select the **orders (2)** folder to display the **CSV files (3)** alongside the notebook editor, as shown here:
 
-    ![Screenshot of a notebook with a Files pane.](./Images/E5T3S1.png)
+    ![.](./Images/p6t3p1.png)
 
 1. In the **orders** folder, right click on the **2019.csv (1)**, then select **Load data (2)** and then select **Spark (3)**.
 
@@ -327,7 +341,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
 1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **... (1)** menu for the **Files** node, select **Refresh (2)**; and select the **transformed_data (3)** folder to verify that it contains a new folder named **orders (4)**, which in turn contains one or more Parquet files **(5)**.
 
-    ![Screenshot of a folder containing parquet files.](./Images/E5T6-transformeddata-1308.png)
+    ![Screenshot of a folder containing parquet files.](./Images/p6t6.2p2.png)
 
 1. Add a new code cell in the notebook using **+ Code**. Then, in the new cell, add the following code. This code will load a new dataframe from the parquet files in the **transformed_orders/orders** folder:
 
@@ -349,7 +363,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
 1. Run the cell and wait for the message that the data has been saved. Then, in the **Explorer** pane on the left, in the **... (1)** menu for the **Files** node, select **Refresh (2)**; and expand the **partitioned_data (3)** folder to verify that it contains a hierarchy of folders named **Year=*xxxx***, each containing folders named **Month=*xxxx***. Each month's folder contains a parquet file with the orders for that month.
 
-    ![Screenshot of a hierarchy of partitioned data files.](./Images/E5T6-savedata-1308.png)
+    ![Screenshot of a hierarchy of partitioned data files.](./Images/p6t6.3p2.png)
 
 1. Partitioning data files is a common way to optimize performance when dealing with large volumes of data. This technique can significantly improve performance and make it easier to filter data.
 
@@ -426,7 +440,7 @@ While it's useful to be able to embed SQL statements into a cell containing PySp
     - The SQL code references the **salesorders** table that you created previously.
     - The output from the SQL query is automatically displayed as the result under the cell.
 
-       ![](./Images/E5T7.2S2-1208.png)
+       ![](./Images/p6t7.2p2.png)
 
         > **Note:** For more information about Spark SQL and dataframes, see the [Spark SQL documentation](https://spark.apache.org/docs/2.2.0/sql-programming-guide.html).
 
@@ -449,11 +463,11 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
 1. We need to change the view from table to chart in the results section beneath the cell.  Click on **+ New chart**.
 
-   ![](./Images/updated_chart.png) 
+    ![](./Images/p6t8.1p3.png) 
 
 1. Click on the **Build my own** button at the bottom right of the suggested charts.
 
-   ![](./Images/E5T8.1S4-1208.png) 
+    ![](./Images/p6t8.1p4.png)
 
 1. In the **Chart settings** pane, set the options as follows.
 
@@ -466,7 +480,7 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
    Verify that the chart looks similar to this:
 
-      ![](./Images/E5T8.1S5.1-1208.png)
+      ![](./Images/p6t8.1p5.png)
     
       ![](./Images/E5T8.1S5.2-1208.png)
 
@@ -486,7 +500,7 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
 1. Run the code and observe that it returns a Spark dataframe containing the yearly revenue.
 
-    ![](./Images/E5T8.2S2-1208.png)
+    ![](./Images/p6t8.2p2.png)
 
 1. To visualize the data as a chart, we'll start by using the **matplotlib** Python library. This library is the core plotting library on which many others are based, and provides a great deal of flexibility in creating charts.
 
@@ -658,6 +672,8 @@ While **matplotlib** enables you to create complex charts of multiple types, it 
 
 1. Run the modified code to view the yearly revenue as a line chart.
 
+    ![](./Images/p6t8.3p6.png)
+
     > **Note:** To learn more about plotting with seaborn, see the [seaborn documentation](https://seaborn.pydata.org/index.html).
 
 ## Task 9: Save the notebook and end the Spark session
@@ -674,7 +690,7 @@ In this task, you will save your notebook with a meaningful name to preserve you
 
     > **Note:** The stop session icon is present next to the **Standard Session** option.
 
-### Summary
+## Summary
 
 In this exercise, you:
 

@@ -17,17 +17,21 @@ In this exercise, you will be able to complete the following tasks:
 
 In this task, you will create a KQL database to facilitate querying of static or streaming data. You will define a table within the KQL database and ingest sales data from a file to enable effective analysis using Kusto Query Language (KQL).
 
-1. From the left navigation pane, select your **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, and click on **+ New item (2)** to create a new Eventhouse.
+1. From the left navigation pane, click on **Workspaces (1)** from the left pane and select your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
-    ![](./Images/E1T3S2-1108.png)
+    ![](./Images/p2t1p1.png)
    
-1. In the All items, search for **Eventhouse (1)** and select **Eventhouse (2)** from the **Store data** list.
+1. Click on **+ New item (1)** and in the New item, search for **Eventhouse (2)** and select **Eventhouse (3)** from the **Store data** list.
 
-    ![](./Images/E3T1S2-1208.png)
+    ![](./Images/p4t1p2.png)
 
 1. Enter the **Eventhouse name** as **Eventhouse-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Create (2)**.
 
-    ![](./Images/E3T1S3-1208.png)
+    ![](./Images/p4t1p3.png)
+
+1. In the **Welcome to Eventhouse!** pop-up window, click on **Get started**.
+
+    ![](./Images/p4t1p4.png)
 
 1. Once the Eventhouse is created, click **+ Database (1)** from the top menu to create a new **KQL Database**.
 
@@ -43,7 +47,7 @@ In this task, you will create a KQL database to facilitate querying of static or
 
 1. In the center of the screen, click on **Get data (1)** and then click on **Local file (2)**.
 
-   ![01](./Images/E3T1S6.png)
+   ![](./Images/p4t1p6.png)
 
 1. Use the wizard to import the data into a new table by selecting the following options:
    
@@ -74,7 +78,7 @@ In this task, you will create a KQL database to facilitate querying of static or
 
 In this task, you will use Kusto Query Language (KQL) to query the sales table in your KQL database. With the data now available, you can write KQL code to extract insights and perform analysis on the sales data.
 
-1. In the **Eventhouse-<inject key="DeploymentID" enableCopy="false"/>**, make sure you have the **sales** table highlighted. Click on sales **Elipsis ... (1)** table, select the **Query with code (2)** drop-down, and from there select **Show any 100 records (3)**.
+1. In the **Eventhouse-<inject key="DeploymentID" enableCopy="false"/>**, make sure you have the **sales** table highlighted. Click on sales **Ellipsis ... (1)** table, select the **Query with code (2)** drop-down, and from there select **Show any 100 records (3)**.
 
     ![](./Images/E3T2S1-1208.png)
 
@@ -120,7 +124,7 @@ In this task, you will use Kusto Query Language (KQL) to query the sales table i
 
 1. From the top left corner select the **KQL-Database<inject key="DeploymentID" enableCopy="false"/> (1)** and rename it as **Revenue by Product (2)**.
 
-    ![](./Images/E3T2S9-1208.png)
+    ![](./Images/p4t2p9.png)
 
 ## Task 3: Create a Power BI report from a KQL Queryset
 
@@ -166,6 +170,8 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
 
 1. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
 
+    ![](./Images/p4t3p5.png)
+
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
@@ -179,7 +185,7 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
 
 1. Navigate back to your **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace and open **Load Sales Notebook (2)**.
 
-    ![](./Images/E3T4S1-1208.png)
+    ![](./Images/p4t4p1.png)
 
 1. Add a new code cell in the notebook using **+ Code (1)**. Then, in the new cell, add the following code **(2)** and click on the run cell icon **(3)**:
 
@@ -274,7 +280,11 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
 
     >**Note**: This code stops the stream.
 
-### Summary
+1. Click the **Stop** icon in the top menu bar to halt the notebook.
+
+    ![](./Images/p4t4p9.png)
+
+## Summary
 
 In this exercise, you:
 - Created a Lakehouse to store and manage structured data.
