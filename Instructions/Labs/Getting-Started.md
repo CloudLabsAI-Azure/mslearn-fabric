@@ -63,7 +63,7 @@ Welcome to your MS Fabric Foundation for Enterprise Analytics workshop! We've pr
  
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-   ![](./Images/acc-env-1108.png)
+   ![](./Images/labguidetab.png)
 
 ## Virtual Machine & Lab Guide
 
@@ -91,13 +91,13 @@ Feel free to **Start, Stop, or Restart** your virtual machine as needed from the
 
 To adjust the zoom level for the environment page, click the A↕ : 100% icon located next to the timer in the lab environment.
 
-   ![](./Images/zoom.png)
+   ![](./Images/zoomintab.png)
 
 ## Let's Get Started with Power BI Portal
 
 1. In the Lab VM, click on the **Microsoft Edge** browser, which is available on the desktop.
 
-   ![04](./Images/GSEdge.png)
+   ![04](./Images/labvm.png)
 
 1. Copy the **Power BI link** below and open this link in a new tab on the Microsoft Edge Browser.
 
@@ -109,13 +109,13 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
 
-     ![04](./Images/Sign1.png)
+     ![04](./Images/usernamewin.png)
      
 1. Now enter the following password and click on **Sign in**.
  
    - **Password:** <inject key="AzureAdUserPassword"></inject> 
 
-      ![05](./Images/Sign2.png)
+      ![05](./Images/passwordwin.png)
      
 1. If you see a pop-up **Stay Signed in?**, click **No**.
 

@@ -20,13 +20,13 @@ In this exercise, you will be able to complete the following tasks:
 
 In this task, you will design and implement a data warehouse by organizing data from multiple sources, creating ETL processes, and optimizing for performance. The goal is to enable efficient querying and reporting while ensuring security, compliance, and scalability.
 
-1. From the left navigation pane, select your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new warehouse.
+1. From the left navigation pane, click on **Workspaces (1)** from the left pane and select your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
-    ![](./Images/E1T3S2-1108.png)
+    ![](./Images/p2t1p1.png)
    
-1. In the search box, search **Warehouse (1)** and select **Warehouse** **(2)** from the list.
+1. Click on **+ New item (1)** to create a new warehouse. In the search box, search **Warehouse (2)** and select **Warehouse** **(3)** from the list.
     
-    ![](./Images/Data1.png)
+    ![](./Images/p2t1p2.png)
 
 1. Enter the following details to create a **Warehouse**:
 
@@ -43,7 +43,7 @@ In this task, you will create database tables by defining their structure with a
 
 1. In your new warehouse, under **Build a warehouse** select the **T-SQL** tile.
 
-   ![](./Images/E3-T2-S1.png)
+   ![](./Images/p2t2p1.png)
 
 1. Enter the following **SQL Code (1)** and click the **&#9655; Run (2)** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
@@ -59,15 +59,15 @@ In this task, you will create database tables by defining their structure with a
    GO
     ```
 
-   ![](./Images/E3-T2-S2.png)
+   ![](./Images/p2t2p2.png)
 
 1. Use the **Refresh (1)** button on the toolbar to refresh the view. Then, in the **Explorer** pane, expand **Schemas (2)** > **dbo (3)** > **Tables (4)** and verify that the **DimProduct (5)** table has been created.
 
-   ![](./Images/E2T2S3.png)
+   ![](./Images/p2t2p3.png)
 
-1. On the **Home** menu tab, use the **New SQL Query** button and from the drop-down select **New SQL Query**  to create a new query, and enter the following INSERT statement:
+1. On the **Home** menu tab, use the **New SQL Query (1)** button and from the drop-down select **New SQL Query (2)**  to create a new query, and enter the following INSERT statement:
 
-    ![](./Images/e2t1s4.png)
+    ![](./Images/p2t2p4.png)
 
     ```SQL
    INSERT INTO dbo.DimProduct
@@ -80,6 +80,8 @@ In this task, you will create database tables by defining their structure with a
 
 1. Run the above query to insert three rows into the **DimProduct** table.
 
+    ![](./Images/p2t2p5.png)
+
 1. On the Home menu tab, use the **New SQL Query** button to create a new query for the table.
 
 1. Open the **Lab VM** and navigate to the following path: `C:\LabFiles\Files\`
@@ -90,13 +92,13 @@ In this task, you will create database tables by defining their structure with a
 
 1. Next, open the files **`create-dw-02.txt`** and **`create-dw-03.txt`**, one after the other, and copy their contents.
 
-   ![01](./Images/02/Pg4-T2-S7.png)
+   ![](./Images/p2t2p10.png)
 
 1. Paste the code from both files **below the existing code** in the **same query window**.
 
 1. Once you have combined the code from all three files into a single query window, click **Run** to execute the query. This will create a basic data warehouse schema and populate it with sample data. The execution should take approximately **30 seconds** to complete.
 
-     ![01](./Images/E2T2S12.png)
+     ![](./Images/p2t2p12.png)
 
 1. Use the **Refresh** button on the toolbar to refresh the view. Then in the **Explorer** pane, verify that the **dbo** schema in the data warehouse now contains the following four tables:
    
@@ -115,15 +117,15 @@ In this task, you will create a relational data warehouse consisting of fact and
 
 1. In the Data warehouse, from the top navigation pane, select the **New semantic model** option.
 
-    ![](./Images/E2T3S1.png)
+    ![](./Images/p2t3p1.png)
     
 1. Provide the Direct Lake semantic model name as **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (1)** and select **DimCustomer, DimDate, DimProduct, FactSalesOrder (2)** tables from the list. Then, click on **Confirm (3)**.
 
-    ![](./Images/E2T3S2.png)
+    ![](./Images/p2t3p2.png)
 
 1. Go back to the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace. Select recently created semantic model named as **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)**
 
-    ![](./Images/E2T3S3.png)
+    ![](./Images/p2t3p3.png)
 
 1. Click on **Open semantic model**.
 
@@ -131,7 +133,7 @@ In this task, you will create a relational data warehouse consisting of fact and
 
 1. On the **Viewing (1)** menu, select **Editing (2)** to enable edit mode.  
 
-   ![](./Images/e2t3s5.png)
+   ![](./Images/p2t3p5.png)
 
 1. In the editing mode, rearrange the tables in your data warehouse so that the **FactSalesOrder** table is in the middle, like this:
 
@@ -147,7 +149,7 @@ In this task, you will create a relational data warehouse consisting of fact and
     - **Cross filter direction (6)**: Single
     - **Make this relationship active (7)**: Selected
     - **Assume referential integrity (8)**: Unselected
-    - click **Save (9)**.
+    - Click **Save (9)**.
 
        ![](./Images/E2T3S3-1108.png)
 
@@ -176,7 +178,9 @@ In this task, you will create a relational data warehouse consisting of fact and
 
 In this task, you will query data warehouse tables using SQL to retrieve and analyze data. Most queries will involve aggregating and grouping data with functions and GROUP BY clauses, as well as joining related fact and dimension tables using JOIN clauses.
 
-1. Switch back to **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/>** from the left pane. Create a **New SQL Query** from the top Menu bar, and run the following code:
+1. Switch back to **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/>** from the top. Create a **New SQL Query** from the top Menu bar, and run the following code:
+
+    ![](./Images/p2t4p1.png)
 
     ```SQL
    SELECT  d.[Year] AS CalendarYear,
@@ -209,9 +213,11 @@ In this task, you will query data warehouse tables using SQL to retrieve and ana
    ORDER BY CalendarYear, MonthOfYear, SalesRegion;
     ```
 
-   ![](./Images/e2t4s3.png)
+   ![](./Images/p2t4p3.png)
 
 4. Run the modified query and review the results, which now include Sales Revenue aggregated by Year, Month, and Sales Region.
+
+    ![](./Images/p2t4p4.png)
 
 ## Task 5: Create a view
 
@@ -252,7 +258,7 @@ In this task, you will create a visual query using the graphical query designer 
 
 1. On the **Home** menu, select **New visual query (2)** from the **New SQL Query (1)** drop-down.
 
-    ![](./Images/e2t6s1.png)
+    ![](./Images/p2t6p1.png)
 
 1. From Tables, drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
@@ -268,9 +274,9 @@ In this task, you will create a visual query using the graphical query designer 
 
    ![02](./Images/Data4.png)
 
-1. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the **arrow (1)** to the right of the column name. Select **ProductName (2)** and click **OK (3)**.
+1. In the **Preview**, note that the new **DimProduct** column has been added to the FactSalesOrder table. Expand the column by clicking the **double arrow (1)** to the right of the column name. Select **ProductName (2)** and click **OK (3)**.
 
-    ![](./Images/E3-T6-S6.png)
+    ![](./Images/p2t6p6.png)
 
 1. If you're interested in looking at data for a single product, per a manager's request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
 
@@ -284,15 +290,15 @@ In this task, you will visualize your data from a single query or your data ware
 
 1. Navigate back to the fabric workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)** semantic model to open it.
 
-    ![](./Images/E2T3S3.png)
+    ![](./Images/p2t7p1.png)
 
 1. On the **Data Warehouse details** page, click **Open semantic model** to launch the semantic model editor.  
 
    ![](./Images/e2t7s1.png)
 
-1. Switch to editing mode.
+1. Click the **Viewing (1)** dropdown and change it to **Editing (2)** to switch modes.
 
-    ![](./Images/e2t3s5.png)
+    ![](./Images/p2t3p5.png)
 
 1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model; it simply hides them from view on the report canvas.
    
@@ -317,7 +323,7 @@ In this task, you will visualize your data from a single query or your data ware
 
 1. From the **File (1)** tab, select **Create new report (2)**. This will open a new window, where you can create a Power BI report.
 
-    ![03](./Images/E2T7S3.png)
+    ![03](./Images/p2t7p5.png)
 
 1. In the **Data** pane, expand **DimProduct**. Note that the columns you hide are no longer visible. 
 
@@ -335,26 +341,28 @@ In this task, you will visualize your data from a single query or your data ware
 
 1. In the **Visualizations** pane, select the **Format your visual (1)** tab and in the **General (2)** sub-tab, in the **Title** section, change the **Text** to **Total Sales by Category (3)**.
 
-   ![04](./Images/E2T7S8-1108.png)
+   ![03](./Images/p2t7p10.png)
 
-1. In the **File (1)** menu, select **Save (2)**. select **fabric-<inject key="DeploymentID" enableCopy="false"/> (3)**, enter a name as **Sales Report (4)**, and click the **Save (5)** button .
+1. In the **File (1)** menu, select **Save (2)**. select **fabric-<inject key="DeploymentID" enableCopy="false"/> (3)**, enter a name as **Sales Report (4)**, and click the **Save (5)** button.
 
    ![04](./Images/E2T7S9.1-1108.png)
 
-   ![04](./Images/E2T7S9.2-1108.png)
+   ![03](./Images/p2t7p11.png)
 
 1. In the menu hub on the left pane, navigate back to your **workspace**. Notice that you now have three items saved in your workspace: your data warehouse, its semantic model (default), and the report you created.
 
    ![Screenshot of the workspace with the three items listed.](./Images/E2T7S10.png)
 
-### Summary
+## Summary
 
 In this exercise, you
 
--  Created a data warehouse containing multiple related tables.
-- Used SQL to: 
+- Created a data warehouse containing multiple related tables.
+- Used SQL to:
+
     - Insert data into the tables.
     - Query the data for analysis.
+
 - Leveraged the visual query tool to explore and transform the data.
 - Enhanced the data model for the default dataset in the data warehouse.
 - Used the enhanced dataset as the source for building a report.
