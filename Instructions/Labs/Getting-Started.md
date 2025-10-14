@@ -61,7 +61,7 @@ Welcome to your MS Fabric Foundation for Enterprise Analytics workshop! We've pr
  
 ## Accessing Your Lab Environment
  
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
    ![](./Images/labguidetab.png)
 
