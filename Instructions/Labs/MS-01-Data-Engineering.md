@@ -23,16 +23,20 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
 
-    ![Account-manager-start](./Images/e1t1s1.png)
+    ![Account-manager-start](./Images/p1t1p1.png)
 
 
-1. On the **Start 60-day free Pro trial** dialog box, click **Start trial** to activate the trial.  
+1. On the **Activate your 60-day free Fabric trial capacity** dialog box, click **Activate**.  
 
-    ![](./Images/e1t1s2.png)
+    ![](./Images/p1t1p2.png)
 
-1. On the **Confirmation** dialog box, click **Got it** to complete the activation.  
+1. On the **Successfully upgraded to Microsoft Fabric** pop-up, click **OK**.
 
-    ![](./Images/e1t1s3.png)
+    ![](./Images/p1t1p3.png)
+
+1. Close the **Invite teammates to try Fabric to extend your trial** pop-up.
+
+    ![](./Images/p1t1p4.png)
 
 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right again, and verify **Trial Status (2)**.
 
@@ -42,9 +46,9 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 In this task, you will create a Fabric workspace. The workspace will contain all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
 
-1. On the left-hand pane of the Power BI portal, select **Workspaces (1)** and click on **+ New workspace (2)**
+1. On the left-hand pane of the Power BI portal, select **Workspaces (1)** and click on **+ New workspace (2)**.
 
-    ![New Workspace](./Images/E1T2S1-1108.png)
+    ![](./Images/p1t2p1.png)
 
 1. On the **Create a workspace** page, enter the following details:
     - **Name:** Enter **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**
@@ -56,7 +60,11 @@ In this task, you will create a Fabric workspace. The workspace will contain all
     - From the dropdown list, select the available **Capacity (4)**.
     - Click **Apply (5)** to create and open the workspace.
  
-      ![advanced-and-apply](./Images/f4.png)
+      ![advanced-and-apply](./Images/p1t2p2(1).png)
+
+1. On the **Introducing task flows (preview)** pop-up window, click **Got it**.
+
+    ![](./Images/p1t2p3.png)
 
 ## Task 3: Create a Lakehouse
 
@@ -67,10 +75,14 @@ In this task, switch to the Data engineering experience and create a new Lakehou
    ![](./Images/E1T3S1-1108.png)
 
    ![](./Images/E1T3S1.1-1108.png)
-   
-1. In the left pane, navigate to **Workspaces** icon and select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, 
 
-    ![](./Images/e1t3s2.png)
+1. On the **Welcome to the Fabric view** pop-up window, click **Cancel**.
+
+    ![](./Images/p1t3p2.png)
+
+1. In the left pane, navigate to **Workspaces (1)** icon and select **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**. 
+
+    ![](./Images/p1t3p3.png)
 
 1. Click on **+ New item (1)** to create a new lakehouse. In the search box, search for **Lakehouse (2)** and select **Lakehouse (3)** from the list.
 
@@ -78,13 +90,13 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 1. Enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and Click on **Create (2)**.
 
-    ![](./Images/E1T3S4-1108.png)
+    ![](./Images/p1t3p4.png)
 
 1. On the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** tab in the left pane, click the **Ellipsis (...) (1)** menu for the **Files** node, click on **New subfolder (2)**.
     
-    ![](./Images/lake4.png)
+    ![](./Images/p1t3p5.png)
 
-1. Enter a Folder name **new_data (1)** and click on **Create (2)**.
+1. Enter the Folder name as **new_data (1)** and click on **Create (2)**.
 
     ![](./Images/E1T3S6-1108.png)
 
@@ -92,11 +104,13 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 In this task, you'll create a pipeline to automate data workflows. Using the Copy data activity, you'll extract data from a source and copy it to a file in the lakehouse, streamlining the data ingestion process.
 
-1. From the left navigation pane, select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, then click on **+ New item (2)**.
+1. From the left navigation pane, select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, then click on same workspace **(2)** and then click on **+ New item (3)**.
 
-    ![](./Images/E1T3S2-1108.png)
+    ![](./Images/p1t4p1.png)
 
-1. In the search box, search for **pipeline (1)** and select **pipeline (2)** under **Get data** from the list.
+    ![](./Images/p1t4p1(1).png)
+
+1. In the search box, search for **pipeline (1)** and select **Pipeline (2)** under **Get data** from the list.
 
     ![](./Images/e1t4s2.png)
 
@@ -106,7 +120,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
    
 1. On the **Build a data pipeline to organize and move your data** page, select **Copy data assistant (1)**.
 
-   ![03](./Images/E2-T3-S3.png)
+   ![03](./Images/p1t4p4.png)
 
 1. In the **Copy data** wizard, on the **Choose data source** page, search for **Http (1)** and select the **Http (2)** source from the results.
 
@@ -119,11 +133,11 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
     - Connection name: **Connection<inject key="DeploymentID" enableCopy="false"/> (3)**
     - Authentication kind: **Anonymous (4)**
   
-      ![](./Images/E1T4S6-1108.png)
+      ![](./Images/p1t4p6.png)
     
 1. On the **Connect to data source** page, keep the default settings and click **Next**.
     
-    ![05](./Images/Lake12.png)
+    ![05](./Images/p1t4p7.png)
    
 1. Wait for the data to be sampled, then verify the following settings:
 
@@ -146,13 +160,13 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 1. Set the following data destination options.
    
    - Root folder: **Files (1)**
-   - Folder path: **new_data (2)**
-   - File name: **sales.csv  (3)**
-   - Click **Next (4)**
+   - Folder path: Click on **Browse (2)**, select **new_data (3)** and click **OK (4)**.
+   - File name: **sales.csv (5)**
+   - Click **Next (6)**
 
-     ![08](./Images/Lake14.png)
+     ![08](./Images/p1t4p10.png)
 
-1. Set the following file format options and then select **Next (4)**:
+1. Set the following file format options:
    
    - File format: **DelimitedText (1)**
    - Column delimiter: **Comma (,) (2)**
@@ -179,7 +193,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/e1t4s14.png)
 
-1. On the **Workspaces** page, select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Lakehouse_... (2)** to open the lakehouse.  
+1. On the **Workspaces** page, select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)** to open the lakehouse.  
 
    ![](./Images/e1t4s15.png)
 
@@ -191,7 +205,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
 In this task, you'll create a Notebook to document your data analysis. You'll set up the environment, import libraries, and structure your code for exploration, visualization, and insights.
 
-1. Select Workspaces on left hand side and select **fabric-<inject key="DeploymentID" enableCopy="false"/>** .
+1. Select **Workspaces (1)** on left hand side and select **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
     ![](./Images/e1t5s1.png)
 
@@ -205,7 +219,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
 1. Click **Add data items (1)** drop-down under explorer and select **Existing data source (2)** from the drop-down.
 
-    ![](./Images/E2-T4-S4.png)  
+    ![](./Images/p1t5p4.png)  
 
 1. Select the previously created **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** then click **Continue (2)**.
  
@@ -270,9 +284,9 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
      ![.](./Images/E1T5S13-1208.png)
  
 
-1. In the hub menu bar on the left, select your **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** 
+1. In the hub menu bar on the left, click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and then select your **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**. 
 
-    ![.](./Images/E1T5S14-1108.png)
+    ![.](./Images/p1t5p13.png)
 
 1. In the **Explorer** pane, refresh the **view (1)**. Then expand **Tables (2)**, and select the **sales (3)** table to see a preview of the data it contains.
 
@@ -307,11 +321,11 @@ In this task, you'll create a visual query in Power BI using Power Query. Start 
 
 1. On the toolbar under **New SQL query (1)** drop-down select **New visual query (2)**.
 
-    ![](./Images/E1T7S1.png)
+    ![](./Images/p1t7p1.png)
 
-1. In the Lakehouse, navigate to **Schemas**, then to **dbo**, expand the **tables** folder and select the **sales** table. In the sales table, click on **Elipsis &#8230; (1)** and select **Insert into canvas (2)**. It is in the new visual query editor pane that opens to create a Power Query. 
+1. In the Lakehouse, navigate to **Schemas**, then to **dbo**, expand the **tables** folder and select the **sales** table. In the sales table, click on **Ellipsis &#8230; (1)** and select **Insert into canvas (2)**. It is in the new visual query editor pane that opens to create a Power Query. 
 
-    ![](./Images/Lake21.png)
+    ![](./Images/p1t7p2.png)
 
 1. In the **Manage columns (1)** menu, select **Choose columns (2)**. Then select only the **SalesOrderNumber and SalesOrderLineNumber (3)** columns and click on **OK (4)**.
 
@@ -321,7 +335,7 @@ In this task, you'll create a visual query in Power BI using Power Query. Start 
 
 1. Click on **+ (1)**, in the **Transform table** menu, select **Group by (2)**.
 
-    ![Screenshot of a Visual query with results.](./Images/Lake22.png)
+    ![](./Images/p1t7p4.png)
 
 1. Then group the data by using the following **Basic** settings.
    
@@ -329,9 +343,9 @@ In this task, you'll create a visual query in Power BI using Power Query. Start 
    - New column name: **LineItems (2)**
    - Operation: **Count distinct values (3)**
    - Column: **SalesOrderLineNumber (4)**
-   - click **OK (5)**
+   - Click **OK (5)**
 
-     ![Screenshot of a Visual query with results.](./Images/E1T7S5-1108.png)
+     ![](./Images/p1t7p5.png)
 
 1. When you're done, the results pane under the visual query shows the number of line items for each sales order.
 
@@ -343,15 +357,15 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 
 1. First, we will need to create a Semantic model. At the top of the SQL analytics endpoint page, select the **New semantic model** tab.
     
-    ![](./Images/E1T8S1.png)
+    ![](./Images/p1t8p1.png)
 
 2. Provide the Direct Lake semantic model name as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and select **sales (2)** table from the list. Click on **Confirm (3)**.
 
-    ![](./Images/E1T8S2.png)
+    ![](./Images/p1t8p2.png)
 
-3. Go back to the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace. Select recently created semantic model named as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**
+3. Go back to the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace from the left pane. Select recently created semantic model named as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**
 
-    ![](./Images/E1T8S3.png)
+    ![](./Images/p1t8p3.png)
 
 4. Click on **Open semantic model** to view the table.
 
@@ -364,7 +378,7 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 
 6. Switch to editing mode. In the top menu bar, select the **File (1)** tab. Then select **Create new report (2)**.
 
-    ![](./Images/E1T8S6.png)
+    ![](./Images/p1t8p5.png)
 
 7. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
    
@@ -372,20 +386,19 @@ In this task, you'll create a report to visualize your data findings. You'll sel
    - **Quantity (2)**
    - Then, a **Table visualization (3)** is added to the report.
 
-        ![Screenshot of a report containing a table.](./Images/E1T8S4-1108.png)
+        ![](./Images/p1t8p7.png)
 
-  
 8. Hide the **Data** and **Filters** panes to create more space if required. Then, make sure the **Table visualization is selected (1)** and in the **Visualizations** pane, change the visualization to a **Clustered bar chart (2)** and resize it as shown here.
 
-   ![Screenshot of a report containing a clustered bar chart.](./Images/E2-T7-S5.png)
+   ![](./Images/p1t8p8.png)
 
    ![Screenshot of a report containing a clustered bar chart.](./Images/E2-T7-S5a.png)
 
 9. On the **File (1)** menu, select **Save As (2)**. Then, name the Report as **Item Sales Report (3)** and click **Save (4)** in the workspace you created previously.
 
-   ![](./Images/e1t8s9.png)
+   ![](./Images/p1t8p9.png)
    
-   ![](./Images/Lake26.png)
+   ![](./Images/p1t8p9(1).png)
 
 10. In the hub menu bar on the left, select your workspace to verify that it contains the following items:
     - Your lakehouse.
@@ -400,7 +413,7 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 
 <validation step="09d5de71-ba8a-42fa-a261-b57c69f32b12" />
 
-### Summary
+## Summary
 
 In this exercise, you:
 
