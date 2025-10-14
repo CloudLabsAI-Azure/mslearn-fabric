@@ -122,7 +122,7 @@ In this task, you will use Kusto Query Language (KQL) to query the sales table i
 
     ![](./Images/E3T2S8-1208.png)
 
-1. From the top left corner select the **KQL-Database<inject key="DeploymentID" enableCopy="false"/> (1)** and rename it as **Revenue by Product (2)**.
+1. From the top select the drop-down next to **KQL-Database<inject key="DeploymentID" enableCopy="false"/> (1)** and then rename it as **Revenue by Product (2)**.
 
     ![](./Images/p4t2p9.png)
 

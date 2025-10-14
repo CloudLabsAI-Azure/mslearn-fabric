@@ -46,7 +46,7 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 In this task, you will create a Fabric workspace. The workspace will contain all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
 
-1. On the left-hand pane of the Power BI portal, select **Workspaces (1)** and click on **+ New workspace (2)**
+1. On the left-hand pane of the Power BI portal, select **Workspaces (1)** and click on **+ New workspace (2)**.
 
     ![](./Images/p1t2p1.png)
 
@@ -80,7 +80,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
     ![](./Images/p1t3p2.png)
 
-1. In the left pane, navigate to **Workspaces (1)** icon and select **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**, 
+1. In the left pane, navigate to **Workspaces (1)** icon and select **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**. 
 
     ![](./Images/p1t3p3.png)
 
@@ -96,7 +96,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
     
     ![](./Images/p1t3p5.png)
 
-1. Enter a Folder name **new_data (1)** and click on **Create (2)**.
+1. Enter the Folder name as **new_data (1)** and click on **Create (2)**.
 
     ![](./Images/E1T3S6-1108.png)
 

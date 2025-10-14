@@ -27,7 +27,7 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 1. Enter the below-mentioned details to create the Dataflow and click on **Create (3)**.
 
    - **Name:** Keep as default **(1)**
-   - **Enable Git integration, deployment pipelines, and Public API Scenarios:** Uncheck
+   - **Enable Git integration, deployment pipelines, and Public API Scenarios:** Uncheck **(2)**
 
       ![](./Images/E6T1S3.png)
 
@@ -66,11 +66,11 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
    ![Query with a custom column step.](./Images/E6T1S8-1208.png)
 
-1. On the **Power Query editor** page, click the **Close (1)** button at the top-right corner to exit the editor.  
+1. On the **Power Query editor** page, click the **Close** button at the top-right corner to exit the editor.  
 
    ![](./Images/e6s12.png)
 
-4. On the **Close** confirmation dialog box, click **Yes (1)** to confirm and exit.  
+4. On the **Close** confirmation dialog box, click **Yes** to confirm and exit.  
 
    ![](./Images/e6s13.png)
 
@@ -88,7 +88,7 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
 
 1. Go back to the previous tab where the Dataflow Gen2 is opened. 
 
-1. In the **Query Settings** in the right pane, click on **+ (1)** for Data Destination, then choose **Lakehouse (2)** from the drop-down menu.
+1. In the **Query Settings** in the right pane, click on **+ (1)** for Data destination, then choose **Lakehouse (2)** from the drop-down menu.
 
    ![Empty data pipeline.](./Images/Flow6.png)
 
@@ -128,7 +128,7 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
 
     ![](./Images/E1T3S2-1108.png)
 
-1. In the Search box, search for **Pipeline (1)**, and select **Pipeline (2)**.
+1. In the search box, search for **Pipeline (1)**, and select **Pipeline (2)**.
 
     ![](./Images/p7t3p2.png)
 
@@ -172,8 +172,7 @@ In this exercise, you:
 - Added a **data destination** to store the output of the Dataflow.
 - Integrated the **Dataflow into a pipeline** for automated data processing.
 
-### You have successfully completed the Hands-on lab
-
 ### Conclusion
 By completing this **MS Fabric Foundation for Enterprise Analytics** hands-on lab, you have gained valuable, hands-on experience with the end-to-end capabilities of Microsoft Fabric for enterprise analytics. Starting from creating a collaborative workspace, you have learned to ingest and prepare data using pipelines, perform advanced analyses in a data warehouse, and access real-time insights through live analytics. You also practiced training machine learning models in notebooks, harnessed the scalability of Apache Spark for large-scale analysis, and designed sophisticated data transformation workflows with Dataflow Gen2. This comprehensive journey empowers you to confidently manage, analyze, and transform data, equipping you with practical skills to drive informed, data-driven decision-making within your organization.
 
+### You have successfully completed the Hands-on lab.

@@ -123,7 +123,7 @@ In this task, you will create a relational data warehouse consisting of fact and
 
     ![](./Images/p2t3p2.png)
 
-1. Go back to the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace. Select recently created semantic model named as **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)**
+1. Go back to the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace. Select recently created semantic model named as **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
     ![](./Images/p2t3p3.png)
 

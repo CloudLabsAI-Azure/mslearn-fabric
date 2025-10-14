@@ -56,7 +56,7 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
     ![](./Images/E5T1S4-1208.png)
 
-1. On the Upload folder pane, click on the **Browse (1)** option. Go to the **C:\LabFiles\Files\ (2)** location, select the **orders (3)** folder, and click on **Upload (4)**. Click on Upload again to upload the folder. 
+1. On the Upload folder pane, click on the **Browse (1)** option. Go to the **C:\LabFiles\Files\ (2)** location, select the **orders (3)** folder, and click on **Upload (4)**. 
 
     ![](./Images/p6t1p5.png)
 

@@ -29,7 +29,7 @@ In this task, you will create a lakehouse and upload files to facilitate data st
 
    ![](./Images/E4T1S2-1208.png)
 
-1. On the Upload files page, click on the **Browse (1)** option to upload the file. Go to the **C:\LabFiles\Files\churn.csv (2)** location, select the **churn.csv (3)** file, and click on **Open (4)**. Then click on **Upload (5)**.   
+1. On the Upload files page, click on the **Browse (1)** option to upload the file. Go to the **`C:\LabFiles\Files` (2)** location, select the **churn.csv (3)** file, and click on **Open (4)**. Then click on **Upload (5)**.   
 
    ![](./Images/E4T1S3.1-1208.png)
 
@@ -300,7 +300,7 @@ In this task, you will save the best-performing machine learning model after com
 
 1. Select **Create a new model (1)** in the newly opened pop-up window.
 
-1. Select the existing folder **Model (2)** and set the name to **model-churn (3)**, and select **Save (4)**. 
+1. Select the existing folder **model (2)** and set the name to **model-churn (3)**, and select **Save (4)**. 
 
     ![](./Images/p5t7p4.png)
 
