@@ -51,9 +51,9 @@ In this task, you will create a KQL database to facilitate querying of static or
 
 1. Use the wizard to import the data into a new table by selecting the following options:
    
-   - **Source**: The local file is the Source. 
+   - **Source:** The local file is the Source. 
    
-   - **Configure**:
+   - **Configure:**
       - **Database:** *The database you created is already selected*
       - **Table:** Click on **+ New table**.
       - **Name:**  **sales (1)**.
@@ -166,7 +166,7 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
        
          ![](./Images/E3T3S5.4-1208.png)
 
-    >**Note**: Refresh the Workspace page if necessary to view all of the items it contains.
+    >**Note:** Refresh the Workspace page if necessary to view all of the items it contains.
 
 1. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
 
@@ -262,7 +262,7 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
    mssparkutils.fs.put(inputPath + "more-data.txt", more_data, True)
     ```
 
-1. Re-run the cell containing the below code. This code queries the **IotDeviceData** table again, which should now include the additional data that was added to the streaming source.
+1. Re-run the cell containing the code below. This code queries the **IotDeviceData** table again, which should now include the additional data that was added to the streaming source.
 
     ```SQL
    %%sql
@@ -278,7 +278,7 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
    deltastream.stop()
     ```
 
-    >**Note**: This code stops the stream.
+    >**Note:** This code stops the stream.
 
 1. Click the **Stop** icon in the top menu bar to halt the notebook.
 
