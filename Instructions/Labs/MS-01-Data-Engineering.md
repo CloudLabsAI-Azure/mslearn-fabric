@@ -10,7 +10,7 @@ In this exercise, you will be able to complete the following tasks:
 
 - Task 1: Sign up for Microsoft Fabric Trial
 - Task 2: Create a workspace
-- Task 3: Enable Copilot inside a Codespace
+- Task 3: Create a lakehouse
 - Task 4: Create a pipeline
 - Task 5: Create a notebook
 - Task 6: Use SQL to query tables
@@ -24,7 +24,6 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
 
     ![Account-manager-start](./Images/p1t1p1.png)
-
 
 1. On the **Activate your 60-day free Fabric trial capacity** dialog box, click **Activate**.  
 
@@ -147,9 +146,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
    - Click **Preview data (4)** to view a sample of the data.
    - After reviewing, close the preview and click **Next (5)**.
   
-     
       ![Account-manager-start](./Images/e1t4s8(1).png)
-  
     
       ![Account-manager-start](./Images/E1T4S8.2-1108.png)
 
@@ -271,7 +268,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
     This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, applies some transformation logic, and saves the transformed data as a **managed table** - appending the data if the table already exists.
 
-1. Verify that your notebooks look similar to the one shown in the below image, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
+1. Verify that your notebooks look similar to the one shown in the image below, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/E1T5S10-1108.png)
 
@@ -282,7 +279,6 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 1. Navigate back to the **Notebook** on the left pane and use the ⚙️ **Settings (1)** icon at the top to view the notebook settings. Then, set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
 
      ![.](./Images/E1T5S13-1208.png)
- 
 
 1. In the hub menu bar on the left, click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and then select your **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**. 
 
@@ -317,7 +313,7 @@ In this task, you'll use SQL to query tables in a database. You'll write stateme
 
 ## Task 7: Create a visual query
 
-In this task, you'll create a visual query in Power BI using Power Query. Start by adding the Sales table to the query editor, select the necessary columns, and apply a Group By transformation to count distinct line items per sales order. Then, review the summarized results.
+In this task, you'll create a visual query in Power BI using Power Query. Start by adding the Sales table to the query editor, select the necessary columns, and applying a Group By transformation to count distinct line items per sales order. Then, review the summarized results.
 
 1. On the toolbar under **New SQL query (1)** drop-down select **New visual query (2)**.
 
@@ -374,7 +370,6 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 5. Once the model is opened, the **sales** table will appear.
 
    ![](./Images/E1T8S5.png)
-
 
 6. Switch to editing mode. In the top menu bar, select the **File (1)** tab. Then select **Create new report (2)**.
 
