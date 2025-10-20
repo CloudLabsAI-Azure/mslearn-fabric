@@ -121,6 +121,10 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
    ![03](./Images/p1t4p4.png)
 
+1. In the **Use Copy job?** dialog box, select **No, use copy assistant**.
+
+    ![](./Images/copy_job.png)
+
 1. In the **Copy data** wizard, on the **Choose data source** page, search for **Http (1)** and select the **Http (2)** source from the results.
 
    ![](./Images/Lake10.png)
@@ -213,6 +217,8 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 1. After a few seconds, a new notebook with a single cell opens. Each notebook consists of code or markdown cells used for running code or adding formatted text.
 
      > **Note:** If a pop-up appears for **Enhance your notebook experience with AI tools**, click on **Skip tour**.
+     >
+     > ![](./Images/skip_tour.png)
 
 1. Click **Add data items (1)** drop-down under explorer and select **Existing data source (2)** from the drop-down.
 
@@ -274,6 +280,8 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
 1. When the notebook run has completed, click on your  **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** pane on the left, in the **Ellipsis (...) (2)** menu for **Tables** select **Refresh (3)** and verify that a **sales (4)** table has been created.
 
+    > **Note:** The **sales** table will be visible only after the cell execution is completed.
+
     ![.](./Images/E1T5S12-1108.png)
 
 1. Navigate back to the **Notebook** on the left pane and use the ⚙️ **Settings (1)** icon at the top to view the notebook settings. Then, set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
@@ -287,6 +295,10 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 1. In the **Explorer** pane, refresh the **view (1)**. Then expand **Tables (2)**, and select the **sales (3)** table to see a preview of the data it contains.
 
     ![.](./Images/E1T5S15-1108.png)
+
+    > **Note:** If you table is unable to load and showing as **Unable to load table view**, select the **Table view (1)** option and switch to **File view (2)**. Then open the file displayed.
+    >
+    >  ![](./Images/unable_to_view.png)
 
 ## Task 6: Use SQL to query tables
 
