@@ -1,4 +1,4 @@
-# Getting started with Microsoft fabric
+# Getting Started with Microsoft fabric
 
 ### Overall Estimated Duration: 60 minutes
 
