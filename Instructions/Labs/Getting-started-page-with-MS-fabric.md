@@ -1,16 +1,20 @@
 # Getting started with Microsoft fabric
 
-### Overall Estimated Duration: 1 Hour
+### Overall Estimated Duration: 60 minutes
 
 ## Overview
 
-In this hands-on lab, you will work with **Microsoft Fabric** to build a complete, cloud-scale analytics solution for managing and analyzing large volumes of e-commerce transaction data. You will create data pipelines to continuously ingest transactional information, store it in a scalable data warehouse, and run real-time analytics to monitor live data streams for instant insights. You will also leverage **Apache Spark** for complex analysis and machine learning, use **Dataflows Gen2** to clean and transform data, and explore the dataset interactively with notebooks.
+In this hands-on lab, you will explore the core capabilities of Microsoft Fabric by building a complete end-to-end data analytics solution. You will begin by signing up for the Microsoft Fabric trial and creating a workspace, which will serve as your central environment for managing all Fabric resources.
 
-By the end of this lab, you will have practical experience in setting up an integrated data environment that enables real-time, data-driven decision-making and helps optimize business strategies effectively.
+Next, you will create a lakehouse to store and organize your data, followed by building a data pipeline to ingest data from various sources into the lakehouse. You will then create a notebook to perform data exploration, transformation, and analysis using code and Spark-based processing.
+
+Once your data is prepared, you will use SQL to query tables, enabling you to analyze data directly within Fabric. You will then create a visual query to design and execute data transformations using an intuitive, no-code interface. Finally, you will build a report to visualize your insights and share them with stakeholders.
+
+By the end of this lab, you will have hands-on experience with the key components of Microsoft Fabric—from data ingestion and transformation to analysis and reporting—gaining a solid understanding of how to create a unified, end-to-end analytics solution in the cloud.
 
 ## Objective
 
-This lab is designed to equip participants with hands-on experience in creating a workspace to manage data, ingesting it via pipelines, analyzing it in a data warehouse, performing real-time analytics, training models using notebooks, leveraging Apache Spark for complex analysis, and designing advanced data transformations with Dataflow Gen2.
+This lab aims to provide hands-on experience with Microsoft Fabric, enabling users to create a workspace, ingest and transform data, and analyze it using notebooks and SQL. Users will learn to build end-to-end data pipelines, visual queries, and reports. By the end, participants will be able to manage, analyze, and visualize data effectively in a unified analytics environment.
 
 1. **Create a Fabric workspace:** Set up a centralized environment in Microsoft Fabric to manage and collaborate on data projects. Participants will establish a centralized platform for managing and collaborating on data projects.
 
@@ -18,34 +22,12 @@ This lab is designed to equip participants with hands-on experience in creating 
 
 Participants should have:
 
-- Knowledge of data integration principles and experience with data formats and sources.
+- Basic understanding of data concepts such as tables, queries, and reports.
 - Understanding of SQL and relational database concepts, and familiarity with data warehousing solutions.
-- Familiarity with machine learning concepts and experience with programming languages like Python or R
-- Understanding of distributed computing principles and experience with data processing frameworks like Apache Spark.
-
-## Architecture
-
-Microsoft Fabric offers a comprehensive suite of services to manage and analyze data at scale. Participants can set up a central workspace for project management, automate data ingestion with pipelines, and perform complex queries using its data warehouse capabilities. Real-time data processing is supported through a dedicated analytics engine, while interactive notebooks facilitate machine learning model development. Apache Spark provides scalable data processing, and advanced data transformations are handled by Dataflow Gen2. Together, these tools enable efficient data management, real-time insights, and scalable analytics across diverse data scenarios.
-
-## Architecture Diagram
-
-   ![](./Images/architecture-diagram-1108.png)
-
-## Explanation of Components
-
-The architecture for this lab involves several key components of Microsoft Fabric:
-
-- **Microsoft Fabric Workspace:** The main environment for managing all data-related projects, including resources, permissions, and configuration.
-- **Microsoft Fabric Data Factory (or Data Pipelines):** Service for creating, scheduling, and managing data ingestion workflows and ETL (Extract, Transform, Load) processes.
-- **Microsoft Fabric Data Warehouse (or Synapse Analytics):** Scalable data storage and querying service for performing complex data analysis and running SQL queries.
-- **Real-Time Analytics Engine:** Service for processing and analyzing streaming data to provide real-time insights.
-- **Microsoft Fabric Notebooks:** Interactive notebooks for developing, training, and testing machine learning models using languages such as Python or R.
-- **Apache Spark on Microsoft Fabric:** A distributed computing service for performing large-scale data processing and analytics using Spark clusters.
-- **Dataflow Gen2:** A service for designing and executing advanced data transformation workflows, enabling efficient data integration and processing.
 
 ## Getting Started with the Lab
  
-Welcome to your MS Fabric workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Microsoft Fabric workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
  
 ## Accessing Your Lab Environment
  
