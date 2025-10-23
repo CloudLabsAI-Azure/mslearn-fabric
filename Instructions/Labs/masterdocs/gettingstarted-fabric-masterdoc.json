@@ -1,0 +1,14 @@
+[{
+  "Name": "Getting Started with Microsoft Fabric",
+  "Language": "English",
+  "Files": [
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/MS-Fabric-Foundation-for-Enterprise-Analytics/Instructions/Labs/Getting-Started.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/MS-Fabric-Foundation-for-Enterprise-Analytics/Instructions/Labs/MS-01-Data-Engineering.md",
+      "Order": 2
+    }
+  ]
+}]
