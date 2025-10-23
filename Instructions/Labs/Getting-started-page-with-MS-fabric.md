@@ -110,6 +110,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
    
-   ![05](./Images/next-page-1208.png)
+   ![05](./Images/next01.jpg)
 
 ## Happy Learning!!
