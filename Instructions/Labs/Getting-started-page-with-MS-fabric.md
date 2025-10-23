@@ -20,11 +20,6 @@ This lab aims to provide hands-on experience with Microsoft Fabric, enabling use
 
 1. **Ingest data with a pipeline in Microsoft Fabric:** Use data pipelines to import and prepare data for analysis within Microsoft Fabric. Participants will automate the import and preparation of data for subsequent analysis.
 
-Participants should have:
-
-- Basic understanding of data concepts such as tables, queries, and reports.
-- Understanding of SQL and relational database concepts, and familiarity with data warehousing solutions.
-
 ## Getting Started with the Lab
  
 Welcome to your Getting started with Microsoft Fabric workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
