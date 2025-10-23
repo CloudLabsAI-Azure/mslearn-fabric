@@ -33,7 +33,7 @@ Welcome to your Microsoft Fabric workshop! We've prepared a seamless environment
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
 
-   ![](./Images/labguidetab.png)
+   ![](./Images/getting-started-with-fab.jpg)
 
 ## Virtual Machine & Lab Guide
 
