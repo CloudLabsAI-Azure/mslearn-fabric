@@ -430,6 +430,4 @@ In this exercise, you:
 - Learned that managed tables in the Lakehouse can be queried using SQL.
 - Observed that these tables are automatically included in a default dataset, enabling seamless data visualization.
 
-### You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.
-
-   ![05](./Images/next-page-1208.png)
+### You have successfully completed the Lab
