@@ -61,7 +61,7 @@ Feel free to **Start, Stop, or Restart** your virtual machine as needed from the
 
 To adjust the zoom level for the environment page, click the A↕ : 100% icon located next to the timer in the lab environment.
 
-   ![](./Images/zoomintab.png)
+   ![](./Images/zoom00-00.png)
 
 ## Let's Get Started with Power BI Portal
 
