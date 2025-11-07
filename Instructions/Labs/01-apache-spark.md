@@ -26,7 +26,7 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
 1. From the left pane, select the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, then click **+ New item (2)**.
 
-    ![](./Images/E1T1S2.png)
+    ![](./Images2/lab2-11-1.png)
 
 1. In the **New item** window, search for **Lakehouse (1)** in the search bar, then select the **Lakehouse (2)** from the results to proceed.
 
@@ -34,11 +34,11 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
 1. Enter the **Name** as **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Create (2)**.
 
-    ![](./Images2/1/2.png)
+     ![](./Images2/lab2-11-2.png)
 
 1. From the Explorer pane, click the **ellipsis (...) (1)** next to the **Files** folder, choose **Upload (2)**, and then click **Upload folder (3)** to import a folder from your local machine.
 
-    ![](./Images2/1/t1-4.png)
+    ![](./Images2/lab2-11-01.png)
 
 1. In the Upload folder dialog, click the **folder** icon to browse and select the folder you want to upload.
 
@@ -50,7 +50,7 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
 1. Click **Upload** in the confirmation pop-up to proceed with uploading all files from the orders folder.
 
-    ![](./Images2/1/t1-7a.png)
+    ![](./Images2/lab2-11-3.png)
 
 1. Click **Upload** again to confirm.
 
@@ -64,11 +64,19 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
 In this task, you will create a notebook to work with data in Apache Spark. Notebooks provide an interactive environment where you can write and run code in multiple languages, while also allowing you to add notes for documentation.
 
-1. From the left pane, select the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, then click on **+ New Item (2)**, search for **Notebook (3)** in the New item panel and select **Notebook (4)**.
+1. From the left pane, click on **My workspace (1)**, then select the **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)** workspace.  
+   
+    ![](./Images2/lab2-11-02.png)
 
-    ![](./Images2/1/t2-1a.png)
+1. In the **fabric-<inject key="DeploymentID" enableCopy="false"/>** workspace, click on **+ New item (1)**, search for **Notebook (2)** in the search bar, and then select **Notebook (3)** from the results.
 
-   > **Note:** After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+    ![](./Images2/lab2-11-03.png)
+
+1. On the **New Notebook** window, leave the default name **Notebook_1 (1)** as it is, and then click on **Create (2)**.
+ 
+    ![](./Images2/lab2-11-4.png)
+
+    > **Note:** After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
 1. From the **Explorer** panel on the left, under the **Data items** tab, open the **Add data items (1)** dropdown and select **Existing data sources (2)**.
 
@@ -113,13 +121,13 @@ In this task, you will load data into a dataframe to prepare it for analysis. Da
    display(df)
     ```
 
-    ![](./Images/ap1-7.png)
+    ![](./Images2/lab2-11-5.png)
 
     > **Note:** You can hide the Lakehouse Explorer panes on the left by using their **<<** icons. Doing so will help you focus on the notebook.
 
 1. Use the **Run** cell button on the left side of the cell to execute it.
 
-    ![](./Images2/1/t3-4.png)
+    ![](./Images2/lab2-11-6.png)
 
     > **Note:** Since this is your first time running Spark code, a Spark session will be started, which may take about a minute to complete; subsequent runs will execute faster.
 
@@ -305,7 +313,7 @@ In this task, you will use Spark to transform data files into a desired format f
     - Add **FirstName** and **LastName** columns based on the **CustomerName** column.
     - Filter and reorder the columns, removing the **CustomerName** column.
 
-      ![](./Images2/1/t6-2aa.png)
+      ![](./Images2/lab2-11-8.png)
 
 1. Review the output and verify that the transformations have been made to the data.
 
@@ -470,7 +478,7 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
 2. **Run** the code and observe that it returns the data from the **salesorders** view you created previously.
 
-    ![](./Images2/1/t8-2.png)
+    ![](./Images2/lab2-11-9.png)
 
 3. In the results section, click **+ New chart** to create a new visualization based on the query output.
 
@@ -693,15 +701,15 @@ While **matplotlib** enables you to create complex charts of multiple types, it 
 
 In this task, you will save your notebook with a meaningful name to preserve your work after processing the data. Additionally, you will end the Spark session to free up resources and complete your data engineering tasks.
 
-1. Rename the notebook by clicking on the current name **Notebook 1 (1)** in the top-left corner, and update it to **Explore Sales Orders Notebook (2)**.
+1. Rename the notebook by clicking on **Saved (1)** at the top, then update the **Name (2)** field to **Explore Sales Orders Notebook**.
 
-    ![](./Images2/1/t9-1.png)
+     ![](./Images2/lab2-11-10.png)
 
 2. On the notebook menu, click the **Stop session** button (the square icon) to terminate the active Spark session.
 
-    ![](./Images2/1/t9-2.png)
+     ![](./Images2/lab2-11-11.png)
 
-    > **Note:** The stop session icon is present next to the **Start Session** option.
+     > **Note:** The stop session icon is present next to the **Start Session** option.
 
 ## Summary
 
