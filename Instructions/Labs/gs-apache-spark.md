@@ -14,7 +14,7 @@ By the end of this lab, you will be able to:
 
 - **Create a Dataflow (Gen2) in Microsoft Fabric:** You will learn how to create and configure Dataflows (Gen2) to connect to data sources and perform transformations using Power Query Online. This task introduces the core features of Dataflows and demonstrates how they can be used in pipelines or Power BI datasets.
 
-- **Ingest data with a pipeline**: You will learn how to build data pipelines to ingest data from external sources into a lakehouse in Microsoft Fabric. This includes using Apache Spark to apply custom transformations before loading the data for analysis.
+- **Ingest data with a pipeline:** You will learn how to build data pipelines to ingest data from external sources into a lakehouse in Microsoft Fabric. This includes using Apache Spark to apply custom transformations before loading the data for analysis.
 
 ## Pre-requisites
 
@@ -36,7 +36,7 @@ The architecture of this lab revolves around Microsoft Fabric’s Dataflows (Gen
 
 - **Notebook:** Notebooks offer an interactive environment for data exploration and transformation using Apache Spark. They enable users to write code, execute queries, visualize results, and perform advanced analytics directly within Fabric.
 
-- **Dataflow (Gen2)**: Dataflows (Gen2) are a low-code data preparation tool designed to ingest, clean, and transform data from various sources. They can be connected to destinations such as lakehouses and integrated into pipelines for streamlined processing.
+- **Dataflow (Gen2):** Dataflows (Gen2) are a low-code data preparation tool designed to ingest, clean, and transform data from various sources. They can be connected to destinations such as lakehouses and integrated into pipelines for streamlined processing.
 
 - **Pipeline:** Pipelines provide orchestration and automation of data workflows in Fabric. They integrate activities such as notebooks and dataflows into a sequence, enabling end-to-end automation of ingestion, transformation, and analysis processes.
 
@@ -68,7 +68,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
 ## Managing Your Virtual Machine
  
-Feel free to **Start, Stop**, or **Restart** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **Start, Stop**, or **Restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
    ![08](./Images2/resources.png)
 
@@ -100,13 +100,13 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
    - **Password:** <inject key="AzureAdUserPassword"></inject> **(1)** 
 
-      ![05](./Images2/pass.png)
+      ![05](./Images2/lab1-11-1.png)
 
 1. If you see a pop-up **Stay Signed in?**, click **No**.
 
-   ![05](./Images2/staysignin.png)
+   ![05](./Images2/lab1-11-2.png)
 
-      > **Note**: If prompted with MFA, please follow the steps highlighted under - [Steps to Proceed with MFA Setup if Ask Later Option is Not Visible](#steps-to-proceed-with-mfa-setup-if-ask-later-option-is-not-visible)
+      > **Note:** If prompted with MFA, please follow the steps highlighted under - [Steps to Proceed with MFA Setup if Ask Later Option is Not Visible](#steps-to-proceed-with-mfa-setup-if-ask-later-option-is-not-visible)
 
 1. You will be navigated to the Fabric Home page.
 
@@ -120,10 +120,14 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
       ![08](./Images2/activate.png)
    
-1. Once the trial capacity is ready and the confirmation message appears, click **Got it** to start working in Fabric.
+1. Once the trial capacity is ready and the confirmation message appears, click **Ok** to start working in Fabric.
 
-      ![08](./Images2/gotit.png)
-   
+      ![08](./Images2/lab1-11-3.png)
+
+1. When the **Invite teammates to try Fabric** pop-up appears, click the **Close (X)** button at the top-right corner to dismiss it and proceed.
+
+    ![08](./Images2/lab1-11-4.png)
+
 1. Open the **Account Manager** again and observe the new **Trial Status** section, which displays the number of days remaining in your trial.
 
     ![08](./Images2/trialstatus.png)
@@ -132,7 +136,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 1. From the left pane, select **Workspaces (1)**, then click **+ New workspace (2)** at the bottom.
 
-      ![08](./Images2/newspace.png)
+      ![08](./Images2/lab1-11-5.png)
 
 1. In the **Create a workspace** dialog box, enter the name as **fabric-<inject key="DeploymentID" enableCopy="false"/>** **(1)**, then click **Apply (2)** to create the workspace.
 
@@ -140,7 +144,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    
 1. When your new workspace opens, it should appear empty, as shown in the image.
 
-    ![08](./Images2/emptyspace.png)
+    ![08](./Images2/lab1-11-6.png)
 
 ## Steps to Proceed with MFA Setup if Ask Later Option is Not Visible
 
