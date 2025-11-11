@@ -42,7 +42,7 @@ In this task, you will create database tables by defining their structure with a
 
 1. In your new warehouse, under **Build a warehouse** select the **T-SQL** tile.
 
-   ![](./Images/p2t2p1.png)
+   ![](./Images/e2p3t2p1.png)
 
 1. Enter the following **SQL Code (1)** and click the **&#9655; Run (2)** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
@@ -120,11 +120,11 @@ In this task, you will create a relational data warehouse consisting of fact and
     
 1. Provide the Direct Lake semantic model name as **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (1)** and select **DimCustomer, DimDate, DimProduct, FactSalesOrder (2)** tables from the list. Then, click on **Confirm (3)**.
 
-    ![](./Images/p2t3p2.png)
+    ![](./Images/e2p3t3p2.png)
 
 1. Go back to the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace. Select the recently created semantic model named as **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)**.
 
-    ![](./Images/p2t3p3.png)
+    ![](./Images/e2p3t3p3.png)
 
 1. Click on **Open semantic model**.
 
@@ -289,7 +289,7 @@ In this task, you will visualize your data from a single query or your data ware
 
 1. Navigate back to the fabric workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)** semantic model to open it.
 
-    ![](./Images/p2t7p1.png)
+    ![](./Images/e2p3t7p1.png)
 
 1. On the **Data Warehouse details** page, click **Open semantic model** to launch the semantic model editor.  
 
@@ -334,6 +334,8 @@ In this task, you will visualize your data from a single query or your data ware
 
 1. Ensure that the column chart on the canvas is active (with a grey border and handles), and then select **SalesTotal** from the **FactSalesOrder** table to add a category to your column chart.
 
+    ![](./Images/e2p3t7p8.png)
+
 1. In the **Visualizations** pane, change the chart type from a column chart to a **clustered bar chart**. Then resize the chart as necessary to ensure that the categories are readable.
 
     ![](./Images/E2T7S7.png)
@@ -346,11 +348,11 @@ In this task, you will visualize your data from a single query or your data ware
 
    ![04](./Images/E2T7S9.1-1108.png)
 
-   ![03](./Images/p2t7p11.png)
+   ![](./Images/e2p3t7p11.png)
 
 1. In the menu hub on the left pane, navigate back to your **workspace**. Notice that you now have three items saved in your workspace: your data warehouse, its semantic model (default), and the report you created.
 
-   ![Screenshot of the workspace with the three items listed.](./Images/E2T7S10.png)
+   ![](./Images/e2p3t7p12.png)
 
 ## Summary
 
