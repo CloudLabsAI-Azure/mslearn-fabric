@@ -89,7 +89,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 1. Enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and Click on **Create (2)**.
 
-    ![](./Images/p1t3p4.png)
+    ![](./Images/e1p2t3p5.png)
 
 1. On the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** tab in the left pane, click the **Ellipsis (...) (1)** menu for the **Files** node, click on **New subfolder (2)**.
     
@@ -105,7 +105,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
 1. From the left navigation pane, select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, then click on same workspace **(2)** and then click on **+ New item (3)**.
 
-    ![](./Images/p1t4p1.png)
+    ![](./Images/e1p2t4p1.png)
 
     ![](./Images/p1t4p1(1).png)
 
@@ -121,10 +121,6 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
    ![03](./Images/p1t4p4.png)
 
-1. In the **Use Copy job?** dialog box, select **No, use copy assistant**.
-
-    ![](./Images/copy_job.png)
-
 1. In the **Copy data** wizard, on the **Choose data source** page, search for **Http (1)** and select the **Http (2)** source from the results.
 
    ![](./Images/Lake10.png)
@@ -138,9 +134,9 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
   
       ![](./Images/p1t4p6.png)
     
-1. On the **Connect to data source** page, keep the default settings and click **Next**.
+1. On the **Choose data** page, keep the default settings and click **Next**.
     
-    ![05](./Images/p1t4p7.png)
+    ![05](./Images/p1t4p7(1).png)
    
 1. Wait for the data to be sampled, then verify the following settings:
 
@@ -150,57 +146,78 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
    - Click **Preview data (4)** to view a sample of the data.
    - After reviewing, close the preview and click **Next (5)**.
   
-      ![Account-manager-start](./Images/e1t4s8(1).png)
+      ![Account-manager-start](./Images/e1p2t4s8(1).png)
     
       ![Account-manager-start](./Images/E1T4S8.2-1108.png)
 
 1. On the **Choose data destination** page, click **OneLake catalog (1)** and select the lakehouse **Lakehouse\_<inject key="DeploymentID" enableCopy="false"/> (2)**.
     
-    ![](./Images/Lake13.png)
+    ![](./Images/Lake13(1).png)
 
-1. Set the following data destination options.
+1. On the **Choose copy job mode** page, select **Full copy (1)** and click **Next (2)**.
+
+    ![](./Images/Lake13(2).png)
+
+1. On the **Map to destination** page, set the following data destination options.
    
-   - Root folder: **Files (1)**
+   - Select **Files (1)**
    - Folder path: Click on **Browse (2)**, select **new_data (3)** and click **OK (4)**.
    - File name: **sales.csv (5)**
-   - Click **Next (6)**
 
-     ![08](./Images/p1t4p10.png)
-
-1. Set the following file format options:
+     ![08](./Images/p1t4p10(1).png)
    
-   - File format: **DelimitedText (1)**
-   - Column delimiter: **Comma (,) (2)**
-   - Row delimiter: **Line feed (\n) (3)**
-   - Click **Next (4)**
+   - File format: **DelimitedText (6)**
+   - Expand the **File format settings**
+   - Column delimiter: **Comma (,) (7)**
+   - Row delimiter: **Line feed (\n) (8)**
+   - Click **Next (9)**
 
-     ![09](./Images/Lake15.png)
+     ![08](./Images/p1t4p10(2).png)
 
-1. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
+1. On the **Review + save** page, review the details of your copy operation and then select **Save**.
 
-    ![09](./Images/Lake16.png)
+    ![08](./Images/p1t4p10(3).png)
 
 1. A new pipeline containing a **Copy data** activity is created, as shown here:
 
     ![Screenshot of a pipeline with a Copy Data activity.](./Images/E1T3S13.png)
 
-1. On the **pipeline canvas** page, to locate the **Output** panel at the bottom of the screen and click the **Up arrow** at the below right to show the panel.
+1. Click on the **Copy job (1)**, then select the **Settings (2)** tab, from the Connection dropdown **(3)**, select **Browse all (4)**.
 
-   ![](./Images/444.png)
+    ![08](./Images/p1t4p10(4).png)
 
-   > **Note:** Click the up arrow at the bottom-right of the panel to display the Output panel.
+1. On **Choose a data source to get started**, click on **Copy job**.
+
+    ![08](./Images/p1t4p10(5).png)
+
+1. On the **Connect data source** page, click on **Sign in (1)** and select **<inject key="AzureAdUserEmail"></inject> (2)**. Then click **Connect (3)**.
+
+    ![08](./Images/p1t4p10(6).png)
+
+    ![08](./Images/p1t4p10(7).png)
+
+    ![08](./Images/p1t4p10(8).png)
+
+1. Under the Home tab, click on **Run**.
+
+    ![08](./Images/p1t4p10(9).png)
+
+1. On the **Save and run?** pop-up, click **Save and run**.
+
+    ![08](./Images/p1t4p10(10).png)
+
 
 1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has been successfully updated.
 
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/e1t4s14.png)
+    ![Screenshot of a pipeline with a Copy Data activity.](./Images/p1t4p10(11).png)
 
 1. On the **Workspaces** page, select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)** to open the lakehouse.  
 
-   ![](./Images/e1t4s15.png)
+   ![](./Images/p1t4p10(12).png)
 
 1. In the **Explorer** pane, expand **new_data (1)** and select **sales.csv (2)** to open the file.  
 
-   ![](./Images/e1t4s15(01).png)
+   ![](./Images/p1t4p10(13).png)
 
 ## Task 5: Create a Notebook
 
@@ -213,6 +230,10 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 1. Click on **+ New item (1)** In the New Item panel, search for **Notebook (2)** and select **Notebook (3)**.
 
     ![](./Images/e1t5s2.png) 
+
+1. In the **New Notebook** pop-up window, leave the name as **default (1)** and click **Create (2)**.
+
+    ![](./Images/e1p2t5p3.png) 
 
 1. After a few seconds, a new notebook with a single cell opens. Each notebook consists of code or markdown cells used for running code or adding formatted text.
 
@@ -240,7 +261,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
 1. In the **Ellipsis (...) (1)** menu for the cell (at its top-right) select **Toggle parameter cell (2)**. This configures the cell so that the variables declared in it are treated as parameters when running the notebook from a pipeline.
 
-     ![Account-manager-start](./Images/E1T5S7-1108.png)
+     ![](./Images/e1p2t5p7.png)
 
 1. Under the parameters cell, use the **+ Code** button to add a new code cell. 
 
@@ -290,7 +311,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
 1. In the hub menu bar on the left, click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and then select your **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**. 
 
-    ![.](./Images/p1t5p13.png)
+    ![](./Images/e1p2t5p13.png)
 
 1. In the **Explorer** pane, refresh the **view (1)**. Then expand **Tables (2)**, and select the **sales (3)** table to see a preview of the data it contains.
 
@@ -317,7 +338,7 @@ In this task, you'll use SQL to query tables in a database. You'll write stateme
    ORDER BY Revenue DESC;
     ```
 
-    ![](./Images/E2-T5-S2.png)
+    ![](./Images/e1p2t6p2.png)
 
 1. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
@@ -365,15 +386,15 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 
 1. First, we will need to create a Semantic model. At the top of the SQL analytics endpoint page, select the **New semantic model** tab.
     
-    ![](./Images/p1t8p1.png)
+    ![](./Images/e1p2t8p1.png)
 
 2. Provide the Direct Lake semantic model name as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and select **sales (2)** table from the list. Click on **Confirm (3)**.
 
-    ![](./Images/p1t8p2.png)
+    ![](./Images/e1p2t8p2.png)
 
 3. Go back to the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace from the left pane. Select recently created semantic model named as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**
 
-    ![](./Images/p1t8p3.png)
+    ![](./Images/e1p2t8p3.png)
 
 4. Click on **Open semantic model** to view the table.
 
@@ -405,7 +426,7 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 
    ![](./Images/p1t8p9.png)
    
-   ![](./Images/p1t8p9(1).png)
+   ![](./Images/e1p2t8p9.png)
 
 10. In the hub menu bar on the left, select your workspace to verify that it contains the following items:
     - Your lakehouse.
