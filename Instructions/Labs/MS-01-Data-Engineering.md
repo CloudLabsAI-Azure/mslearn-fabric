@@ -198,7 +198,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
     ![08](./Images/p1t4p10(8).png)
 
-1. Under the Home tab, click on **Run**.
+1. Under the **Home** tab, click on **Run**.
 
     ![08](./Images/p1t4p10(9).png)
 
