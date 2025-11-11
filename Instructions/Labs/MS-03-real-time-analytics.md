@@ -152,7 +152,7 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
 
     -  In the **Just a few details first** pane, enter the file name as **Revenue by Item (1)** and click **Continue (2)** to save the report in Power BI.
 
-         ![](./Images/E3T3S5.1-1208.png)
+         ![](./Images/e3p4t3p4.png)
 
     -  The report has been saved successfully. Now, click on **Open the file in Power BI to view, edit, and get a shareable link** to proceed.
 

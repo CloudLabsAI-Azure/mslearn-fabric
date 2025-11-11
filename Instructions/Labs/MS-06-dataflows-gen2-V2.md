@@ -80,7 +80,7 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
 1. On the **Delete "orders"?** pop-up, click **Delete**.
    
-   ![](./Images/p7t1p13.png)
+   ![](./Images/e6p7t1p13.png)
 
 ## Task 2: Add data destination for Dataflow
 
@@ -108,7 +108,7 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
  
 1. On the Destination settings page, first **toggle off (1)** the **Use automatic settings** option. Next, under the **MonthNo** column header, set the **Source type** to **Whole number (2)**. Finally, click **Save settings (3)** to apply the changes.
 
-   ![Data destination settings page.](./Images/E6T2S5-1208.png)
+   ![](./Images/e6p7t2p6.png)
 
 1. Select **Publish** to publish the dataflow. Then wait for the **Dataflow** to be created in the workspace.
 

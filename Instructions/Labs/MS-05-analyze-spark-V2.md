@@ -50,7 +50,7 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
    - Click on **Create (2)**
 
-     ![](./Images/p6t1p3.png)
+     ![](./Images/e5p6t1p3.png)
 
 1. Once you're in the lakehouse, navigate to the **Files** folder in the **Explorer** pane, click on the **Ellipses ... (1)** menu for **Files**, and select **Upload (2)** followed by **Upload folder (3)**.
 
@@ -83,6 +83,10 @@ In this task, you will create a notebook to work with data in Apache Spark. Note
 1. In the search box, search **Notebook (1)** and select **Notebook (2)**.
 
     ![](./Images/E4T2S2-1208.png)
+
+1. On the **New Notebook** dialog, click **Create**.
+
+    ![](./Images/e5p6t2p3.png)
 
     > **Note:** After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
