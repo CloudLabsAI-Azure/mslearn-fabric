@@ -31,9 +31,9 @@ In this task, you will create a lakehouse and upload files to facilitate data st
 
 1. On the Upload files page, click on the **Browse (1)** option to upload the file. Go to the **`C:\LabFiles\Files` (2)** location, select the **churn.csv (3)** file, and click on **Open (4)**. Then click on **Upload (5)**.   
 
-   ![](./Images/E4T1S3.1-1208.png)
+   ![](./Images/e4p5t1p3.png)
 
-   ![](./Images/E4T1S3.2-1208.png)
+   ![](./Images/e4p5t1p3(1).png)
 
 1. After the files have been uploaded, expand **Files** and verify that the CSV file has been uploaded.
 
@@ -49,7 +49,11 @@ In this task, you will create a notebook to facilitate model training and experi
 
 2. In the New Item panel, search for **Notebook (2)** and select **Notebook (3)**.
 
-    ![](./Images/E4T2S2-1208.png) 
+    ![](./Images/E4T2S2-1208.png)
+
+1. On the **New Notebook** dialog, click **Create**.
+
+    ![](./Images/e4p5t2p3.png)
 
 1. After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
