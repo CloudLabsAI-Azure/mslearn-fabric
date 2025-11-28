@@ -53,7 +53,11 @@ In this task, you will create a notebook to facilitate model training and experi
 
 2. In the workspace, click on **+ New Item (1)**. In the New Item panel, search for **Notebook (2)** and select **Notebook (3)** from the result.
 
-    ![](./Images/e4t2p2.png) 
+    ![](./Images/e4t2p2.png)
+
+1. In the **New Notebook** window, keep the default notebook **Name (1)** unchanged, and then click **Create (2)** to continue.
+
+    ![](./Images/fab-ric-ex1-g34.png)
 
 1. After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
@@ -260,6 +264,8 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 
 1. Do the same for the other two runs as well
 
+    ![](./Images/fab-ric-ex1-g39.png)
+
 By plotting the accuracy per logged estimator, you can review which algorithm resulted in a better model.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
@@ -283,15 +289,15 @@ In this task, you will save the best-performing machine learning model after com
 
    ![](./Images/e4t7p3.png)
 
-1. Select **Create a new model (1)** in the newly opened pop-up window.
+1. Select **Create a new model (1)** in the newly opened pop-up window, set the name to **model-churn (2)**, and select **Save (3)**. 
 
-1. Select the existing folder **model (2)** and set the name to **model-churn (3)**, and select **Save (4)**. 
-
-    ![](./Images/Note3.png)
+    ![](./Images/fab-ric-ex1-g40.png)
 
 1. Select **View ML model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**. 
 
-   >**Note:** The model, the experiment, and the experiment run are linked, allowing you to review how the model is trained. 
+    ![](./Images/fab-ric-ex1-g41.png)
+
+    >**Note:** The model, the experiment, and the experiment run are linked, allowing you to review how the model is trained. 
 
 ## Task 8: Save the notebook and end the Spark session
 
