@@ -72,7 +72,7 @@ In this task, you will create a KQL database to facilitate querying of static or
 
         ![01](./Images/e3t1s7.2.png)
     
-    > **Note:** In this example, you imported a very small amount of static data from a file, which is fine for this exercise. In reality, you can use Kusto to analyze much larger volumes of data, including real-time data from a streaming source such as Azure Event Hubs.
+> **Note:** In this example, you imported a very small amount of static data from a file, which is fine for this exercise. In reality, you can use Kusto to analyze much larger volumes of data, including real-time data from a streaming source such as Azure Event Hubs.
 
 ## Task 2: Use KQL to query the sales table
 
