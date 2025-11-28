@@ -251,7 +251,7 @@ In this task, you will aggregate and group data within a dataframe to summarize 
 
 In this task, you will use Spark to transform data files into a desired format for analysis and processing. This involves ingesting data in specific structures and applying transformations, a common responsibility for data engineers, to prepare the data for downstream applications.
 
-#### Use dataframe methods and functions to transform data
+### Use dataframe methods and functions to transform data
 
 1. Add a new code cell to the notebook, and enter the following code in it:
 
@@ -285,7 +285,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
     > **Tip**: See the [Spark dataframe documentation](https://spark.apache.org/docs/latest/api/python/reference/pyspark.sql/dataframe.html) to learn more about the methods of the Dataframe object.
 
-#### Save the transformed data
+### Save the transformed data
 
 1. Add a new cell with the following code to save the transformed dataframe in Parquet format (Overwriting the data if it already exists):
 
@@ -309,7 +309,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
 4. Run the cell and verify that the results show the order data that has been loaded from the parquet files.
 
-#### Save data in partitioned files
+### Save data in partitioned files
 
 1. Add a new cell with the following code; which saves the dataframe, partitioning the data by **Year** and **Month**:
 
@@ -337,7 +337,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
 As you've seen, the native methods of the dataframe object enable you to query and analyze data from a file quite effectively. However, many data analysts are more comfortable working with tables that they can query using SQL syntax. Spark provides a *metastore* in which you can define relational tables. The Spark SQL library that provides the dataframe object also supports the use of SQL statements to query tables in the metastore. By using these capabilities of Spark, you can combine the flexibility of a data lake with the structured data schema and SQL-based queries of a relational data warehouse - hence the term "data lakehouse".
 
-#### Create a table
+### Create a table
 
 Tables in a Spark metastore are relational abstractions over files in the data lake. tables can be *managed* (in which case the files are managed by the metastore) or *external* (in which case the table references a file location in the data lake that you manage independently of the metastore).
 
@@ -359,7 +359,11 @@ Tables in a Spark metastore are relational abstractions over files in the data l
 
     ![Screenshot of the salesorder table in Explorer.](./Images/table-view.png)
 
-4. In the **...** menu for the **salesorders** table, select **Load data** > **Spark**. A new code cell containing code similar to the following example is added to the notebook:
+4. In the **...** menu for the **salesorders** **(1)** table, select **Load data** **(2)** > **Spark** **(2)**. 
+
+   ![01](./Images/02/pg04-loadspark.png)
+
+5. A new code cell containing code similar to the following example is added to the notebook:
 
     ```Python
    df = spark.sql("SELECT * FROM [your_lakehouse].salesorders LIMIT 1000")
@@ -367,9 +371,9 @@ Tables in a Spark metastore are relational abstractions over files in the data l
     ```
      > **Note**: Ensure to replace the [your_lakehouse] with **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>**
      
-5. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
+6. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
 
-#### Run SQL code in a cell
+### Run SQL code in a cell
 
 While it's useful to be able to embed SQL statements into a cell containing PySpark code, data analysts often just want to work directly in SQL.
 
@@ -398,7 +402,7 @@ While it's useful to be able to embed SQL statements into a cell containing PySp
 
 In this task, you will visualize data using Spark to enhance understanding and insights through graphical representation. While Fabric notebooks offer a basic chart view for data from dataframes or Spark SQL queries, you can utilize Python graphics libraries like **matplotlib** and **seaborn** for more comprehensive and customized charting.
 
-#### View results as a chart
+### View results as a chart
 
 1. Add a new code cell to the notebook, and enter the following code in it:
 
@@ -409,23 +413,30 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
 2. Run the code and observe that it returns the data from the **salesorders** view you created previously.
 
-3. We need to change the view from table to chart in the results section beneath the cell. To do so we will first need to turn off the new visualization option. Click on **...** and then **New visualization** to turn it off. Then click on **Chart**.
+3. We need to change the view from table to chart in the results section beneath the cell. To do so click on **+ New chart** next to your result table tab.
 
-   ![](./Images/L6T9S3.png) 
+   ![01](./Images/02/pg07-addchart.png)
 
-4. Use the **Customize Chart** button at the top right of the chart to display the options pane for the chart. Then set the options as follows and select **Apply**.
+4. Click on **Start editing** under **Suggested charts** to customize chart visulaization. Then set the options as follows under **Basic** of **chat settings**.
+    - **Title**: Sales Order Visualization
+    - **Subtitle**: Overview of Item-wise Sales Order Quantities
     - **Chart type**: Bar chart
-    - **Key**: Item
-    - **Values**: Quantity
+    - **X-axis**: Item
+    - **Y-axis**: Quantity
+    - **Show Legend**: *Unslected*
     - **Series Group**: *leave blank*
     - **Aggregation**: Sum
     - **Stacked**: *Unselected*
 
+       ![01](./Images/02/pg07-basic01.png)
+
+       ![01](./Images/02/pg07-basic02.png)
+
 5. Verify that the chart looks similar to this:
 
-    ![Screenshot of a bar chart of products by total order quantiies](./Images/chart_final_1.png)
+   ![01](./Images/02/pg07-finalchart.png)
 
-#### Get started with **matplotlib**
+### Get started with **matplotlib**
 
 1. Add a new code cell to the notebook, and enter the following code in it:
 
@@ -463,6 +474,8 @@ In this task, you will visualize data using Spark to enhance understanding and i
     - At the core of the **matplotlib** library is the **pyplot** object. This is the foundation for most plotting functionality.
     - The default settings result in a usable chart, but there's considerable scope to customize it
 
+   ![01](./Images/02/pg07-Matplotresult01.png)
+
 1. Modify the code to plot the chart as follows:
 
     ```Python
@@ -486,6 +499,8 @@ In this task, you will visualize data using Spark to enhance understanding and i
     ```
 
 1. Re-run the code cell and view the results. The chart now includes a little more information.
+
+   ![01](./Images/02/pg07-Matplotresult02.png)
 
 1. A plot is technically contained within a **Figure**. In the previous examples, the figure was created implicitly for you, but you can create it explicitly.
 
@@ -546,9 +561,11 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
 1. Re-run the code cell and view the results. The figure contains the subplots specified in the code.
 
+   ![01](./Images/02/pg07-Matplotresult03.png)
+
     > **Note:** To learn more about plotting with matplotlib, see the [matplotlib documentation](https://matplotlib.org/).
 
-#### Use the **seaborn** library
+### Use the **seaborn** library
 
 While **matplotlib** enables you to create complex charts of multiple types, it can require some complex code to achieve the best results. For this reason, over the years, many new libraries have been built on the base of matplotlib to abstract its complexity and enhance its capabilities. One such library is **seaborn**.
 
@@ -599,6 +616,8 @@ While **matplotlib** enables you to create complex charts of multiple types, it 
     ```
 
 6. Run the modified code to view the yearly revenue as a line chart.
+
+   ![01](./Images/02/pg07-Seaborn01.png)
 
     > **Note**: To learn more about plotting with seaborn, see the [seaborn documentation](https://seaborn.pydata.org/index.html).
 

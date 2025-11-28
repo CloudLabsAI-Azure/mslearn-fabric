@@ -88,6 +88,8 @@ In this task, you will create database tables by defining their structure with a
 
 1. Run the above query to insert three rows into the **DimProduct** table.
 
+   ![01](./Images/02/pg04-results.png)
+
 1. When the query has finished, select the **Data** tab at the bottom of the page in the data warehouse. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
 
 1. On the Home menu tab, use the **New SQL Query** button to create a new query for the table.

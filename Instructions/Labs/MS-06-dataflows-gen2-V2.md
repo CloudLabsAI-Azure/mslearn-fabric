@@ -24,13 +24,21 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
 1. In the All items search for **Dataflow Gen2** and select it from the list.
 
-1. Select **Get data**, select **Test/CSV** and create a new data source with the following settings:
+   ![01](./Images/02/pg08-creategen2.png)
+
+1. provide a **Name** for the New Dataflow Gen, and make sure **Enable Git intergation, deployment pipelines and Public APU scenarios** is checked. And click on **Create**.
+
+1. Select **Import from a Test/CSV file** and create a new data source with the following settings:
     - **Link to file**: *Selected*
     - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
     - **Connection**: Create new connection
+    - **Connection name**: dataconnection
+      >**Note:** Data connection name would change automatically along with your username, please ignore and continue
     - **data gateway**: (none)
     - **Authentication kind**: Anonymous
     - **Privacy level**: None
+
+       ![01](./Images/02/pg08-createdatasource.png)
 
 1. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown below:
 
@@ -68,9 +76,11 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
 
     ![Data destination settings page.](./Images/lak2.png)
 
-5. Select **Publish** to publish the dataflow. Then wait for the **Dataflow** to be created in the workspace.
+5. Select **save** to publish the dataflow. Then wait for the **Dataflow** to be created in the workspace.
 
-6. Once published,click on the **ellipse** next to the published dataflow in the workspace, select **Properties**, and rename the dataflow as **Transform Orders Dataflow**.
+6. Once saved,click on the **Dataflow 1** and rename the dataflow as **Transform Orders Dataflow**.
+
+   ![01](./Images/02/pg08-savedataflow.png)
 
 ### Task 3: Add a dataflow to a pipeline
 
