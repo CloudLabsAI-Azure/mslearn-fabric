@@ -281,6 +281,8 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
      ![](./Images/E2-T4-S9.png) 
 
+     > **Note:** The **+ Code** button may not be immediately visible. Hover your cursor just below the parameters cell, and it will appear.
+
 1. Add the following code to it:
 
     ```python
