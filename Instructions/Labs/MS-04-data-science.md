@@ -284,11 +284,9 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 By plotting the accuracy per logged estimator, you can review which algorithm resulted in a better model.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-      
-   - If you receive an In Progress message, you can hit refresh to see the final status.
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - If you receive a success message, you can proceed to the next task.
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="421eaf46-3e33-4dcd-86f4-ace96f811965" />
 
@@ -329,6 +327,8 @@ In this task, you will save your notebook with a meaningful name to preserve you
 1. On the notebook menu, select &#9645;**Stop session** to end the Spark session.
 
     ![](./Images/p5t8p3.png)
+
+   > **Note:** Make sure the session is stopped, otherwise the new notebooks created doesn't work.
 
    >**Note:** If you can't see the **Stop Session** option, it means the Spark session has already ended.
 

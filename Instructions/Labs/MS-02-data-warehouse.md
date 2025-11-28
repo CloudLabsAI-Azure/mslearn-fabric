@@ -40,7 +40,7 @@ In this task, you will design and implement a data warehouse by organizing data 
 
 In this task, you will create database tables by defining their structure with appropriate columns and constraints. Afterwards, you'll insert data into the tables, ensuring it is ready for querying and further operations.
 
-1. In your new warehouse, under **Build a warehouse** select the **T-SQL** tile.
+1. In your new warehouse, under **Build a warehouse**, select the **T-SQL** tile.
 
    ![](./Images/e2p3t2p1.png)
 
@@ -138,7 +138,15 @@ In this task, you will create a relational data warehouse consisting of fact and
 
     ![Screenshot of the data warehouse model page.](./Images/E2T3S5.png)
 
-1. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details.
+1. In the **Home** tab, click on **Manage relationships**.
+
+    ![](./Images/select-managerelationship.png)
+
+1. In the Manage relationships window, select **+ New relationship**.
+
+    ![](./Images/new-relationship.png)
+
+1. In the **New relationship** window, confirm the following:
    
     - **From table (1)**: FactSalesOrder
     - **Column (2)**: ProductKey
@@ -197,7 +205,7 @@ In this task, you will query data warehouse tables using SQL to retrieve and ana
 
     ![](./Images/E2T4S2-1108.png)
 
-1. Create a **New SQL Query (1)** and modify the query **(2)** as follows to add a second dimension to the aggregation.
+1. Click on **New SQL Query (1)** from the top menu bar and create a query **(2)** as follows to add a second dimension to the aggregation.
 
     ```SQL
    SELECT  d.[Year] AS CalendarYear,
@@ -239,7 +247,7 @@ In this task, you will create a view in the data warehouse to encapsulate SQL lo
     ```
     ![](./Images/E3-T5-S1.png)
 
-2. After executing, it will create a view. **Refresh (1)** the data warehouse schema once and verify that the new view **vSalesByRegion (2)** is listed in the **Explorer** pane.
+2. After execution is completed, it will create a view. **Refresh (1)** the data warehouse schema once and verify that the new view **vSalesByRegion (2)** is listed in the **Explorer** pane.
 
     ![](./Images/E2T5S2.png)
 
@@ -261,7 +269,11 @@ In this task, you will create a visual query using the graphical query designer 
 
 1. From Tables, drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
+    ![](./Images/drag-factsalesorder.png)
+
 1. And then, drag **DimProduct** onto the **canvas**. We now have two tables in our query.
+
+    ![](./Images/drag-dimproduct.png)
 
 1. Click the **+ (1)** button on the **FactSalesOrder** and then click on **Merge queries (2)**.
 
@@ -269,7 +281,7 @@ In this task, you will create a visual query using the graphical query designer 
 
    > **Note:** If the + option is not visible, click on the three dots (i.e., the Actions button) to view the required options. 
 
-1. In the **Merge queries** window, select **DimProduct (1)** as the right table for merge. Select **ProductKey  (2)** in both queries, leave the default **Left outer (3)** to join type, and click **OK (4)**.
+1. In the **Merge queries** window, select **DimProduct (1)** as the **Right table for merge**. Select **ProductKey  (2)** in both queries, leave the default **Left outer (3)** to join type, and click **OK (4)**.
 
    ![02](./Images/Data4.png)
 
@@ -277,7 +289,7 @@ In this task, you will create a visual query using the graphical query designer 
 
     ![](./Images/p2t6p6.png)
 
-1. If you're interested in looking at data for a single product, per a manager's request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
+1. If you're interested in looking at data for a single product, per a manager's request, you can now use the **ProductName** column to filter the data in the query. For example, filter the **ProductName** column to look at **Cable Lock** data only.
 
     ![](./Images/E3-T6-S7.png)
 
