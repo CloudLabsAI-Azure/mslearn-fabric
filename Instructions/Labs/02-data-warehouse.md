@@ -257,6 +257,8 @@ In this task, you will create a view in the data warehouse to encapsulate SQL lo
    ORDER BY CalendarYear, MonthOfYear, SalesRegion;
     ```
 
+    ![](./Images/fab-ric-ex1-g28.png)
+
 ## Task 6: Create a visual query
 
 In this task, you will create a visual query using the graphical query designer to query data warehouse tables without writing SQL code. Similar to Power Query online, this no-code approach allows you to perform data transformations, and for more complex tasks, you can leverage Power Query's M language.
@@ -267,7 +269,11 @@ In this task, you will create a visual query using the graphical query designer 
 
 1. From Tables, drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
+    ![](./Images/fab-ric-ex1-g29.png)
+
 1. And then, drag **DimProduct** onto the **canvas**. We now have two tables in our query.
+
+    ![](./Images/fab-ric-ex1-g30.png)
 
 1. Click the **+ (1)** button on the **FactSalesOrder** and then click on **Merge queries (2)**.
 
