@@ -93,7 +93,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 1. On the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** tab in the left pane, click the **Ellipsis (...) (1)** menu for the **Files** node, click on **New subfolder (2)**.
     
-    ![](./Images/p1t3p5.png)
+    ![](./Images/E1T3S6.png)
 
 1. Enter the Folder name as **new_data (1)** and click on **Create (2)**.
 
@@ -123,7 +123,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
 1. In the **Copy data** wizard, on the **Choose data source** page, search for **Http (1)** and select the **Http (2)** source from the results.
 
-   ![](./Images/Lake10.png)
+   ![](./Images/E1T4S5.png)
 
 1. In the **Connection settings** page, enter the following settings and click on **Next (5)**:
     
@@ -205,7 +205,6 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 1. On the **Save and run?** pop-up, click **Save and run**.
 
     ![08](./Images/p1t4p10(10).png)
-
 
 1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has been successfully updated.
 
