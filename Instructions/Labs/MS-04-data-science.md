@@ -328,6 +328,8 @@ In this task, you will save your notebook with a meaningful name to preserve you
 
     ![](./Images/p5t8p3.png)
 
+   > **Note:** Make sure the session is stopped, otherwise the new notebooks created doesn't work.
+
    >**Note:** If you can't see the **Stop Session** option, it means the Spark session has already ended.
 
 ## Summary

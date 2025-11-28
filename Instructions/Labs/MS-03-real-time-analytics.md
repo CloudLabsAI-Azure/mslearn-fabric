@@ -282,6 +282,8 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
 
 1. Click the **Stop** icon in the top menu bar to halt the notebook.
 
+    > **Note:** Make sure the session is stopped, otherwise the new notebooks doesn't work.
+
     ![](./Images/p4t4p9.png)
 
 ## Summary
