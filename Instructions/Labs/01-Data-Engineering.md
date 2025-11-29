@@ -44,7 +44,7 @@ In this task, you will create a Fabric workspace. The workspace will contain all
 
 1. On the left-hand pane of the Power BI portal, select **Workspaces (1)** and click on **+ New workspace (2)**
 
-    ![New Workspace](./Images/f2.png)
+    ![New Workspace](./Images/fab-ric-ex1-g1.png)
 
 1. On the **Create a workspace** page, enter the following details:
 
@@ -62,6 +62,8 @@ In this task, you will create a Fabric workspace. The workspace will contain all
       ![alt text](image-1.png)
 
 1. In the **Introducing task flows (preview)** window, click **Got it**.
+
+    ![](./Images/fab-ric-ex1-g2.png)
       
 ## Task 3: Create a Lakehouse
 
@@ -69,9 +71,9 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Fabric (2)** experience.
 
-   ![](./Images/E2T1S1.png)
+   ![](./Images/fab-ric-ex1-g3.png)
 
-   ![](./Images/E1T1S1-1.png)
+   ![](./Images/fab-ric-ex1-g4.png)
    
 1. In the **Welcome to the Fabric view** window, click **Cancel**.
 
@@ -79,7 +81,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 1. In the left pane, navigate to your Workspace named as **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new lakehouse.
 
-    ![](./Images/Lake2.png)
+    ![](./Images/fab-ric-ex1-g5.png)
 
 1. In the search box, search for **Lakehouse (1)** and select **Lakehouse (2)** from the list.
 
@@ -87,7 +89,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 1. In the **New lakehouse** window, enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and click on **Create (2)**.
 
-    ![](./Images/ex1t3p4.png)
+    ![](./Images/fab-ric-ex1-g6.png)
 
 1. On the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** tab in the left pane, click the **Ellipsis (...) (1)** menu for the **Files** node, select **New subfolder (2)**.
     
@@ -103,7 +105,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
 1. In the left pane, navigate back to the workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (2)**.
 
-    ![](./Images/Lake2.png)
+    ![](./Images/fab-ric-ex1-g7.png)
 
 1. In the search box, search for **Pipeline (1)** and select **Pipeline (2)** from the list.
 
@@ -111,7 +113,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
 1. Create a new data pipeline named **Ingest Sales Data Pipeline (1)** and click on **Create (2)**. 
     
-    ![](./Images/Lake9.png)
+    ![](./Images/fab-ric-ex1-g8.png)
    
 1. On the **Build a data pipeline to organize and move your data** page, select **Copy data assistant**.
 
@@ -155,27 +157,29 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
     
     ![](./Images/Lake13.png)
 
-1. Set the following data destination options.
+1. On the **Choose copy job mode** page, select **Full copy (1)** and then click **Next (2)** to proceed.
 
-    - Root folder: **Files (1)**
-    - Folder path: **new_data (2)**
-    - File name: **sales.csv  (3)**
-    - Click **Next (4)**
+    ![](./Images/fab-ric-ex1-g9.png)
+
+1. On the **Map to destination** page, select **Files (1)**, then set **Folder path** to **new_data (2)** and **File name** to **sales.csv (3)**.
     
-        ![08](./Images/Lake14.png)
+    ![08](./Images/fab-ric-ex1-g10.png)
 
-1. Set the following file format options.
+    ![08](./Images/fab-ric-ex1-g11.png)
 
-    - File format: **DelimitedText (1)**
-    - Column delimiter: **Comma (,) (2)**
-    - Row delimiter: **Line feed (\n) (3)**
-    - Click **Next (4)**
+1. Set the following file format options:
+
+   - File format: **DelimitedText (1)**
+   - Click **File format settings (2)**
+   - Column delimiter: **Comma (,) (3)**
+   - Row delimiter: **Line feed (\n) (4)**
+   - Click **Next (5)**
    
-        ![09](./Images/Lake15.png)
+        ![09](./Images/fab-ric-ex1-g12.png)
 
-1. On the **Copy summary** page, review the details of your copy operation and then select **Save + Run**.
+1. On the **Review + save** page, verify the source and destination details, then click **Save (1)** to create and run the copy job.
 
-    ![09](./Images/Lake16.png)
+    ![09](./Images/fab-ric-cor-g1.png)
 
 1. A new pipeline containing a **Copy data** activity is created, as shown here:
 
@@ -186,6 +190,46 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
     > **Note:** If you don't see any Output status, click on **View run status** on the top menu or check the notifications for a successful output.
 
     ![](./Images/01/Pg3-CpyOutput.png)
+
+1. If you don’t see any run status in the **Output** pane, click **Run** on the top menu to manually start the pipeline.
+
+    ![09](./Images/fab-ric-ex1-g14.png)
+
+1. If you don’t see any run status in the **Output** pane, click **Run** on the top menu to manually start the pipeline.
+
+    ![09](./Images/fab-ric-ex1-g15.png)
+
+    > **Note:** If any errors appear while running the pipeline, review the details in the notification panel, fix the issue, and run it again. If everything succeeds, you can skip **Step 18** and move on.
+
+    1. If the **Connection** field shows an error, open the dropdown **(1)** and select **Browse all (2)** to choose the correct connection manually.
+
+        ![09](./Images/fab-ric-cor-g2.png)
+    
+    1. From the **Get data** page, select **Copy job (1)** under the **New sources** section to continue.
+
+        ![09](./Images/fab-ric-cor-g3.png)
+    
+    1. Set the following connection details:
+
+        - Connection name: **Connection<inject key="DeploymentID" enableCopy="false"/> (1)**
+        - Click **Sign in (2)** to authenticate if prompted.
+
+            ![09](./Images/fab-ric-cor-g4.png)
+    
+    1. When prompted to sign in, select your **ODL_User** account.  
+        - Or sign in manually using:
+        - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+        - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
+
+            ![09](./Images/fab-ric-cor-g5.png)
+    
+    1. After the connection details are verified and you are signed in, click **Connect** to proceed.
+    
+    1. Once the **Copy job (1)** is configured, click **Run (2)** at the top to execute the pipeline.
+
+        ![09](./Images/fab-ric-cor-g7.png)
+    
+    1. When prompted, click **Save and run** to start the pipeline.
 
 1. In the left pane, click on the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** page, expand **Files (1)** and select the **new_data (2)** folder, refresh the page and verify that the **sales.csv (3)** file has been copied.
 
@@ -202,6 +246,10 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 1. In the workspace, click on **+ New Item (1)**. In the New item panel, search for **Notebook (2)** and select **Notebook (3)**.
 
     ![03](./Images/ex1t5p2.png)
+
+1. In the **New Notebook** window, enter a name for the **Notebook 1 (1)** and click **Create (2)** to continue.
+
+    ![03](./Images/fab-ric-ex1-g17.png)
 
     >**Note:** If **Enhance your notebook experience with AI tools** wizard opens, click **Skip tour**.
 
@@ -232,6 +280,8 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 1. Hover under the parameters cell, use the **+ Code** button to add a new code cell. 
 
      ![](./Images/E2-T4-S9.png) 
+
+     > **Note:** The **+ Code** button may not be immediately visible. Hover your cursor just below the parameters cell, and it will appear.
 
 1. Add the following code to it:
 
@@ -278,6 +328,10 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
     ```
     
     > **Note**: To run the above code, you need to replace the <abfs_path> with your abfs path
+
+    > **Note**: To get the ABFS path of the folder, click the **Ellipsis (...) (1)** next to the **new_data** folder and select **Copy ABFS path (2)**.
+
+    ![.](./Images/fab-ric-ex1-g21.png)
 
 1. When the notebook run has completed, click on your  **Lakehouse** pane on the left, in the **Ellipsis (...)** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
 

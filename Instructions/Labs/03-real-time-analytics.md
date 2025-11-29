@@ -175,7 +175,11 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
 
 In this task, you will use Delta tables to handle streaming data, leveraging their capabilities for real-time data processing. Specifically, you will implement a Delta table as a sink for streaming data in a simulated Internet of Things (IoT) scenario, utilizing the Spark Structured Streaming API.
 
-1. Navigate back to your workspace and open **Load Sales Notebook**. Add a new code cell in the notebook using **+ Code**. Then, in the new cell, add the following code and run it:
+1. Navigate back to your workspace and open **Load Sales Notebook**.
+
+    ![05](./Images/fab-ric-ex1-g31.png)
+
+1. Add a new code cell in the notebook using **+ Code**. Then, in the new cell, add the following code and run it:
 
    ```python
    from notebookutils import mssparkutils
@@ -264,7 +268,13 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
    deltastream.stop()
     ```
 
+    ![05](./Images/fab-ric-ex1-g33.png)
+
     >**Note**: This code stops the stream.
+
+1. Click the **Stop (■)** button to end the session before proceeding.
+
+    ![05](./Images/fab-ric-ex1-g35.png)
 
 ## Summary
 

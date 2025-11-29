@@ -106,21 +106,21 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
 
-     ![04](./Images/Sign1.png)
+     ![04](./Images/fab-ric-gs-g1.png)
      
-3. Now enter the following password and click on **Sign in**.
+3. Now enter the following **Temporary Access Pass (1)** and click on **Sign in (2)**.
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject> 
+   - **Temporary Access Pass** <inject key="AzureAdUserPassword"></inject> 
 
-      ![05](./Images/Sign2.png)
+      ![05](./Images/fab-ric-gs-g2.png)
      
 1. If you see a pop-up **Stay Signed in?**, click **No**.
 
-   ![05](./Images/Sign3.png)
+   ![05](./Images/fab-ric-gs-g3.png)
 
 1. You will be navigated to the Power BI Home page.
 
-   ![05](./Images/Power1.png)
+   ![05](./Images/fab-ric-gs-g4.png)
 
 ## Support Contact
 
