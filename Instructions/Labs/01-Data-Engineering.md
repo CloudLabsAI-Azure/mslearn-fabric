@@ -121,7 +121,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
 1. In the **Copy data** wizard, on the **Choose data source** page, search for **Http (1)** and select the **Http (2)** source from the results.
 
-   ![](./Images/Lake10.png)
+   ![](./Images/E1T4S5.png)
 
 1. In the **Connection settings** pane, enter the following settings for the connection to your data source:
     
@@ -135,11 +135,11 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
     - Leave everything else as default
     - Click on **Next (5)**
   
-      ![03](./Images/ex1t4p6.png)
+      ![03](./Images/E1T4S6.png)
     
 1. On the **Connect to data source** pane, keep the default settings and click **Next**.
     
-    ![05](./Images/Lake12.png)
+    ![05](./Images/E1T4S7.png)
    
 1. Wait for the data to be sampled, then verify the following settings:
 
@@ -149,23 +149,21 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
    - Click **Preview data (4)** to view a sample of the data.
    - After reviewing, close the preview and click **Next (5)**.
 
-        ![Account-manager-start](./Images/lab1-image12.png)
+        ![Account-manager-start](./Images/E1T4S8.png)
 
-        ![Account-manager-start](./Images/lab1-image13.png)
+        ![Account-manager-start](./Images/E1T4S8i.png)
 
 1. On the **Choose data destination** page, click **OneLake catalog (1)** and select the lakehouse **Lakehouse\_<inject key="DeploymentID" enableCopy="false"/> (2)**.
     
-    ![](./Images/Lake13.png)
+    ![](./Images/E1T4S9.png)
 
 1. On the **Choose copy job mode** page, select **Full copy (1)** and then click **Next (2)** to proceed.
 
-    ![](./Images/fab-ric-ex1-g9.png)
+    ![](./Images/E1T4S10.png)
 
 1. On the **Map to destination** page, select **Files (1)**, then set **Folder path** to **new_data (2)** and **File name** to **sales.csv (3)**.
     
-    ![08](./Images/fab-ric-ex1-g10.png)
-
-    ![08](./Images/fab-ric-ex1-g11.png)
+    ![08](./Images/E1T4S11.png)
 
 1. Set the following file format options:
 
@@ -175,11 +173,11 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
    - Row delimiter: **Line feed (\n) (4)**
    - Click **Next (5)**
    
-        ![09](./Images/fab-ric-ex1-g12.png)
+        ![09](./Images/E1T4S12.png)
 
 1. On the **Review + save** page, verify the source and destination details, then click **Save (1)** to create and run the copy job.
 
-    ![09](./Images/fab-ric-cor-g1.png)
+    ![09](./Images/E1T4S13.png)
 
 1. A new pipeline containing a **Copy data** activity is created, as shown here:
 
