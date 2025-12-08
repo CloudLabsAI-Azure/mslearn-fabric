@@ -73,7 +73,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
    ![](./Images/fab-ric-ex1-g3.png)
 
-   ![](./Images/fab-ric-ex1-g4.png)
+   ![](./Images/E1T3S1ii.png)
    
 1. In the **Welcome to the Fabric view** window, click **Cancel**.
 
