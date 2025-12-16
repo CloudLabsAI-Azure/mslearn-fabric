@@ -171,7 +171,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
    - Click **File format Settings (2)**
    - Column delimiter: **Comma (,) (3)**
    - Row delimiter: **Line feed (\n) (4)**
-   - Click **Next (5)**
+   - Leave all other settings as default and Click **Next (5)**
    
         ![09](./Images/E1T4S12.png)
 
