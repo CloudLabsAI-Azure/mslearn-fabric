@@ -137,7 +137,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
   
       ![03](./Images/E1T4S6.png)
     
-1. On the **Connect to data source** pane, keep the default settings and click **Next**.
+1. On the **Choose data** pane, keep the default settings and click **Next**.
     
     ![05](./Images/E1T4S7.png)
    
@@ -165,10 +165,10 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
     
     ![08](./Images/E1T4S11.png)
 
-1. Set the following file format options:
+1. Set the following file format options and leave all other settings at their default values:
 
    - File format: **DelimitedText (1)**
-   - Click **File format settings (2)**
+   - Click **File format Settings (2)**
    - Column delimiter: **Comma (,) (3)**
    - Row delimiter: **Line feed (\n) (4)**
    - Click **Next (5)**
