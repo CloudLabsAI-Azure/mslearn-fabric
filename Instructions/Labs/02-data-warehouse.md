@@ -119,7 +119,7 @@ In this task, you’ll set up the foundation of your data warehouse. You’ll cr
 
 1. Now, from the toolbar at the top, click **New semantic model**.
 
-    ![](./Images/e2t3p1.png)
+    ![](./Images/E2T2S15.png)
 
 1. In the new semantic model window, name it **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (1)**. Then navigate to **Schemas > dbo > Tables (2)** and select the following tables and then click **Confirm (3)**:
 
@@ -141,13 +141,13 @@ In this task, you’ll set up the foundation of your data warehouse. You’ll cr
 
 In this task, you will create a relational data warehouse consisting of fact and dimension tables, where fact tables hold numeric measures for analysis and dimension tables store entity attributes. You'll define relationships between tables in Microsoft Fabric to build a data model for efficient business performance analysis.
 
-1. From the left apne, click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and select **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)** Semantic model.
+1. From the left pane, click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and select **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)** Semantic model.
 
-    ![](./Images/e2t3p3.png)
+    ![](./Images/E2T3S1.png)
 
 1. Click on **Open semantic model**, from the toolbar on the top. 
 
-    ![](./Images/e2t3p4.png)
+    ![](./Images/E2T3S2.png)
 
 1. In the top right corner, click on **Viewing (1)** drop-down and select **Editing (2)**.
 
@@ -222,7 +222,7 @@ In this task, you will query data warehouse tables using SQL to retrieve and ana
 
 1. **Run** the modified query and review the results, which now include Sales Revenue aggregated by Year, Month, and Sales Region.
 
-    ![](./Images/e2t3p11.png)
+    ![](./Images/E2T4S4.png)
 
 ## Task 5: Create a view
 
@@ -265,7 +265,7 @@ In this task, you will create a visual query using the graphical query designer 
 
 1. On the **Home** menu, from the **New SQL query (1)** drop-down and select **New visual query (2)**.
 
-    ![](./Images/Ware7.png)
+    ![](./Images/E2T6S1.png)
 
 1. From Tables, drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
@@ -323,7 +323,7 @@ In this task, you will visualize your data from a single query or your data ware
       - **ProductKey**
       - **ProductAltKey** 
 
-        ![03](./Images/e2t7p2.png)
+        ![03](./Images/E2T7S2ii.png)
 
     > **Note:** If the screen stutters while making these changes, try refreshing the browser window.
 

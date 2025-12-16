@@ -19,13 +19,15 @@ You will be able to complete the following tasks:
 
 In this task, you will create a KQL database to facilitate querying of static or streaming data. You will define a table within the KQL database and ingest sales data from a file to enable effective analysis using Kusto Query Language (KQL).
 
-1. In the left pane, navigate to your Workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new Eventhouse.
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Eventhouse**.
 
-    ![](./Images/Lake2.png)
+    ![](./Images/fabricnav.png)
+
+    ![](./Images/fabricnav2.png)
    
 1. In the New item section, search for **Eventhouse (1)** and select **Eventhouse (2)** from the list.
 
-    ![](./Images/Real1.png)
+    ![](./Images/E3T1S2.png)
 
 1. Create a new **Eventhouse** with the name **Eventhouse-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Create (2)**.
 
@@ -45,7 +47,7 @@ In this task, you will create a KQL database to facilitate querying of static or
 
    - Click on **Create (2)**.
 
-     ![](./Images/Real2.png)
+     ![](./Images/E3T1S6.png)
 
 1. In the center of the screen, click on **Get data (1)** and then select **Local file (2)**.
 
@@ -80,7 +82,7 @@ In this task, you will use Kusto Query Language (KQL) to query the sales table i
 
 1. Make sure you have the **sales** table highlighted. Click on **Ellipsis (...) (1)** next to the **sales** table, select the **Query with code (2)**, and then click on **Show any 100 records (3)**.
 
-    ![](./Images/Real4.png)
+    ![](./Images/E3T2S1.png)
 
 1. A new pane will open with the query and its result. 
 
@@ -120,9 +122,9 @@ In this task, you will use Kusto Query Language (KQL) to query the sales table i
 
     ![](./Images/e3t2p8.png)
 
-1. From the top left corner select the **KQL-Database<inject key="DeploymentID" enableCopy="false"/> (1)** and rename it to **Revenue by Product (2)**.
+1. From the top open window, select the **KQL-Database<inject key="DeploymentID" enableCopy="false"/> (1)** and rename it to **Revenue by Product (2)**.
 
-    ![](./Images/e3t2p9.png)
+    ![](./Images/E3T2S9.png)
 
 ## Task 3: Create a Power BI report from a KQL Queryset
 
@@ -175,9 +177,9 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
 
 In this task, you will use Delta tables to handle streaming data, leveraging their capabilities for real-time data processing. Specifically, you will implement a Delta table as a sink for streaming data in a simulated Internet of Things (IoT) scenario, utilizing the Spark Structured Streaming API.
 
-1. Navigate back to your workspace and open **Load Sales Notebook**.
+1. In the left pane, click oto your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and then open **Load Sales Notebook (2)** that is listed under your workspace.
 
-    ![05](./Images/fab-ric-ex1-g31.png)
+    ![05](./Images/E3T4S1.png)
 
 1. Add a new code cell in the notebook using **+ Code**. Then, in the new cell, add the following code and run it:
 
@@ -274,7 +276,7 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
 
 1. Click the **Stop (■)** button to end the session before proceeding.
 
-    ![05](./Images/fab-ric-ex1-g35.png)
+    ![05](./Images/E3T4S13.png)
 
 ## Summary
 
