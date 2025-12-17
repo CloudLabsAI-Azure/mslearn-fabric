@@ -58,27 +58,25 @@ In this task, you’ll create a **Dataflow Gen2** in Microsoft Fabric, import a 
 
 1. To give you a clearer view of everything Copilot is doing, expand the UI slightly to reveal what’s happening behind the scenes.
 
-1. Expand **Query settings** (these are the steps in the query that bring in the data)
+   - **Query settings** (these are the steps in the query that bring in the data)
    
-   ![New dataflow.](./Images/e5t1p7.png)
+      ![New dataflow.](./Images/e5t1p7.png)
 
-1. **View menu**: Look for the option or menu labeled "View" in the toolbar. Click on it to reveal a dropdown menu.
+   - **View menu**: Look for the option or menu labeled "View" in the toolbar. Click on it to reveal a dropdown menu.
 
-   ![New dataflow.](./Images/e5t1p8.png)
+      ![New dataflow.](./Images/e5t1p8.png)
 
-1. **Diagram View**: From the drop-down menu, select "Diagram View." This will switch your view to a visual representation of your code.
+   - **Diagram View**: From the drop-down menu, select "Diagram View." This will switch your view to a visual representation of your code.
 
-   ![New dataflow.](./Images/e5t1p9.png)
+      ![New dataflow.](./Images/e5t1p9.png)
 
-1. **Script View**: Once you're in Script View, you should be able to see the M-Code that Copilot has generated. This is the underlying code representation of the actions or commands depicted in the Diagram View.
+   - **Script View**: Once you're in Script View, you should be able to see the M-Code that Copilot has generated. This is the underlying code representation of the actions or commands depicted in the Diagram View.
 
-   ![New dataflow.](./Images/e5t1p10.png)
+      ![New dataflow.](./Images/e5t1p10.png)
 
-1. Looking at the data, notice the Item Column. This is really three different fields, which contains a short description of the item, a color, and a size.
+1. Looking at the data, notice the **Item** column. This is really three different fields, which contains a **short description of the item, a color, and a size**.
 
-1.	The fields are not consistently delimited (' ' and then ',')
-
-1. Let's use Copilot to clean this up. Type the following into **Copilot chat window**:
+1.	The fields are not consistently delimited (' ' and then ','). Let's use Copilot to clean this up. Type the following into **Copilot chat**:
  
     ```
     In the Item column, replace the ',' with ' '
@@ -91,13 +89,13 @@ In this task, you’ll create a **Dataflow Gen2** in Microsoft Fabric, import a 
 1. Type the following query into Copilot:
  
     ```
-    Split the Item column on the ' ', creating two new fields called Description and Color
+    Split the Item column by space into two new columns named Description and Color.
     ```
  
 1. Type the following query into Copilot:
  
     ```
-    Split the Item column on the ' ', creating two new fields called Color and Size
+    Split the Color column by space into two new fields named Color and Size
     ```
 
 1. Three new fields have now been created to replace the Item Column.
@@ -116,7 +114,7 @@ In this task, you’ll create a **Dataflow Gen2** in Microsoft Fabric, import a 
  
 1. Show that the quantity field for Red bikes is now 10 instead of 1.
 
-   ![New dataflow.](./Images/Inj7.png)
+   ![New dataflow.](./Images/E5T1S17.png)
  
 1. Here is a concise summary highlighting the impacts of Visual Query and M-Query/M-Code scripting:
 

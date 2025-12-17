@@ -18,13 +18,17 @@ You will be able to complete the following tasks:
 
 In this task, you will create a Dataflow (Gen2) to efficiently ingest and transform data from multiple sources for analysis. This process streamlines data preparation, enabling you to prepare the data for further processing and insights.
 
-1. In the left pane, on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** Workspace, click on **+ New item (2)**. In the Search box search for **Dataflow Gen2 (3)** and select **Dataflow Gen2 (4)**. 
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Data Flow Gen 2**.
 
-   ![](./Images/Flow1.png)
+    ![](./Images/fabricnav.png)
 
-1. Leave the **Name** as default, **Uncheck (1)** the **Enable Git integration, deployment pipelines and Public API Scenarios** and click on **Create (2)**.
-   
-   ![](./Images/e8t1p1.png)
+    ![](./Images/fabricnav2.png)
+
+1. Search for **Dataflow Gen2 (1)** and select **Dataflow Gen2 (2)**. Leave the name as default, **Uncheck (3)** the **Enable Git integration, deployment pipelines and Public API scenarios**, and then click on **Create (4)**.
+
+   ![New dataflow.](./Images/E5T1S1i.png)
+
+   ![New dataflow.](./Images/E5T1S1ii.png)
 
 1. From the **Get data** pane, select **Import from a Text/CSV file**.
 
@@ -57,9 +61,14 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
    ![](./Images/e8t1p6.png)
 
-1. Duplicate the existing tab. In the left pane, go to the **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** Lakehouse, click on the **Ellipsis (...) (2)** next to the **orders** file, and then select **Delete (3)**.
+1. Duplicate the current window. From the left pane, click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** Lakehouse. 
 
-   ![](./Images/e8t1p7.png)
+   ![](./Images/E8T1S8.png)
+
+
+1. Hover on **orders** file and click on the **Ellipsis (...) (2)**, and then select **Delete (3)**.
+
+   ![](./Images/E8T1S9.png)
 
 ## Task 2: Add data destination for Dataflow
 
@@ -73,11 +82,11 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
 
 1. In the **Connect to data destination** dialog box, make sure **Create a new connection (1)** is selected and the **<inject key="AzureAdUserEmail"></inject> (2)** account is signed in and then click on **Next (3)**.
 
-   ![](./Images/Flow7.png)
+   ![](./Images/E8T2S2.png)
 
 1. In the **Choose destination target** window, select the **fabric-<inject key="DeploymentID" enableCopy="false"/>** Workspace. Select the **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** then specify the new table name as **orders (2)**, then click **Next (3)**.
 
-   ![Data destination configuration page.](./Images/e8t2p1.png)
+   ![Data destination configuration page.](./Images/E8T2S3.png)
 
 1. On the Destination settings page, observe that **MonthNo** is not selected in the Column mapping, and an informational message is displayed.
  
@@ -87,19 +96,25 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
 
 1. Click on the **Dataflow 2 (1)** on the top left, and rename the dataflow as **Transform Orders Dataflow (2)**.
 
-   ![](./Images/Flow8.png)
+   ![](./Images/E8T2S6.png)
 
 1. Select **Publish** from the bottom right corner to publish the dataflow. Then wait for the **Dataflow** to be created in the workspace.
 
-   ![](./Images/Publish.png)
+   ![](./Images/E8T2S7.png)
 
 ## Task 3: Add a dataflow to a pipeline
 
 In this task, you’ll add a dataflow to a pipeline to streamline the data processing workflow and enable automated data transformations.
 
-1. In the left pane, click on your **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, Select **+ New item (2)**. In the Search box, search for **Data pipeline (3)**, and select **Data pipeline (4)**.
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Data Flow Gen 2**.
 
-   ![](./Images/Flow9.png)
+    ![](./Images/fabricnav.png)
+
+    ![](./Images/fabricnav2.png)
+
+1. In the Search box, search for **Pipeline (1)**, and select **Pipeline (2)**.
+
+   ![](./Images/E8t3S2.png)
 
 1. Set the Name as **Load Orders pipeline (1)** and click on **Create (2)**. This will open the pipeline editor.
 
@@ -109,7 +124,7 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
 
 1. In the **Build a data pipeline to organize and move your data** window, click on **Pipeline activity (1)**, and select **Dataflow (2)** activity to the pipeline.
 
-   ![Empty data pipeline.](./Images/e8t3p1.png)
+   ![Empty data pipeline.](./Images/E8t3S4.png)
 
 1. With the new **Dataflow1** activity selected, go to the **Settings (1)** tab in the bottom. In the **Workspace** drop-down list, choose **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)** and in the **Dataflow** drop-down list, select **Transform Orders Dataflow (3)** (the data flow you created previously).
 
