@@ -23,13 +23,13 @@ You will be able to complete the following tasks:
 
 In this task, you will create a lakehouse and upload files to facilitate data storage and analysis. Using the same workspace, you'll switch to the *Data Science* experience in the portal to manage and utilize the data effectively.
 
-1. In the left pane, go back to your Lakehouse. In the **Explorer** pane, open the **Ellipsis (…) (1)** menu next to the **Files** node, then choose **Upload (2)** > **Upload files (3)**. 
+1. In the left pane, go back to your Lakehouse. In the **Explorer** pane, hover and open the **Ellipsis (…) (1)** menu next to the **Files** node, then choose **Upload (2)** > **Upload files (3)**. 
 
-   ![](./Images/Pg6-S1.png)
+   ![](./Images/E4T1S1.png)
 
 1. In the **Upload files** section, click on the **folder** icon.
 
-    ![](./Images/e4t1p2.png)
+    ![](./Images/E4T1S2.png)
 
 1. Navigate to **`C:\LabFiles\Files` (1)**, select the **churn.csv (2)** file and click on **Open (3)**.   
 
@@ -37,7 +37,7 @@ In this task, you will create a lakehouse and upload files to facilitate data st
 
 1. In the **Upload files** section after **churn.csv** file is added, click **Upload**.
 
-    ![](./Images/e4t1p2(1).png)
+    ![](./Images/E4T1S4.png)
 
 1. After the files have been uploaded, expand **Files** and verify that the CSV file has been uploaded.
 
@@ -47,9 +47,11 @@ In this task, you will create a lakehouse and upload files to facilitate data st
 
 In this task, you will create a notebook to facilitate model training and experimentation. Notebooks offer an interactive environment where you can write and execute code in multiple languages, allowing you to conduct experiments effectively.
 
-1. From the left pane, select the workspace **fabric-<inject key="DeploymentID" enableCopy="false"/>**.
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Eventhouse**.
 
-    ![](./Images/e4t2p1.png) 
+    ![](./Images/fabricnav.png)
+
+    ![](./Images/fabricnav2.png)
 
 2. In the workspace, click on **+ New Item (1)**. In the New Item panel, search for **Notebook (2)** and select **Notebook (3)** from the result.
 
@@ -63,7 +65,7 @@ In this task, you will create a notebook to facilitate model training and experi
 
 1. Select the first cell (which is currently a *code* cell), and then in the dynamic toolbar at its top-right, use the **M&#8595;** button to convert the cell to a *markdown* cell.
 
-    ![](./Images/E5-T2-S3.png)
+    ![](./Images/E4T2S5.png)
 
 1. When the cell changes to a markdown cell, the text it contains is rendered.
 
@@ -238,7 +240,7 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 
 1. In the left pane, navigate to your **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, you will see the **experiment-churn (2)** Experiment created.
 
-    ![](./Images/e4t6p1.png)
+    ![](./Images/E4T6S1.png)
 
 1. Select the `experiment-churn` experiment to open it.
 
@@ -252,7 +254,7 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 
 1. Select the **&#128393;** **(Edit) (4)** button of the graph visualizing the accuracy for each run. 
 
-   ![](./Images/Pg6-ExpChurn-S6.png)
+   ![](./Images/E4T6S6.png)
 
 1. Change the **visualization type** to **bar (1)**. 
 
@@ -260,7 +262,7 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 
 1. Select **Replace (3)** and explore the new graph.
 
-    ![](./Images/Note1.png)
+    ![](./Images/E4T6S9.png)
 
 1. Do the same for the other two runs as well
 
@@ -289,9 +291,9 @@ In this task, you will save the best-performing machine learning model after com
 
    ![](./Images/e4t7p3.png)
 
-1. Select **Create a new model (1)** in the newly opened pop-up window, set the name to **model-churn (2)**, and select **Save (3)**. 
+1. Select **Create a new model (1)** in the newly opened pop-up window, Select the folder **model (2)** set the name to **model-churn (3)**, and select **Save (4)**. 
 
-    ![](./Images/fab-ric-ex1-g40.png)
+    ![](./Images/E4T7S4.png)
 
 1. Select **View ML model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**. 
 
@@ -313,7 +315,7 @@ In this task, you will save your notebook with a meaningful name to preserve you
 
 1. On the notebook menu, select &#9645;**Stop session** to end the Spark session.
 
-    ![](./Images/Spark9.png)
+    ![](./Images/E3T4S13.png)
 
    >**Note:** If you can't see the **Stop Session** option, it means the Spark session has already ended.
 

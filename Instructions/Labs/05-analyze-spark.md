@@ -24,67 +24,76 @@ You will be able to complete the following tasks:
 
 In this task, you will create a lakehouse to organize and analyze your data files. After setting up your workspace, you'll switch to the Data Engineering experience in the portal to initiate the creation of the data lakehouse.
 
-1. In the left pane, navigate to your Workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new Lakehouse.
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Lakehouse**.
 
-    ![](./Images/Lake2.png)
+    ![](./Images/fabricnav.png)
+
+    ![](./Images/fabricnav2.png)
 
 1. In the search box, search **Lakehouse (1)** and select **Lakehouse (2)** from the result.
 
-    ![](./Images/Spark1.png)
+    ![](./Images/E7T1S2.png)
    
 1. Enter the details to create a Lakehouse. 
 
-   - Name: **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**
+    - Name: **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**
+    - Location: **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**
+    -Make sure to **uncheck the box for Lakehouse Schema (3)**
+    - Click on **Create (4)**
 
-    - Click on **Create (2)**
+        ![](./Images/E7T1S3.png)
 
-        ![](./Images/Spark2.png)
+1. Once you're in the lakehouse, hover the mouse on the **Files** folder in the **Explorer** and click on the **Ellipses (...) (1)** menu for **Files**, and select **Upload (2)** followed by **Upload folder (3)**. 
 
-1. Once you're in the lakehouse, navigate to the **Files** folder in the **Explorer** pane, click on the **Ellipses (...) (1)** menu for **Files**, and select **Upload (2)** followed by **Upload folder (3)**. 
+    ![](./Images/E7T1S4.png)
 
-    ![](./Images/Spark3.png)
-
-1. Then navigate to **`C:\LabFiles\Files\orders` (1)** and click **Upload (2)**.
+1. In the **Upload files** section, click on the **folder** icon. Then navigate to **`C:\LabFiles\Files\orders` (1)** and click **Upload (2)**.
    
-    ![](./Images/e7t1p4.png)
+    ![](./Images/E7T1S5.png)
+
+    ![](./Images/E7T1S5i.png)
 
 1. In the **Upload 3 files to this site?** window, click **Upload**.
 
-    ![](./Images/e7t1p5.png)
+    ![](./Images/E7T1S6.png)
 
 1. In the **Upload folder** window, after adding the **orders** folder, click **Upload**.
 
-    ![](./Images/e7t1p6.png)
+    ![](./Images/E7T1S7.png)
 
 1. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
 
-    ![](./Images/e7t1p7.png)
+    ![](./Images/E7T1S8.png)
 
 ## Task 2: Create a notebook
 
 In this task, you will create a notebook to work with data in Apache Spark. Notebooks provide an interactive environment where you can write and run code in multiple languages, while also allowing you to add notes for documentation.
 
-1. In the left pane, navigate to your Workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new notebook.
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Notebook**.
 
-    ![](./Images/Lake2.png)
+    ![](./Images/fabricnav.png)
+
+    ![](./Images/fabricnav2.png)
 
 1. In the search box, search **Notebook (1)** and select **Notebook (2)** from the result.
 
-    ![](./Images/Spark4.png)
+    ![](./Images/E7T2S2.png)
 
     > **Note:** After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
 1. In the **Explorer** tab, click on **Data items (1)**, then select **Add data items (2)** drop-down and choose **Existing data sources (3)**.
 
-    ![.](./Images/notebooka.png)
+    ![.](./Images/E7T2S3.png)
 
 1. Select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** from the options and click on **Connect (2)**.
     
-    ![](./Images/Spark5.png)
+    ![](./Images/E7T2S4.png)
 
     > **Note:** If required, reload the page to get the files and folders.
 
 1. Select the first cell (currently a *code* cell), and then click the **M&#8595;** button in the dynamic toolbar at the top-right to convert it to a **Markdown** cell.
+
+    ![](./Images/E4T2S5.png)
 
 1. Use the **&#128393;** **(Edit)** button to switch the cell to editing mode, then modify the markdown as follows:
 
@@ -106,11 +115,11 @@ In this task, you will load data into a dataframe to prepare it for analysis. Da
 
 1. With the notebook open, expand the **Files** list and select the **orders** folder to display the CSV files alongside the notebook editor, as shown here:
 
-    ![Screenshot of a notebook with a Files pane.](./Images/notebook-files.png)
+    ![Screenshot of a notebook with a Files pane.](./Images/E7T3S1.png)
 
 1. In the **orders (1)** folder, right click on the **2019.csv (2)**, then go to **Load data (3)** and select **Spark (4)**.
 
-   ![](./Images/Pg7-LoadData-S2.png)
+   ![](./Images/E7T3S2.png)
 
 1. A new code cell containing the following code should be added to the notebook:
 
@@ -255,7 +264,7 @@ In this task, you will explore data within a dataframe to gain insights and unde
 
 1. Run the modified code to view the customers who have purchased the *Road-250 Red, 52* product. Note that you can "chain" multiple functions together so that the output of one function becomes the input for the next - in this case, the dataframe created by the **select** method is the source dataframe for the **where** method that is used to apply filtering criteria.
 
-    ![](./Images/e7t4p1.png)
+    ![](./Images/E7T4S1.png)
 
 ## Task 5: Aggregate and group data in a dataframe
 
@@ -459,7 +468,11 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
    ![](./Images/e7t8p1.png) 
 
-1. Use the **Build my own** button at the bottom right of the suggested charts. Then set the options as follows.
+1. Use the **Build my own** button at the bottom right of the suggested charts. 
+
+    ![](./Images/E7T8S4.png) 
+
+1. Then set the options as follows.
     - **Chart type (1):** Bar chart
     - **X-axis (2):** Item
     - **Y-axis (3):** Quantity
@@ -666,9 +679,9 @@ While **matplotlib** enables you to create complex charts of multiple types, it 
 
 In this task, you will save your notebook with a meaningful name to preserve your work after processing the data. Additionally, you will end the Spark session to free up resources and complete your data engineering tasks.
 
-1. In the top left corner, set the **Name** of the notebook from **Notebook 1 (1)** to **Explore Sales Orders Notebook (2)**.
+1. In the top left corner, set the **Name** of the notebook from **Notebook_1 (1)** to **Explore Sales Orders Notebook (2)**.
 
-    ![](./Images/Spark8.png)
+    ![](./Images/E7T9S1.png)
 
 1. On the notebook menu, select **Stop session** to end the Spark session.
 
