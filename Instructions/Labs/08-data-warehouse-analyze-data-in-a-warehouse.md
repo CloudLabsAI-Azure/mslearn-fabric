@@ -16,13 +16,9 @@ You will be able to complete the following task:
 
 In this task, you’ll explore a **Data Warehouse** in Microsoft Fabric, review table relationships, and understand the **semantic model** used in Power BI. With **Copilot**, you’ll generate a sales report, get insights like **Sales by Region**, and create an **executive summary** demonstrating how AI enhances data analysis and reporting.
 
-1. In the left pane, click **Workspaces** and select the workspace **fabric-<inject key="DeploymentID" enableCopy="false"/>**.
+1. In the left pane, click onto your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and then open **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)** that is listed under your workspace.
 
-   ![New dataflow.](./Images/26.png)
- 
-1. Select **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/>** from the list.
-
-   ![](./Images/e6t1p1.png)
+   ![](./Images/E6t1S1.png)
 
 1. In the **Explorer** pane, verify that the **dbo** schema in the data warehouse contains the following four tables:
    
@@ -34,17 +30,17 @@ In this task, you’ll explore a **Data Warehouse** in Microsoft Fabric, review 
 
    - **FactSalesOrder**
 
-      ![01](./Images/02/Pg4-T2-S9.png)  
+      ![01](./Images/E6t1S2.png)  
 
     > **Note:** If the schema takes a while to load, just refresh the browser page.
  
-1. Click on **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/>** Semantic model to open it.
+1. In the left pane, click onto your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and then open **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)** that is listed under your workspace.
 
-   ![](./Images/e6t1p2.png)
+   ![](./Images/E6t1S3.png)
 
 1. Click **Open semantic model** from the top toolbar to view the relationships between the tables in your data warehouse.
 
-    ![](./Images/e2t3p4.png)
+    ![](./Images/E2T3S2.png)
 
 1. In the top-right corner, click the **Viewing (1)** drop-down and select **Editing (2)**.
 
@@ -52,9 +48,9 @@ In this task, you’ll explore a **Data Warehouse** in Microsoft Fabric, review 
 
 1. When you click on the **Relationship (1)** between **FactSalesOrder** and **DimCustomer** and access its **Properties (2)** pop-up on the right of the window, you're essentially examining how these two tables are linked together. This relationship defines how data from these tables can be combined or related when querying or visualizing in Power BI.
 
-     ![](./Images/e6t1p3.png)
+     ![](./Images/E6t1S6.png)
 
-    - This relationship indicates that each record in the "FactSalesOrder" table is associated with a specific customer represented in the "DimCustomer" table. For example, if we have a sales record in "FactSalesOrder" for a particular transaction, we can use this relationship to look up additional details about the corresponding customer from the "DimCustomer" table.
+    - This relationship indicates that each record in the **"FactSalesOrder"** table is associated with a specific customer represented in the **"DimCustomer"** table. For example, if we have a sales record in "**FactSalesOrder"** for a particular transaction, we can use this relationship to look up additional details about the corresponding customer from the **"DimCustomer"** table.
 
     - This linkage is crucial for defining the Semantic Model used by Power BI. The Semantic Model essentially acts as a blueprint that outlines how data elements are interconnected and how they should be interpreted within Power BI. By establishing and defining relationships between tables, we're instructing Power BI on how to navigate and analyze the data effectively.
  
@@ -66,11 +62,11 @@ In this task, you’ll explore a **Data Warehouse** in Microsoft Fabric, review 
 
 1. Locate and click on the **Copilot** feature within the tool or platform you're using.
 
-   ![](./Images/13.png)
+   ![](./Images/E6t1S9.png)
 
 1. If the pop-up titled **Welcome to Copilot in Power BI** appears, proceed by selecting **Get started**.
 
-   ![](./Images/14.png)
+   ![](./Images/E6t1S10.png)
 
 1. Locate the **Prompt guide (1)** icon, then click on it to access its **Menu (2)**.
 
@@ -113,11 +109,11 @@ In this task, you’ll explore a **Data Warehouse** in Microsoft Fabric, review 
  
 1. **Expand each suggestion** to see the text of the prompt and what will be created. This helps illustrate the range of suggestions Copilot can provide.
  
-1. Select the **Sales Performance by Region (1)** report as it's usually a decent report to work with. Note that the report generated can vary.
+1. Select the **Sales by Region (1)** report as it's usually a decent report to work with. Note that the report generated can vary.
   
     >**Note:** Click **Edit (2)** to demonstrate that you can adjust the query and customize the report.
 
-   ![](./Images/Analyze3.png)
+   ![](./Images/E6t1S20.png)
 
 1. Clear the input box and click **Prompt guide** icon and select **Give me an executive summary**:
     
