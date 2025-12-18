@@ -24,7 +24,7 @@ In this task, you will design and implement a data warehouse by organizing data 
 
 1. Navigate to your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new warehouse.
 
-    ![](./Images/Lake2.png)
+   ![](./Images/fab-ric-ex1-g7.png)
    
 1. In the search box, search **Warehouse (1)** and select **Warehouse** **(2)** from the list.
     
