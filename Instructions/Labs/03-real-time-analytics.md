@@ -51,7 +51,7 @@ In this task, you will create a KQL database to facilitate querying of static or
 
 1. In the center of the screen, click on **Get data (1)** and then select **Local file (2)**.
 
-   ![01](./Images/E4T1S4.png)
+   ![01](./Images/E3T1S7.png)
 
 1. Use the wizard to import the data into a new table by selecting the following options:
    
