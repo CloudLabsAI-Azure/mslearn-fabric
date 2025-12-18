@@ -72,16 +72,15 @@ In this task, you’ll create a **Dataflow Gen2** in Microsoft Fabric, import a 
 
    - **Script View**: Once you're in Script View, you should be able to see the M-Code that Copilot has generated. This is the underlying code representation of the actions or commands depicted in the Diagram View.
 
-      ![New dataflow.](./Images/e5t1p10.png)
+   ![New dataflow.](./Images/e5t1p10.png)
 
 1. Looking at the data, notice the **Item** column. This is really three different fields, which contains a **short description of the item, a color, and a size**.
-
-1.	The fields are not consistently delimited (' ' and then ','). Let's use Copilot to clean this up. Type the following into **Copilot chat**:
+  
+1. The fields are not consistently delimited (' ' and then ','). Let's use Copilot to clean this up. Type the following into **Copilot chat**:
  
-      ```
+   ```
       In the Item column, replace the ',' with ' '
-      ```
- 
+   ```
 1. The Item column now consistently has a delimiter of **' '**.
 
    ![New dataflow.](./Images/E5T1S16.png)
