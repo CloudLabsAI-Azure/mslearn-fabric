@@ -72,7 +72,7 @@ In this task, you’ll create a **Dataflow Gen2** in Microsoft Fabric, import a 
 
    - **Script View**: Once you're in Script View, you should be able to see the M-Code that Copilot has generated. This is the underlying code representation of the actions or commands depicted in the Diagram View.
 
-   ![New dataflow.](./Images/e5t1p10.png)
+      ![New dataflow.](./Images/e5t1p10.png)
 
 1. Looking at the data, notice the **Item** column. This is really three different fields, which contains a **short description of the item, a color, and a size**.
   
