@@ -77,9 +77,11 @@ In this task, you’ll create a **Dataflow Gen2** in Microsoft Fabric, import a 
 1. Looking at the data, notice the **Item** column. This is really three different fields, which contains a **short description of the item, a color, and a size**.
   
 1. The fields are not consistently delimited (' ' and then ','). Let's use Copilot to clean this up. Type the following into **Copilot chat**:
-   ```
-    In the Item column, replace the ',' with ' '
-   ```
+   
+    ```
+      In the Item column, replace the ',' with ' '
+    ```
+   
 1. The Item column now consistently has a delimiter of **' '**.
 
    ![New dataflow.](./Images/E5T1S16.png)
