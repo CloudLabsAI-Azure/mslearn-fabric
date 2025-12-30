@@ -50,7 +50,7 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
    - Click on **Create (2)**
 
-     ![](./Images/e5p6t1p3.png)
+     ![](./Images/E1T3S5-1.png)
 
 1. Once you're in the lakehouse, navigate to the **Files** folder in the **Explorer** pane, click on the **Ellipses ... (1)** menu for **Files**, and select **Upload (2)** followed by **Upload folder (3)**.
 

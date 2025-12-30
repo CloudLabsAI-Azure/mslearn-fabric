@@ -39,7 +39,7 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right again, and verify **Trial Status (2)**.
 
-    ![Account-manager-start](./Images/E1T1S4-1108.png)
+    ![Account-manager-start](./Images/E1T1S5-2.png)
 
 ## Task 2: Create a workspace
 
@@ -89,7 +89,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 1. Enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and Click on **Create (2)**.
 
-    ![](./Images/e1p2t3p5.png)
+    ![](./Images/E1T3S5-1.png)
 
 1. On the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** tab in the left pane, click the **Ellipsis (...) (1)** menu for the **Files** node, click on **New subfolder (2)**.
     
@@ -296,7 +296,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
 1. Verify that your notebooks look similar to the one shown in the image below, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
-    ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/E1T5S10-1108.png)
+    ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/E1T5S11.png)
 
 1. When the notebook run has completed, click on your  **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** pane on the left, in the **Ellipsis (...) (2)** menu for **Tables** select **Refresh (3)** and verify that a **sales (4)** table has been created.
 
