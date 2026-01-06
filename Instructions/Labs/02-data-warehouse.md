@@ -24,7 +24,7 @@ In this task, you will design and implement a data warehouse by organizing data 
 
 1. Navigate to your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new warehouse.
 
-   ![](./Images/fab-ric-ex1-g7.png)
+   ![](./Images/newitem.png)
    
 1. In the search box, search **Warehouse (1)** and select **Warehouse** **(2)** from the list.
     
@@ -45,7 +45,7 @@ In this task, you’ll set up the foundation of your data warehouse. You’ll cr
 
 1. In your new warehouse, under **Build a warehouse**, select the **T-SQL** tile.
 
-   ![](./Images/e2t2p1.png)
+   ![](./Images/tsq.png)
 
 1. Enter the following **SQL Code (1)** and click the **&#9655; Run (2)** button to run the SQL script, which creates a new table named **DimProduct** in the **dbo** schema of the data warehouse.
 
@@ -80,7 +80,9 @@ In this task, you’ll set up the foundation of your data warehouse. You’ll cr
    GO
     ```
 
-1. **Run** the above query to insert three rows into the **DimProduct** table.
+1. **Run** the **above query (1)** by clicking on **Run (2)** to insert three rows into the **DimProduct** table.
+
+    ![](./Images/dimins.png)
 
 1. In the **Explorer** pane, select the **DimProduct** table and verify that the three rows have been added to the table.
 
@@ -147,7 +149,7 @@ In this task, you will create a relational data warehouse consisting of fact and
 
 1. Click on **Open semantic model**, from the toolbar on the top. 
 
-    ![](./Images/E2T3S2.png)
+    ![](./Images/upE2T3S2.png)
 
 1. In the top right corner, click on **Viewing (1)** drop-down and select **Editing (2)**.
 
@@ -289,7 +291,7 @@ In this task, you will create a visual query using the graphical query designer 
 
     ![](./Images/e2t6p1.png)
 
-1. If you're interested in looking at data for a single product, per a manager's request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
+1. If you're interested in looking at data for a single product, as per a manager's request, you can now use the **ProductName** column to filter the data in the query. Filter the **ProductName** column to look at **Cable Lock** data only.
 
     ![](./Images/E3-T6-S7.png)
 
@@ -300,6 +302,8 @@ In this task, you will create a visual query using the graphical query designer 
 In this task, you will visualize your data from a single query or your data warehouse to gain insights and present findings effectively. Before creating visualizations, it's important to hide any columns or tables that may clutter the report and are not user-friendly for report designers.
 
 1. Switch to the browser tab where the **Model layout** view is open.
+
+    >**Note:** If the browser tab is not open, navigate to your Semantic model (as done in earlier steps) by duplicating the tab. Please make sure to switch to editing by click on **Viewing** drop-down and select **Editing**.
 
 1. Hide the following columns in your Fact and Dimension tables that are not necessary to create a report. Note that this does not remove the columns from the model; it simply hides them from view on the report canvas.
    
@@ -357,7 +361,7 @@ In this task, you will visualize your data from a single query or your data ware
 
 1. In the **Save your report** window, select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, enter a name as **Sales Report (2)**, and click the **Save (3)** button .
 
-   ![03](./Images/e2t7p8.png)
+   ![03](./Images/salesrprt.png)
 
 ## Summary
 
