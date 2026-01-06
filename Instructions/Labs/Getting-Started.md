@@ -76,7 +76,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
 
    ![08](./Images/GS3.png)
 
-   >**Note:** You will see the DeploymentID value on the **Environment** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
+   >**Note:** You will see the **DeploymentID** value on the **Environment** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
 
 ## Managing Your Virtual Machine
  
@@ -106,17 +106,17 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
 
-     ![04](./Images/fab-ric-gs-g1.png)
+     ![04](./Images/upfab-ric-gs-g1.png)
      
 3. Now enter the following **Temporary Access Pass (1)** and click on **Sign in (2)**.
  
    - **Temporary Access Pass** <inject key="AzureAdUserPassword"></inject> 
 
-      ![05](./Images/fab-ric-gs-g2.png)
+      ![05](./Images/upfab-ric-gs-g2.png)
      
 1. If you see a pop-up **Stay Signed in?**, click **No**.
 
-   ![05](./Images/fab-ric-gs-g3.png)
+   ![05](./Images/upfab-ric-gs-g3.png)
 
 1. You will be navigated to the Power BI Home page.
 
