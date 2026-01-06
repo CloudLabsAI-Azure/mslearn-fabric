@@ -19,7 +19,7 @@ You will be able to complete the following tasks:
 
 In this task, you will create a KQL database to facilitate querying of static or streaming data. You will define a table within the KQL database and ingest sales data from a file to enable effective analysis using Kusto Query Language (KQL).
 
-1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Eventhouse**.
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**, then click on **+ New item (3)** to create a new **Eventhouse**.
 
     ![](./Images/fabricnav.png)
 
@@ -27,7 +27,7 @@ In this task, you will create a KQL database to facilitate querying of static or
    
 1. In the New item section, search for **Eventhouse (1)** and select **Eventhouse (2)** from the list.
 
-    ![](./Images/E3T1S2.png)
+    ![](./Images/evt.png)
 
 1. Create a new **Eventhouse** with the name **Eventhouse-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Create (2)**.
 
@@ -47,11 +47,11 @@ In this task, you will create a KQL database to facilitate querying of static or
 
    - Click on **Create (2)**.
 
-     ![](./Images/E3T1S6.png)
+     ![](./Images/kqlcr.png)
 
 1. In the center of the screen, click on **Get data (1)** and then select **Local file (2)**.
 
-   ![01](./Images/E3T1S7.png)
+   ![01](./Images/getdatalocalfile.png)
 
 1. Use the wizard to import the data into a new table by selecting the following options:
    
@@ -134,7 +134,7 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
 
 1. Select **Create Power BI Report** and wait for the report editor to open.
 
-    ![Screenshot of a report from a KQL query.](./Images/imagekql.png)
+    ![Screenshot of a report from a KQL query.](./Images/upimagekql.png)
 
 1. In the report editor, in the **Data** pane, expand **Kusto Query Result** and select the checkboxes for **Item** and **TotalNet Revenue** fields.
 
@@ -142,7 +142,11 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
 
     ![Screenshot of a report from a KQL query.](./Images/update3.png)
 
-1. In the **Power BI** window, in the **File** menu, select **Save**. Then save the report as **Revenue by Item** in the **fabric-<inject key="DeploymentID" enableCopy="false"/>** where your lakehouse and KQL database are defined using a **Non-Business** sensitivity label from the drop-down. Click on **Continue**
+1. In the **Power BI (preview)** window, in the **File (1)** menu, select **Save (2)**. Then save the report as **Revenue by Item (3)** in the **fabric-<inject key="DeploymentID" enableCopy="false"/> (4)** where your lakehouse and KQL database are defined using a **Non-Business** sensitivity label from the drop-down. Click on **Continue (5)**
+
+    ![](./Images/bisave.png)
+
+    ![](./Images/rbi.png)
 
     >**Note:** If you are not getting option to **Save** the report in the **fabric-<inject key="DeploymentID" enableCopy="false"/>** then follow the below steps:
 
@@ -160,7 +164,7 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
 
     - Select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** where you want to save the copied report, enter a name as **Revenue by Item (2)**, and click the **Save (3)** button to finalize the copy.
        
-         ![](./Images/41.png)
+         ![](./Images/up41.png)
 
         >**Note**: Refresh the Workspace page if necessary to view all of the items it contains.
 
@@ -181,7 +185,7 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
 
     ![05](./Images/E3T4S1.png)
 
-1. Add a new code cell in the notebook using **+ Code**. Then, in the new cell, add the following code and run it:
+1. Add a new code cell in the notebook using **+ Code**. Then, in the new cell, add the following **code (1)** and **run (2)** it:
 
    ```python
    from notebookutils import mssparkutils
@@ -213,9 +217,11 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
    print("Source stream created...")
    ```
 
-1. Ensure the message **Source stream created...** is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, representing readings from hypothetical IoT devices.
+    ![05](./Images/streamcr.png)
 
-1. Add a new code cell, and run the following code:
+1. Ensure the message **Source stream created... (3)** is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, representing readings from hypothetical IoT devices.
+
+1. Add a **new code cell**, and run the following **code (1)** by clicking on **Run (2)** button:
 
     ```python
    # Write the stream to a delta table
@@ -225,15 +231,19 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
    print("Streaming to delta sink...")
     ```
 
+    ![05](./Images/sink.png)
+
 1. This code writes the streaming device data in delta format to a folder named **iotdevicedata**. Because the path for the folder location is in the **Tables** folder, a table will automatically be created for it.
 
-1. Add a new code cell, and run the following code:
+1. Add a new code cell, and **run** the following **code**:
 
     ```SQL
    %%sql
 
    SELECT * FROM IotDeviceData;
     ```
+
+    ![05](./Images/star.png)
 
 1. This code queries the **IotDeviceData** table, which contains the device data from the streaming source.
 
@@ -252,9 +262,11 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
    mssparkutils.fs.put(inputPath + "more-data.txt", more_data, True)
     ```
 
+    ![05](./Images/moredata.png)
+
 1. This code writes more hypothetical device data to the streaming source.
 
-1. Re-run the cell containing the following code:
+1. **Re-run (1)** the cell containing the following code:
 
     ```SQL
    %%sql
@@ -262,7 +274,9 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
    SELECT * FROM IotDeviceData;
     ```
 
-1. This code queries the **IotDeviceData** table again, which should now include the additional data that was added to the streaming source.
+    ![05](./Images/rerun.png)
+
+1. This code queries the **IotDeviceData** table again, which should now include the **additional data (2)** that was added to the streaming source.
 
 1. Add a new code cell, and run the following code:
 
@@ -270,7 +284,7 @@ In this task, you will use Delta tables to handle streaming data, leveraging the
    deltastream.stop()
     ```
 
-    ![05](./Images/fab-ric-ex1-g33.png)
+    ![05](./Images/dstop.png)
 
     >**Note**: This code stops the stream.
 
