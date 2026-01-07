@@ -24,9 +24,9 @@ In this task, you’ll create a **Dataflow Gen2** in Microsoft Fabric, import a 
 
 1. Search for **Dataflow Gen2 (1)** and select **Dataflow Gen2 (2)**. Leave the name as default, **Uncheck (3)** the **Enable Git integration, deployment pipelines and Public API scenarios**, and then click on **Create (4)**.
 
-   ![New dataflow.](./Images/E5T1S1i.png)
+   ![New dataflow.](./Images/dfsr.png)
 
-   ![New dataflow.](./Images/E5T1S1ii.png)
+   ![New dataflow.](./Images/dfsrcr.png)
 
 1. After a few seconds, the Power Query editor for your new dataflow will open. From there, select **Import from a Text/CSV file**.
 
@@ -100,7 +100,7 @@ In this task, you’ll create a **Dataflow Gen2** in Microsoft Fabric, import a 
 
 1. Three new fields have now been created to replace the Item Column.
 
-   ![New dataflow.](./Images/Inj6.png)
+   ![New dataflow.](./Images/upInj6.png)
  
    >**Note:** Copilot can do more than transform the table; we can actually change data as well.
 

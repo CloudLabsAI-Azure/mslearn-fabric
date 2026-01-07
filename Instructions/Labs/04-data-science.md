@@ -47,19 +47,19 @@ In this task, you will create a lakehouse and upload files to facilitate data st
 
 In this task, you will create a notebook to facilitate model training and experimentation. Notebooks offer an interactive environment where you can write and execute code in multiple languages, allowing you to conduct experiments effectively.
 
-1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Eventhouse**.
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Notebook**.
 
     ![](./Images/fabricnav.png)
 
     ![](./Images/fabricnav2.png)
 
-2. In the workspace, click on **+ New Item (1)**. In the New Item panel, search for **Notebook (2)** and select **Notebook (3)** from the result.
+2. In the New Item panel, search for **Notebook (1)** and select **Notebook (2)** from the result.
 
-    ![](./Images/e4t2p2.png)
+    ![](./Images/notebookcr.png)
 
 1. In the **New Notebook** window, keep the default notebook **Name (1)** unchanged, and then click **Create (2)** to continue.
 
-    ![](./Images/fab-ric-ex1-g34.png)
+    ![](./Images/upfab-ric-ex1-g34.png)
 
 1. After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
 
@@ -112,6 +112,8 @@ In this task, you will load data into a dataframe to prepare for model training.
 
 1. Use the **&#9655; Run cell** button on the left of the cell to run it.
 
+    ![](./Images/e4t3s7.png)
+
     > **Note:** If the Spark session doesn't start or you get an error, click on the **Run all** button on the ribbon to restart the Spark session.
     
     > **Note:** Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
@@ -126,7 +128,7 @@ In this task, you will load data into a dataframe to prepare for model training.
 
 In this task, you will train a machine learning model to predict customer churn using the prepared data. Utilizing the Scikit-Learn library, you'll train the model and track its performance with MLflow to ensure effective monitoring and evaluation.
 
-1. Use the **+ Code** icon below the cell output to add a new code cell to the notebook, and enter the following code in it:
+1. Use the **+ Code (1)** icon below the cell output to add a new code cell to the notebook, and enter the following **code (2)** in it:
 
     ```python
    from sklearn.model_selection import train_test_split
@@ -137,7 +139,10 @@ In this task, you will train a machine learning model to predict customer churn 
    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.30, random_state=0)
     ```
 
-1. Run the code cell you added, and note you're omitting 'CustomerID' from the dataset, and splitting the data into a training and test dataset.
+1. **Run (3)** the code cell you added, and note you're omitting 'CustomerID' from the dataset, and splitting the data into a training and test dataset.
+
+    ![](./Images/sklearn.png)
+
 1. Add a new code cell to the notebook, enter the following code in it, and run it:
     
     ```python
@@ -145,7 +150,9 @@ In this task, you will train a machine learning model to predict customer churn 
    experiment_name = "experiment-churn"
    mlflow.set_experiment(experiment_name)
     ```
-    
+
+    ![](./Images/mlflow.png)
+
 1. The code creates an MLflow experiment named `experiment-churn`. Your models will be tracked in this experiment.
 
 1. Add a new code cell to the notebook, enter the following code in it, and run it:
@@ -160,7 +167,9 @@ In this task, you will train a machine learning model to predict customer churn 
 
        mlflow.log_param("estimator", "LogisticRegression")
     ```
-    
+
+    ![](./Images/linear.png)
+
 1. The code trains a classification model using Logistic Regression. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `LogisticRegression`.
 
 1. Add a new code cell to the notebook, enter the following code in it, and run it:
@@ -178,6 +187,8 @@ In this task, you will train a machine learning model to predict customer churn 
 
     >**Note:** If the node fails, attempt to re-run the previous node and then execute the existing node.
 
+    ![](./Images/tree.png)
+
 1. The code trains a classification model using a Decision Tree Classifier. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
 
 ## Task 5: Use MLflow to search and view your experiments
@@ -193,6 +204,8 @@ In this task, you will use MLflow to search for and view your experiments relate
        print(exp.name)
     ```
 
+    ![](./Images/expt5.png)
+
 1. Add a new code cell to the notebook, enter the following code, and run it to retrieve a specific experiment. You can get it by its name:
 
     ```python
@@ -201,17 +214,23 @@ In this task, you will use MLflow to search for and view your experiments relate
    print(exp)
     ```
 
+    ![](./Images/expcrn.png)
+
 1. Add a new code cell to the notebook, enter the following code to use an experiment name, and you can retrieve all jobs of that experiment:
 
     ```python
    mlflow.search_runs(exp.experiment_id)
     ```
 
+    ![](./Images/idexp.png)
+
 1. Add a new code cell to the notebook, and enter the following code to more easily compare job runs and outputs. You can configure the search to order the results. For example, the following cell orders the results by `start_time`, and only shows a maximum of `2` results: 
 
     ```python
    mlflow.search_runs(exp.experiment_id, order_by=["start_time DESC"], max_results=2)
     ```
+
+    ![](./Images/timestrt.png)
 
 1. Add a new code cell to the notebook, enter the following code to finally plot the evaluation metrics of multiple models next to each other to easily compare models:
 
@@ -230,9 +249,9 @@ In this task, you will use MLflow to search for and view your experiments relate
    plt.show()
     ```
 
-1. The output should resemble the following image:
+1. The **output** should resemble the following image:
 
-    ![Screenshot of the plotted evaluation metrics.](./Images/plotted-metrics.png)
+    ![Screenshot of the plotted evaluation metrics.](./Images/abe.png)
 
 ## Task 6: Explore your experiments
 
@@ -240,7 +259,7 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 
 1. In the left pane, navigate to your **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, you will see the **experiment-churn (2)** Experiment created.
 
-    ![](./Images/E4T6S1.png)
+    ![](./Images/expnav.png)
 
 1. Select the `experiment-churn` experiment to open it.
 
@@ -254,7 +273,7 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 
 1. Select the **&#128393;** **(Edit) (4)** button of the graph visualizing the accuracy for each run. 
 
-   ![](./Images/E4T6S6.png)
+   ![](./Images/upE4T6S6.png)
 
 1. Change the **visualization type** to **bar (1)**. 
 
@@ -262,11 +281,11 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 
 1. Select **Replace (3)** and explore the new graph.
 
-    ![](./Images/E4T6S9.png)
+    ![](./Images/repl.png)
 
 1. Do the same for the other two runs as well
 
-    ![](./Images/fab-ric-ex1-g39.png)
+    ![](./Images/upfab-ric-ex1-g39.png)
 
 By plotting the accuracy per logged estimator, you can review which algorithm resulted in a better model.
 
@@ -293,11 +312,13 @@ In this task, you will save the best-performing machine learning model after com
 
 1. Select **Create a new model (1)** in the newly opened pop-up window, Select the folder **model (2)** set the name to **model-churn (3)**, and select **Save (4)**. 
 
-    ![](./Images/E4T7S4.png)
+    ![](./Images/modsave.png)
 
 1. Select **View ML model** in the notification that appears at the top right of your screen when the model is created. You can also refresh the window. The saved model is linked under **Registered version**. 
 
     ![](./Images/fab-ric-ex1-g41.png)
+
+    ![](./Images/mcv1.png)
 
     >**Note:** The model, the experiment, and the experiment run are linked, allowing you to review how the model is trained. 
 
@@ -307,7 +328,7 @@ In this task, you will save your notebook with a meaningful name to preserve you
 
 1. Select the notebook that you created. 
 
-   ![](./Images/Note4.png)
+   ![](./Images/nbslct.png)
 
 2. In the notebook menu bar. Click on the ⚙️ **Settings (1)** icon to view the notebook settings, and set the **Name** of the notebook to **Train and compare models notebook (2)**, and then close the settings pane.
 
