@@ -26,9 +26,9 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
 1. Search for **Dataflow Gen2 (1)** and select **Dataflow Gen2 (2)**. Leave the name as default, **Uncheck (3)** the **Enable Git integration, deployment pipelines and Public API scenarios**, and then click on **Create (4)**.
 
-   ![New dataflow.](./Images/E5T1S1i.png)
+   ![New dataflow.](./Images/dfsr.png)
 
-   ![New dataflow.](./Images/E5T1S1ii.png)
+   ![New dataflow.](./Images/dfsrcr.png)
 
 1. From the **Get data** pane, select **Import from a Text/CSV file**.
 
@@ -40,7 +40,7 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
     - **File path or URL: (2)** `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
     - **Connection: (3)** Create new connection
     - **Connection Name: (4)** Connection
-    - **data gateway: (5)** (none)
+    - **Data gateway: (5)** (none)
     - **Authentication kind: (6)** Anonymous
     - **Privacy level: (7)** None
     - Click **Next (8)**
@@ -66,17 +66,25 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
    ![](./Images/E8T1S8.png)
 
 
-1. Hover on **orders** file and click on the **Ellipsis (...) (2)**, and then select **Delete (3)**.
+1. Hover on **orders (1)** file and click on the **Ellipsis (...)**, and then select **Delete (2)**.
 
    ![](./Images/E8T1S9.png)
+
+1. Click on **Delete** for the pop-up **Delete "orders"?**
+
+   ![](./Images/delod.png)
 
 ## Task 2: Add data destination for Dataflow
 
 In this task, you’ll add a data destination for the Dataflow to determine where the ingested and transformed data will be stored for future use.
 
-1. In the **Query settings** in the right pane, click on **+ (1)** for Data Destination, then choose **Lakehouse (2)** from the menu.
+1. Switch to your Dataflow window. In the **Query settings** in the right pane, click on **+ (1)** for Data Destination, then choose **Lakehouse (2)** from the menu.
 
    ![Empty data pipeline.](./Images/Flow6.png)
+
+   >**Note:** If the Query settings pane isn't visible, go to the top ribbon, select **Query (1)**, then click **Add data destination (2)** and choose **Lakehouse (3)**.
+
+   ![Empty data pipeline.](./Images/lakedest.png)
 
    >**Note:** If this option is greyed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
@@ -106,7 +114,7 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
 
 In this task, you’ll add a dataflow to a pipeline to streamline the data processing workflow and enable automated data transformations.
 
-1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Data Flow Gen 2**.
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)**.
 
     ![](./Images/fabricnav.png)
 
@@ -114,7 +122,7 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
 
 1. In the Search box, search for **Pipeline (1)**, and select **Pipeline (2)**.
 
-   ![](./Images/E8t3S2.png)
+   ![](./Images/pl.png)
 
 1. Set the Name as **Load Orders pipeline (1)** and click on **Create (2)**. This will open the pipeline editor.
 
@@ -138,13 +146,13 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
 
    ![](./Images/Flow12.png)
    
-   ![](./Images/lak8.png)
+   ![](./Images/prun.png)
 
-1. In the left pane, select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>** Lakehouse.
+1. Navigate to your **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>** Lakehouse.
 
 1. Expand the **Tables** section and select the **orders** table created by your dataflow.
 
-   ![Table loaded by a dataflow.](./Images/Orders11.png)
+   ![Table loaded by a dataflow.](./Images/pop.png)
 
    >**Note:** You might have to refresh the browser to get the expected output.
 
