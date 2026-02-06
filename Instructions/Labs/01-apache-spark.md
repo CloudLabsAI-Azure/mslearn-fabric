@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this exercise, you will use Apache Spark within Microsoft Fabric to ingest, process, and analyze data using PySpark. You'll begin by creating a lakehouse to store raw data files and then use notebooks to write and run Spark code for data exploration, transformation, and analysis. You'll learn how to work with DataFrames, apply filtering and grouping operations, use Spark SQL for querying data, and visualize results using built-in tools and Python libraries like matplotlib and seaborn. This end-to-end lab provides a practical introduction to scalable data analytics in Microsoft Fabric.
+In this exercise, you will use Apache Spark within Microsoft Fabric to ingest, process, and analyze data using PySpark. You will begin by creating a lakehouse to store raw data files and then use notebooks to write and run Spark code for data exploration, transformation, and analysis. You will learn how to work with DataFrames, apply filtering and grouping operations, use Spark SQL for querying data, and visualize results using built-in tools and Python libraries like matplotlib and seaborn. This end-to-end lab provides a practical introduction to scalable data analytics in Microsoft Fabric.
 
 ## Lab objectives
 
@@ -22,7 +22,7 @@ You will be able to complete the following tasks:
 
 ## Task 1: Create a lakehouse and upload files
 
-In this task, you will create a lakehouse to organize and analyze your data files. After setting up your workspace, you'll switch to the *Data Engineering* experience in the portal to initiate the creation of the data lakehouse.
+In this task, you will create a lakehouse to organize and analyze your data files. After setting up your workspace, you will switch to the *Data Engineering* experience in the portal to initiate the creation of the data lakehouse.
 
 1. From the left pane, select the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, then click **+ New item (2)**.
 
@@ -36,11 +36,11 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
      ![](./Images2/lab2-11-2.png)
 
-1. From the Explorer pane, click the **ellipsis (...) (1)** next to the **Files** folder, choose **Upload (2)**, and then click **Upload folder (3)** to import a folder from your local machine.
+1. From the Explorer pane, hover the mouse next to the **Files** folder, click the **ellipsis (...) (1)** , choose **Upload (2)**, and then click **Upload folder (3)** to import a folder from your local machine.
 
-    ![](./Images2/lab2-11-01.png)
+    ![](./Images2/E1T1S5.png)
 
-1. In the Upload folder dialog, click the **folder** icon to browse and select the folder you want to upload.
+1. In the Upload folder dialog, click the **folder** icon to browse.
 
     ![](./Images2/1/t1-5.png)
 
@@ -107,11 +107,11 @@ In this task, you will create a notebook to work with data in Apache Spark. Note
 
 In this task, you will load data into a dataframe to prepare it for analysis. Dataframes in Spark, similar to Pandas dataframes in Python, offer a structured way to manage and manipulate data organized in rows and columns.
 
-> **Note:** Spark supports multiple coding languages, including Scala, Java, and others. In this exercise, we'll use *PySpark*, which is a Spark-optimized variant of Python. PySpark is one of the most commonly used languages on Spark and is the default language in Fabric notebooks.
+> **Note:** Spark supports multiple coding languages, including Scala, Java, and others. In this exercise, we will use *PySpark*, which is a Spark-optimized variant of Python. PySpark is one of the most commonly used languages on Spark and is the default language in Fabric notebooks.
 
-1. With the notebook open, expand the **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** under **Explorer**, then expand **Files (2)**, select the **orders (3)** folder, click the **ellipsis (...) (4)** menu next to 2019.csv, and choose **Load data (5)** -> **Spark (6)**.
+1. With the notebook open, expand the **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** under **Data items**, on the **Explorer** page, then expand **Files (2)**, select the **orders (3)** folder, click the **ellipsis (...) (4)** menu next to 2019.csv, and choose **Load data (5)** -> **Spark (6)**.
 
-    ![](./Images2/1/t3-2.png)
+    ![](./Images2/1/E1T3S1.png)
 
 1. A **new code** cell with the following code will be added to the notebook:
 
@@ -232,7 +232,7 @@ In this task, you will explore data within a dataframe to gain insights and unde
 
 2. **Run (1)** the new code cell, then review the **results (2)**. Observe the following details:
 
-    - When you operate on a dataframe, the result is a new dataframe (in this case, a new **customers** dataframe is created by selecting a specific subset of columns from the **df** dataframe)
+    - When you operate on a dataframe, the result is a new dataframe (in this case, a new **customers** dataframe is created by selecting a specific subset of columns from the **df** dataframe).
 
     - Dataframes provide functions such as **count** and **distinct** that can be used to summarize and filter the data they contain.
 
@@ -353,7 +353,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
 ### Save data in partitioned files
 
-1. Add a **new code** cell and enter the following code to save the dataframe, partitioned by **Year** and **Month:**
+1. Add a **new code** cell and enter the following code to save the dataframe, partitioned by **Year** and **Month**.
 
     ```python
    orders_df.write.partitionBy("Year","Month").mode("overwrite").parquet("Files/partitioned_data")
@@ -366,7 +366,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
 1. In the Explorer pane on the left, click the **ellipsis (...) (1)** menu next to the **Files** and select **Refresh (2)**. Then expand the **partitioned_data (3)** folder to verify that it contains subfolders named by **Year (4)** (e.g., Year=2019, Year=2020, Year=2021). Inside each year folder, ensure there are further subfolders named by **Month (5)** (e.g., Month=1, Month=2, etc.), each containing **parquet (6)** files representing the orders for that month.
 
-    ![](./Images2/1/t6-11.png)
+    ![](./Images2/E1T1S4.png)
 
     ![](./Images2/1/t6-14.png)
 
@@ -542,7 +542,7 @@ In this task, you will visualize data using Spark to enhance understanding and i
 
     - At the core of the **matplotlib** library is the **pyplot** object. This is the foundation for most plotting functionality.
 
-    - The default settings result in a usable chart, but there's considerable scope to customize it
+    - The default settings result in a usable chart, but there's considerable scope to customize it.
 
       ![](./Images2/1/t8-12.png)
 

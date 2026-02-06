@@ -72,11 +72,11 @@ In this task, you will create a pipeline in Microsoft Fabric to ingest data into
 
     ![](./Images2/3/t1-9.png)
      
-1. On **Choose copy job mode**, select **Full copy(1)** and click on **Next(2)** 
+1. On **Choose copy job mode** page, select **Full copy (1)** and click on **Next (2)**.
 
     ![](./Images2/3/E3T1S11.png)
 
-12. On the **Map to destination** page, configure the following settings,
+12. On the **Map to destination** page, configure the following settings:
 
     - Select: **Files (1)**
     - Folder path: **new_data (2)**
@@ -84,12 +84,12 @@ In this task, you will create a pipeline in Microsoft Fabric to ingest data into
    
       ![](./Images2/3/E3T1S12.png)
 
-13. Scroll down and expand **File format settings** and select following settings and then click on **Next(3)**
+13. Scroll down and expand **File format settings** and select following settings and then click on **Next (3)**:
 
     - Column delimiter: **Comma (,) (1)**
     - Row delimiter: **Line feed (\n) (2)**
 
-     ![](./Images2/3/E3T1S14.png)
+      ![](./Images2/3/E3T1S14.png)
 
 14. On the **Review + save** page, review the copy summary to verify all source and destination settings, and then click on **Save** to initiate the data copy process.
 
@@ -103,11 +103,11 @@ In this task, you will create a pipeline in Microsoft Fabric to ingest data into
 
     ![](./Images2/3/E3T1S16.png)
 
-1. Select **Copy job**
+1. On the **Choose a data source to get started** page, select **Copy job**
 
     ![](./Images2/3/E3T1S17.png)
 
-1. On the **Connect data source** page, select **Create new connection(1)** and in the **Authentication kind**, select **Organizational account(2)** then click on **Sign in(3)**
+1. On the **Connect data source** page, select **Create new connection (1)** and in the **Authentication kind**, select **Organizational account (2)** then click on **Sign in (3)**
 
     ![](./Images2/3/E3T1S20.png)
 
@@ -115,7 +115,7 @@ In this task, you will create a pipeline in Microsoft Fabric to ingest data into
 
     ![](./Images2/3/E3T1S18.png)
 
-1. On the **Home (1)** tab, save the pipeline using the **Save (2)** icon, then execute it by clicking **Run (3)** and wait for all activities to complete.
+1. Click on the **Home (1)** tab, save the pipeline using the **Save (2)** icon, then execute it by clicking **Run (3)** and wait for all activities to complete.
 
     ![](./Images2/3/E3T1S19.png)
 
@@ -135,7 +135,7 @@ In this task, you will create a pipeline in Microsoft Fabric to ingest data into
 
 ## Task 2: Create a notebook
 
-In this task, you will create a notebook in Microsoft Fabric to begin processing your ingested data using PySpark. You’ll write code to load sales data, apply transformations, and save the results as a table in the lakehouse—enabling further analysis or reporting through SQL or visualization tools.
+In this task, you will create a notebook in Microsoft Fabric to begin processing your ingested data using PySpark. You will write code to load sales data, apply transformations, and save the results as a table in the lakehouse—enabling further analysis or reporting through SQL or visualization tools.
 
 1. From the lakehouse Home page, open the **Open notebook (1)** menu and select **New notebook (2)** to create a new notebook.
 
@@ -153,7 +153,7 @@ In this task, you will create a notebook in Microsoft Fabric to begin processing
 
     ![](./Images2/3/t2-3.png)
 
-1. Under the parameters cell, use the **+ Code** button to add a new code cell. Then add the following code to it:
+1. Under the parameters cell, hover the mouse and use the **+ Code** button to add a new code cell. Then add the following code to it:
 
     ![](./Images2/3/t2-4.png)
 
@@ -205,7 +205,7 @@ In this task, you will create a notebook in Microsoft Fabric to begin processing
 
 ## Task 3: Modify the pipeline
 
-In this task, you will modify your existing pipeline to include the notebook you created for data transformation. By integrating the notebook into the pipeline, you’ll build a reusable and automated ETL process that extracts data, runs Spark-based transformations, and loads the results into a lakehouse table.
+In this task, you will modify your existing pipeline to include the notebook you created for data transformation. By integrating the notebook into the pipeline, you will build a reusable and automated ETL process that extracts data, runs Spark-based transformations, and loads the results into a lakehouse table.
 
 1. From the left pane, click on **My workspace (1)**, then select the previously created **Ingest Sales Data pipeline (2)** to proceed.
 
@@ -275,7 +275,7 @@ In this task, you will modify your existing pipeline to include the notebook you
 
     The **table_name** parameter will be passed to the notebook and override the default value assigned to the **table_name** variable in the parameters cell.
 
-7. On the **Home (1)** tab, save the pipeline using the **Save (2)** icon, then execute it by clicking **Run (3)** and wait for all activities to complete.
+7. Click on the **Home (1)** tab, save the pipeline using the **Save (2)** icon, then execute it by clicking **Run (3)** and wait for all activities to complete.
 
     ![](./Images2/3/t3-7.png)
 

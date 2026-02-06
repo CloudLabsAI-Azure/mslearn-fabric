@@ -26,7 +26,7 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
      ![](./Images2/lab3-11-02.png)
 
-1. In the New Dataflow Gen2 dialog, enter a **Name (1)**, **uncheck** the **Enable Git integration (2)** option, and click **Create (3)** to proceed.
+1. In the New Dataflow Gen2 dialog, keep the **Name (1)** as default , **uncheck** the **Enable Git integration (2)** option, and click **Create (3)** to proceed.
 
     ![](./Images2/2/t1-2.png)
 
@@ -53,7 +53,7 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
     ![](./Images2/2/t1-6.png)
 
-1. In the Custom column dialog, enter **MonthNo (1)** as the new column name, input the formula `Date.Month([OrderDate])` **(2)**, and then click **OK (3)** to apply.
+1. In the **Custom column** dialog, enter **MonthNo (1)** as the new column name, input the formula `Date.Month([OrderDate])` **(2)**, and then click **OK (3)** to apply.
 
     ![](./Images2/lab3-11-3.png)
 
@@ -63,7 +63,7 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
 ## Task 2: Add data destination for Dataflow
 
-In this task, you’ll add a data destination for the Dataflow to determine where the ingested and transformed data will be stored for future use.
+In this task, you will add a data destination for the Dataflow to determine where the ingested and transformed data will be stored for future use.
 
 1. From the bottom right corner, click the **+ (1)** icon and select **Lakehouse (2)** from the New destination menu.
 
@@ -79,7 +79,7 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
 
     ![](./Images2/2/t2-3pa.png)
 
-1. On the Destination settings page, toggle **off** the **use automatic settings (1)** option. Then, for the **MonthNo** column header, set the **Source type** to **Whole number (2)**. Finally, click **Save settings (3)** to apply the changes
+1. On the **Choose Destination settings** page, toggle **off** the **use automatic settings (1)** option. Then, for the **MonthNo** column header, set the **Source type** to **Whole number (2)**. Finally, click **Save settings (3)** to apply the changes.
 
     ![](./Images2/lab3-11-4.png)
 
@@ -101,7 +101,7 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
 
 ## Task 3: Add a dataflow to a pipeline
 
-In this task, you’ll add a dataflow to a pipeline to streamline the data processing workflow and enable automated data transformations.
+In this task, you will add a dataflow to a pipeline to streamline the data processing workflow and enable automated data transformations.
 
 1. From the left pane, click on **My workspace (1)**, then select the **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)** workspace.  
 
