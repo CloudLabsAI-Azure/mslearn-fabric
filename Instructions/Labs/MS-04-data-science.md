@@ -113,6 +113,10 @@ In this task, you will load data into a dataframe to prepare for model training.
 
     > **Note:** Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first run in the session can take a minute or so to complete. Subsequent runs will be quicker.
 
+    > **Note:** If you face any error stating **"Too many Requests for Capacity with error code 430"(1)**, navigate to **Monitor(2)** section to see if there are any ongoing spark jobs running if yes we can wait for it to finish or stop the process.
+
+    ![](./Images/E4T3S7N-i.png)
+    ![](./Images/E4T3S7N-ii.png)
 1. When the cell command has been completed, review the output below the cell, which should look similar to this:
 
     ![](./Images/output.png)
