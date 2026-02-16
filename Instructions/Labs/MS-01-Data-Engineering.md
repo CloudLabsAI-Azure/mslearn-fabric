@@ -55,7 +55,7 @@ In this task, you will create a Fabric workspace. The workspace will contain all
 
       ![name-and-desc-of-workspc](./Images/f3.png)
 
-    - Select **License mode** as **Fabric capacity (3)**.
+    - Select **License mode** as **Fabric (3)**.
     - From the dropdown list, select the available **Capacity (4)**.
     - Click **Apply (5)** to create and open the workspace.
  
@@ -71,7 +71,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Fabric (2)** experience.
 
-   ![](./Images/E1T3S1-1108.png)
+   ![](./Images/E1T3S1-i.png)
 
    ![](./Images/E1T3S1.1-1108.png)
 

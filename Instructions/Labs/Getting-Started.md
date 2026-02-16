@@ -123,11 +123,11 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
 
 1. You will be navigated to the Power BI Home page.
 
-   ![05](./Images/pbi-homepage.png)
+   ![05](./Images/pbihome.png)
 
-1. On the **Microsoft Fabric (Free) license assigned** dialog box, click **OK (1)** to confirm the license assignment.  
+1. On the **Microsoft Fabric (Free) license assigned** dialog box, click **OK** to confirm the license assignment.  
 
-   ![](./Images/GSpop.png)
+   ![](./Images/freetrial.png)
 
 ## Support Contact
 
