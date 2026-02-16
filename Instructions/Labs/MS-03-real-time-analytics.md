@@ -144,15 +144,19 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
 
     ![Screenshot of a report from a KQL query.](./Images/E3T3S4-1208.png)
 
-1. Now to save the report, in the **Power BI (Preview)** window,
-
-    - Select the **File (1)** menu, and click on **Save (2)**.
+1. Now to save the report, in the **Power BI (Preview)** window, Select the **File (1)** menu, and click on **Save (2)**.
 
       ![](./Images/E3T3S5-1208.png)
 
-    -  In the **Just a few details first** pane, enter the file name as **Revenue by Item (1)** and click **Continue (2)** to save the report in Power BI.
+1. In the **Just a few details first** pane, enter the file name as **Revenue by Item (1)**, choose the workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)** and click **Continue (2)** to save the report in Power BI.
 
-         ![](./Images/e3p4t3p4.png)
+    ![](./Images/03/E3T3S5.png)
+
+    > Note: If you are unable to choose the workspace as instructed above please follow the below steps.
+
+    - When you save the report,In the **Just a few details first** pane, enter the file name as **Revenue by Item (1)** and click **Continue (2)** to save the report in Power BI.
+
+        ![](./Images/e3p4t3p4.png)
 
     -  The report has been saved successfully. Now, click on **Open the file in Power BI to view, edit, and get a shareable link** to proceed.
 
