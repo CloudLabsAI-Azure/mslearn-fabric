@@ -172,7 +172,7 @@ In this exercise, you:
 - Added a **data destination** to store the output of the Dataflow.
 - Integrated the **Dataflow into a pipeline** for automated data processing.
 
-### Conclusion
+## Conclusion
 
 By completing this **MS Fabric Foundation for Enterprise Analytics** hands-on lab, you have gained valuable, hands-on experience with the end-to-end capabilities of Microsoft Fabric for enterprise analytics. Starting from creating a collaborative workspace, you have learned to ingest and prepare data using pipelines, perform advanced analyses in a data warehouse, and access real-time insights through live analytics. You also practiced training machine learning models in notebooks, harnessed the scalability of Apache Spark for large-scale analysis, and designed sophisticated data transformation workflows with Dataflow Gen2. This comprehensive journey empowers you to confidently manage, analyze, and transform data, equipping you with practical skills to drive informed, data-driven decision-making within your organization.
 

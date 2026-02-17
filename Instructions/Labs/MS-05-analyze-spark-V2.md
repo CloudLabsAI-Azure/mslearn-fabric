@@ -709,6 +709,6 @@ In this exercise, you:
 - Visualized data using **Spark charts**, **matplotlib**, and **seaborn**.
 - Saved the notebook and ended the Spark session.
 
-### You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.
+### You have successfully completed the exercise. Click on **Next >>** to proceed with the next exercise.
 
    ![05](./Images/next-page-1208.png)
