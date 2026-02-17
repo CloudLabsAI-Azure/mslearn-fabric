@@ -23,7 +23,7 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
 
-    ![Account-manager-start](./Images/Ex1T1S1a.png)
+    ![Account-manager-start](./Images/01/E1T1S1.png)
 
 1. On the **Activate your 60-day free Fabric trial capacity** dialog box, click **Activate**.  
 
@@ -55,11 +55,11 @@ In this task, you will create a Fabric workspace. The workspace will contain all
 
       ![name-and-desc-of-workspc](./Images/f3.png)
 
-    - Select **License mode** as **Fabric capacity (3)**.
+    - Select **License mode** as **Fabric (3)**.
     - From the dropdown list, select the available **Capacity (4)**.
     - Click **Apply (5)** to create and open the workspace.
  
-      ![advanced-and-apply](./Images/p1t2p2(1).png)
+      ![advanced-and-apply](./Images/01/E1T2S2ii.png)
 
 1. On the **Introducing task flows (preview)** pop-up window, click **Got it**.
 
@@ -71,7 +71,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Fabric (2)** experience.
 
-   ![](./Images/E1T3S1-1108.png)
+   ![](./Images/E1T3S1-i.png)
 
    ![](./Images/E1T3S1.1-1108.png)
 
@@ -90,6 +90,10 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 1. Enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and Click on **Create (2)**.
 
     ![](./Images/E1T3S5-1.png)
+
+    > **Note**: Ensure we are unchecking the **Lakehouse schema** as this is checked by default when creating the **Lakehouse**.
+
+    ![](./Images/01/E1T3S5-N.png)    
 
 1. On the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** tab in the left pane, click the **Ellipsis (...) (1)** menu for the **Files** node, click on **New subfolder (2)**.
     
@@ -119,7 +123,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
    
 1. On the **Build a data pipeline to organize and move your data** page, select **Copy data assistant (1)**.
 
-   ![03](./Images/p1t4p4.png)
+   ![03](./Images/01/E1T4S4.png)
 
 1. In the **Copy data** wizard, on the **Choose data source** page, search for **Http (1)** and select the **Http (2)** source from the results.
 
@@ -132,7 +136,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
     - Connection name: **Connection<inject key="DeploymentID" enableCopy="false"/> (3)**
     - Authentication kind: **Anonymous (4)**
   
-      ![](./Images/p1t4p6.png)
+      ![](./Images/01/E1T4S6.png)
     
 1. On the **Choose data** page, keep the default settings and click **Next**.
     
@@ -148,7 +152,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
   
       ![Account-manager-start](./Images/e1p2t4s8(1).png)
     
-      ![Account-manager-start](./Images/E1T4S8.2-1108.png)
+      ![Account-manager-start](./Images/01/E1T4S8i.png)
 
 1. On the **Choose data destination** page, click **OneLake catalog (1)** and select the lakehouse **Lakehouse\_<inject key="DeploymentID" enableCopy="false"/> (2)**.
     
@@ -238,11 +242,11 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
      > **Note:** If a pop-up appears for **Enhance your notebook experience with AI tools**, click on **Skip tour**.
      >
-     > ![](./Images/skip_tour.png)
+     > ![](./Images/01/skip_tour.png)
 
-1. Click **Add data items (1)** drop-down under explorer and select **Existing data source (2)** from the drop-down.
+1. Click **Add data items (1)** drop-down under explorer and select **From OneLake catalog (2)** from the drop-down.
 
-    ![](./Images/p1t5p4.png)  
+    ![](./Images/01/E1T5S5.png)  
 
 1. Select the previously created **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** then click **Continue (2)**.
  
@@ -337,7 +341,7 @@ In this task, you'll use SQL to query tables in a database. You'll write stateme
    ORDER BY Revenue DESC;
     ```
 
-    ![](./Images/e1p2t6p2.png)
+    ![](./Images/01/E1T6S2.png)
 
 1. Use the **&#9655; Run** button to run the query and view the results, which should show the total revenue for each product.
 
@@ -395,9 +399,9 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 
     ![](./Images/e1p2t8p3.png)
 
-4. Click on **Open semantic model** to view the table.
+4. Click on **Open(1)** to view the table in semantic model.
 
-   ![](./Images/E1T8S4.png)
+   ![](./Images/01/E1T8S4.png)
 
 5. Once the model is opened, the **sales** table will appear.
 

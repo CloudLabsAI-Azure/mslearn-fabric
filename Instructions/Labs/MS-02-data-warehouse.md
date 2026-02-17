@@ -249,7 +249,7 @@ In this task, you will create a view in the data warehouse to encapsulate SQL lo
 
 2. After execution is completed, it will create a view. **Refresh (1)** the data warehouse schema once and verify that the new view **vSalesByRegion (2)** is listed in the **Explorer** pane.
 
-    ![](./Images/E2T5S2.png)
+    ![](./Images/02/E2T5S2.png)
 
 3. Create a **New SQL query** from the top Menu bar and run the following SELECT statement:
 
@@ -303,9 +303,9 @@ In this task, you will visualize your data from a single query or your data ware
 
     ![](./Images/e2p3t7p1.png)
 
-1. On the **Data Warehouse details** page, click **Open semantic model** to launch the semantic model editor.  
+1. On the **Data Warehouse details** page, click **Open** to launch the semantic model editor.  
 
-   ![](./Images/e2t7s1.png)
+   ![](./Images/02/E2T7S1.png)
 
 1. Click the **Viewing (1)** dropdown and change it to **Editing (2)** to switch modes.
 
@@ -318,7 +318,7 @@ In this task, you will visualize your data from a single query or your data ware
         - **CustomerKey**
         - **ProductKey**
 
-           ![03](./Images/02/03.png)
+           ![03](./Images/02/E2T7S4.png)
    
     - From DimCustomer
         - **CustomerKey**

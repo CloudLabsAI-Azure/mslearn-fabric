@@ -73,13 +73,13 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 To get the lab environment details, you can select the **Environment** tab. Additionally, the credentials will also be emailed to your registered email address.
 
-   ![](./Images/exp-lab-resources-1108.png)
+   ![](./Images/env.png)
 
 ## Utilizing the Split Window Feature
 
 Utilizing the Split Window Feature: For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-   ![](./Images/split-feature.png)
+   ![](./Images/split.png)
 
 ## Managing Your Virtual Machine
  
@@ -109,25 +109,25 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
 
-     ![04](./Images/usernamewin.png)
+     ![04](./Images/pbilogin.png)
      
 1. Now enter the following password and click on **Sign in**.
  
    - **Password:** <inject key="AzureAdUserPassword"></inject> 
 
-      ![05](./Images/passwordwin.png)
+      ![05](./Images/GSpwd.png)
      
 1. If you see a pop-up **Stay Signed in?**, click **No**.
 
-   ![05](./Images/Sign3.png)
+   ![05](./Images/GSno.png)
 
 1. You will be navigated to the Power BI Home page.
 
-   ![05](./Images/pbi-homepage.png)
+   ![05](./Images/pbihome.png)
 
-1. On the **Microsoft Fabric (Free) license assigned** dialog box, click **OK (1)** to confirm the license assignment.  
+1. On the **Microsoft Fabric (Free) license assigned** dialog box, click **OK** to confirm the license assignment.  
 
-   ![](./Images/GSpop.png)
+   ![](./Images/freetrial.png)
 
 ## Support Contact
 
