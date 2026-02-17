@@ -126,9 +126,9 @@ In this task, you will create a relational data warehouse consisting of fact and
 
     ![](./Images/e2p3t3p3.png)
 
-1. Click on **Open semantic model**.
+1. On the **Data Warehouse details** page, click **Open** to launch the semantic model editor.  
 
-     ![](./Images/E1T8S4.png)
+   ![](./Images/02/E2T7S1.png)
 
 1. On the **Viewing (1)** menu, select **Editing (2)** to enable edit mode.  
 
@@ -380,6 +380,6 @@ In this exercise, you
 - Enhanced the data model for the default dataset in the data warehouse.
 - Used the enhanced dataset as the source for building a report.
 
-### You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.
+### You have successfully completed the exercise. Click on **Next >>** to proceed with the next exercise.
 
    ![05](./Images/next-page-1208.png)

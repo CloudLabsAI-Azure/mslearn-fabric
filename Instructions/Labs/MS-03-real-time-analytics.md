@@ -170,7 +170,7 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
        
          ![](./Images/E3T3S5.4-1208.png)
 
-    >**Note:** Refresh the Workspace page if necessary to view all of the items it contains.
+        >**Note:** Refresh the Workspace page if necessary to view all of the items it contains.
 
 1. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
 
@@ -299,6 +299,6 @@ In this exercise, you:
 - Created a query set based on your KQL analysis.
 - Used the query set as the data source for a Power BI report to visualize the results.
 
-### You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.
+### You have successfully completed the exercise. Click on **Next >>** to proceed with the next exercise.
 
    ![05](./Images/next-page-1208.png)
