@@ -1,255 +1,20 @@
-# Exercise 1: Ingest data with a pipeline in Microsoft Fabric
+# Lab 02: Ingest data with a Microsoft Fabric Lakehouse
 
 ### Estimated Duration: 90 Minutes
 
 ## Overview 
-In this exercise, you'll ingest data into a Microsoft Fabric lakehouse using pipelines and Apache Spark. Pipelines allow you to extract data from external sources and load it into OneLake. Spark enables you to transform the data at scale before storing it in lakehouse tables for analysis. Ensure data is successfully loaded into OneLake before applying transformations.
+In this lab, you'll explore Cloud-Scale Analytics using Microsoft Fabric. This lab is designed to provide hands-on experience with ingesting data into a Microsoft Fabric Lakehouse, creating notebooks, leveraging SQL queries to extract meaningful insights from the ingested data, building visual queries, and generating a comprehensive report using Power BI.
 
 ## Lab objectives
 
 You will be able to complete the following tasks:
 
-- Task 1: Sign up for Microsoft Fabric Trial
-- Task 2: Create a workspace
-- Task 3: Enable Copilot inside a Codespace
-- Task 4: Create a pipeline
-- Task 5: Create a notebook
-- Task 6: Use SQL to query tables
-- Task 7: Create a visual query
-- Task 8: Create a report
-
-## Task 1: Sign up for Microsoft Fabric Trial
-
-In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
-
-1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
-
-     ![Account-manager-start](./Images/freetrail.png)
-
-1. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
-
-      ![03](./Images/ex1t1p2.png)
-
-1. On **Successfully upgraded to Microsoft Fabric** pop-up click on **OK** when prompted.
-
-      ![Account-manager-start](./Images/mfok.png)
-
-1. Close the **Invite teammates to try Fabric to extend your trial** pop-up by clicking on **X**. 
-
-    ![03](./Images/extendtrail.png)
-
-1. The page will reload, and a pop-up will appear saying **Microsoft Fabric (Free) license assigned**. Click **OK** to close it.
-
-    ![03](./Images/assign.png)
-
-1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right again, and verify **Trial Status (2)**.
-
-      ![Account-manager-start](./Images/trialstat.png)
-
-## Task 2: Create a workspace
-
-In this task, you will create a Fabric workspace. The workspace will contain all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
-
-1. On the left-hand pane of the Power BI portal, select **Workspaces (1)** and click on **+ New workspace (2)**
-
-    ![New Workspace](./Images/wrkspc.png)
-
-1. On the **Create a workspace** page, enter the following details:
-
-    - Name: **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - Expand the **Advanced (2)** section.
-
-      ![alt text](image.png)
-
-    - Select **License mode** as **Fabric capacity (3)**.
-
-    - From the dropdown list, select the available **Capacity (4)**.
-
-    - Click **Apply (5)** to create and open the workspace.
- 
-      ![alt text](image-1.png)
-
-1. In the **Introducing task flows (preview)** window, click **Got it**.
-
-    ![](./Images/fab-ric-ex1-g2.png)
-      
-## Task 3: Create a Lakehouse
-
-In this task, switch to the Data engineering experience and create a new Lakehouse. You'll use it to ingest and manage data in the following steps.
-
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Fabric (2)** experience.
-
-   ![](./Images/upfab-ric-ex1-g3.png)
-
-   ![](./Images/E1T3S1ii.png)
-   
-1. In the **Welcome to the Fabric view** window, click **Cancel**.
-
-    ![](./Images/ex1t3p2.png)
-
-1. In the left pane, navigate to your Workspace named as **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new lakehouse.
-
-    ![](./Images/newitem.png)
-
-    >**Note:** To navigate to your workspace click on **Workspaces (1)** from the left navigation panel and select your Workspace named as **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**
-
-    ![](./Images/nav.png)
-
-1. In the search box, search for **Lakehouse (1)** and select **Lakehouse (2)** from the list.
-
-    ![](./Images/Lake1.png)
-
-1. In the **New lakehouse** window, enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and make sure to **unhcheck Lakehouse Schemas box (2)** click on **Create (3)**.
-
-    ![](./Images/lhcreate.png)
-
-1. On the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** tab in the left pane, click the **Ellipsis (...) (1)** menu for the **Files** node, select **New subfolder (2)**.
-    
-    ![](./Images/filesub.png)
-
-1. In the **New subfolder** window, enter the name as **new_data (1)** and click on **Create (2)**.
-
-    ![](./Images/Lake5.png)
-
-## Task 4: Create a pipeline
-
-In this task, you'll create a pipeline to automate data workflows. Using the Copy data activity, you'll extract data from a source and copy it to a file in the lakehouse, streamlining the data ingestion process.
-
-1. In the left pane, navigate back to the workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (2)**.
-
-    ![](./Images/e1t4s1.png)
-
-1. In the search box, search for **Pipeline (1)** and select **Pipeline (2)** from the list.
-
-    ![](./Images/E1T4S2.png)
-
-1. Create a new data pipeline named **Ingest Sales Data Pipeline (1)** and click on **Create (2)**. 
-    
-    ![](./Images/fab-ric-ex1-g8.png)
-   
-1. On the **Build a data pipeline to organize and move your data** page, select **Copy data assistant**.
-
-   ![03](./Images/e1t4s4.png)
-
-1. In the **Copy data** wizard, on the **Choose data source** page, search for **Http (1)** and select the **Http (2)** source from the results.
-
-   ![](./Images/l1t4s5.png)
-
-1. In the **Connection settings** pane, enter the following settings for the connection to your data source:
-    
-    - URL: Enter the URL Below **(1)**
-        ```
-        https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv
-        ```
-    - Connection: **Create new connection (2)**
-    - Connection name: **Connection<inject key="DeploymentID" enableCopy="false"/> (3)**
-    - Authentication kind: **Anonymous (4)**
-    - Leave everything else as default
-    - Click on **Next (5)**
-  
-      ![03](./Images/l1t4s6.png)
-    
-1. On the **Choose data** pane, keep the default settings and click **Next**.
-    
-    ![05](./Images/E1T4S7.png)
-   
-1. Wait for the data to be sampled, then verify the following settings:
-
-   - **File format:** DelimitedText **(1)**
-   - **Column delimiter:** Comma (,) **(2)**
-   - **Row delimiter:** Line feed (\n) **(3)**
-   - Click **Preview data (4)** to view a sample of the data.
-   - After reviewing, close the preview and click **Next (5)**.
-
-        ![Account-manager-start](./Images/l1t4s8.png)
-
-        ![Account-manager-start](./Images/E1T4S8i.png)
-
-1. On the **Choose data destination** page, click **OneLake catalog (1)** and select the lakehouse **Lakehouse\_<inject key="DeploymentID" enableCopy="false"/> (2)**.
-    
-    ![](./Images/E1T4S9.png)
-
-1. On the **Choose copy job mode** page, select **Full copy (1)** and then click **Next (2)** to proceed.
-
-    ![](./Images/l1t4s10.png)
-
-1. On the **Map to destination** page, select **Files (1)**, then set **Folder path** to **new_data (2)** and **File name** to **sales.csv (3)**.
-    
-    ![08](./Images/E1T4S11.png)
-
-1. Set the following file format options and leave all other settings at their default values:
-
-   - File format: **DelimitedText (1)**
-   - Click **File format Settings (2)**
-   - Column delimiter: **Comma (,) (3)**
-   - Row delimiter: **Line feed (\n) (4)**
-   - Leave all other settings as default and Click **Next (5)**
-   
-        ![09](./Images/E1T4S12.png)
-
-1. On the **Review + save** page, verify the source and destination details, then click **Save** to create and run the copy job.
-
-    ![09](./Images/cpjobsave.png)
-
-1. A new pipeline containing a **Copy data** activity is created, as shown here:
-
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/cpdta.png)
-
-1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
-
-    > **Note:** If you don't see any Output status, click on **View run status** on the top menu or check the notifications for a successful output.
-
-    ![](./Images/01/upPg3-CpyOutput.png)
-
-1. If you don’t see any run status in the **Output** pane, click **Run** on the top menu to manually start the pipeline.
-
-    ![09](./Images/upfab-ric-ex1-g14.png)
-
-1.  When prompted, click on **Save and run** to start the pipeline.
-
-    ![09](./Images/fab-ric-ex1-g15.png)
-
-    > **Note:** If any errors appear while running the pipeline, review the details in the notification panel, fix the issue, and run it again. If everything succeeds, you can skip below steps and proceed with **Step 18**.
-
-    1. If the **Connection** field shows an error, select the **Copy job (1)** and switch to  **Settings (2)**, click on the dropdown **(3)** and select **Browse all (4)** to choose the correct connection manually.
-
-        ![09](./Images/manualcon.png)
-    
-    1. From the **Get data** page, select **Copy job (1)** under the **New sources** section to continue.
-
-        ![09](./Images/fab-ric-cor-g3.png)
-    
-    1. Set the following connection details:
-
-        - Connection name: **Connection<inject key="DeploymentID" enableCopy="false"/> (1)**
-        - Click **Sign in (2)** to authenticate if it shows You are not signed in.
-
-            ![09](./Images/upfab-ric-cor-g4.png)
-    
-    1. When prompted to sign in, select your **ODL_User** account.  
-        - Or sign in manually using:
-        - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-        - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
-
-            ![09](./Images/upfab-ric-cor-g5.png)
-    
-    1. After the connection details are verified and you are signed in, click **Connect** to proceed.
-    
-    1. Once the **Copy job (1)** is configured, click **Run (2)** at the top to execute the pipeline.
-
-        ![09](./Images/upfab-ric-cor-g7.png)
-    
-    1. When prompted, click on **Save and run** to start the pipeline.
-
-        ![09](./Images/fab-ric-ex1-g15.png)
-
-1. From the Top bar navigate to your Lakehouse by clicking on the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)**, expand **Files (2)** and select the **new_data (3)** folder, refresh the page and verify that the **sales.csv (4)** file has been copied.
-
-    ![Account-manager-start](./Images/lhcsv.png)
-
-    >**Note:** You can also navigate to your Lakehouse by clicking your workspace and selecting the Lakehouse.
-
-## Task 5: Create a Notebook
+- Task 1: Create a notebook
+- Task 2: Use SQL to query tables
+- Task 3: Create a visual query
+- Task 4: Create a report
+
+## Task 1: Create a Notebook
 
 In this task, you'll create a Notebook to document your data analysis. You'll set up the environment, import libraries, and structure your code for exploration, visualization, and insights.
 
@@ -359,7 +124,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
     ![03](./Images/salepre.png)
 
-## Task 6: Use SQL to query tables
+## Task 2: Use SQL to query tables
 
 In this task, you'll use SQL to query tables in a database. You'll write statements to retrieve, filter, and manipulate data, helping you analyze the dataset and build your SQL skills.
 
@@ -386,7 +151,7 @@ In this task, you'll use SQL to query tables in a database. You'll write stateme
 
     ![](./Images/ref.png)
 
-## Task 7: Create a visual query
+## Task 3: Create a visual query
 
 In this task, you'll create a visual query in Power BI using Power Query. Start by adding the Sales table to the query editor, selecting the necessary columns, and applying a Group By transformation to count distinct line items per sales order. Then, review the summarized results.
 
@@ -422,7 +187,7 @@ In this task, you'll create a visual query in Power BI using Power Query. Start 
 
     ![Screenshot of a Visual query with results.](./Images/E2-T6-S6.png)
 
-## Task 8: Create a report
+## Task 4: Create a report
 
 In this task, you’ll build a report that transforms raw data into insights. You’ll connect to your semantic model, select key fields, apply the right visualizations, and design a clear, well-structured report. The final output will highlight item sales in a way that supports analysis and decision-making.
 

@@ -8,37 +8,14 @@ Apache Spark is an open-source engine for distributed data processing and is wid
 
 You will be able to complete the following tasks:
 
-- Task 1: Create a lakehouse and upload files
-- Task 2: Create a notebook
-- Task 3: Load data into a dataframe
-- Task 4: Explore data in a dataframe
-- Task 5: Aggregate and group data in a dataframe
-- Task 6: Use Spark to transform data files
-- Task 7: Work with tables and SQL
-- Task 8: Visualize data with Spark
-- Task 9: Save the notebook and end the Spark session
+- Task 1: Create a notebook
+- Task 2: Load data into a dataframe
+- Task 3: Explore data in a dataframe
+- Task 4: Use Spark to transform data files
+- Task 5: Work with tables and SQL
+- Task 6: Save the notebook and end the Spark session
 
-### Task 1: Create a lakehouse and upload files
-
-In this task, you will create a lakehouse to organize and analyze your data files. After setting up your workspace, you'll switch to the *Data Engineering* experience in the portal to initiate the creation of the data lakehouse.
-
-1. Navigate to your workspace named as **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** from the left navigation pane, click on **+ New item (2)** to create a new lakehouse.
-
-    ![](./Images/E1T1S2.png)
-
-2. In the All items search for Lakehouse (1) and select Lakehouse (2) from the list.
-
-    ![](./Images/E1T1S3.png)
-
-3. Enter the **Name** as **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>** and Click on **Create (2)**.
-
-4. Once you're in the lakehouse, navigate to the **Files** folder in the **Explorer** pane, click on the **ellipses** menu, and select **Upload** followed by **Upload folder**. Then, upload the **orders** folder located at **C:\LabFiles\Files\orders** to the lakehouse.
-
-5. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
-
-    ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded.png)
-
-### Task 2: Create a notebook
+### Task 1: Create a notebook
 
 In this task, you will create a notebook to work with data in Apache Spark. Notebooks provide an interactive environment where you can write and run code in multiple languages, while also allowing you to add notes for documentation.
 
@@ -69,7 +46,7 @@ In this task, you will create a notebook to work with data in Apache Spark. Note
 
 4. Click anywhere in the notebook outside of the cell to exit editing mode and view the rendered markdown.
 
-### Task 3: Load data into a dataframe
+### Task 2: Load data into a dataframe
 
 In this task, you will load data into a dataframe to prepare it for analysis. Dataframes in Spark, similar to Pandas dataframes in Python, offer a structured way to manage and manipulate data organized in rows and columns.
 
@@ -189,7 +166,7 @@ In this task, you will load data into a dataframe to prepare it for analysis. Da
 
     >**Note**: Only a subset of the rows is displayed, so you may not be able to see examples from all years.
 
-### Task 4: Explore data in a dataframe
+### Task 3: Explore data in a dataframe
 
 In this task, you will explore data within a dataframe to gain insights and understand its structure. The dataframe object offers various functions for filtering, grouping, and manipulating the data it contains, facilitating effective analysis.
 
@@ -222,31 +199,7 @@ In this task, you will explore data within a dataframe to gain insights and unde
 
 4. Run the modified code to view the customers who have purchased the *Road-250 Red, 52* product. Note that you can "chain" multiple functions together so that the output of one function becomes the input for the next - in this case, the dataframe created by the **select** method is the source dataframe for the **where** method that is used to apply filtering criteria.
 
-### Task 5: Aggregate and group data in a dataframe
-
-In this task, you will aggregate and group data within a dataframe to summarize information and extract meaningful insights. This process involves applying functions to organize the data based on specific criteria, allowing for easier analysis and reporting.
-
-1. Add a new code cell to the notebook, and enter the following code in it:
-
-    ```Python
-   productSales = df.select("Item", "Quantity").groupBy("Item").sum()
-   display(productSales)
-    ```
-
-2. Run the code cell you added, and note that the results show the sum of order quantities grouped by product. The **groupBy** method groups the rows by *Item*, and the subsequent **sum** aggregate function is applied to all of the remaining numeric columns (in this case, *Quantity*)
-
-3. Add another new code cell to the notebook, and enter the following code in it:
-
-    ```Python
-   from pyspark.sql.functions import *
-
-   yearlySales = df.select(year(col("OrderDate")).alias("Year")).groupBy("Year").count().orderBy("Year")
-   display(yearlySales)
-    ```
-
-4. Run the code cell you added, and note that the results show the number of sales orders per year. Note that the **select** method includes a SQL **year** function to extract the year component of the *OrderDate* field (which is why the code includes an **import** statement to import functions from the Spark SQL library). It then uses an **alias** method is used to assign a column name to the extracted year value. The data is then grouped by the derived *Year* column and the count of rows in each group is calculated before finally the **orderBy** method is used to sort the resulting dataframe.
-
-### Task 6: Use Spark to transform data files
+### Task 4: Use Spark to transform data files
 
 In this task, you will use Spark to transform data files into a desired format for analysis and processing. This involves ingesting data in specific structures and applying transformations, a common responsibility for data engineers, to prepare the data for downstream applications.
 
@@ -338,7 +291,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
 <validation step="c2a9bb5d-2eb6-45b7-8b8a-2145f7f1d7e2" />
 
-### Task 7: Work with tables and SQL
+### Task 5: Work with tables and SQL
 
 As you've seen, the native methods of the dataframe object enable you to query and analyze data from a file quite effectively. However, many data analysts are more comfortable working with tables that they can query using SQL syntax. Spark provides a *metastore* in which you can define relational tables. The Spark SQL library that provides the dataframe object also supports the use of SQL statements to query tables in the metastore. By using these capabilities of Spark, you can combine the flexibility of a data lake with the structured data schema and SQL-based queries of a relational data warehouse - hence the term "data lakehouse".
 
@@ -395,7 +348,7 @@ While it's useful to be able to embed SQL statements into a cell containing PySp
 
         > **Note**: For more information about Spark SQL and dataframes, see the [Spark SQL documentation](https://spark.apache.org/docs/2.2.0/sql-programming-guide.html).
 
-### Task 8: Visualize data with Spark
+### Task 6: Visualize data with Spark
 
 In this task, you will visualize data using Spark to enhance understanding and insights through graphical representation. While Fabric notebooks offer a basic chart view for data from dataframes or Spark SQL queries, you can utilize Python graphics libraries like **matplotlib** and **seaborn** for more comprehensive and customized charting.
 
@@ -612,7 +565,17 @@ In this task, you will save your notebook with a meaningful name to preserve you
 
 ### Summary
 
-In this exercise, you've learned how to use Spark to work with data in Microsoft Fabric.
+In this exercise, data analysis was conducted with Apache Spark. The process began with the creation of a notebook to serve as the analytical environment. Data was loaded into a DataFrame for further processing. Exploration of the DataFrame provided insights into the dataset's characteristics. Spark was then employed to transform data files, enhancing their structure and content. Finally, data visualization with Spark facilitated a comprehensive understanding of patterns and trends within the dataset.
+
+### Review
+
+In this lab, you have completed:
+
+- Create a notebook
+- Load data into a dataframe
+- Explore data in a dataframe
+- Use Spark to transform data files
+- Visualize data with Spark
 
 ### You have successfully completed the lab. Click on Next >> to procced with next exercise.
 
