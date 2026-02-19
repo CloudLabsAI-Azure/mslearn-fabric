@@ -1,53 +1,47 @@
 # **Cloud Scale Analytics with Microsoft Fabric**
 
-### **Overall Estimated Duration**: 150 minutes  
+### **Overall Estimated Duration**: 60 minutes  
 
 ## **Overview**  
-In **Microsoft Fabric**, a data warehouse provides a relational database designed for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse supports full SQL semantics, including the ability to insert, update, and delete data in tables.  
-
-In this lab, you will dive into the world of data analysis within a data warehouse using **Power BI**.
+**Microsoft Fabric** offers a robust runtime designed for storing and querying data using Kusto Query Language (KQL), which is particularly optimized for time series data, such as real-time logs and IoT device streams. This lab provides an engaging introduction to the capabilities of **KQL**, guiding you through the process of creating a KQL database, performing **data queries**, and **visualizing insights** with **Power BI reports**. By exploring the exciting realm of real-time analytics, you will gain hands-on experience with Microsoft Fabric's powerful tools and learn how to harness KQL for dynamic data analysis and reporting.
 
 
 ## **Objective**  
 
-**Analyze Data in a Data Warehouse:** Utilize Microsoft Fabric to build and analyze data in a data warehouse. Participants will learn to create a data warehouse, define data models, query data with SQL, and generate insights. The lab will also cover creating views and using Power BI to visualize data, enabling advanced reporting and interactive dashboards for data-driven decision-making. 
+**Get Started with Real-Time Analytics in Microsoft Fabric:** The objective of the lab,  is to introduce you to the powerful capabilities of Microsoft Fabric and Kusto Query Language (KQL) for real-time analytics. You will learn how to create a KQL database, query time-series data efficiently, and develop compelling Power BI reports. By the end of this lab, you will have hands-on experience leveraging Microsoft Fabric to analyze real-time data, such as log files and IoT device streams, and transform insights into actionable visualizations.
 
 
 ## **Prerequisites**  
 
 Participants should have:  
-- **Basic Understanding of Relational Databases:** Familiarity with SQL and database concepts.  
+- **Basic Understanding of KQL:** Familiarity with Kusto Query Language and querying structured data.  
 
-- **Proficiency in Power BI:** Experience creating visualizations and analyzing data with Power BI.  
-- **Microsoft Fabric Knowledge:** Understanding of the components and structure of Microsoft Fabric.  
-- **Data Modeling Skills:** Ability to define relationships and optimize data for analysis.  
+- **Experience with Microsoft Fabric:** General understanding of the Microsoft Fabric environment and its components. 
 
+- **Proficiency in Power BI:** Basic experience in creating and customizing visualizations using Power BI.  
+
+- **Knowledge of Real-Time Data Concepts:** Understanding of time-series data and its applications, such as log files and IoT streams.
 
 ## **Architecture**  
 
-The architecture for this lab illustrates how Microsoft Fabric integrates with a data warehouse and Power BI to create a seamless data analysis experience. The data warehouse serves as the central repository for large-scale analytics, offering robust SQL capabilities. Using Microsoft Fabric, you can manage and scale the data warehouse while defining relationships and data models to ensure efficiency. Power BI acts as the visualization layer, providing an interactive interface to explore, analyze, and present data insights.
+The architecture illustrates the workflow for Exercise 1 of the lab, showcasing a three-step process. The first step involves creating a KQL database in Microsoft Fabric, which acts as the foundational storage for time-series or structured data. Once the database is set up, the next step is to use Kusto Query Language (KQL) to query the "Sales" table, retrieving and analyzing data based on specific criteria. Finally, the results of the KQL query are used to create a dynamic Power BI report, enabling visualization and actionable insights. This flow demonstrates the seamless integration of Microsoft Fabric, KQL, and Power BI to perform real-time analytics effectively.
 
 ### **Architecture Diagram**  
-   ![Navigate-To-AAD](./Images/Arch03.png)
+   ![Navigate-To-AAD](./Images/Arch4.png)
 ---
 
 ## **Explanation of Components**  
 
 The architecture for this lab involves the following key components:
--  **Create a Data Warehouse**
-Participants will set up a data warehouse in Microsoft Fabric, learning the process of creating a scalable relational database designed for large-scale data analytics and reporting.
+-  **Create a KQL Database:**
+In this step, you created a KQL database to store and manage your data. This database serves as the foundation for querying and analyzing data using Kusto Query Language (KQL). The database structure was designed to efficiently organize sales data for further analysis.
 
-- **Create Tables and Insert Data**
-Participants will create tables within the data warehouse, define their schema, and insert sample data to prepare for analysis, gaining hands-on experience in data organization.
+- **Use KQL to Query the Sales Table:**
+With KQL, you wrote queries to interact with the sales table, filtering and aggregating data to derive meaningful insights. By using various operators and functions, you calculated key metrics, such as total revenue and product-wise sales, enabling more precise data analysis.
 
-- **Define a Data Model**
-Participants will define relationships between tables to optimize the data for querying and analysis, using techniques like normalization to ensure data integrity and efficiency.
+- **Create a Power BI Report from a KQL Queryset:**
+Using the results from your KQL query, you created a Power BI report that visualizes the data. The report was customized with charts and tables to display the insights clearly, allowing stakeholders to easily interpret and make data-driven decisions based on the sales information.
 
-- **Query Data Warehouse Tables**
-Participants will write and execute SQL queries to retrieve and manipulate data, using commands like SELECT, JOIN, and WHERE to filter and aggregate data for analysis.
-
-- **Create a View and Visualize Your Data** 
-Participants will create views to simplify querying and use Power BI to visualize data, building interactive dashboards and reports for insights and decision-making. 
 
 ## Getting Started with the Lab 
 

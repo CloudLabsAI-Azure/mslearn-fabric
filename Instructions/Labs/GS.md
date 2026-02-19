@@ -41,7 +41,7 @@ Microsoft Fabric offers a comprehensive suite of services to manage and analyze 
 
 ## Architecture Diagram
 
-![](./Images/cloud-scale-fabric-arch-diagram.png)
+![](./Images/Arch.png)
 
 ## Explanation of Components
 
@@ -57,78 +57,73 @@ The architecture for this lab involves several key components of Microsoft Fabri
 
 **Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
 
-## Getting Started with the Lab
- 
-Welcome to your MS Fabric Foundation for Enterprise Analytics workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
- 
-## Accessing Your Lab Environment
- 
+## Getting Started with the Lab 
+
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-## Virtual Machine & Lab Guide
- 
-Your virtual machine is your workhorse throughout the workshop. The **Guide** is your roadmap to success.
+![08](./Images/Gs001.png) 
 
-![](./Images/ws/02062025(1).png)
+## Virtual Machine & Lab Guide
+
+In the integrated environment, the lab VM serves as the designated workspace, while the lab guide is accessible on the right side of the screen.
+
+**Note**: Kindly ensure that you are following the instructions carefully to ensure the lab runs smoothly and provides an optimal user experience.
 
 ## Exploring Your Lab Resources
- 
+
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
- 
-![](./Images/ws/02062025(2).png)
- 
+
+![08](./Images/GS2.png)
+   
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![](./Images/ws/02062025(3).png)
- 
-## Managing Your Virtual Machine
- 
-Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
-
-![](./Images/ws/02062025(4).png)
+![Use the Split Window Feature](./Images/GS3.png) 
 
 ## Lab Guide Zoom In/Zoom Out
+ 
+To adjust the zoom level, select the **A↕ (1)** icon next to the timer, and then choose the required **zoom percentage (2)** from the dropdown.
 
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+![08](./Images/GS4.png)  
 
-![](./Images/ws/02062025(5).png)
+## Managing Your Virtual Machine
 
-## Let's get started with Azure
+Feel free to start, stop, or restart your virtual machine by selecting **More (1)**, choosing **Resources (2)**, and using the available **VM actions (3)** to manage your lab environment as needed.
 
-1. In the Lab VM, click on Azure portal shortcut of Microsoft Edge browser which is created on the desktop.
+![](Images/GS5.png)
+  
+## Let's Get Started with Azure Portal
 
-   ![Azure Portal](./Images/ws/GS1.png)
+1. On your virtual machine, click on the Azure Portal icon as shown below:
 
+   ![Launch Azure Portal](./Images/GS01.png)
+   
+1. You'll see the **Sign into Microsoft Azure** tab. Here, enter your credentials:
+ 
+   - **Email (1):** <inject key="AzureAdUserEmail"></inject>
 
-1. On the **Sign in to Microsoft Azure** window, you will see the login screen. Enter the following username and click on **Next**.
+   - click **Next (2)**.
+ 
+      ![Enter Your Username](./Images/GS002.png)
+ 
+1. Next, provide your **Enter Temporary Access Pass**:
+ 
+   - **Password (1):** <inject key="AzureAdUserPassword"></inject>
 
-    **Email/Username: <inject key="AzureAdUserEmail"></inject>**
-        
-    ![Sign-In](./Images/ws/GS2.png)
+   - click **Sign in (2)**.
+ 
+      ![Enter Your Password](./Images/GS003.png)
 
-1. Now enter the following password and click on **Sign in**.
+1. If **Action Required** window pop up click on **Ask later**.
+ 
+1. If prompted to stay signed in, you can click "No."
 
-    **Password: <inject key="AzureAdUserPassword"></inject>**
-
-   ![Password](./Images/ws/GS3.png)
-
-1. First-time users are often prompted to **Stay Signed In**, if you see this pop-up, click on **Yes**.
-
-    ![](./Images/ws/GS4.png)
+1. If you see the pop-up **Sign in to sync data**, Click on **No,thanks.** 
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Maybe Later** to skip the tour.
-
-1. In the **Search** pane, search for **Resource groups (1)** and select **Resource groups (2)**.
-
-    ![In the search results pane, select the Resource group](./Images/ws/GS5.png)
-
-1. On the **Resource groups** page, you can view the pre-deployed resource group **fabric**.
-
-   ![RG](./Images/ws/GS6.png)
+1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
 ## Support Contact
  
@@ -138,8 +133,8 @@ Learner Support Contacts:
 - Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+Now, click on **Next** from the lower right corner to move on to the next page. 
 
-![alt text](./Images/ws/GS7.png)
+![Launch Azure Portal](./Images/GS004.png) 
 
 ### Happy Learning!!
