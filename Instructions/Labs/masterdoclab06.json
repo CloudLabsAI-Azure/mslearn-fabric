@@ -6,9 +6,13 @@
       "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/fabric-capacity/Instructions/Labs/Intro.md",
       "Order": 1
     },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/commonexe.md",
+      "Order": 2
+    },
      {
       "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/05-analyze-spark-V2.md",
-      "Order": 2
+      "Order": 3
     }
   ]
 }]
