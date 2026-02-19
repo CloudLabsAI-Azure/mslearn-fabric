@@ -9,142 +9,12 @@ In this lab, you'll explore Cloud-Scale Analytics using Microsoft Fabric. This l
 
 You will be able to complete the following tasks:
 
-- Task 1: Sign up for Microsoft Fabric Trial
-- Task 2: Create a workspace
-- Task 3: Create a Lakehouse
-- Task 4: Create a notebook
-- Task 5: Use SQL to query tables
-- Task 6: Create a visual query
-- Task 7: Create a report
+- Task 1: Create a notebook
+- Task 2: Use SQL to query tables
+- Task 3: Create a visual query
+- Task 4: Create a report
 
-## Task 1: Sign up for Microsoft Fabric Trial
-
-In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
-
-1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Free trial (2)**.
-
-     ![Account-manager-start](./Images/freetrail.png)
-
-1. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
-
-      ![03](./Images/ex1t1p2.png)
-
-1. On **Successfully upgraded to Microsoft Fabric** pop-up click on **OK** when prompted.
-
-      ![Account-manager-start](./Images/mfok.png)
-
-1. Close the **Invite teammates to try Fabric to extend your trial** pop-up by clicking on **X**. 
-
-    ![03](./Images/extendtrail.png)
-
-1. The page will reload, and a pop-up will appear saying **Microsoft Fabric (Free) license assigned**. Click **OK** to close it.
-
-    ![03](./Images/assign.png)
-
-1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right again, and verify **Trial Status (2)**.
-
-      ![Account-manager-start](./Images/trialstat.png)
-
-## Task 2: Create a workspace
-
-In this task, you will create a Fabric workspace. The workspace will contain all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
-
-1. On the left-hand pane of the Power BI portal, select **Workspaces (1)** and click on **+ New workspace (2)**
-
-    ![New Workspace](./Images/wrkspc.png)
-
-1. On the **Create a workspace** page, enter the following details:
-
-    - Name: **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - Expand the **Advanced (2)** section.
-
-      ![alt text](image.png)
-
-    - Select **License mode** as **Fabric capacity (3)**.
-
-    - From the dropdown list, select the available **Capacity (4)**.
-
-    - Click **Apply (5)** to create and open the workspace.
- 
-      ![alt text](image-1.png)
-
-1. In the **Introducing task flows (preview)** window, click **Got it**.
-
-    ![](./Images/fab-ric-ex1-g2.png)
-      
-## Task 3: Create a Lakehouse
-
-In this task, switch to the Data engineering experience and create a new Lakehouse. You'll use it to ingest and manage data in the following steps.
-
-1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Fabric (2)** experience.
-
-   ![](./Images/upfab-ric-ex1-g3.png)
-
-   ![](./Images/E1T3S1ii.png)
-   
-1. In the **Welcome to the Fabric view** window, click **Cancel**.
-
-    ![](./Images/ex1t3p2.png)
-
-1. In the left pane, navigate to your Workspace named as **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new lakehouse.
-
-    ![](./Images/newitem.png)
-
-    >**Note:** To navigate to your workspace click on **Workspaces (1)** from the left navigation panel and select your Workspace named as **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**
-
-    ![](./Images/nav.png)
-
-1. In the search box, search for **Lakehouse (1)** and select **Lakehouse (2)** from the list.
-
-    ![](./Images/Lake1.png)
-
-1. In the **New lakehouse** window, enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and make sure to **unhcheck Lakehouse Schemas box (2)** click on **Create (3)**.
-
-    ![](./Images/lhcreate.png)
-
-1. On the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** tab in the left pane, click the **Ellipsis (...) (1)** menu for the **Files** node, select **New subfolder (2)**.
-    
-    ![](./Images/filesub.png)
-
-1. In the **New subfolder** window, enter the name as **new_data (1)** and click on **Create (2)**.
-
-    ![](./Images/Lake5.png)
-
-1. Select the **More options (1)** next to the **new_data** folder, choose **Upload (2)**, and then select **Upload files (3)** to add files to the Lakehouse.
-
-     ![03](./Images/ws/Fab10.png)
-
-1. In the **Upload files** dialog, select the **folder icon** to browse and choose the files you want to upload to the Lakehouse.
-
-     ![03](./Images/ws/Fab11.png)
-
-1. Browse the path **C:\LabFiles\Files** and select the file **sales.csv (1)**. Then click on **Open (2).**
-
-     ![03](./Images/ws/Fab12.png)
-
-1. In the **Upload files** dialog, select the file **sales.csv (1)**, and then click **Upload (2)** to upload the file to the Lakehouse.
-
-     ![03](./Images/ws/Fab13.png)
-
-1. Verify that the file **sales.csv (1)** has been uploaded successfully, and then close the **Upload files** dialog by selecting **Close (2)**.
-
-     ![03](./Images/ws/Fab14.png)
-
-1. In the menu bar on the left, select your lakehouse.
-   
-1. On the **Home** page, in the **Lakehouse explorer (1)** pane, expand **Files**, select the **new_data (2)** folder, and verify that the **sales.csv (3)** file is present.
-
-     ![03](./Images/ws/Fab15.png)
-
-  <validation step="b1004506-d334-44ec-ab7c-b546a3bc1d6f" />
-
-  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-  - Navigate to the Lab Validation Page from the upper right corner in the lab guide section.
-  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-## Task 4: Create a Notebook
+## Task 1: Create a Notebook
 
 In this task, you'll create a Notebook to document your data analysis. You'll set up the environment, import libraries, and structure your code for exploration, visualization, and insights.
 
@@ -254,7 +124,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
     ![03](./Images/salepre.png)
 
-## Task 5: Use SQL to query tables
+## Task 2: Use SQL to query tables
 
 In this task, you'll use SQL to query tables in a database. You'll write statements to retrieve, filter, and manipulate data, helping you analyze the dataset and build your SQL skills.
 
@@ -281,7 +151,7 @@ In this task, you'll use SQL to query tables in a database. You'll write stateme
 
     ![](./Images/ref.png)
 
-## Task 7: Create a visual query
+## Task 3: Create a visual query
 
 In this task, you'll create a visual query in Power BI using Power Query. Start by adding the Sales table to the query editor, selecting the necessary columns, and applying a Group By transformation to count distinct line items per sales order. Then, review the summarized results.
 
@@ -317,7 +187,7 @@ In this task, you'll create a visual query in Power BI using Power Query. Start 
 
     ![Screenshot of a Visual query with results.](./Images/E2-T6-S6.png)
 
-## Task 8: Create a report
+## Task 4: Create a report
 
 In this task, you’ll build a report that transforms raw data into insights. You’ll connect to your semantic model, select key fields, apply the right visualizations, and design a clear, well-structured report. The final output will highlight item sales in a way that supports analysis and decision-making.
 

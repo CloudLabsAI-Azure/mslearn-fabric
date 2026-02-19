@@ -10,91 +10,11 @@ In this Lab, you'll explore real-time analytics in Microsoft Fabric using Kusto 
 
 You will be able to complete the following tasks:
 
-- Task 1: Assign Fabric Administrator Role
-- Task 2: Sign up for Microsoft Fabric Trial
-- Task 3: Create a workspace
-- Task 4: Create a KQL database
-- Task 5: Use KQL to query the sales table
-- Task 6: Create a Power BI report from a KQL Queryset
-- Task 7: Use delta tables for streaming data (Optional Task)
+- Task 1: Create a KQL database
+- Task 2: Use KQL to query the sales table
+- Task 3: Create a Power BI report from a KQL Queryset
 
-#### Task 1: Assign Fabric Administrator Role
-
-In this task, we're assigning ourselves the **Fabric Administrator** role in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
-
-1. In the Azure portal, search for **Microsoft Entra ID (1)** using the search bar, and then select **Microsoft Entra ID (2)** from the results.
-
-    ![Navigate-To-AAD](./Images/ws/Fab3.png)
-
-1. Under **Manage (1)**, Navigate to **Roles and administrators (2)**.
-
-    ![Roles-and-Administrator](./Images/ws/Fab4.png)
-
-1. In the **Roles and administrators** page, search for **Fabric Administrator (1)**, and click on it **(2)**.
-
-    ![search-fabric-admin](./Images/ws/Fab5.png)
-
-1. You will be taken to the **Fabric Administrator | Assignments** page. From here, assign yourself the **Fabric Administrator** role by selecting **+ Add assignments**.
-
-    ![click-add-assignments](./Images/ws/Fab6.png)
-
-1. Ensure you **check the box (1)** next to your username, verify that it appears under **Selected (2)**, and then select **Add (3)** to complete the assignment.
-
-    ![check-and-add-role](./Images/ws/Fab7.png)
-
-1. Confirm the **Fabric Administrator** role has been added by selecting **Refresh (1)** on the Fabric Administrators | Assignments page. Once the assignment is visible **(2)**.
-
-    ![check-and-navigate-back-to-home](./Images/ws/Fab8.png)
-
-### Task 2: Sign up for Microsoft Fabric Trial
-
-In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
-
-1. Copy the **Power BI homepage link**, and open this link inside the VM in a new tab.
-
-   ```
-   https://powerbi.com
-   ```
-
-   >**Note**: In case a sign-up page asks for a phone number, you can enter a dummy phone number to proceed.
-
-1. Select **Account manager (1)**, and click on **Free trial (2)**.
-
-     ![Account-manager-start](./Images/f1.png)
-
-1. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
-
-    ![image](https://github.com/user-attachments/assets/d12f89b8-955d-4e0c-b671-977c34e152d1)
-
-    > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.  
-
-1. Click on **Stay on current page** when prompted.
-
-      ![Account-manager-start](./Images/fabric-2.png)
-
-1. Now, open **Account manager (1)** again, and verify **Trial Status (2)**.
-
-      ![Account-manager-start](./Images/lab1-image5.png)
-      
-### Task 3: Create a workspace
-
-Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
-
-1. Now, select **Workspaces (1)** and click on **+ New workspace (2)**.
-
-    ![New Workspace](./Images/f2.png)
-
-1. Fill out the **Create a workspace** form with the following details:
- 
-   - **Name:** Enter **fabric-<inject key="DeploymentID" enableCopy="false"/>**
- 
-      ![name-and-desc-of-workspc](./Images/f3.png)
- 
-   - **Advanced:** Expand it and Under **License mode**, select **Fabric (1)**, Under **Capacity** Select available **fabric<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region"></inject>(2)** and click on **Apply (3)** to create and open the workspace.
- 
-      ![advanced-and-apply](./Images/ws/Fab20.png)
-
-## Task 4: Create a KQL database
+## Task 1: Create a KQL database
 
 In this task, you will create a KQL database to facilitate querying of static or streaming data. You will define a table within the KQL database and ingest sales data from a file to enable effective analysis using Kusto Query Language (KQL).
 
@@ -155,7 +75,7 @@ In this task, you will create a KQL database to facilitate querying of static or
     
     > **Note:** In this example, you imported a very small amount of static data from a file, which is fine for this exercise. In reality, you can use Kusto to analyze much larger volumes of data, including real-time data from a streaming source such as Azure Event Hubs.
 
-## Task 5: Use KQL to query the sales table
+## Task 2: Use KQL to query the sales table
 
 In this task, you will use Kusto Query Language (KQL) to query the sales table in your KQL database. With the data now available, you can write KQL code to extract insights and perform analysis on the sales data.
 
@@ -205,7 +125,7 @@ In this task, you will use Kusto Query Language (KQL) to query the sales table i
 
     ![](./Images/E3T2S9.png)
 
-## Task 6: Create a Power BI report from a KQL Queryset
+## Task 3: Create a Power BI report from a KQL Queryset
 
 In this task, you will create a Power BI report using your KQL Queryset as the foundation for the analysis. This allows you to visualize and present the insights derived from your KQL queries in an interactive and user-friendly format within Power BI.
 
@@ -249,127 +169,12 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
 
 1. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+    <validation step="f0432ac8-2698-4432-be77-0a69568c2d09" />
 
-<validation step="f0432ac8-2698-4432-be77-0a69568c2d09" />
-
-## Task 4: Use delta tables for streaming data (Optional Task)
-
-In this task, you will use Delta tables to handle streaming data, leveraging their capabilities for real-time data processing. Specifically, you will implement a Delta table as a sink for streaming data in a simulated Internet of Things (IoT) scenario, utilizing the Spark Structured Streaming API.
-
-1. In the left pane, click oto your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and then open **Load Sales Notebook (2)** that is listed under your workspace.
-
-    ![05](./Images/E3T4S1.png)
-
-1. Add a new code cell in the notebook using **+ Code**. Then, in the new cell, add the following **code (1)** and **run (2)** it:
-
-   ```python
-   from notebookutils import mssparkutils
-   from pyspark.sql.types import *
-   from pyspark.sql.functions import *
-
-   # Create a folder
-   inputPath = 'Files/data/'
-   mssparkutils.fs.mkdirs(inputPath)
-
-   # Create a stream that reads data from the folder, using a JSON schema
-   jsonSchema = StructType([
-   StructField("device", StringType(), False),
-   StructField("status", StringType(), False)
-   ])
-   iotstream = spark.readStream.schema(jsonSchema).option("maxFilesPerTrigger", 1).json(inputPath)
-
-   # Write some event data to the folder
-   device_data = '''{"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev2","status":"error"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"error"}
-   {"device":"Dev2","status":"ok"}
-   {"device":"Dev2","status":"error"}
-   {"device":"Dev1","status":"ok"}'''
-   mssparkutils.fs.put(inputPath + "data.txt", device_data, True)
-   print("Source stream created...")
-   ```
-
-    ![05](./Images/streamcr.png)
-
-1. Ensure the message **Source stream created... (3)** is printed. The code you just ran has created a streaming data source based on a folder to which some data has been saved, representing readings from hypothetical IoT devices.
-
-1. Add a **new code cell**, and run the following **code (1)** by clicking on **Run (2)** button:
-
-    ```python
-   # Write the stream to a delta table
-   delta_stream_table_path = 'Tables/iotdevicedata'
-   checkpointpath = 'Files/delta/checkpoint'
-   deltastream = iotstream.writeStream.format("delta").option("checkpointLocation", checkpointpath).start(delta_stream_table_path)
-   print("Streaming to delta sink...")
-    ```
-
-    ![05](./Images/sink.png)
-
-1. This code writes the streaming device data in delta format to a folder named **iotdevicedata**. Because the path for the folder location is in the **Tables** folder, a table will automatically be created for it.
-
-1. Add a new code cell, and **run** the following **code**:
-
-    ```SQL
-   %%sql
-
-   SELECT * FROM IotDeviceData;
-    ```
-
-    ![05](./Images/star.png)
-
-1. This code queries the **IotDeviceData** table, which contains the device data from the streaming source.
-
-1. Add a new code cell, and run the following code:
-
-    ```python
-   # Add more data to the source stream
-   more_data = '''{"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"ok"}
-   {"device":"Dev1","status":"error"}
-   {"device":"Dev2","status":"error"}
-   {"device":"Dev1","status":"ok"}'''
-
-   mssparkutils.fs.put(inputPath + "more-data.txt", more_data, True)
-    ```
-
-    ![05](./Images/moredata.png)
-
-1. This code writes more hypothetical device data to the streaming source.
-
-1. **Re-run (1)** the cell containing the following code:
-
-    ```SQL
-   %%sql
-
-   SELECT * FROM IotDeviceData;
-    ```
-
-    ![05](./Images/rerun.png)
-
-1. This code queries the **IotDeviceData** table again, which should now include the **additional data (2)** that was added to the streaming source.
-
-1. Add a new code cell, and run the following code:
-
-    ```python
-   deltastream.stop()
-    ```
-
-    ![05](./Images/dstop.png)
-
-    >**Note**: This code stops the stream.
-
-1. Click the **Stop (■)** button to end the session before proceeding.
-
-    ![05](./Images/E3T4S13.png)
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - If you receive a success message, you can proceed to the next task.
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Summary
 
@@ -378,7 +183,6 @@ In this exercise, you:
 - Set up a KQL (Kusto Query Language) database to analyze the data stored in the Lakehouse.
 - Used KQL queries to explore and extract insights from the data.
 - Created a query set based on your KQL analysis.
-- Used the query set as the data source for a Power BI report to visualize the results.
 
 ### You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.
 

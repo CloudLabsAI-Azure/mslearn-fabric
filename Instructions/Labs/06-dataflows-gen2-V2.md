@@ -22,21 +22,39 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
     ![](./Images/E1T1S2.png)
 
-1. In the All items search for **Dataflow Gen2** and select it from the list.
+1. Search for **Dataflow Gen2 (1)** and select **Dataflow Gen2 (2)**.
+Leave the name as default, **Uncheck (3)** the Enable Git integration, deployment pipelines and Public API scenarios, and then click on **Create (4)**.
 
-1. Select **Get data**, select **Test/CSV** and create a new data source with the following settings:
-    - **Link to file**: *Selected*
-    - **File path or URL**: `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
-    - **Connection**: Create new connection
-    - **data gateway**: (none)
-    - **Authentication kind**: Anonymous
-    - **Privacy level**: None
+   ![](./Images/Fab21.png)
 
-1. Select **Next** to preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown below:
+   ![](./Images/Fab22.png)
+
+1. Select **Get data**, select **Test/CSV** and create a new data 1. 
+
+   ![](./Images/Fab23.png)
+
+Create a new data source with the following settings:
+
+   - **Link to file: (1)** Selected
+   - **File path or URL: (2)** `https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv`
+   - **Connection: (3)** Create new connection
+   - **Connection Name: (4)** Connection
+   - **data gateway: (5)** (none)
+   - **Authentication kind: (6)** Anonymous
+   - **Privacy level: (7)** None
+   - Click **Next (8)**
+
+      ![](./Images/Fab24.png)
+
+1. Preview the file data, and then **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown below:
 
    ![Query in the Power Query editor.](./Images/fabric23.png)
 
-1. Select the **Add column** tab on the toolbar ribbon. Then, choose **Custom column** and create a new column named **MonthNo** using the formula `Date.Month([OrderDate])`.
+1. Select the **Add column (1)** tab on the toolbar ribbon.Then, choose **Custom column (2)**.
+
+   ![](./Images/Fab25.png)
+
+1. Now create a new column named **MonthNo (1)** using the formula `Date.Month([OrderDate])`**(2)**.And click on **OK (3)**.
 
    ![Custom column in Power Query editor.](./Images/fabric24.png)
 
@@ -54,50 +72,65 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
 
    >**Note:** If this option is greyed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-2. In the **Connect to data destination** dialog box, edit the connection by selecting **Create a new connection**. Then, sign in with your Power BI organizational account to establish the identity that the dataflow will use to access the lakehouse.
+2. In the **Connect to data destination** dialog box, make sure **Create a new connection (1)** is selected and the **<inject key="AzureAdUserEmail"></inject> (2)** account is signed in and then click on **Next (3)**.
 
-   ![Data destination configuration page.](./Images/lak1.png)
+   ![](./Images/Fab26.png)
 
-4. Select **Next**, Select the **fabric-<inject key="DeploymentID" enableCopy="false"/>**. Choose the **lakehouse** then specify a new table named **orders**.
+4. In the **Choose destination target** window, select the **fabric-<inject key="DeploymentID" enableCopy="false"/>** Workspace. Select the **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** then specify the new table name as **orders (2)**, then click **Next (3)**.
 
    ![Data destination configuration page.](./Images/fabric26.png)
 
 5. On the Destination settings page, observe that **MonthNo** is not selected in the Column mapping, and an informational message is displayed.
  
-6. On the Destination settings page, toggle off the **Use Automatic Settings** option. Then, right-click on the **MonthNo** column header and select **Change Type** to set **MonthNo** as a **Whole number**. Finally, click on **Save Settings**.
-    ![Data destination settings page.](./Images/lak2.png)
+6. On the Destination settings page, toggle **off (1)** the **Use Automatic Settings** option. Then, for the **MonthNo** column header, change the **Source Type** to **Whole number (2)**. Now, click on **Save settings (3)**.
 
-5. Select **Publish** to publish the dataflow. Then wait for the **Dataflow** to be created in the workspace.
+    ![Data destination settings page.](./Images/Fab27.png)
 
-6. Once published,click on the **ellipse** next to the published dataflow in the workspace, select **Properties**, and rename the dataflow as **Transform Orders Dataflow**.
+5. Click on the **Dataflow 2 (1)** on the top left, and rename the dataflow as **Transform Orders Dataflow (2)**.
+
+   ![](./Images/Fab28.png)
+
+6. Select **Publish** from the bottom right corner to publish the dataflow. Then wait for the **Dataflow** to be created in the workspace.
+
+   ![](./Images/Fab29.png)
 
 ### Task 3: Add a dataflow to a pipeline
 
 In this task, you’ll add a dataflow to a pipeline to streamline the data processing workflow and enable automated data transformations.
 
-1. Navigate back to the workspace, click on **+ New item** and select **Data pipeline**.Name the pipeline as **Load Orders pipeline**. This will open the pipeline editor.
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Data Flow Gen 2**.
 
-    ![](./Images/E1T3S1.png)
-  
-   > **Note**: If the Copy Data wizard opens automatically, close it!
+    ![](./Images/Fab30.png)
 
-3. Select **pipeline activity**, and add a **Dataflow** activity to the pipeline.
+    ![](./Images/Fab31.png)
+
+1. In the Search box, search for **Pipeline (1)**, and select **Pipeline (2)**.
+
+   ![](./Images/Fab32.png)
+
+1. Set the Name as **Load Orders pipeline (1)** and click on **Create (2)**. This will open the pipeline editor.
+
+   ![](./Images/Fab33.png)
+
+   > **Note:** If the Copy Data wizard opens automatically, close it!
+
+1. Select **pipeline activity**, and add a **Dataflow** activity to the pipeline.
 
    ![Empty data pipeline.](./Images/dataflow_1.png)
 
-4. With the new **Dataflow1** activity selected, go to the **Settings (1)** tab which is at the bottom of the page. In the **Dataflow** drop-down list, choose **fabric-<inject key="DeploymentID" enableCopy="false"/>** or my workspace (2) and select **Transform Orders Dataflow (3)** 
+1. With the new **Dataflow1** activity selected, go to the **Settings (1)** tab which is at the bottom of the page. In the **Dataflow** drop-down list, choose **fabric-<inject key="DeploymentID" enableCopy="false"/>** or my workspace (2) and select **Transform Orders Dataflow (3)** 
 
    ![Empty data pipeline.](./Images/transform.png)
    
-6. **Save** the pipeline from the top left corner.
+1. **Save** the pipeline from the top left corner.
 
-7. Use the **Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
+1. Use the **Run** button to run the pipeline, and wait for it to complete. It may take a few minutes.
 
    ![Pipeline with a dataflow that has completed successfully.](./Images/lak8.png)
 
-8. In the menu bar on the left edge, select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>**
+1. In the menu bar on the left edge, select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>**
 
-9. Expand the **Tables** section and select the **orders** table created by your dataflow.
+1. Expand the **Tables** section and select the **orders** table created by your dataflow.
 
    ![Table loaded by a dataflow.](./Images/orders_1.png)
 
