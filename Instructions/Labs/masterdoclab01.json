@@ -3,7 +3,7 @@
   "Language": "English",
   "Files": [
     {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/fabric-capacity/Instructions/Labs/GSlab1.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/GSlab1.md",
       "Order": 1
     },
     {
@@ -11,4 +11,5 @@
       "Order": 2
     }
   ]
+
 }]
