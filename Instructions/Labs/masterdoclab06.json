@@ -7,7 +7,7 @@
       "Order": 1
     },
      {
-      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/main/Instructions/Labs/MS-05-analyze-spark-V2.md",
+      "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/05-analyze-spark-V2.md",
       "Order": 2
     }
   ]
