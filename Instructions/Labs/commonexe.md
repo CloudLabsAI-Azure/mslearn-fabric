@@ -11,6 +11,7 @@ You will be able to complete the following tasks:
 - Task 1: Assign Fabric Administrator Role
 - Task 2: Sign up for Microsoft Fabric Trial
 - Task 3: Create a workspace
+- Task 4: Create a Lakehouse
 
 #### Task 1: Assign Fabric Administrator Role
 
@@ -87,6 +88,78 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
    - **Advanced:** Expand it and Under **License mode**, select **Fabric (1)**, Under **Capacity** Select available **fabric<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region"></inject>(2)** and click on **Apply (3)** to create and open the workspace.
  
       ![advanced-and-apply](./Images/ws/Fab20.png)
+
+## Task 4: Create a Lakehouse and upload files
+
+In this task, switch to the Data engineering experience and create a new Lakehouse. You'll use it to ingest and manage data in the following steps.
+
+1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Fabric (2)** experience.
+
+   ![](./Images/upfab-ric-ex1-g3.png)
+
+   ![](./Images/E1T3S1ii.png)
+   
+1. In the **Welcome to the Fabric view** window, click **Cancel**.
+
+    ![](./Images/ex1t3p2.png)
+
+1. In the left pane, navigate to your Workspace named as **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new lakehouse.
+
+    ![](./Images/newitem.png)
+
+    >**Note:** To navigate to your workspace click on **Workspaces (1)** from the left navigation panel and select your Workspace named as **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**
+
+    ![](./Images/nav.png)
+
+1. In the search box, search for **Lakehouse (1)** and select **Lakehouse (2)** from the list.
+
+    ![](./Images/Lake1.png)
+
+1. In the **New lakehouse** window, enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and make sure to **unhcheck Lakehouse Schemas box (2)** click on **Create (3)**.
+
+    ![](./Images/lhcreate.png)
+
+1. On the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** tab in the left pane, click the **Ellipsis (...) (1)** menu for the **Files** node, select **New subfolder (2)**.
+    
+    ![](./Images/filesub.png)
+
+1. In the **New subfolder** window, enter the name as **new_data (1)** and click on **Create (2)**.
+
+    ![](./Images/Lake5.png)
+
+1. Select the **More options (1)** next to the **new_data** folder, choose **Upload (2)**, and then select **Upload files (3)** to add files to the Lakehouse.
+
+     ![03](./Images/ws/Fab10.png)
+
+1. In the **Upload files** dialog, select the **folder icon** to browse and choose the files you want to upload to the Lakehouse.
+
+     ![03](./Images/ws/Fab11.png)
+
+1. Browse the path **C:\LabFiles\Files** and select the file **sales.csv (1)**. Then click on **Open (2).**
+
+     ![03](./Images/ws/Fab12.png)
+
+1. In the **Upload files** dialog, select the file **sales.csv (1)**, and then click **Upload (2)** to upload the file to the Lakehouse.
+
+     ![03](./Images/ws/Fab13.png)
+
+1. Verify that the file **sales.csv (1)** has been uploaded successfully, and then close the **Upload files** dialog by selecting **Close (2)**.
+
+     ![03](./Images/ws/Fab14.png)
+
+1. In the menu bar on the left, select your lakehouse.
+   
+1. On the **Home** page, in the **Lakehouse explorer (1)** pane, expand **Files**, select the **new_data (2)** folder, and verify that the **sales.csv (3)** file is present.
+
+     ![03](./Images/ws/Fab15.png)
+
+  <validation step="b1004506-d334-44ec-ab7c-b546a3bc1d6f" />
+
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+  - Navigate to the Lab Validation Page from the upper right corner in the lab guide section.
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Summary
 
