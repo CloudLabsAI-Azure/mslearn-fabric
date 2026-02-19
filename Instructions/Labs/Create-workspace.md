@@ -18,27 +18,27 @@ In this task, we're assigning ourselves the **Fabric Administrator** role in Mic
 
 1. In the Azure portal, search for **Microsoft Entra ID (1)** using the search bar, and then select **Microsoft Entra ID (2)** from the results.
 
-    ![Navigate-To-AAD](./Images/ws/fab-lab1-rt-e1-g1.png)
+    ![Navigate-To-AAD](./Images/ws/Fab3.png)
 
 1. Under **Manage (1)**, Navigate to **Roles and administrators (2)**.
 
-    ![Roles-and-Administrator](./Images/ws/fab-lab1-rt-e1-g2.png)
+    ![Roles-and-Administrator](./Images/ws/Fab4.png)
 
 1. In the **Roles and administrators** page, search for **Fabric Administrator (1)**, and click on it **(2)**.
 
-    ![search-fabric-admin](./Images/ws/fab-lab1-rt-e1-g3.png)
+    ![search-fabric-admin](./Images/ws/Fab5.png)
 
 1. You will be taken to the **Fabric Administrator | Assignments** page. From here, assign yourself the **Fabric Administrator** role by selecting **+ Add assignments**.
 
-    ![click-add-assignments](./Images/ws/fab-lab1-rt-e1-g4.png)
+    ![click-add-assignments](./Images/ws/Fab6.png)
 
 1. Ensure you **check the box (1)** next to your username, verify that it appears under **Selected (2)**, and then select **Add (3)** to complete the assignment.
 
-    ![check-and-add-role](./Images/ws/fab-lab1-rt-e1-g5.png)
+    ![check-and-add-role](./Images/ws/Fab7.png)
 
 1. Confirm the **Fabric Administrator** role has been added by selecting **Refresh (1)** on the Fabric Administrators | Assignments page. Once the assignment is visible **(2)**.
 
-    ![check-and-navigate-back-to-home](./Images/ws/fab-lab1-rt-e1-g28.png)
+    ![check-and-navigate-back-to-home](./Images/ws/Fab8.png)
 
 ### Task 2: Sign up for Microsoft Fabric Trial
 
@@ -84,9 +84,9 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
  
       ![name-and-desc-of-workspc](./Images/f3.png)
  
-   - **Advanced:** Expand it and Under **License mode**, select **Fabric capacity (1)**, Under **Capacity** Select available **fabric<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region"></inject>(2)** and click on **Apply (3)** to create and open the workspace.
+   - **Advanced:** Expand it and Under **License mode**, select **Fabric (1)**, Under **Capacity** Select available **fabric<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region"></inject>(2)** and click on **Apply (3)** to create and open the workspace.
  
-      ![advanced-and-apply](./Images/f4.png)
+      ![advanced-and-apply](./Images/ws/Fab20.png)
 
 ### Summary
 
