@@ -1,9 +1,9 @@
-# Exercise 1: Ingest data with a pipeline in Microsoft Fabric
+# Lab 02: Ingest data with a Microsoft Fabric Lakehouse
 
 ### Estimated Duration: 90 Minutes
 
 ## Overview 
-In this exercise, you'll ingest data into a Microsoft Fabric lakehouse using pipelines and Apache Spark. Pipelines allow you to extract data from external sources and load it into OneLake. Spark enables you to transform the data at scale before storing it in lakehouse tables for analysis. Ensure data is successfully loaded into OneLake before applying transformations.
+In this lab, you'll explore Cloud-Scale Analytics using Microsoft Fabric. This lab is designed to provide hands-on experience with ingesting data into a Microsoft Fabric Lakehouse, creating notebooks, leveraging SQL queries to extract meaningful insights from the ingested data, building visual queries, and generating a comprehensive report using Power BI.
 
 ## Lab objectives
 
@@ -11,12 +11,11 @@ You will be able to complete the following tasks:
 
 - Task 1: Sign up for Microsoft Fabric Trial
 - Task 2: Create a workspace
-- Task 3: Enable Copilot inside a Codespace
-- Task 4: Create a pipeline
-- Task 5: Create a notebook
-- Task 6: Use SQL to query tables
-- Task 7: Create a visual query
-- Task 8: Create a report
+- Task 3: Create a Lakehouse
+- Task 4: Create a notebook
+- Task 5: Use SQL to query tables
+- Task 6: Create a visual query
+- Task 7: Create a report
 
 ## Task 1: Sign up for Microsoft Fabric Trial
 
@@ -111,27 +110,31 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
     ![](./Images/Lake5.png)
 
+1. Select the **More options (1)** next to the **new_data** folder, choose **Upload (2)**, and then select **Upload files (3)** to add files to the Lakehouse.
+
+     ![03](./Images/ws/Fab10.png)
+
 1. In the **Upload files** dialog, select the **folder icon** to browse and choose the files you want to upload to the Lakehouse.
 
-     ![03](./Images/ws/fab-lab1-rt-e1-g24.png)
+     ![03](./Images/ws/Fab11.png)
 
 1. Browse the path **C:\LabFiles\Files** and select the file **sales.csv (1)**. Then click on **Open (2).**
 
-     ![03](./Images/ws/sales.png)
+     ![03](./Images/ws/Fab12.png)
 
 1. In the **Upload files** dialog, select the file **sales.csv (1)**, and then click **Upload (2)** to upload the file to the Lakehouse.
 
-     ![03](./Images/ws/fab-lab1-rt-e1-g25.png)
+     ![03](./Images/ws/Fab13.png)
 
 1. Verify that the file **sales.csv (1)** has been uploaded successfully, and then close the **Upload files** dialog by selecting **Close (2)**.
 
-     ![03](./Images/ws/fab-lab1-rt-e1-g26.png)
+     ![03](./Images/ws/Fab14.png)
 
 1. In the menu bar on the left, select your lakehouse.
    
 1. On the **Home** page, in the **Lakehouse explorer (1)** pane, expand **Files**, select the **new_data (2)** folder, and verify that the **sales.csv (3)** file is present.
 
-     ![03](./Images/ws/fab-lab1-rt-e1-g27.png)
+     ![03](./Images/ws/Fab15.png)
 
   <validation step="b1004506-d334-44ec-ab7c-b546a3bc1d6f" />
 
