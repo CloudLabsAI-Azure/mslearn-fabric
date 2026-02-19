@@ -111,145 +111,37 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
     ![](./Images/Lake5.png)
 
-## Task 4: Create a pipeline
+1. In the **Upload files** dialog, select the **folder icon** to browse and choose the files you want to upload to the Lakehouse.
 
-In this task, you'll create a pipeline to automate data workflows. Using the Copy data activity, you'll extract data from a source and copy it to a file in the lakehouse, streamlining the data ingestion process.
+     ![03](./Images/ws/fab-lab1-rt-e1-g24.png)
 
-1. In the left pane, navigate back to the workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (2)**.
+1. Browse the path **C:\LabFiles\Files** and select the file **sales.csv (1)**. Then click on **Open (2).**
 
-    ![](./Images/e1t4s1.png)
+     ![03](./Images/ws/sales.png)
 
-1. In the search box, search for **Pipeline (1)** and select **Pipeline (2)** from the list.
+1. In the **Upload files** dialog, select the file **sales.csv (1)**, and then click **Upload (2)** to upload the file to the Lakehouse.
 
-    ![](./Images/E1T4S2.png)
+     ![03](./Images/ws/fab-lab1-rt-e1-g25.png)
 
-1. Create a new data pipeline named **Ingest Sales Data Pipeline (1)** and click on **Create (2)**. 
-    
-    ![](./Images/fab-ric-ex1-g8.png)
+1. Verify that the file **sales.csv (1)** has been uploaded successfully, and then close the **Upload files** dialog by selecting **Close (2)**.
+
+     ![03](./Images/ws/fab-lab1-rt-e1-g26.png)
+
+1. In the menu bar on the left, select your lakehouse.
    
-1. On the **Build a data pipeline to organize and move your data** page, select **Copy data assistant**.
+1. On the **Home** page, in the **Lakehouse explorer (1)** pane, expand **Files**, select the **new_data (2)** folder, and verify that the **sales.csv (3)** file is present.
 
-   ![03](./Images/e1t4s4.png)
+     ![03](./Images/ws/fab-lab1-rt-e1-g27.png)
 
-1. In the **Copy data** wizard, on the **Choose data source** page, search for **Http (1)** and select the **Http (2)** source from the results.
+  <validation step="b1004506-d334-44ec-ab7c-b546a3bc1d6f" />
 
-   ![](./Images/l1t4s5.png)
+  > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+  - Navigate to the Lab Validation Page from the upper right corner in the lab guide section.
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-1. In the **Connection settings** pane, enter the following settings for the connection to your data source:
-    
-    - URL: Enter the URL Below **(1)**
-        ```
-        https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv
-        ```
-    - Connection: **Create new connection (2)**
-    - Connection name: **Connection<inject key="DeploymentID" enableCopy="false"/> (3)**
-    - Authentication kind: **Anonymous (4)**
-    - Leave everything else as default
-    - Click on **Next (5)**
-  
-      ![03](./Images/l1t4s6.png)
-    
-1. On the **Choose data** pane, keep the default settings and click **Next**.
-    
-    ![05](./Images/E1T4S7.png)
-   
-1. Wait for the data to be sampled, then verify the following settings:
-
-   - **File format:** DelimitedText **(1)**
-   - **Column delimiter:** Comma (,) **(2)**
-   - **Row delimiter:** Line feed (\n) **(3)**
-   - Click **Preview data (4)** to view a sample of the data.
-   - After reviewing, close the preview and click **Next (5)**.
-
-        ![Account-manager-start](./Images/l1t4s8.png)
-
-        ![Account-manager-start](./Images/E1T4S8i.png)
-
-1. On the **Choose data destination** page, click **OneLake catalog (1)** and select the lakehouse **Lakehouse\_<inject key="DeploymentID" enableCopy="false"/> (2)**.
-    
-    ![](./Images/E1T4S9.png)
-
-1. On the **Choose copy job mode** page, select **Full copy (1)** and then click **Next (2)** to proceed.
-
-    ![](./Images/l1t4s10.png)
-
-1. On the **Map to destination** page, select **Files (1)**, then set **Folder path** to **new_data (2)** and **File name** to **sales.csv (3)**.
-    
-    ![08](./Images/E1T4S11.png)
-
-1. Set the following file format options and leave all other settings at their default values:
-
-   - File format: **DelimitedText (1)**
-   - Click **File format Settings (2)**
-   - Column delimiter: **Comma (,) (3)**
-   - Row delimiter: **Line feed (\n) (4)**
-   - Leave all other settings as default and Click **Next (5)**
-   
-        ![09](./Images/E1T4S12.png)
-
-1. On the **Review + save** page, verify the source and destination details, then click **Save** to create and run the copy job.
-
-    ![09](./Images/cpjobsave.png)
-
-1. A new pipeline containing a **Copy data** activity is created, as shown here:
-
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/cpdta.png)
-
-1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has succeeded.
-
-    > **Note:** If you don't see any Output status, click on **View run status** on the top menu or check the notifications for a successful output.
-
-    ![](./Images/01/upPg3-CpyOutput.png)
-
-1. If you don’t see any run status in the **Output** pane, click **Run** on the top menu to manually start the pipeline.
-
-    ![09](./Images/upfab-ric-ex1-g14.png)
-
-1.  When prompted, click on **Save and run** to start the pipeline.
-
-    ![09](./Images/fab-ric-ex1-g15.png)
-
-    > **Note:** If any errors appear while running the pipeline, review the details in the notification panel, fix the issue, and run it again. If everything succeeds, you can skip below steps and proceed with **Step 18**.
-
-    1. If the **Connection** field shows an error, select the **Copy job (1)** and switch to  **Settings (2)**, click on the dropdown **(3)** and select **Browse all (4)** to choose the correct connection manually.
-
-        ![09](./Images/manualcon.png)
-    
-    1. From the **Get data** page, select **Copy job (1)** under the **New sources** section to continue.
-
-        ![09](./Images/fab-ric-cor-g3.png)
-    
-    1. Set the following connection details:
-
-        - Connection name: **Connection<inject key="DeploymentID" enableCopy="false"/> (1)**
-        - Click **Sign in (2)** to authenticate if it shows You are not signed in.
-
-            ![09](./Images/upfab-ric-cor-g4.png)
-    
-    1. When prompted to sign in, select your **ODL_User** account.  
-        - Or sign in manually using:
-        - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-        - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
-
-            ![09](./Images/upfab-ric-cor-g5.png)
-    
-    1. After the connection details are verified and you are signed in, click **Connect** to proceed.
-    
-    1. Once the **Copy job (1)** is configured, click **Run (2)** at the top to execute the pipeline.
-
-        ![09](./Images/upfab-ric-cor-g7.png)
-    
-    1. When prompted, click on **Save and run** to start the pipeline.
-
-        ![09](./Images/fab-ric-ex1-g15.png)
-
-1. From the Top bar navigate to your Lakehouse by clicking on the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)**, expand **Files (2)** and select the **new_data (3)** folder, refresh the page and verify that the **sales.csv (4)** file has been copied.
-
-    ![Account-manager-start](./Images/lhcsv.png)
-
-    >**Note:** You can also navigate to your Lakehouse by clicking your workspace and selecting the Lakehouse.
-
-## Task 5: Create a Notebook
+## Task 4: Create a Notebook
 
 In this task, you'll create a Notebook to document your data analysis. You'll set up the environment, import libraries, and structure your code for exploration, visualization, and insights.
 
@@ -359,7 +251,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
     ![03](./Images/salepre.png)
 
-## Task 6: Use SQL to query tables
+## Task 5: Use SQL to query tables
 
 In this task, you'll use SQL to query tables in a database. You'll write statements to retrieve, filter, and manipulate data, helping you analyze the dataset and build your SQL skills.
 
