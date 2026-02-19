@@ -1,0 +1,40 @@
+[
+  {
+    "Name": "Cloud Scale Analytics with Microsoft Fabric",
+    "Language": "English",
+    "Files": [
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/fabric-capacity/Instructions/Labs/Intro.md",
+        "Order": 1
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/Create-workspace.md",
+        "Order": 2
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/01-Data-Engineering.md",
+        "Order": 3
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/02-data-warehouse.md",
+        "Order": 4
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/03-real-time-analytics.md",
+        "Order": 5
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/04-data-science.md",
+        "Order": 6
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/05-analyze-spark-V2.md",
+        "Order": 7
+      },
+      {
+        "RawFilePath": "https://raw.githubusercontent.com/CloudLabsAI-Azure/mslearn-fabric/refs/heads/guidedlabs/Instructions/Labs/06-dataflows-gen2-V2.md",
+        "Order": 8
+      }
+    ]
+  }
+]
