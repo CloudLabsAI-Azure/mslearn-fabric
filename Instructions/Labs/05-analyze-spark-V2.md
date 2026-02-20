@@ -1,6 +1,6 @@
-#  Exercise 6: Analyze data with Apache Spark
+#  Lab 06: Analyze data with Apache Spark
 
-### Estimated Duration: 90 minutes
+### Estimated Duration: 60 minutes
 
 Apache Spark is an open-source engine for distributed data processing and is widely used to explore, process, and analyze huge volumes of data in data lake storage. Spark is available as a processing option in many data platform products, including Azure HDInsight, Azure Databricks, Azure Synapse Analytics, and Microsoft Fabric. One of the benefits of Spark is support for a wide range of programming languages, including Java, Scala, Python, and SQL; making Spark a very flexible solution for data processing workloads including data cleansing and manipulation, statistical analysis and machine learning, and data analytics and visualization.
 
@@ -12,8 +12,7 @@ You will be able to complete the following tasks:
 - Task 2: Load data into a dataframe
 - Task 3: Explore data in a dataframe
 - Task 4: Use Spark to transform data files
-- Task 5: Work with tables and SQL
-- Task 6: Save the notebook and end the Spark session
+- Task 5: Visualize data with Spark
 
 ### Task 1: Create a notebook
 
@@ -291,64 +290,7 @@ In this task, you will use Spark to transform data files into a desired format f
 
 <validation step="c2a9bb5d-2eb6-45b7-8b8a-2145f7f1d7e2" />
 
-### Task 5: Work with tables and SQL
-
-As you've seen, the native methods of the dataframe object enable you to query and analyze data from a file quite effectively. However, many data analysts are more comfortable working with tables that they can query using SQL syntax. Spark provides a *metastore* in which you can define relational tables. The Spark SQL library that provides the dataframe object also supports the use of SQL statements to query tables in the metastore. By using these capabilities of Spark, you can combine the flexibility of a data lake with the structured data schema and SQL-based queries of a relational data warehouse - hence the term "data lakehouse".
-
-#### Create a table
-
-Tables in a Spark metastore are relational abstractions over files in the data lake. tables can be *managed* (in which case the files are managed by the metastore) or *external* (in which case the table references a file location in the data lake that you manage independently of the metastore).
-
-1. Add a new code cell to the notebook, and enter the following code, which saves the dataframe of sales order data as a table named **salesorders**:
-
-    ```Python
-   # Create a new table
-   df.write.format("delta").saveAsTable("salesorders")
-
-   # Get the table description
-   spark.sql("DESCRIBE EXTENDED salesorders").show(truncate=False)
-    ```
-
-    > **Note:** It's worth noting a couple of things about this example. Firstly, no explicit path is provided, so the files for the table will be managed by the metastore. Secondly, the table is saved in **delta** format. You can create tables based on multiple file formats (including CSV, Parquet, Avro, and others) but *delta lake* is a Spark technology that adds relational database capabilities to tables; including support for transactions, row versioning, and other useful features. Creating tables in delta format is preferred for data lakehouses in Fabric.
-
-2. Run the code cell and review the output, which describes the definition of the new table.
-
-3. In the **Explorer** pane, in the **...** menu for the **Tables** folder, select **Refresh**. Then expand the **Tables** node and verify that the **salesorders** table has been created.
-
-    ![Screenshot of the salesorder table in Explorer.](./Images/table1234.png)
-
-4. In the **...** menu for the **salesorders** table, select **Load data** > **Spark**. A new code cell containing code similar to the following example is added to the notebook:
-
-    ```Python
-   df = spark.sql("SELECT * FROM [your_lakehouse].salesorders LIMIT 1000")
-   display(df)
-    ```
-
-5. Run the new code, which uses the Spark SQL library to embed a SQL query against the **salesorder** table in PySpark code and load the results of the query into a dataframe.
-
-#### Run SQL code in a cell
-
-While it's useful to be able to embed SQL statements into a cell containing PySpark code, data analysts often just want to work directly in SQL.
-
-1. Add a new code cell to the notebook, and enter the following code in it:
-
-    ```SQL
-   %%sql
-   SELECT YEAR(OrderDate) AS OrderYear,
-          SUM((UnitPrice * Quantity) + Tax) AS GrossRevenue
-   FROM salesorders
-   GROUP BY YEAR(OrderDate)
-   ORDER BY OrderYear;
-    ```
-
-2. Run the cell and review the results. Observe that:
-    - The `%%sql` line at the beginning of the cell (called a *magic*) indicates that the Spark SQL language runtime should be used to run the code in this cell instead of PySpark.
-    - The SQL code references the **salesorders** table that you created previously.
-    - The output from the SQL query is automatically displayed as the result under the cell.
-
-        > **Note**: For more information about Spark SQL and dataframes, see the [Spark SQL documentation](https://spark.apache.org/docs/2.2.0/sql-programming-guide.html).
-
-### Task 6: Visualize data with Spark
+### Task 5: Visualize data with Spark
 
 In this task, you will visualize data using Spark to enhance understanding and insights through graphical representation. While Fabric notebooks offer a basic chart view for data from dataframes or Spark SQL queries, you can utilize Python graphics libraries like **matplotlib** and **seaborn** for more comprehensive and customized charting.
 
@@ -553,15 +495,6 @@ While **matplotlib** enables you to create complex charts of multiple types, it 
 6. Run the modified code to view the yearly revenue as a line chart.
 
     > **Note**: To learn more about plotting with seaborn, see the [seaborn documentation](https://seaborn.pydata.org/index.html).
-
-### Task 9: Save the notebook and end the Spark session
-
-In this task, you will save your notebook with a meaningful name to preserve your work after processing the data. Additionally, you will end the Spark session to free up resources and complete your data engineering tasks.
-
-1. In the top left corner, set the **Name** of the notebook from Notebook 2 to **Explore Sales Orders Notebook**.
-2. On the notebook menu, select **Stop session** to end the Spark session.
-
-    > **Note:** The stop session icon is present next to the **Start Session** option.
 
 ### Summary
 

@@ -1,6 +1,6 @@
 # Lab 03: Analyze data in a data warehouse
 
-### Estimated Duration: 75 Minutes
+### Estimated Duration: 120 Minutes
 
 ## Overview
 

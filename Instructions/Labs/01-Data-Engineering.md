@@ -1,6 +1,6 @@
 # Lab 02: Ingest data with a Microsoft Fabric Lakehouse
 
-### Estimated Duration: 90 Minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview 
 In this lab, you'll explore Cloud-Scale Analytics using Microsoft Fabric. This lab is designed to provide hands-on experience with ingesting data into a Microsoft Fabric Lakehouse, creating notebooks, leveraging SQL queries to extract meaningful insights from the ingested data, building visual queries, and generating a comprehensive report using Power BI.

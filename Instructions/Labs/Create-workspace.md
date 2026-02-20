@@ -1,6 +1,6 @@
-# Exercise 1: Create a Fabric workspace
+# Lab 01: Create a Fabric workspace
 
-### Estimated Duration: 40 Minutes
+### Estimated Duration: 30 Minutes
 
 Microsoft Fabric lets you set up workspaces depending on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. This lab will introduce you to creating a workspace in Microsoft Fabric. You will learn how to set up a workspace, which serves as a collaborative environment for organizing and managing your projects, data, and resources.
 

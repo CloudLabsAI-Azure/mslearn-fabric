@@ -1,6 +1,6 @@
-# Exercise 7: Create a Dataflow (Gen2) in Microsoft Fabric
+# Lab 07: Create a Dataflow (Gen2) in Microsoft Fabric
 
-### Estimated Duration: 40 minutes
+### Estimated Duration: 60 minutes
 
 In Microsoft Fabric, Dataflows (Gen2) connect to various data sources and perform transformations in Power Query Online. They can then be used in Data Pipelines to ingest data into a lakehouse or other analytical store or to define a dataset for a Power BI report.
 
@@ -139,6 +139,19 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
 ### Summary
 
 In this exercise, you have created a Dataflow (Gen2) to ingest data , added data destination for Dataflow and a dataflow to a pipeline.
+
+### Review
+
+In this lab, you have completed:
+
+- Create a Dataflow (Gen2) in Microsoft Fabric  
+- Connect to an external CSV data source  
+- Transform data using Power Query (add a custom column – MonthNo)  
+- Configure a Lakehouse as the data destination  
+- Publish the Dataflow to the workspace  
+- Create a Pipeline in Microsoft Fabric  
+- Add a Dataflow activity to the pipeline  
+- Run the pipeline and validate the data in the Lakehouse table  
 
 ### You have successfully completed the lab
 

@@ -1,6 +1,6 @@
-# Exercise 4: Use notebooks to train a model in Microsoft Fabric
+# Lab 05: Use notebooks to train a model in Microsoft Fabric
 
-### Estimated Duration: 70 Minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview
 
@@ -10,40 +10,15 @@ In this exercise, you'll build a machine learning workflow in Microsoft Fabric u
 
 You will be able to complete the following tasks:
 
-- Task 1: Upload files into the lakehouse
-- Task 2: Create a notebook
-- Task 3: Load data into a dataframe
-- Task 4: Train a machine learning model
-- Task 5: Use MLflow to search and view your experiments
-- Task 6: Explore your experiments
-- Task 7: Save the model
-- Task 8: Save the notebook and end the Spark session
+- Task 1: Create a notebook
+- Task 2: Load data into a dataframe
+- Task 3: Train a machine learning model
+- Task 4: Use MLflow to search and view your experiments
+- Task 5: Explore your experiments
+- Task 6: Save the model
+- Task 7: Save the notebook and end the Spark session
 
-## Task 1: Upload files into the lakehouse
-
-In this task, you will create a lakehouse and upload files to facilitate data storage and analysis. Using the same workspace, you'll switch to the *Data Science* experience in the portal to manage and utilize the data effectively.
-
-1. In the left pane, go back to your Lakehouse. In the **Explorer** pane, hover and open the **Ellipsis (…) (1)** menu next to the **Files** node, then choose **Upload (2)** > **Upload files (3)**. 
-
-   ![](./Images/E4T1S1.png)
-
-1. In the **Upload files** section, click on the **folder** icon.
-
-    ![](./Images/E4T1S2.png)
-
-1. Navigate to **`C:\LabFiles\Files` (1)**, select the **churn.csv (2)** file and click on **Open (3)**.   
-
-    ![](./Images/Pg6-S2.png)
-
-1. In the **Upload files** section after **churn.csv** file is added, click **Upload**.
-
-    ![](./Images/E4T1S4.png)
-
-1. After the files have been uploaded, expand **Files** and verify that the CSV file has been uploaded.
-
-   ![](./Images/Pg6-S2.1.png)
-
-## Task 2: Create a notebook
+## Task 1: Create a notebook
 
 In this task, you will create a notebook to facilitate model training and experimentation. Notebooks offer an interactive environment where you can write and execute code in multiple languages, allowing you to conduct experiments effectively.
 
@@ -77,7 +52,7 @@ In this task, you will create a notebook to facilitate model training and experi
    Use the code in this notebook to train and track models.
     ```    
 
-## Task 3: Load data into a dataframe
+## Task 2: Load data into a dataframe
 
 In this task, you will load data into a dataframe to prepare for model training. Dataframes in Spark, akin to Pandas dataframes in Python, offer a structured way to work with data in rows and columns, enabling efficient data manipulation and analysis.
 
@@ -124,7 +99,7 @@ In this task, you will load data into a dataframe to prepare for model training.
 
 1. The output shows the rows and columns of customer data from the churn.csv file.
 
-## Task 4: Train a machine learning model
+## Task 3: Train a machine learning model
 
 In this task, you will train a machine learning model to predict customer churn using the prepared data. Utilizing the Scikit-Learn library, you'll train the model and track its performance with MLflow to ensure effective monitoring and evaluation.
 
@@ -191,7 +166,7 @@ In this task, you will train a machine learning model to predict customer churn 
 
 1. The code trains a classification model using a Decision Tree Classifier. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
 
-## Task 5: Use MLflow to search and view your experiments
+## Task 4: Use MLflow to search and view your experiments
 
 In this task, you will use MLflow to search for and view your experiments related to model training. By leveraging the MLflow library, you can retrieve detailed information about your experiments, helping you assess model performance and make informed decisions.
 
@@ -253,7 +228,7 @@ In this task, you will use MLflow to search for and view your experiments relate
 
     ![Screenshot of the plotted evaluation metrics.](./Images/abe.png)
 
-## Task 6: Explore your experiments
+## Task 5: Explore your experiments
 
 In this task, you will explore your experiments in Microsoft Fabric, which tracks all your training activities. The platform allows for visual exploration of these experiments, enabling you to analyze and compare results effectively.
 
@@ -298,7 +273,7 @@ By plotting the accuracy per logged estimator, you can review which algorithm re
 
 <validation step="9bc2b595-c7f5-4276-93dc-2293e35d87e2" />
 
-## Task 7: Save the model
+## Task 6: Save the model
 
 In this task, you will save the best-performing machine learning model after comparing the results from various experiment runs. This saved model can then be utilized to generate predictions for future data analysis.
 
@@ -322,7 +297,7 @@ In this task, you will save the best-performing machine learning model after com
 
     >**Note:** The model, the experiment, and the experiment run are linked, allowing you to review how the model is trained. 
 
-## Task 8: Save the notebook and end the Spark session
+## Task 7: Save the notebook and end the Spark session
 
 In this task, you will save your notebook with a meaningful name to preserve your work after training and evaluating the models. Additionally, you will end the Spark session to free up resources and finalize your data processing environment.
 

@@ -7,7 +7,6 @@ In **Microsoft Fabric**, a data warehouse provides a relational database designe
 
 In this lab, you will dive into the world of data analysis within a data warehouse using **Power BI**.
 
-
 ## **Objective**  
 
 **Analyze Data in a Data Warehouse:** Utilize Microsoft Fabric to build and analyze data in a data warehouse. Participants will learn to create a data warehouse, define data models, query data with SQL, and generate insights. The lab will also cover creating views and using Power BI to visualize data, enabling advanced reporting and interactive dashboards for data-driven decision-making. 
