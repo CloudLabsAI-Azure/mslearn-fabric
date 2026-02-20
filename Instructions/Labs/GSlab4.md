@@ -1,6 +1,6 @@
 # **Cloud Scale Analytics with Microsoft Fabric**
 
-### **Overall Estimated Duration**: 60 minutes  
+### Overall Estimated Duration: **60 minutes**  
 
 ## **Overview**  
 **Microsoft Fabric** offers a robust runtime designed for storing and querying data using Kusto Query Language (KQL), which is particularly optimized for time series data, such as real-time logs and IoT device streams. This lab provides an engaging introduction to the capabilities of **KQL**, guiding you through the process of creating a KQL database, performing **data queries**, and **visualizing insights** with **Power BI reports**. By exploring the exciting realm of real-time analytics, you will gain hands-on experience with Microsoft Fabric's powerful tools and learn how to harness KQL for dynamic data analysis and reporting.

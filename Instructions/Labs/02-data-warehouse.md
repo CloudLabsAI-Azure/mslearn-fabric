@@ -1,6 +1,6 @@
 # Lab 03: Analyze data in a data warehouse
 
-### Estimated Duration: 75 Minutes
+### Estimated Duration: **90 Minutes**
 
 ## Overview
 
@@ -88,7 +88,9 @@ In this task, you’ll set up the foundation of your data warehouse. You’ll cr
 
     ![](./Images/e2t2p6.png)
 
-1. On the Home menu tab, use the **New SQL Query** button to create a new query for the table.
+1. On the **Home** menu tab, use the **New SQL Query (1)** drop-down button and from the menu select **New SQL Query (2)**  to create a new query
+
+    ![](./Images/e2t2p4.png)
 
 1. Open the **Lab VM** and navigate to the following path: `C:\LabFiles\Files\`.
 
@@ -131,13 +133,6 @@ In this task, you’ll set up the foundation of your data warehouse. You’ll cr
     - **FactSalesOrder**
 
         ![](./Images/e2t3p2.png)
-
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
-> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
-
-<validation step="ae9ea1a1-6466-459b-87da-12cb0f83b186" />
 
 ## Task 3: Define a data model
 

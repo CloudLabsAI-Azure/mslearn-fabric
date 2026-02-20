@@ -128,31 +128,25 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
     ![](./Images/Lake5.png)
 
-1. Select the **More options (1)** next to the **new_data** folder, choose **Upload (2)**, and then select **Upload files (3)** to add files to the Lakehouse.
+1. In the left pane, go back to your Lakehouse. In the **Explorer** pane, hover and open the **Ellipsis (…) (1)** menu next to the **Files** node, then choose **Upload (2)** and select **Upload files (3)**. 
 
-     ![03](./Images/ws/Fab10.png)
+   ![](./Images/E4T1S1.png)
 
-1. In the **Upload files** dialog, select the **folder icon** to browse and choose the files you want to upload to the Lakehouse.
+1. In the **Upload files** section, click on the **folder** icon.
 
-     ![03](./Images/ws/Fab11.png)
+    ![](./Images/E4T1S2.png)
 
-1. Browse the path **C:\LabFiles\Files** and select the file **sales.csv (1)**. Then click on **Open (2).**
+1. Navigate to **`C:\LabFiles\Files` (1)**, select the **churn.csv (2)** file and click on **Open (3)**.   
 
-     ![03](./Images/ws/Fab12.png)
+    ![](./Images/Pg6-S2.png)
 
-1. In the **Upload files** dialog, select the file **sales.csv (1)**, and then click **Upload (2)** to upload the file to the Lakehouse.
+1. In the **Upload files** section after **churn.csv** file is added, click **Upload**.
 
-     ![03](./Images/ws/Fab13.png)
+    ![](./Images/E4T1S4.png)
 
-1. Verify that the file **sales.csv (1)** has been uploaded successfully, and then close the **Upload files** dialog by selecting **Close (2)**.
+1. After the files have been uploaded, expand **Files** and verify that the CSV file has been uploaded.
 
-     ![03](./Images/ws/Fab14.png)
-
-1. In the menu bar on the left, select your lakehouse.
-   
-1. On the **Home** page, in the **Lakehouse explorer (1)** pane, expand **Files**, select the **new_data (2)** folder, and verify that the **sales.csv (3)** file is present.
-
-     ![03](./Images/ws/Fab15.png)
+   ![](./Images/Pg6-S2.1.png)
 
 
   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:

@@ -1,6 +1,6 @@
 # **Cloud Scale Analytics with Microsoft Fabric**
 
-### **Overall Estimated Duration**: 150 minutes  
+### Overall Estimated Duration: **120 minutes**  
 
 ## **Overview**  
 In **Microsoft Fabric**, a data warehouse provides a relational database designed for large-scale analytics. Unlike the default read-only SQL endpoint for tables defined in a lakehouse, a data warehouse supports full SQL semantics, including the ability to insert, update, and delete data in tables.  

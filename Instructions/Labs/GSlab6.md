@@ -1,6 +1,6 @@
 # Cloud Scale Analytics with Microsoft Fabric
 
-### Overall Estimated Duration : **1 hour 30 Minutes**
+### Overall Estimated Duration : **120 Minutes**
 
 ## Overview
 

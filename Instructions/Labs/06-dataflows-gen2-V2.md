@@ -1,4 +1,4 @@
-# Exercise 7: Create a Dataflow (Gen2) in Microsoft Fabric
+# Lab 07: Create a Dataflow (Gen2) in Microsoft Fabric
 
 ### Estimated Duration: 40 minutes
 

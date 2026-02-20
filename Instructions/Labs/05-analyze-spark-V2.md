@@ -1,4 +1,4 @@
-#  Exercise 6: Analyze data with Apache Spark
+#  Lab 06: Analyze data with Apache Spark
 
 ### Estimated Duration: 90 minutes
 
@@ -13,7 +13,8 @@ You will be able to complete the following tasks:
 - Task 3: Explore data in a dataframe
 - Task 4: Use Spark to transform data files
 - Task 5: Work with tables and SQL
-- Task 6: Save the notebook and end the Spark session
+- Task 6: Visualize data with Spark
+- Task 7: Save the notebook and end the Spark session
 
 ### Task 1: Create a notebook
 
@@ -555,7 +556,7 @@ While **matplotlib** enables you to create complex charts of multiple types, it 
 
     > **Note**: To learn more about plotting with seaborn, see the [seaborn documentation](https://seaborn.pydata.org/index.html).
 
-### Task 9: Save the notebook and end the Spark session
+### Task 7: Save the notebook and end the Spark session
 
 In this task, you will save your notebook with a meaningful name to preserve your work after processing the data. Additionally, you will end the Spark session to free up resources and complete your data engineering tasks.
 

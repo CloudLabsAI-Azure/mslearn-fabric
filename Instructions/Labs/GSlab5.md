@@ -1,6 +1,6 @@
 # **Cloud Scale Analytics with Microsoft Fabric**
 
-### **Overall Estimated Duration**: 90 minutes  
+### Overall Estimated Duration: **90 minutes**  
 
 ## **Overview**  
 In these labs, you will explore the fundamentals of Microsoft Fabric by first setting up a workspace and managing data using a Lakehouse for structured data storage and analysis. The second lab focuses on training machine learning models using notebooks, where you'll load data, train models, and track experiments. Throughout, you will gain hands-on experience with the tools and processes involved in both data management and machine learning within the Microsoft Fabric environment. These labs provide a comprehensive introduction to utilizing Microsoft Fabric for data processing and model development, preparing you to work with its key features in real-world applications.
