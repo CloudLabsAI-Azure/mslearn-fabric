@@ -20,26 +20,78 @@ You will be able to complete the following tasks:
 
 In this task, you will create a notebook to work with data in Apache Spark. Notebooks provide an interactive environment where you can write and run code in multiple languages, while also allowing you to add notes for documentation.
 
-1. From the left pane, select the workspace named fabric-<inject key="DeploymentID" enableCopy="false"/> **(1)** and select fabric-<inject key="DeploymentID" enableCopy="false"/> **(2)**.
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Lakehouse**.
 
-    ![](./Images/Fab30.png) 
+    ![](./Images/fabricnav.png)
+
+    ![](./Images/fabricnav2.png)
+
+1. In the search box, search **Lakehouse (1)** and select **Lakehouse (2)** from the result.
+
+    ![](./Images/E7T1S2.png)
    
-2. In the workspace, click on **+ New Item**. In the New Item panel, search for **Notebook** and select it.
+1. Enter the details to create a Lakehouse. 
 
-    ![](./Images/E2-T4-S2.png) 
+    - Name: **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**
+    - Location: **fabric-<inject key="DeploymentID" enableCopy="false"/> (2)**
+    -Make sure to **uncheck the box for Lakehouse Schema (3)**
+    - Click on **Create (4)**
 
-   > **Note**: After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+        ![](./Images/E7T1S3.png)
 
-2. Select **Lakehouses** from **Explorer** on the left Panel.
+1. Once you're in the lakehouse, hover the mouse on the **Files** folder in the **Explorer** and click on the **Ellipses (...) (1)** menu for **Files**, and select **Upload (2)** followed by **Upload folder (3)**. 
 
-3. Click on **Add** to add the previously created Lakehouse.
+    ![](./Images/E7T1S4.png)
 
-4. Select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>** from the options and click on Add.
-    > Note: Reload the page to get the files and folders.
+1. In the **Upload files** section, click on the **folder** icon. Then navigate to **`C:\LabFiles\Files\orders` (1)** and click **Upload (2)**.
+   
+    ![](./Images/E7T1S5.png)
 
-2. Select the first cell (currently a *code* cell), and then click the **M&#8595;** button in the dynamic toolbar at the top-right to convert it to a **markdown** cell.
+    ![](./Images/E7T1S5i.png)
 
-3. Use the **&#128393;** **(Edit)** button to switch the cell to editing mode, then modify the markdown as follows:
+1. In the **Upload 3 files to this site?** window, click **Upload**.
+
+    ![](./Images/E7T1S6.png)
+
+1. In the **Upload folder** window, after adding the **orders** folder, click **Upload**.
+
+    ![](./Images/E7T1S7.png)
+
+1. After the files have been uploaded, expand **Files (1)** and select the **orders (2)** folder; and verify that the **CSV files (3)** have been uploaded, as shown here:
+
+    ![](./Images/upcsv.png)
+
+1. In the left pane, navigate to your **Workspace (1)** and click on **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on **+ New item (3)** to create a new **Notebook**.
+
+    ![](./Images/fabricnav.png)
+
+    ![](./Images/fabricnav2.png)
+
+1. In the search box, search **Notebook (1)** and select **Notebook (2)** from the result.
+
+    ![](./Images/notebookcr.png)
+
+1. In the New Notebook window, keep the **default notebook Name (1)** unchanged, and then click **Create (2)** to continue.
+
+    ![](./Images/upfab-ric-ex1-g34.png)
+
+    > **Note:** After a few seconds, a new notebook containing a single *cell* will open. Notebooks are made up of one or more cells that can contain *code* or *markdown* (formatted text).
+
+1. In the **Explorer** tab, click on **Data items (1)**, then select **Add data items (2)** drop-down and choose **Existing data sources (3)**.
+
+    ![.](./Images/E7T2S3.png)
+
+1. Select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** from the options and click on **Connect (2)**.
+    
+    ![](./Images/confblh.png)
+
+    > **Note:** If required, reload the page to get the files and folders.
+
+1. Select the first cell (currently a *code* cell), and then click the **M&#8595;** button in the dynamic toolbar at the top-right to convert it to a **Markdown** cell.
+
+    ![](./Images/E4T2S5.png)
+
+1. Use the **&#128393;** **(Edit)** button to switch the cell to editing mode, then modify the markdown as follows:
 
     ```
    # Sales order data exploration
@@ -47,7 +99,9 @@ In this task, you will create a notebook to work with data in Apache Spark. Note
    Use the code in this notebook to explore sales order data.
     ```
 
-4. Click anywhere in the notebook outside of the cell to exit editing mode and view the rendered markdown.
+    ![](./Images/e7t1p8.png)
+
+1. Click anywhere in the notebook outside of the cell to exit editing mode and view the rendered markdown.
 
 ### Task 2: Load data into a dataframe
 
