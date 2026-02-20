@@ -1,4 +1,4 @@
-#  Exercise 6: Analyze data with Apache Spark
+#  Lab 06: Analyze data with Apache Spark
 
 ### Estimated Duration: 90 minutes
 
@@ -13,13 +13,16 @@ You will be able to complete the following tasks:
 - Task 3: Explore data in a dataframe
 - Task 4: Use Spark to transform data files
 - Task 5: Work with tables and SQL
-- Task 6: Save the notebook and end the Spark session
+- Task 6: Visualize data with Spark
+- Task 7: Save the notebook and end the Spark session
 
 ### Task 1: Create a notebook
 
 In this task, you will create a notebook to work with data in Apache Spark. Notebooks provide an interactive environment where you can write and run code in multiple languages, while also allowing you to add notes for documentation.
 
-1. From the left pane, select the workspace named Fabric-<inject key="DeploymentID" enableCopy="false"/>.
+1. From the left pane, select the workspace named fabric-<inject key="DeploymentID" enableCopy="false"/> **(1)** and select fabric-<inject key="DeploymentID" enableCopy="false"/> **(2)**.
+
+    ![](./Images/Fab30.png) 
    
 2. In the workspace, click on **+ New Item**. In the New Item panel, search for **Notebook** and select it.
 
@@ -283,13 +286,12 @@ In this task, you will use Spark to transform data files into a desired format f
 1. Run the cell and verify that the results show the order data for sales in 2021. Note that the partitioning columns specified in the path (**Year** and **Month**) are not included in the dataframe.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-      
-   - If you receive an InProgress message, you can hit refresh to see the final status.
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+> - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="c2a9bb5d-2eb6-45b7-8b8a-2145f7f1d7e2" />
+<validation step="a2c95369-41aa-42f4-93c6-a2d4f5ea0d3d" />
 
 ### Task 5: Work with tables and SQL
 
@@ -554,7 +556,7 @@ While **matplotlib** enables you to create complex charts of multiple types, it 
 
     > **Note**: To learn more about plotting with seaborn, see the [seaborn documentation](https://seaborn.pydata.org/index.html).
 
-### Task 9: Save the notebook and end the Spark session
+### Task 7: Save the notebook and end the Spark session
 
 In this task, you will save your notebook with a meaningful name to preserve your work after processing the data. Additionally, you will end the Spark session to free up resources and complete your data engineering tasks.
 

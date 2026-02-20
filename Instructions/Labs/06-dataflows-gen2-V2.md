@@ -1,4 +1,4 @@
-# Exercise 7: Create a Dataflow (Gen2) in Microsoft Fabric
+# Lab 07: Create a Dataflow (Gen2) in Microsoft Fabric
 
 ### Estimated Duration: 40 minutes
 
@@ -94,6 +94,13 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
 
    ![](./Images/Fab29.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="8a7b316c-9513-4f0e-a48a-2e84f7b12eb2" />
+
 ### Task 3: Add a dataflow to a pipeline
 
 In this task, you’ll add a dataflow to a pipeline to streamline the data processing workflow and enable automated data transformations.
@@ -135,6 +142,13 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
    ![Table loaded by a dataflow.](./Images/orders_1.png)
 
    >**Note:** You might have to refresh the browser to get the expected output.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="8e4e892b-1a8b-4031-ae89-edc2622f0aae" />
 
 ### Summary
 

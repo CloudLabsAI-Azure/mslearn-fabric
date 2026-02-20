@@ -1,6 +1,6 @@
 # Lab 02: Ingest data with a Microsoft Fabric Lakehouse
 
-### Estimated Duration: 90 Minutes
+### Estimated Duration: 60 Minutes
 
 ## Overview 
 In this lab, you'll explore Cloud-Scale Analytics using Microsoft Fabric. This lab is designed to provide hands-on experience with ingesting data into a Microsoft Fabric Lakehouse, creating notebooks, leveraging SQL queries to extract meaningful insights from the ingested data, building visual queries, and generating a comprehensive report using Power BI.
@@ -94,7 +94,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
     > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
 
-1. (Optional) You can also create **external tables** for which the schema metadata is defined in the metastore for the lakehouse, but the data files are stored in an external location.
+    > (Optional) You can also create **external tables** for which the schema metadata is defined in the metastore for the lakehouse, but the data files are stored in an external location.
 
     ```python
     df.write.format("delta").saveAsTable("external_sales", path="<abfs_path>/external_sales")
@@ -112,9 +112,9 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
     ![.](./Images/upfab-ric-ex1-g21.png)
 
-1. When the notebook run has completed, navigate back to your  **Lakehouse**, in the **Ellipsis (...)** menu for **Tables** select **Refresh** and verify that a **sales** table has been created.
+1. When the notebook run has completed, navigate back to your  **Lakehouse**, in the **Ellipsis (...) (1)** menu for **Tables** select **Refresh (2)** and verify that a **sales (3** table has been created.
 
-    ![.](./Images/fab-6.png)
+    ![.](./Images/Fab111.png)
 
 1. Navigate back to the **Notebook** on the left pane and use the ⚙️ **Settings (1)** icon at the top to view the notebook settings. Then, set the **Name** of the notebook to **Load Sales Notebook (2)** and close the settings pane.
 
@@ -128,7 +128,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
 In this task, you'll use SQL to query tables in a database. You'll write statements to retrieve, filter, and manipulate data, helping you analyze the dataset and build your SQL skills.
 
-1. At the top-right of the Lakehouse page,  click on **drop-down (1)** and switch from **Lakehouse** to **SQL analytics endpoint (2)**. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query its tables, as shown here:
+1. At the top-right of the Lakehouse page,  click on **drop-down (1)** and switch from **Lakehouse** to **SQL analytics endpoint (2)** if it is not already selected. Then wait a short time until the SQL query endpoint for your lakehouse opens in a visual interface from which you can query its tables, as shown here:
 
     ![03](./Images/ex1t6p1.png)
 
@@ -238,11 +238,12 @@ In this task, you’ll build a report that transforms raw data into insights. Yo
     - The **Item Sales Report** report.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
-> - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+> - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="478b8d65-837a-4b29-b792-922fe3c10580" />
+<validation step="29bd5d7f-364f-44f0-b3f3-7645255fc86e" />
 
 ## Summary
 

@@ -1,10 +1,10 @@
-# Exercise 3: Get started with Real-Time Analytics in Microsoft Fabric
+# Lab 04: Get started with Real-Time Intelligence in Microsoft Fabric
 
-### Estimated Duration: 65 Minutes
+### Estimated Duration: 30 Minutes
 
 ## Overview
 
-In this Lab, you'll explore real-time analytics in Microsoft Fabric using Kusto Query Language (KQL). You'll begin by creating a KQL database and importing sales data into a table. Then, you'll run KQL queries to analyze the data and create a query set. Using this query set, you’ll build a Power BI report to visualize results. Finally, you'll simulate real-time data ingestion using Spark Structured Streaming and Delta tables to process and query IoT-like data dynamically.
+In this Lab, you'll explore Real-Time Intelligence in Microsoft Fabric using Kusto Query Language (KQL). You'll begin by creating a KQL database and importing sales data into a table. Then, you'll run KQL queries to analyze the data and create a query set. Using this query set, you’ll build a Power BI report to visualize results. Finally, you'll simulate real-time data ingestion using Spark Structured Streaming and Delta tables to process and query IoT-like data dynamically.
 
 ## Lab objectives
 
@@ -167,14 +167,15 @@ In this task, you will create a Power BI report using your KQL Queryset as the f
 
         >**Note**: Refresh the Workspace page if necessary to view all of the items it contains.
 
-1. In the list of items in your workspace, note that the **Revenue by Item** report is listed.
-
-    <validation step="f0432ac8-2698-4432-be77-0a69568c2d09" />
-
+1. In the list of items in your workspace, note that the **Revenue by Item** report is listed. 
+   
     > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-    > - If you receive a success message, you can proceed to the next task.
-    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
+    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
     > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+    <validation step="c742ae58-7ab2-4511-a05c-401839b6ca9e" />
 
 ## Summary
 
