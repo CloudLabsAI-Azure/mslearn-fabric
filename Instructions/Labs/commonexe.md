@@ -161,7 +161,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  <validation step="fb7b968e-ba5c-403c-b4e3-690d2d091d3a" />
+   <validation step="b1004506-d334-44ec-ab7c-b546a3bc1d6f" />
 
 ### Summary
 

@@ -1,6 +1,6 @@
-# Exercise 1: Create a Fabric workspace
+# Lab 01: Create a Fabric workspace
 
-### Estimated Duration: 40 Minutes
+### Estimated Duration: 30 Minutes
 
 Microsoft Fabric lets you set up workspaces depending on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. This lab will introduce you to creating a workspace in Microsoft Fabric. You will learn how to set up a workspace, which serves as a collaborative environment for organizing and managing your projects, data, and resources.
 
@@ -87,6 +87,14 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
    - **Advanced:** Expand it and Under **License mode**, select **Fabric (1)**, Under **Capacity** Select available **fabric<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region"></inject>(2)** and click on **Apply (3)** to create and open the workspace.
  
       ![advanced-and-apply](./Images/ws/Fab20.png)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+- Navigate to the Lab Validation Page from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+<validation step="b1004506-d334-44ec-ab7c-b546a3bc1d6f" />
 
 ### Summary
 
