@@ -263,7 +263,6 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
 
     ![](./Images/upfab-ric-ex1-g39.png)
 
-
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
