@@ -284,19 +284,17 @@ In this task, you will explore your experiments in Microsoft Fabric, which track
     ![](./Images/repl.png)
 
 1. Do the same for the other two runs as well
+    - By plotting the accuracy per logged estimator, you can review which algorithm resulted in a better model.
 
     ![](./Images/upfab-ric-ex1-g39.png)
 
-By plotting the accuracy per logged estimator, you can review which algorithm resulted in a better model.
 
-> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-      
-   - If you receive an InProgress message, you can hit refresh to see the final status.
-   - If you receive a success message, you can proceed to the next task.
-   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+    > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="9bc2b595-c7f5-4276-93dc-2293e35d87e2" />
+    <validation step="b5f0b814-3d77-425a-8bec-5db3903e90f2" />
 
 ## Task 7: Save the model
 
