@@ -7,7 +7,7 @@ In this lab, you'll explore Cloud-Scale Analytics using Microsoft Fabric. This l
 
 ## Lab objectives
 
-You will be able to complete the following tasks:
+In this exercise, you will complete the following tasks:
 
 - Task 1: Create a notebook
 - Task 2: Use SQL to query tables
@@ -18,7 +18,7 @@ You will be able to complete the following tasks:
 
 In this task, you'll create a Notebook to document your data analysis. You'll set up the environment, import libraries, and structure your code for exploration, visualization, and insights.
 
-1. From the left pane, select the workspace named **fabric-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and navigate to your workspace and click on **+ New Item (2)**
+1. From the left pane, select the workspace named **fabric-<inject key="DeploymentID" enableCopy="false"/>** **(1)** and navigate to your workspace and select **+ New Item (2)**
 
     ![](./Images/newitem.png) 
 
@@ -80,7 +80,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
     df = df["SalesOrderNumber", "SalesOrderLineNumber", "OrderDate", "Year", "Month", "FirstName", "LastName", "EmailAddress", "Item", "Quantity", "UnitPrice", "TaxAmount"]
 
     # Load the data into a managed table
-    #Managed tables are tables for which both the schema metadata and the data files are managed by Fabric. The data files for the table are created in the Tables folder.
+    #Managed tables are tables in which both schema metadata and data files are managed by Fabric.. The data files for the table are created in the Tables folder.
     df.write.format("delta").mode("append").saveAsTable(table_name)
     ```
 
@@ -88,11 +88,11 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
     This code loads the data from the sales.csv file that was ingested by the **Copy Data** activity, applies some transformation logic, and saves the transformed data as a **managed table** - appending the data if the table already exists.
 
-1. Verify that your notebooks look similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
+1. Verify that your notebook look similar to this, and then use the **&#9655; Run all** button on the toolbar to run all of the cells it contains.
 
     ![Screenshot of a notebook with a parameters cell and code to transform data.](./Images/codeaddedrun.png)
 
-    > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool must be started. This means that the first cell can take a minute or so to complete.
+    > **Note**: Since this is the first time you've run any Spark code in this session, the Spark pool will start automatically. This means that the first cell can take a minute or so to complete.
 
     > (Optional) You can also create **external tables** for which the schema metadata is defined in the metastore for the lakehouse, but the data files are stored in an external location.
 
@@ -106,7 +106,7 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
     #abfss://workspace@tenant-onelake.dfs.fabric.microsoft.com/lakehousename.Lakehouse/Files
     ```
     
-    > **Note**: To run the above code, you need to replace the <abfs_path> with your abfs path
+    > **Note**: To run the above code, replace <abfs_path> with your ABFS path.
 
     > **Note**: To get the ABFS path of the folder, click the **Ellipsis (...) (1)** next to the **new_data** folder and select **Copy ABFS path (2)**.
 

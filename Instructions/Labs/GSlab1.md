@@ -4,22 +4,27 @@
 
 ## Overview
 
-Microsoft Fabric is a unified data platform that combines data engineering, data warehousing, and business intelligence tools into a cohesive environment. By leveraging Microsoft Fabric, organizations can effectively manage, analyze, and visualize large datasets, enabling powerful data-driven decision-making processes.
+Microsoft Fabric is a unified data platform that combines data engineering, data warehousing, and business intelligence tools into a cohesive environment. By leveraging Microsoft Fabric, you can effectively manage, analyze, and visualize large datasets, analyze, and visualize large datasets, enabling powerful data-driven decision-making processes.
 
-In this hands-on lab, you will set up a Microsoft Fabric workspace, create a Lakehouse, and upload files for data analysis. Microsoft Fabric serves as a comprehensive analytics platform, streamlining workflows by integrating data engineering, data warehousing, and business intelligence capabilities. Here, you can create dedicated workspaces and work with Lakehouse storage to upload and organize data files.
+In this lab, you will create dedicated workspaces and work with Lakehouse storage to upload and organize data files. Microsoft Fabric serves as a comprehensive analytics platform, streamlining workflows by integrating data engineering, data warehousing, and business intelligence capabilities. Here, you can create dedicated workspaces and work with Lakehouse storage to upload and organize data files.
 
 ## Objective
 
-**Getting Started with Microsoft Fabric:** Learn to create and manage a Microsoft Fabric workspace, assign appropriate roles, and build a Lakehouse for structured data storage and analysis. Gain hands-on experience in setting up a Fabric workspace, assigning the Fabric Administrator role to ensure efficient access control and management, and configuring the workspace for optimal use. Additionally, explore how to create a Lakehouse, an essential component for storing and managing structured data, and upload files to facilitate seamless data retrieval and analysis. This process develops the skills needed to efficiently manage data environments and perform advanced data processing tasks within Microsoft Fabric.
+In this lab, you will:
+
+- Create and configure a Microsoft Fabric workspace
+- Assign the Fabric Administrator role
+- Create a Lakehouse for structured data storage
+- Upload files for analysis
 
 ## Prerequisites
 
 Participants should have:
 
 - **Basic Knowledge of Microsoft Azure**: Familiarity with the Azure portal and the process of role assignments within Azure Active Directory (Entra ID).
-- **Understanding of Workspace Creation**: Familiarity with the concept of workspaces in cloud platforms and how to create and configure them.
-- **Basic Knowledge of Cloud Data Storage**: Understanding the concept of Lakehouses for organizing and storing data in cloud environments.
-- **Basic File Management Skills**: Ability to upload files into a cloud-based data platform like Microsoft Fabric for further analysis.
+- **Understanding of Workspace creation**: Familiarity with the concept of workspaces in cloud platforms and how to create and configure them.
+- **Basic Knowledge of cloud data storage**: Understanding the concept of Lakehouses for organizing and storing data in cloud environments.
+- **Basic file management skills**: Ability to upload files into a cloud-based data platform like Microsoft Fabric for further analysis.
 
 ## Architecture
 
@@ -39,11 +44,11 @@ The architecture for this lab involves the following key components:
 
 - **Lakehouse:** A data storage solution designed for structured and unstructured data. The Lakehouse enables efficient data organization and facilitates analysis tasks.
 
-- **Data Ingestion Tools:** Enables uploading of files into the Lakehouse to populate datasets required for analysis and querying.
+- **Data Ingestion Tools:** Enables the uploading of files into the Lakehouse to populate datasets required for analysis and querying.
 
 ## Getting Started with the Lab 
 
-Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
+Once you begin, your virtual machine and lab guide will be available directly within your web browser.
 
 ![08](./Images/Gs001.png) 
 
@@ -61,7 +66,7 @@ To get a better understanding of your lab resources and credentials, navigate to
    
 ## Utilizing the Split Window Feature
  
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top-right corner.
  
 ![Use the Split Window Feature](./Images/GS3.png) 
 
@@ -87,7 +92,7 @@ Feel free to start, stop, or restart your virtual machine by selecting **More (1
  
    - **Email (1):** <inject key="AzureAdUserEmail"></inject>
 
-   - click **Next (2)**.
+   - Click **Next (2)**.
  
       ![Enter Your Username](./Images/GS002.png)
  
@@ -101,9 +106,9 @@ Feel free to start, stop, or restart your virtual machine by selecting **More (1
 
 1. If **Action Required** window pop up click on **Ask later**.
  
-1. If prompted to stay signed in, you can click "No."
+1. If prompted to stay signed in, click "No."
 
-1. If you see the pop-up **Sign in to sync data**, Click on **No,thanks.** 
+1. If you see the pop-up **Sign in to sync data**, Click **No,thanks.** 
 
 1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
 

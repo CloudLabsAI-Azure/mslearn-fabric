@@ -2,8 +2,8 @@
 
 ### Estimated Duration: 30 Minutes
 
-Microsoft Fabric lets you set up workspaces depending on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. 
-This lab will introduce you to creating a workspace in Microsoft Fabric. You will learn how to set up a workspace, which serves as a collaborative environment for organizing and managing your projects, data, and resources.
+Microsoft Fabric allows you to set up workspaces based on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. 
+In this lab, you will learn how to create a workspace in Microsoft Fabric. You will learn how to set up a workspace, which serves as a collaborative environment for organizing and managing your projects, data, and resources.
 
 ## Lab objectives
 
@@ -16,13 +16,13 @@ You will be able to complete the following tasks:
 
 #### Task 1: Assign Fabric Administrator Role
 
-In this task, we're assigning ourselves the **Fabric Administrator** role in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
+In this task, you will assign the **Fabric Administrator** role to yourself in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
 
 1. In the Azure portal, search for **Microsoft Entra ID (1)** using the search bar, and then select **Microsoft Entra ID (2)** from the results.
 
     ![Navigate-To-AAD](./Images/ws/Fab3.png)
 
-1. Under **Manage (1)**, Navigate to **Roles and administrators (2)**.
+1. Under **Manage (1)**, navigate to **Roles and administrators (2)**.
 
     ![Roles-and-Administrator](./Images/ws/Fab4.png)
 
@@ -38,15 +38,15 @@ In this task, we're assigning ourselves the **Fabric Administrator** role in Mic
 
     ![check-and-add-role](./Images/ws/Fab7.png)
 
-1. Confirm the **Fabric Administrator** role has been added by selecting **Refresh (1)** on the Fabric Administrators | Assignments page. Once the assignment is visible **(2)**.
+1. Confirm the **Fabric Administrator** role has been added by selecting **Refresh (1)** on the Fabric Administrators | Assignments page. Once the assignment is visible **(2)**, the role has been successfully assigned.
 
     ![check-and-navigate-back-to-home](./Images/ws/Fab8.png)
 
 ### Task 2: Sign up for Microsoft Fabric Trial
 
-In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
+In this task, you will initiate your 60-day Microsoft Fabric trial by signing up through the Fabric app, which provides access to its data integration, analytics, and visualization capabilities.
 
-1. Copy the **Power BI homepage link**, and open this link inside the VM in a new tab.
+1. Copy the **Power BI homepage link** and open it in a new browser tab inside the VM.
 
    ```
    https://powerbi.com
@@ -56,25 +56,25 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 1. Select **Account manager (1)**, and click on **Free trial (2)**.
 
-     ![Account-manager-start](./Images/f1.png)
+   ![Account-manager-start](./Images/f1.png)
 
 1. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-    ![image](https://github.com/user-attachments/assets/d12f89b8-955d-4e0c-b671-977c34e152d1)
+   ![Account-manager-start](./Images/ff241.png)
 
-    > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.  
+   > **Note:** The trial capacity region may differ from the screenshot. Use the default selected region and proceed to the next step.
 
 1. Click on **Stay on current page** when prompted.
 
-      ![Account-manager-start](./Images/fabric-2.png)
+   ![Account-manager-start](./Images/fabric-2.png)
 
 1. Now, open **Account manager (1)** again, and verify **Trial Status (2)**.
 
-      ![Account-manager-start](./Images/lab1-image5.png)
+   ![Account-manager-start](./Images/lab1-image5.png)
       
 ### Task 3: Create a workspace
 
-Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
+In this task, you will create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
 
 1. Now, select **Workspaces (1)** and click on **+ New workspace (2)**.
 
@@ -116,7 +116,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
     ![](./Images/Lake1.png)
 
-1. In the **New lakehouse** window, enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and make sure to **unhcheck Lakehouse Schemas box (2)** click on **Create (3)**.
+1. In the **New lakehouse** window, enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and make sure to **uncheck Lakehouse Schemas box (2)** click on **Create (3)**.
 
     ![](./Images/lhcreate.png)
 
@@ -148,7 +148,7 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
      ![03](./Images/ws/Fab14.png)
 
-1. In the menu bar on the left, select your lakehouse.
+1. From the left navigation menu, select your lakehouse.
    
 1. On the **Home** page, in the **Lakehouse explorer (1)** pane, expand **Files**, select the **new_data (2)** folder, and verify that the **sales.csv (3)** file is present.
 

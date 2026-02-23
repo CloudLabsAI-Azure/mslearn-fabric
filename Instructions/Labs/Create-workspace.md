@@ -2,11 +2,11 @@
 
 ### Estimated Duration: 30 Minutes
 
-Microsoft Fabric lets you set up workspaces depending on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. This lab will introduce you to creating a workspace in Microsoft Fabric. You will learn how to set up a workspace, which serves as a collaborative environment for organizing and managing your projects, data, and resources.
+Microsoft Fabric lets you set up workspaces depending on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. This lab introduces you to creating a workspace in Microsoft Fabric. You learn how to set up a workspace, which serves as a collaborative environment for organizing and managing your projects, data, and resources.
 
 ## Lab objectives
 
-You will be able to complete the following tasks:
+In this lab, you complete the following tasks:
 
 - Task 1: Assign Fabric Administrator Role
 - Task 2: Sign up for Microsoft Fabric Trial
@@ -14,9 +14,9 @@ You will be able to complete the following tasks:
 
 #### Task 1: Assign Fabric Administrator Role
 
-In this task, we're assigning ourselves the **Fabric Administrator** role in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
+In this task, you assign yourself the Fabric Administrator role in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
 
-1. In the Azure portal, search for **Microsoft Entra ID (1)** using the search bar, and then select **Microsoft Entra ID (2)** from the results.
+1. In the Azure portal, search for **Microsoft Entra ID (1)** in the search bar, and then select **Microsoft Entra ID (2)** from the results.
 
     ![Navigate-To-AAD](./Images/ws/Fab3.png)
 
@@ -42,7 +42,7 @@ In this task, we're assigning ourselves the **Fabric Administrator** role in Mic
 
 ### Task 2: Sign up for Microsoft Fabric Trial
 
-In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
+In this task, you initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
 
 1. Copy the **Power BI homepage link**, and open this link inside the VM in a new tab.
 
@@ -50,7 +50,7 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
    https://powerbi.com
    ```
 
-   >**Note**: In case a sign-up page asks for a phone number, you can enter a dummy phone number to proceed.
+   >**Note**: In case a sign-up page asks for a phone number, you can enter any valid placeholder phone number to proceed.
 
 1. Select **Account manager (1)**, and click on **Free trial (2)**.
 
@@ -72,7 +72,7 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
       
 ### Task 3: Create a workspace
 
-Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
+In this task, you create a Fabric workspace. The workspace contains all the items required for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
 
 1. Now, select **Workspaces (1)** and click on **+ New workspace (2)**.
 
@@ -91,13 +91,13 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 - Navigate to the Lab Validation Page from the upper right corner in the lab guide section.
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If not, review the error message and retry the step by following the instructions in the lab guide.
 - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="fb7b968e-ba5c-403c-b4e3-690d2d091d3a" />
 
 ### Summary
 
-In this exercise, you have signed up for the Microsoft Fabric Trial and created a workspace.
+In this exercise, you signed up for the Microsoft Fabric trial and created a workspace.
 
 ### You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.

@@ -4,13 +4,13 @@
 
 ## Overview
 
-Microsoft Fabric is a unified data platform that combines data engineering, data warehousing, and business intelligence tools into a cohesive environment. By leveraging Microsoft Fabric, organizations can effectively manage, analyze, and visualize large datasets, enabling powerful data-driven decision-making processes.
+Microsoft Fabric is a unified data platform that combines data engineering, data warehousing, and business intelligence tools into a cohesive environment. By leveraging Microsoft Fabric, you can effectively manage, analyze, and visualize large datasets, enabling data-driven decision-making.
 
 In this hands-on experience, you will explore how to use Microsoft Fabric to set up a centralized data workspace, ingest and transform data, and utilize Power BI for reporting and analysis. You will begin by configuring your Fabric workspace and Lakehouse to store data efficiently, then move on to ingesting and transforming data using notebooks. With SQL queries, you’ll analyze the data and create compelling, interactive reports in Power BI to uncover valuable insights.
 
 ## Objective
 
-Learn to leverage Microsoft Fabric and Power BI to manage, transform, and analyze data within a unified data platform. This experience will guide you through the process of setting up a centralized data workspace, ingesting and transforming data, and creating interactive reports for actionable insights.
+In this lab, you will learn to leverage Microsoft Fabric and Power BI to manage, transform, and analyze data within a unified data platform. This experience will guide you through the process of setting up a centralized data workspace, ingesting and transforming data, and creating interactive reports for actionable insights.
 
 - **Getting Started with Microsoft Fabric:** Learn how to create and manage a workspace in Microsoft Fabric by assigning the Fabric Administrator role, setting up a new workspace for data and analytics projects, and organizing your work effectively. Additionally, gain hands-on experience in setting up a Lakehouse within the workspace and uploading data files (e.g., CSV) to the Lakehouse, laying the foundation for future data analysis and processing.
 
@@ -32,7 +32,7 @@ Participants should have:
 
 ## Architecture
 
-The architecture leverages Microsoft Fabric to create and manage a streamlined data environment involving workspaces, lakehouses, notebooks, and reporting tools. The first lab focuses on foundational setup, starting with assigning the Fabric Administrator Role, creating a workspace, setting up a lakehouse for data storage, and uploading files for analysis. The second lab builds on this by creating a notebook for data exploration, querying data using SQL, generating visual queries, and creating reports to summarize insights. This flow ensures a seamless transition from data ingestion to analysis and reporting, enabling efficient data management and actionable insights.
+The architecture leverages Microsoft Fabric to create and manage a streamlined data environment involving workspaces, lakehouses, notebooks, and reporting tools. The first lab focuses on foundational setup, starting with assigning the Fabric administrator role, creating a workspace, setting up a lakehouse for data storage, and uploading files for analysis. The second lab builds on this by creating a notebook for data exploration, querying data using SQL, generating visual queries, and creating reports to summarize insights. This flow ensures a seamless transition from data ingestion to analysis and reporting, enabling efficient data management and actionable insights.
 
 
 ## Architecture Diagram
@@ -55,7 +55,7 @@ The architecture leverages Microsoft Fabric to create and manage a streamlined d
 
 - **Notebook:** A collaborative environment for writing and executing code. Notebooks are used to explore and analyze data interactively.
 
-- **SQL Query Engine:** Facilitates structured querying of stored data, extracting insights directly from tables for analysis..
+- **SQL Query Engine:** Facilitates structured querying of stored data, extracting insights directly from tables for analysis.
 
 - **Visual Query Tools:** Translates SQL results into visual representations, making data trends and patterns easier to understand.
 
@@ -81,7 +81,7 @@ To get a better understanding of your lab resources and credentials, navigate to
    
 ## Utilizing the Split Window Feature
  
-For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top-right corner.
  
 ![Use the Split Window Feature](./Images/GS3.png) 
 
@@ -119,7 +119,7 @@ Feel free to start, stop, or restart your virtual machine by selecting **More (1
  
       ![Enter Your Password](./Images/GS003.png)
 
-1. If **Action Required** window pop up click on **Ask later**.
+1. If **Action Required** window pop up click **Ask later**.
  
 1. If prompted to stay signed in, you can click "No."
 
