@@ -4,9 +4,9 @@
 
 ## Overview
 
-In this Lab, you'll analyze data in a Microsoft Fabric data warehouse using SQL and visual tools. You'll begin by creating a data warehouse, designing its schema with fact and dimension tables, and inserting sample data. You’ll then define relationships to build a data model, run SQL queries to analyze data, and create a view for reuse. Finally, you'll use visual query and reporting features to explore and present insights effectively.
+In this Lab, you'll analyze data in a Microsoft Fabric data warehouse using SQL and visual tools. You'll begin by creating a data warehouse and designing its schema with fact and dimension tables. You will then insert sample data. You’ll then define relationships to build a data model, run SQL queries to analyze data, and create a view for reuse. Finally, you'll use visual query and reporting features to explore and present insights effectively.
 
-## Lab objectives
+## Lab Objectives
 
 You will be able to complete the following tasks:
 
@@ -20,7 +20,7 @@ You will be able to complete the following tasks:
 
 ## Task 1: Create a data warehouse
 
-In this task, you will design and implement a data warehouse by organizing data from multiple sources, creating ETL processes, and optimizing for performance. The goal is to enable efficient querying and reporting while ensuring security, compliance, and scalability.
+In this task, you will create a new data warehouse in Microsoft Fabric that will be used throughout the lab. The goal is to enable efficient querying and reporting while ensuring security, compliance, and scalability.
 
 1. Navigate to your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new warehouse.
 
@@ -41,7 +41,7 @@ In this task, you will design and implement a data warehouse by organizing data 
 
 ## Task 2: Create tables and insert data
 
-In this task, you’ll set up the foundation of your data warehouse. You’ll create tables with the right structure, load them with sample data, and then build a semantic model on top of those tables. This model provides a business-friendly layer that makes the warehouse data easier to explore and use in reports.
+In this task, you’ll set up the foundation of your data warehouse. You will create tables with the required structure, load them with sample data, and then build a semantic model on top of those tables. This model provides a business-friendly layer that makes the warehouse data easier to explore and use in reports.
 
 1. In your new warehouse, under **Build a warehouse**, select the **T-SQL** tile.
 
@@ -92,7 +92,7 @@ In this task, you’ll set up the foundation of your data warehouse. You’ll cr
 
     ![](./Images/e2t2p4.png)
 
-1. Open the **Lab VM** and navigate to the following path: `C:\LabFiles\Files\`.
+1. Open the **Lab VM** and navigate to the following path:: `C:\LabFiles\Files\`.
 
     ![](./Images/e2t2p8.png)
 
@@ -121,7 +121,7 @@ In this task, you’ll set up the foundation of your data warehouse. You’ll cr
 
         > **Note:** If the schema takes a while to load, just refresh the browser page.
 
-1. Now, from the toolbar at the top, click **New semantic model**.
+1. Click on Open **semantic model**, from the toolbar on the top.
 
     ![](./Images/E2T2S15.png)
 
@@ -242,11 +242,11 @@ In this task, you will create a view in the data warehouse to encapsulate SQL lo
     ```
     ![](./Images/E3-T5-S1.png)
 
-2. **Run** the query to create the view. Then refresh the data warehouse schema and verify that the new view is listed in the **Explorer** pane.
+1. **Run** the query to create the view. Then refresh the data warehouse schema and verify that the new view is listed in the **Explorer** pane.
 
     ![](./Images/e2t5p1.png)
 
-3. Create a **New SQL query** from the top Menu bar and run the following SELECT statement:
+1. Create a **New SQL query** from the top Menu bar and run the following SELECT statement:
 
     ```SQL
    SELECT CalendarYear, MonthName, SalesRegion, SalesRevenue
@@ -268,7 +268,7 @@ In this task, you will create a visual query using the graphical query designer 
 
     ![](./Images/fab-ric-ex1-g29.png)
 
-1. And then, drag **DimProduct** onto the **canvas**. We now have two tables in our query.
+1. And then, drag **DimProduct** onto the **canvas**. You now have two tables in your query.
 
     ![](./Images/fab-ric-ex1-g30.png)
 

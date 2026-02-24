@@ -10,17 +10,17 @@ In this lab, you will dive into the world of data analysis within a data warehou
 
 ## **Objective**  
 
-**Analyze Data in a Data Warehouse:** Utilize Microsoft Fabric to build and analyze data in a data warehouse. Participants will learn to create a data warehouse, define data models, query data with SQL, and generate insights. The lab will also cover creating views and using Power BI to visualize data, enabling advanced reporting and interactive dashboards for data-driven decision-making. 
+**Analyze Data in a Data Warehouse:** Utilize Microsoft Fabric to build and analyze data in a data warehouse. In this lab, you will learn to create a data warehouse, define data models, query data using SQL, and generate insights. You will also create views and use Power BI to visualize data, enabling advanced reporting and interactive dashboards for data-driven decision-making.
 
 
 ## **Prerequisites**  
 
-Participants should have:  
+You should have:  
 - **Basic Understanding of Relational Databases:** Familiarity with SQL and database concepts.  
 
 - **Proficiency in Power BI:** Experience creating visualizations and analyzing data with Power BI.  
-- **Microsoft Fabric Knowledge:** Understanding of the components and structure of Microsoft Fabric.  
-- **Data Modeling Skills:** Ability to define relationships and optimize data for analysis.  
+- **Basic knowledge of Microsoft Fabric:** Understanding of the components and structure of Microsoft Fabric.  
+- **Basic data modeling skills:** Ability to define relationships and optimize data for analysis.  
 
 
 ## **Architecture**  
@@ -35,19 +35,19 @@ The architecture for this lab illustrates how Microsoft Fabric integrates with a
 
 The architecture for this lab involves the following key components:
 -  **Create a Data Warehouse**
-Participants will set up a data warehouse in Microsoft Fabric, learning the process of creating a scalable relational database designed for large-scale data analytics and reporting.
+You will set up a data warehouse in Microsoft Fabric, learning the process of creating a scalable relational database designed for large-scale data analytics and reporting.
 
 - **Create Tables and Insert Data**
-Participants will create tables within the data warehouse, define their schema, and insert sample data to prepare for analysis, gaining hands-on experience in data organization.
+You will create tables within the data warehouse, define their schema, and insert sample data to prepare for analysis, gaining hands-on experience in data organization.
 
 - **Define a Data Model**
-Participants will define relationships between tables to optimize the data for querying and analysis, using techniques like normalization to ensure data integrity and efficiency.
+You will define relationships between tables to optimize the data for querying and analysis, using techniques like normalization to ensure data integrity and efficiency.
 
 - **Query Data Warehouse Tables**
-Participants will write and execute SQL queries to retrieve and manipulate data, using commands like SELECT, JOIN, and WHERE to filter and aggregate data for analysis.
+You will write and execute SQL queries to retrieve and manipulate data, using commands like SELECT, JOIN, and WHERE to filter and aggregate data for analysis.
 
 - **Create a View and Visualize Your Data** 
-Participants will create views to simplify querying and use Power BI to visualize data, building interactive dashboards and reports for insights and decision-making. 
+You will create views to simplify querying and use Power BI to visualize data, building interactive dashboards and reports for insights and decision-making. 
 
 ## Getting Started with the Lab 
 
