@@ -2,12 +2,12 @@
 
 ### Estimated Duration: 30 Minutes
 
-Microsoft Fabric lets you set up workspaces depending on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. 
-This lab will introduce you to creating a workspace in Microsoft Fabric. You will learn how to set up a workspace, which serves as a collaborative environment for organizing and managing your projects, data, and resources.
+Microsoft Fabric allows you to set up workspaces based on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. 
+In this lab, you will create a workspace in Microsoft Fabric. You will learn how to set up a workspace, which serves as a collaborative environment for organizing and managing your projects, data, and resources.
 
 ## Lab objectives
 
-You will be able to complete the following tasks:
+After completing this lab, you will be able to:
 
 - Task 1: Assign Fabric Administrator Role
 - Task 2: Sign up for Microsoft Fabric Trial
@@ -16,13 +16,13 @@ You will be able to complete the following tasks:
 
 #### Task 1: Assign Fabric Administrator Role
 
-In this task, we're assigning ourselves the **Fabric Administrator** role in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
+In this task, you will assign the **Fabric Administrator role** in Microsoft Entra ID through the Azure portal to manage permissions and access.
 
 1. In the Azure portal, search for **Microsoft Entra ID (1)** using the search bar, and then select **Microsoft Entra ID (2)** from the results.
 
     ![Navigate-To-AAD](./Images/ws/Fab3.png)
 
-1. Under **Manage (1)**, Navigate to **Roles and administrators (2)**.
+1. Under **Manage (1)**, navigate to **Roles and administrators (2)**.
 
     ![Roles-and-Administrator](./Images/ws/Fab4.png)
 
@@ -44,7 +44,7 @@ In this task, we're assigning ourselves the **Fabric Administrator** role in Mic
 
 ### Task 2: Sign up for Microsoft Fabric Trial
 
-In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
+In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools.
 
 1. Copy the **Power BI homepage link**, and open this link inside the VM in a new tab.
 
@@ -60,7 +60,7 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 1. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-    ![image](https://github.com/user-attachments/assets/d12f89b8-955d-4e0c-b671-977c34e152d1)
+    ![Account-manager-start](./Images/ff241.png)
 
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.  
 
@@ -74,7 +74,7 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
       
 ### Task 3: Create a workspace
 
-Here, you create a Fabric workspace. The workspace contains all the items needed for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
+In this task, you will create a Fabric workspace. The workspace will contain all items required for this lakehouse tutorial, which includes lakehouse, dataflows, Data Factory pipelines, notebooks, Power BI datasets, and reports.
 
 1. Now, select **Workspaces (1)** and click on **+ New workspace (2)**.
 
@@ -92,7 +92,7 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
 
 ## Task 4: Create a Lakehouse and upload files
 
-In this task, switch to the Data engineering experience and create a new Lakehouse. You'll use it to ingest and manage data in the following steps.
+In this task, you will switch to the Data Engineering experience and create a new Lakehouse. You'll use it to ingest and manage data in the following steps.
 
 1. At the bottom left of the Power BI portal, select the **Power BI (1)** icon and switch to the **Fabric (2)** experience.
 

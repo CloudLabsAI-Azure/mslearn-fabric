@@ -2,7 +2,7 @@
 
 ### Estimated Duration: 30 Minutes
 
-Microsoft Fabric lets you set up workspaces depending on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. 
+Microsoft Fabric allows you set up workspaces depending on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. 
 This lab will introduce you to creating a workspace in Microsoft Fabric. You will learn how to set up a workspace, which serves as a collaborative environment for organizing and managing your projects, data, and resources.
 
 ## Lab objectives
@@ -16,7 +16,7 @@ You will be able to complete the following tasks:
 
 #### Task 1: Assign Fabric Administrator Role
 
-In this task, we're assigning ourselves the **Fabric Administrator** role in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
+In this task, you will assign the **Fabric Administrator role** in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
 
 1. In the Azure portal, search for **Microsoft Entra ID (1)** using the search bar, and then select **Microsoft Entra ID (2)** from the results.
 
@@ -46,7 +46,7 @@ In this task, we're assigning ourselves the **Fabric Administrator** role in Mic
 
 In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
 
-1. Copy the **Power BI homepage link**, and open this link inside the VM in a new tab.
+1. Copy the **Power BI homepage link** and open it inside the VM in a new browser tab.
 
    ```
    https://powerbi.com
@@ -86,7 +86,7 @@ Here, you create a Fabric workspace. The workspace contains all the items needed
  
       ![name-and-desc-of-workspc](./Images/f3.png)
  
-   - **Advanced:** Expand it and Under **License mode**, select **Fabric (1)**, Under **Capacity** Select available **fabric<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region"></inject>(2)** and click on **Apply (3)** to create and open the workspace.
+   - **Advanced:** Expand it and Under **License mode**, select **Fabric (1)**, Under **Capacity**, select available **fabric<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region"></inject>(2)** and click on **Apply (3)** to create and open the workspace.
  
       ![advanced-and-apply](./Images/ws/Fab20.png)
 

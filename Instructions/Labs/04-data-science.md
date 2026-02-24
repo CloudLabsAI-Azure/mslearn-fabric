@@ -28,7 +28,7 @@ In this task, you will create a notebook to facilitate model training and experi
 
     ![](./Images/fabricnav2.png)
 
-2. In the New Item panel, search for **Notebook (1)** and select **Notebook (2)** from the result.
+1. In the New Item panel, search for **Notebook (1)** and select **Notebook (2)** from the result.
 
     ![](./Images/notebookcr.png)
 
@@ -145,7 +145,7 @@ In this task, you will train a machine learning model to predict customer churn 
 
     ![](./Images/linear.png)
 
-1. The code trains a classification model using Logistic Regression. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `LogisticRegression`.
+1. The code trains a classification model using Logistic Regression. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you log a parameter called `estimator`, with the value `LogisticRegression`.
 
 1. Add a new code cell to the notebook, enter the following code in it, and run it:
 
@@ -164,7 +164,7 @@ In this task, you will train a machine learning model to predict customer churn 
 
     ![](./Images/tree.png)
 
-1. The code trains a classification model using a Decision Tree Classifier. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you're logging a parameter called `estimator`, with the value `DecisionTreeClassifier`.
+1. The code trains a classification model using a Decision Tree Classifier. Parameters, metrics, and artifacts are automatically logged with MLflow. Additionally, you logg a parameter called `estimator`, with the value `DecisionTreeClassifier`.
 
 ## Task 4: Use MLflow to search and view your experiments
 

@@ -14,7 +14,7 @@ In these labs, you will explore the fundamentals of Microsoft Fabric by first se
 
 ## **Prerequisites**
 
-Participants should have:
+Before starting this lab, you should have:
 
 - **Basic Understanding of Data Management:** Familiarity with data storage and management concepts, particularly in cloud environments.
 
@@ -40,23 +40,23 @@ The architecture for this lab involves the following key components:
 
 ### **Lab 01 Components:**
 
-**Create a Fabric Workspace:**  In Task 1.1, participants will assign the Fabric Administrator role, granting the necessary permissions to manage and configure resources within the Microsoft Fabric environment. Task 1.2 involves creating a Fabric workspace, which serves as a centralized hub for managing data, notebooks, and machine learning projects within the platform.
+**Create a Fabric Workspace:**  In Task 1.1, you will assign the Fabric Administrator role, granting the necessary permissions to manage and configure resources within the Microsoft Fabric environment. Task 1.2 involves creating a Fabric workspace, which serves as a centralized hub for managing data, notebooks, and machine learning projects within the platform.
 
-**Create a Lakehouse and Upload Files:**  Task 2.1 focuses on creating a Lakehouse within the workspace, which allows for the storage and management of both structured and unstructured data. Task 2.2 involves uploading data files into the Lakehouse, enabling participants to begin analyzing and processing their data in a unified environment.
+**Create a Lakehouse and Upload Files:**  Task 2.1 focuses on creating a Lakehouse within the workspace, which allows for the storage and management of both structured and unstructured data. Task 2.2 involves uploading data files into the Lakehouse, enabling you to begin analyzing and processing their data in a unified environment.
 
 ### **Lab 02 Components:**
 
-**Create a Notebook:** Participants will create an interactive notebook, providing a flexible environment for running code, visualizing results, and documenting their work. The notebook will serve as the primary tool for data manipulation and machine learning in subsequent tasks.
+**Create a Notebook:** you will create an interactive notebook, providing a flexible environment for running code, visualizing results, and documenting their work. The notebook will serve as the primary tool for data manipulation and machine learning in subsequent tasks.
 
-**Load Data into a DataFrame:** In this task, participants will load data into a DataFrame, a key structure in data analysis and machine learning that allows for efficient data manipulation and processing. This step prepares the data for model training and analysis.
+**Load Data into a DataFrame:** In this task, you will load data into a DataFrame, a key structure in data analysis and machine learning that allows for efficient data manipulation and processing. This step prepares the data for model training and analysis.
 
-**Train a Machine Learning Model:** Participants will train a machine learning model using the data loaded in the previous step. The task involves selecting an appropriate algorithm and training the model to make predictions based on the provided dataset.
+**Train a Machine Learning Model:** You will train a machine learning model using the data loaded in the previous step. The task involves selecting an appropriate algorithm and training the model to make predictions based on the provided dataset.
 
-**Use MLflow to Search and View Experiments:**  MLflow will be used to track the participants’ experiments, enabling them to search for and view details about various model runs, such as parameters, metrics, and results. This helps in managing and comparing different model versions.
+**Use MLflow to Search and View Experiments:**  MLflow will be used to track the your experiments, enabling them to search for and view details about various model runs, such as parameters, metrics, and results. This helps in managing and comparing different model versions.
 
-**Explore Your Experiments:**  Participants will explore their machine learning experiments, reviewing the metrics and performance of different models to assess their effectiveness. This step allows for in-depth analysis and fine-tuning of the model.
+**Explore Your Experiments:**  You will explore their machine learning experiments, reviewing the metrics and performance of different models to assess their effectiveness. This step allows for in-depth analysis and fine-tuning of the model.
 
-**Save the Model, Save the Notebook, and End the Spark Session:**  In the final task, participants will save the trained machine learning model for future use, preserve their notebook with all steps and results, and properly terminate the Spark session to ensure all resources are efficiently managed.
+**Save the Model, Save the Notebook, and End the Spark Session:**  In the final task, you will save the trained machine learning model for future use, preserve their notebook with all steps and results, and properly terminate the Spark session to ensure all resources are efficiently managed.
 
 ## Getting Started with the Lab 
 

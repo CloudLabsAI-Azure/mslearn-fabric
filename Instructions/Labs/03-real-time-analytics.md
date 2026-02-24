@@ -4,7 +4,7 @@
 
 ## Overview
 
-In this Lab, you'll explore Real-Time Intelligence in Microsoft Fabric using Kusto Query Language (KQL). You'll begin by creating a KQL database and importing sales data into a table. Then, you'll run KQL queries to analyze the data and create a query set. Using this query set, you’ll build a Power BI report to visualize results. Finally, you'll simulate real-time data ingestion using Spark Structured Streaming and Delta tables to process and query IoT-like data dynamically.
+In this lab, you'll explore Real-Time Intelligence in Microsoft Fabric using Kusto Query Language (KQL). You'll begin by creating a KQL database and importing sales data into a table. Then, you'll run KQL queries to analyze the data and create a query set. Using this query set, you’ll build a Power BI report to visualize results. Finally, you'll simulate real-time data ingestion using Spark Structured Streaming and Delta tables to process and query IoT-like data dynamically.
 
 ## Lab objectives
 
@@ -24,7 +24,7 @@ In this task, you will create a KQL database to facilitate querying of static or
 
     ![](./Images/fabricnav2.png)
    
-1. In the New item section, search for **Eventhouse (1)** and select **Eventhouse (2)** from the list.
+1. In the New item pane, search for **Eventhouse (1)** and select **Eventhouse (2)** from the list.
 
     ![](./Images/evt.png)
 
@@ -83,7 +83,7 @@ In this task, you will use Kusto Query Language (KQL) to query the sales table i
 
     ![](./Images/E3T2S1.png)
 
-1. A new pane will open with the query and its result. 
+1. A new pane opens displaying the query and its results.
 
 1. Modify the query as follows:
 

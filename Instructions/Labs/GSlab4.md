@@ -8,12 +8,12 @@
 
 ## **Objective**  
 
-**Get Started with Real-Time Analytics in Microsoft Fabric:** The objective of the lab,  is to introduce you to the powerful capabilities of Microsoft Fabric and Kusto Query Language (KQL) for real-time analytics. You will learn how to create a KQL database, query time-series data efficiently, and develop compelling Power BI reports. By the end of this lab, you will have hands-on experience leveraging Microsoft Fabric to analyze real-time data, such as log files and IoT device streams, and transform insights into actionable visualizations.
+**Get Started with Real-Time Analytics in Microsoft Fabric:** In this lab, you will learn how to use Microsoft Fabric and Kusto Query Language (KQL) for real-time analytics. You will learn how to create a KQL database, query time-series data efficiently, and develop compelling Power BI reports. By the end of this lab, you will have hands-on experience leveraging Microsoft Fabric to analyze real-time data, such as log files and IoT device streams, and transform insights into actionable visualizations.
 
 
 ## **Prerequisites**  
 
-Participants should have:  
+You should have:  
 - **Basic Understanding of KQL:** Familiarity with Kusto Query Language and querying structured data.  
 
 - **Experience with Microsoft Fabric:** General understanding of the Microsoft Fabric environment and its components. 

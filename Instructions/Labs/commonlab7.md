@@ -16,7 +16,7 @@ You will be able to complete the following tasks:
 
 #### Task 1: Assign Fabric Administrator Role
 
-In this task, we're assigning ourselves the **Fabric Administrator** role in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
+In this task, you will assign yourself the **Fabric Administrator role** in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
 
 1. In the Azure portal, search for **Microsoft Entra ID (1)** using the search bar, and then select **Microsoft Entra ID (2)** from the results.
 
@@ -38,7 +38,7 @@ In this task, we're assigning ourselves the **Fabric Administrator** role in Mic
 
     ![check-and-add-role](./Images/ws/Fab7.png)
 
-1. Confirm the **Fabric Administrator** role has been added by selecting **Refresh (1)** on the Fabric Administrators | Assignments page. Once the assignment is visible **(2)**.
+1. Confirm the **Fabric Administrator** role has been added by selecting **Refresh (1)** on the Fabric Administrators | Assignments page. Once the assignment is visible **(2)**, the role assignment is complete.
 
     ![check-and-navigate-back-to-home](./Images/ws/Fab8.png)
 
@@ -46,7 +46,7 @@ In this task, we're assigning ourselves the **Fabric Administrator** role in Mic
 
 In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
 
-1. Copy the **Power BI homepage link**, and open this link inside the VM in a new tab.
+1. Copy the **Power BI homepage link** and open it inside the VM in a new browser tab.
 
    ```
    https://powerbi.com
@@ -60,7 +60,7 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 1. A new prompt will appear asking you to **Activate your 60-day free Fabric trial capacity**, click on **Activate**.
 
-    ![image](https://github.com/user-attachments/assets/d12f89b8-955d-4e0c-b671-977c34e152d1)
+    ![Account-manager-start](./Images/ff241.png)
 
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.  
 
@@ -165,6 +165,6 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
 ### Summary
 
-In this exercise, you have signed up for the Microsoft Fabric Trial and created a workspace.
+In this exercise, you have signed up for the Microsoft Fabric trial and created a workspace.
 
 ### You have successfully completed the exercise. Click on Next >> to proceed with the next exercise.

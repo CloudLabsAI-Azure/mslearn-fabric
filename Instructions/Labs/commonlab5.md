@@ -2,8 +2,8 @@
 
 ### Estimated Duration: 30 Minutes
 
-Microsoft Fabric lets you set up workspaces depending on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. 
-This lab will introduce you to creating a workspace in Microsoft Fabric. You will learn how to set up a workspace, which serves as a collaborative environment for organizing and managing your projects, data, and resources.
+Microsoft Fabric allows you to create workspaces depending on your workflows and use cases. A workspace is where you can collaborate with others to create reports, notebooks, lakehouses, etc. 
+In this lab, you will learn how to create a workspace in Microsoft Fabric. A workspace serves as a collaborative environment for organizing and managing your projects, data, and resources.
 
 ## Lab objectives
 
@@ -16,13 +16,13 @@ You will be able to complete the following tasks:
 
 #### Task 1: Assign Fabric Administrator Role
 
-In this task, we're assigning ourselves the **Fabric Administrator** role in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
+In this task, you will assign yourself the **Fabric Administrator role** in Microsoft Entra ID through the Azure portal to manage permissions and access within the Azure environment.
 
 1. In the Azure portal, search for **Microsoft Entra ID (1)** using the search bar, and then select **Microsoft Entra ID (2)** from the results.
 
     ![Navigate-To-AAD](./Images/ws/Fab3.png)
 
-1. Under **Manage (1)**, Navigate to **Roles and administrators (2)**.
+1. Under **Manage (1)**, navigate to **Roles and administrators (2)**.
 
     ![Roles-and-Administrator](./Images/ws/Fab4.png)
 
@@ -38,7 +38,7 @@ In this task, we're assigning ourselves the **Fabric Administrator** role in Mic
 
     ![check-and-add-role](./Images/ws/Fab7.png)
 
-1. Confirm the **Fabric Administrator** role has been added by selecting **Refresh (1)** on the Fabric Administrators | Assignments page. Once the assignment is visible **(2)**.
+1. Confirm the **Fabric Administrator** role has been added by selecting **Refresh (1)** on the Fabric Administrators | Assignments page. Once the assignment is visible **(2)**, the role assignment is complete.
 
     ![check-and-navigate-back-to-home](./Images/ws/Fab8.png)
 
@@ -46,7 +46,7 @@ In this task, we're assigning ourselves the **Fabric Administrator** role in Mic
 
 In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
 
-1. Copy the **Power BI homepage link**, and open this link inside the VM in a new tab.
+1. Copy the **Power BI homepage link** and open it in a new browser tab inside the VM.
 
    ```
    https://powerbi.com

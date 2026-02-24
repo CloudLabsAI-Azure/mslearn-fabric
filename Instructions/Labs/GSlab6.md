@@ -4,22 +4,21 @@
 
 ## Overview
 
-Microsoft Fabric is a unified data platform that combines data engineering, data warehousing, and business intelligence tools into a cohesive environment. By leveraging Microsoft Fabric, organizations can effectively manage, analyze, and visualize large datasets, enabling powerful data-driven decision-making processes.
+Microsoft Fabric is a unified data platform that combines data engineering, data warehousing, and business intelligence tools into a cohesive environment. By leveraging Microsoft Fabric, you can effectively manage, analyze, and visualize large datasets, enabling powerful data-driven decision-making.
 
 In this hands-on lab, you will explore and set up Microsoft Fabric by creating a workspace and assigning the Fabric Administrator role. You will then create a Lakehouse to centralize and manage data, followed by uploading files for analysis. Additionally, you will leverage Apache Spark within Microsoft Fabric to load, explore, and transform data, performing operations such as filtering, aggregating, and summarizing. You will also save the transformed data in Parquet format, partition it, and visualize insights through Spark, gaining practical experience in data analysis and visualization within the platform.
 
 ## Objective
 
-Learn to leverage Microsoft Fabric for workspace management, use Apache Spark for analyzing and transforming large datasets, and perform advanced data manipulation. 
+Learn how to leverage Microsoft Fabric for workspace management, use Apache Spark to analyze and transform large datasets, and perform advanced data manipulation.
 
 - **Getting Started with Microsoft Fabric:** Learn how to create and manage a workspace in Microsoft Fabric by assigning the Fabric Administrator role, setting up a new workspace for data and analytics projects, and organizing your work effectively. Additionally, gain hands-on experience in setting up a Lakehouse within the workspace and uploading data files (e.g., CSV) to the Lakehouse, laying the foundation for future data analysis and processing.
 
-
-- **Analyze Data with Apache Spark:** Use Apache Spark to analyze large datasets and perform data transformations. Participants will learn how to process and analyze large volumes of data efficiently, apply data transformations, clean and structure data, and perform aggregations using Spark. The lab will also cover creating and querying a Delta table for advanced data manipulation.
+- **Analyze Data with Apache Spark:** Use Apache Spark to analyze large datasets and perform data transformations. You will learn how to process and analyze large volumes of data efficiently, apply data transformations, clean and structure data, and perform aggregations using Spark. The lab will also cover creating and querying a Delta table for advanced data manipulation.
 
 ## Prerequisites
 
-Participants should have:
+You should have:
 
 - **Basic Knowledge of Microsoft Azure**: Familiarity with the Azure portal and the process of role assignments within Azure Active Directory (Entra ID).
 - **Understanding of Workspace Creation**: Familiarity with the concept of workspaces in cloud platforms and how to create and configure them.
@@ -52,7 +51,7 @@ The architecture for this lab involves the following key components:
 
 - **Lakehouse:** A data storage solution designed for structured and unstructured data. The Lakehouse enables efficient data organization and facilitates analysis tasks.
 
-- **Data Ingestion Tools:** Enables uploading of files into the Lakehouse to populate datasets required for analysis and querying.
+- **Data Ingestion Tools:** Enables you to upload files into the Lakehouse to populate datasets required for analysis and querying.
 
 ### Lab 02 Components:
 

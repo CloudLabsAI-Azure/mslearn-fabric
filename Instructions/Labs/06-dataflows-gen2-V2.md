@@ -4,7 +4,7 @@
 
 In Microsoft Fabric, Dataflows (Gen2) connect to various data sources and perform transformations in Power Query Online. They can then be used in Data Pipelines to ingest data into a lakehouse or other analytical store or to define a dataset for a Power BI report.
 
-This lab is designed to introduce the different elements of Dataflows (Gen2), and not create a complex solution that may exist in an enterprise.
+This lab introduces the core elements of Dataflows (Gen2) and focuses on understanding the fundamentals rather than building a complex enterprise-level solution.
 
 ## Lab objectives
 
@@ -18,21 +18,21 @@ You will be able to complete the following tasks:
 
 In this task, you will create a Dataflow (Gen2) to efficiently ingest and transform data from multiple sources for analysis. This process streamlines data preparation, enabling you to prepare the data for further processing and insights.
 
-1. Select your workspace, then select **+ New item** and **Notebook**. After a few seconds, a new notebook containing a single cell will open. Notebooks are made up of one or more cells that can contain code or markdown (formatted text).
+1. Select your workspace, then select **+ New item** and choose **Notebook**. After a few seconds, a new notebook containing a single cell will open. Notebooks are made up of one or more cells that can contain code or markdown (formatted text).
 
-2. On the All items page, scroll down and select Lakehouse from Store data.
+1. On the All items page, scroll down and select Lakehouse from Store data.
 
      ![Screenshot of uploaded files in a lakehouse.](./Images/E1T1S3.png)
    
-3. Enter the below-mentioned details to create a Lakehouse. 
+1. Enter the following details to create a Lakehouse.
 
    - **Name:** Enter **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>**
 
    - Click on **Create**
 
-4. Once you're in the lakehouse, navigate to the **Files** folder in the **Explorer** pane, click on the **ellipses** menu, and select **Upload** followed by **Upload folder**. Then, upload the **orders** folder located at **C:\LabFiles\Files\orders** to the lakehouse.
+1. Once you're in the lakehouse, navigate to the **Files** folder in the **Explorer** pane, click on the **ellipses** menu, and select **Upload** followed by **Upload folder**. Then, upload the **orders** folder located at **C:\LabFiles\Files\orders** to the lakehouse.
 
-5. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
+1. After the files have been uploaded, expand **Files** and select the **orders** folder; and verify that the CSV files have been uploaded, as shown here:
 
     ![Screenshot of uploaded files in a lakehouse.](./Images/uploaded-files.png)
 
