@@ -419,13 +419,15 @@ Tables in a Spark metastore are relational abstractions over files in the data l
 
     ![](./Images2/1/t7-2.png)
 
-3. In the left **Explorer** pane, click the **ellipsis (...) (1)** menu next to the **Tables** folder and select **Refresh (2)**. After refreshing, expand the **Tables** > **dbo** folder and confirm that the **salesorders (3)** table has been successfully created.
+3. In the left **Explorer** pane, click the **ellipsis (...) (1)** menu next to the **Tables** folder and select **Refresh (2)**. 
 
     ![](./Images2/1/t7-3.png)
+   
+4. After refreshing, expand the **Tables (1)** > **dbo (2)** folder and confirm that the **salesorders (3)** table has been successfully created.
 
-    ![](./Images2/1/t7-3p.png)
+   ![](./Images2/1/fab-image21.png)
 
-4. In the left **Explorer** pane, click the **ellipsis (...) (1)** menu next to the **salesorders** table, then select **Load data (2)** -> **Spark (3)**. This action will add a new code cell to the notebook with code to load the table data using Spark, similar to the example shown.
+5. In the left **Explorer** pane, click the **ellipsis (...) (1)** menu next to the **salesorders** table, then select **Load data (2)** -> **Spark (3)**. This action will add a new code cell to the notebook with code to load the table data using Spark, similar to the example shown.
 
     ![](./Images2/1/t7-4.png)
 
@@ -434,7 +436,7 @@ Tables in a Spark metastore are relational abstractions over files in the data l
    display(df)
     ```
 
-5. Run the newly added code cell, which leverages the Spark SQL library to execute a SQL query on the **salesorders** table, loading the query results into a PySpark dataframe for further processing and analysis.
+6. Run the newly added code cell, which leverages the Spark SQL library to execute a SQL query on the **salesorders** table, loading the query results into a PySpark dataframe for further processing and analysis.
 
     ![](./Images2/1/t7-5.png)
 
