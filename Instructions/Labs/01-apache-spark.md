@@ -84,7 +84,9 @@ In this task, you will create a notebook to work with data in Apache Spark. Note
 
 1. Select the checkbox next to **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>** **(1)**, then click **Connect (2)** in the bottom-right corner.
 
-    ![](./Images2/1/t2-3.png)
+   **>Note**: If you see **Add** button instead of **Connect** button, kindly click on **Add** and proceed with next step. 
+
+   ![](./Images2/1/t2-3.png)
 
 1. Select the first cell (which is currently a code cell), then click the **M↓** button in the top-right dynamic toolbar to convert it to a **markdown** cell.
 
@@ -417,7 +419,7 @@ Tables in a Spark metastore are relational abstractions over files in the data l
 
     ![](./Images2/1/t7-2.png)
 
-3. In the left **Explorer** pane, click the **ellipsis (...) (1)** menu next to the **Tables** folder and select **Refresh (2)**. After refreshing, expand the **Tables** folder and confirm that the **salesorders (3)** table has been successfully created.
+3. In the left **Explorer** pane, click the **ellipsis (...) (1)** menu next to the **Tables** folder and select **Refresh (2)**. After refreshing, expand the **Tables** > **dbo** folder and confirm that the **salesorders (3)** table has been successfully created.
 
     ![](./Images2/1/t7-3.png)
 
