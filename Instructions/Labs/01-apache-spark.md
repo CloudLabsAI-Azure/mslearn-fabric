@@ -84,7 +84,7 @@ In this task, you will create a notebook to work with data in Apache Spark. Note
 
 1. Select the checkbox next to **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>** **(1)**, then click **Connect (2)** in the bottom-right corner.
 
-   **>Note**: If you see **Add** button instead of **Connect** button, kindly click on **Add** and proceed with next step. 
+   **>Note**: If you see the **Add** button instead of the **Connect** button, kindly click on **Add** and proceed to the next step.
 
    ![](./Images2/1/t2-3.png)
 
