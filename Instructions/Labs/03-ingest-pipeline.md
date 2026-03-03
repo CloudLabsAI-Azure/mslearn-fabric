@@ -135,11 +135,13 @@ In this task, you will create a pipeline in Microsoft Fabric to ingest data into
 
 ## Task 2: Create a notebook
 
-In this task, you will create a notebook in Microsoft Fabric to begin processing your ingested data using PySpark. You will write code to load sales data, apply transformations, and save the results as a table in the lakehouse—enabling further analysis or reporting through SQL or visualization tools.
+In this task, you will create a notebook in Microsoft Fabric to begin processing your ingested data using PySpark. You will write code to load sales data, apply transformations, and save the results as a table in the lakehouse enabling further analysis or reporting through SQL or visualization tools.
 
 1. From the lakehouse Home page, open the **Open notebook (1)** menu and select **New notebook (2)** to create a new notebook.
 
     ![](./Images2/3/t2-1.png)
+
+   **>Note**: If you are unable to see **Open notebook** as mentioned above, kindly click on the three-dot button or zoom out the browser page to view the option.
 
 1. Select the existing cell in the notebook, replace the default code with the following **code (1)** and click on **&#9655; Run (2)**.
 
