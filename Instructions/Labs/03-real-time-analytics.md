@@ -82,7 +82,7 @@ In this task, you will use Kusto Query Language (KQL) to query the sales table i
 
 1. Make sure you have the **sales** table highlighted. Click on **Ellipsis (...) (1)** next to the **sales** table, select the **Query with code (2)**, and then click on **Show any 100 records (3)**.
 
-    ![](./Images/E3T2S1.png)
+    ![](./Images/E3T2P1.png)
 
 1. A new pane will open with the query and its result. 
 

@@ -61,13 +61,13 @@ In this task, you will create a Fabric workspace. The workspace will contain all
 
       ![alt text](image.png)
 
-    - Select **License mode** as **Fabric capacity (3)**.
+    - Select **License mode** as **Fabric (3)**.
 
-    - From the dropdown list, select the available **Capacity (4)**.
+    - In the Details section, from the dropdown list, select the available **Capacity (4)**.
 
     - Click **Apply (5)** to create and open the workspace.
  
-      ![alt text](image-1.png)
+      ![alt text](./Images/E1T2P2.png)
 
 1. In the **Introducing task flows (preview)** window, click **Got it**.
 
@@ -169,9 +169,9 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
     
     ![](./Images/E1T4S9.png)
 
-1. On the **Choose copy job mode** page, select **Full copy (1)** and then click **Next (2)** to proceed.
+1. On the **Settings** page, select **Full copy (1)** and then click **Next (2)** to proceed.
 
-    ![](./Images/l1t4s10.png)
+    ![](./Images/E1T4P10.png)
 
 1. On the **Map to destination** page, select **Files (1)**, then set **Folder path** to **new_data (2)** and **File name** to **sales.csv (3)**.
     
@@ -269,9 +269,9 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
 1. After a few seconds, a new notebook with a single cell opens. Each notebook consists of code or markdown cells used for running code or adding formatted text.
 
-1. Click **Add data items (1)** drop-down under explorer and select **Existing data sources (2)**.
+1. Click **Add data items (1)** drop-down under explorer and select **From OneLake catalog (2)**.
 
-    ![](./Images/dtaitms.png) 
+    ![](./Images/E1T5P5.png) 
  
 1. Select the previously created **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** then click **Connect (2)**.
  
@@ -438,9 +438,9 @@ In this task, you’ll build a report that transforms raw data into insights. Yo
 
     ![](./Images/semnav.png)
 
-1. From the toolbar at the top, click **Open semantic model**.
+1. From the toolbar at the top, click **Open**.
 
-    ![](./Images/newsemanticmodel(4)(1).png)
+    ![](./Images/E1T8P4.png)
 
 1. From the **File (1)** menu, select **Create new report (2)**.
 
