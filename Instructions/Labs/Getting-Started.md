@@ -68,21 +68,21 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 To get the lab environment details, you can select the **Environment** tab. Additionally, the credentials will also be emailed to your registered email address.
 
-   ![08](./Images/GS2.png)
+   ![08](./Images/env.png)
 
 ## Utilizing the Split Window Feature
 
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-   ![08](./Images/GS3.png)
+   ![08](./Images/split.png)
 
    >**Note:** You will see the **DeploymentID** value on the **Environment** tab, use it wherever you see SUFFIX or DeploymentID in lab steps.
 
 ## Managing Your Virtual Machine
  
-Feel free to **Start, Restart, or Stop** your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
+Feel free to **Start, Restart, or Stop (1)** your virtual machine as needed from the **Resources (2)** tab. Your experience is in your hands!
 
-   ![08](./Images/GS5.png)
+   ![08](./Images/resources.png)
 
 ## Lab Guide Zoom In/Zoom Out Options
 
@@ -102,25 +102,25 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
    https://powerbi.com
    ```
    
-2. On the **Enter your email, we'll check if you need to create a new account** window, you will see the login screen, in that enter the following email/username, and click on **Submit (2)**.
+2. On the **Enter your email, we'll check if you need to create a new account (1)** window, you will see the login screen, in that enter the following email/username, and click on **Submit (2)**.
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
 
-     ![04](./Images/upfab-ric-gs-g1.png)
+     ![04](./Images/pbilogin.png)
      
 3. Now enter the following **Temporary Access Pass (1)** and click on **Sign in (2)**.
  
    - **Temporary Access Pass** <inject key="AzureAdUserPassword"></inject> 
 
-      ![05](./Images/upfab-ric-gs-g2.png)
+      ![05](./Images/GSpwd.png)
      
 1. If you see a pop-up **Stay Signed in?**, click **No**.
 
-   ![05](./Images/upfab-ric-gs-g3.png)
+   ![05](./Images/GSno.png)
 
 1. You will be navigated to the Power BI Home page.
 
-   ![05](./Images/fab-ric-gs-g4.png)
+   ![05](./Images/pbihome.png)
 
 ## Support Contact
 
