@@ -229,37 +229,37 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
     > **Note:** If any errors appear while running the pipeline, review the details in the notification panel, fix the issue, and run it again. If everything succeeds, you can skip below steps and proceed with **Step 18**.
 
-    1. If the **Connection** field shows an error, select the **Copy job (1)** and switch to  **Settings (2)**, click on the dropdown **(3)** and select **Browse all (4)** to choose the correct connection manually.
+1. If the **Connection** field shows an error, select the **Copy job (1)** and switch to  **Settings (2)**, click on the dropdown **(3)** and select **Browse all (4)** to choose the correct connection manually.
 
-        ![09](./Images/manualcon.png)
+    ![09](./Images/manualcon.png)
     
-    1. From the **Get data** page, select **Copy job (1)** under the **New sources** section to continue.
+1. From the **Get data** page, select **Copy job (1)** under the **New sources** section to continue.
 
-        ![09](./Images/fab-ric-cor-g3.png)
+    ![09](./Images/fab-ric-cor-g3.png)
     
-    1. Set the following connection details:
+1. Set the following connection details:
 
-        - Connection name: **Connection<inject key="DeploymentID" enableCopy="false"/> (1)**
-        - Click **Sign in (2)** to authenticate if it shows You are not signed in.
+    - Connection name: **Connection<inject key="DeploymentID" enableCopy="false"/> (1)**
+    - Click **Sign in (2)** to authenticate if it shows You are not signed in.
 
-            ![09](./Images/upfab-ric-cor-g4.png)
+        ![09](./Images/upfab-ric-cor-g4.png)
     
-    1. When prompted to sign in, select your **ODL_User** account.  
-        - Or sign in manually using:
-        - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-        - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
+1. When prompted to sign in, select your **ODL_User** account.  
+    - Or sign in manually using:
+    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+    - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
 
-            ![09](./Images/upfab-ric-cor-g5.png)
+        ![09](./Images/upfab-ric-cor-g5.png)
     
-    1. After the connection details are verified and you are signed in, click **Connect** to proceed.
+1. After the connection details are verified and you are signed in, click **Connect** to proceed.
     
-    1. Once the **Copy job (1)** is configured, click **Run (2)** at the top to execute the pipeline.
+1. Once the **Copy job (1)** is configured, click **Run (2)** at the top to execute the pipeline.
 
-        ![09](./Images/upfab-ric-cor-g7.png)
+    ![09](./Images/upfab-ric-cor-g7.png)
     
-    1. When prompted, click on **Save and run** to start the pipeline.
+1. When prompted, click on **Save and run** to start the pipeline.
 
-        ![09](./Images/fab-ric-ex1-g15.png)
+    ![09](./Images/fab-ric-ex1-g15.png)
 
 1. From the Top bar navigate to your Lakehouse by clicking on the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)**, expand **Files (2)** and select the **new_data (3)** folder, refresh the page and verify that the **sales.csv (4)** file has been copied.
 
