@@ -187,13 +187,13 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
     
     ![](./Images/E1T4S9.png)
 
-1. On the **Settings** page, select **Full copy (1)** and then click **Next (2)** to proceed.
+1. On the **Settings** page, select **Full copy (1)**, scroll down to set the destination root folder set to **Files (2)** and then click **Next (3)** to proceed.
 
-    ![](./Images/E1T4P10.png)
+    ![](./Images/E1T2S10.png)
 
-1. On the **Map to destination** page, select **Files (1)**, then set **Folder path** to **new_data (2)** and **File name** to **sales.csv (3)**.
+1. On the **Map to destination** page, set **Folder path** to **new_data (1)** and **File name** to **sales.csv (1)**.
     
-    ![08](./Images/E1T4S11.png)
+    ![08](./Images/E1T2S11.png)
 
 1. Set the following file format options and leave all other settings at their default values:
 
