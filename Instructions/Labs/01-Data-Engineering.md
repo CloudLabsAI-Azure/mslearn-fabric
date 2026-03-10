@@ -72,6 +72,24 @@ In this task, you will create a Fabric workspace. The workspace will contain all
 1. In the **Introducing task flows (preview)** window, click **Got it**.
 
     ![](./Images/fab-ric-ex1-g2.png)
+
+1. Once the **fabric-<inject key="DeploymentID" enableCopy="false"/>** is created, navigate to **Manage Access (1)**.
+
+    ![](./Images/manageaccess.png)
+
+1. On the **Manage Access** window, click on **+Add people or groups (1)**.
+
+    ![](./Images/add.png)
+
+1. On the **+Add people or groups** window, search with `https://aec-svc/` service principle and select it.
+
+    ![](./Images/search.png)
+
+
+1. In the Add people pane, select the appropriate role from **Admin (1)**, and then click **Add (2)**. Make sure that is listed on the **Manage access** window.
+
+    ![](./Images/admin.png)
+
       
 ## Task 3: Create a Lakehouse
 
