@@ -81,10 +81,10 @@ In this task, you will create a notebook to facilitate model training and experi
 
 In this task, you will load data into a dataframe to prepare for model training. Dataframes in Spark, akin to Pandas dataframes in Python, offer a structured way to work with data in rows and columns, enabling efficient data manipulation and analysis.
 
-1. In the Explorer pane, click **Add data items (1)** drop-down and select **Existing data sources (2)**.
+1. In the Explorer pane, Click **Add data items (1)** drop-down under explorer and select **From OneLake catalog (2)**.
 
-    ![](./Images/e4t3p1.png) 
-
+    ![](./Images/E1T5P5.png) 
+    
 1. Select the lakehouse named **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Connect (2)**.
  
     ![](./Images/e4t3p2.png)
