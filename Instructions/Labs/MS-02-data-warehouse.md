@@ -83,7 +83,7 @@ In this task, you will create database tables by defining their structure with a
 
 1. On the Home menu tab, use the **New SQL Query** button to create a new query for the table.
 
-1. Open the **Lab VM** and navigate to the following path: `C:\LabFiles\Files\`
+1. On the **Lab VM** and navigate to the following path: `C:\LabFiles\Files\`
 
 1. Open the file **`create-dw-01.txt`** and copy the Transact-SQL code related to the **`DimProduct`** table.
 

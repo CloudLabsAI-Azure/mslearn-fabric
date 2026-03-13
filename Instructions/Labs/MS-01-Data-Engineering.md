@@ -39,7 +39,7 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
 
 1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right again, and verify **Trial Status (2)**.
 
-    ![Account-manager-start](./Images/E1T1S5-2.png)
+    ![Account-manager-start](./Images/img-01.png)
 
 ## Task 2: Create a workspace
 
@@ -61,7 +61,7 @@ In this task, you will create a Fabric workspace. The workspace will contain all
  
       ![advanced-and-apply](./Images/01/E1T2S2ii.png)
 
-1. On the **Introducing task flows (preview)** pop-up window, click **Got it**.
+1. On the **Introducing task flows** pop-up window, click **Got it**.
 
     ![](./Images/p1t2p3.png)
 
@@ -87,11 +87,9 @@ In this task, switch to the Data engineering experience and create a new Lakehou
 
     ![](./Images/e1t3s4.png)
 
-1. Enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and Click on **Create (2)**.
+1. Enter the **Name** as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)**. Ensure that the **Lakehouse schema** option is unchecked, as it is selected by default when creating the **Lakehouse**. Then click **Create (2)**.
 
     ![](./Images/E1T3S5-1.png)
-
-    > **Note**: Ensure we are unchecking the **Lakehouse schema** as this is checked by default when creating the **Lakehouse**.
 
     ![](./Images/01/E1T3S5-N.png)    
 
@@ -125,9 +123,9 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
    ![03](./Images/01/E1T4S4.png)
 
-1. In the **Copy data** wizard, on the **Choose data source** page, search for **Http (1)** and select the **Http (2)** source from the results.
+1. In the **Copy job** wizard, on the **Choose data source** page, search for **Http (1)** and select the **Http (2)** source from the results.
 
-   ![](./Images/E1T4S5.png)
+   ![](./Images/img-03.png)
 
 1. In the **Connection settings** page, enter the following settings and click on **Next (5)**:
     
@@ -136,11 +134,11 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
     - Connection name: **Connection<inject key="DeploymentID" enableCopy="false"/> (3)**
     - Authentication kind: **Anonymous (4)**
   
-      ![](./Images/01/E1T4S6.png)
+      ![](./Images/img-04.png)
     
 1. On the **Choose data** page, keep the default settings and click **Next**.
     
-    ![05](./Images/p1t4p7(1).png)
+    ![05](./Images/img-05.png)
    
 1. Wait for the data to be sampled, then verify the following settings:
 
@@ -150,25 +148,24 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
    - Click **Preview data (4)** to view a sample of the data.
    - After reviewing, close the preview and click **Next (5)**.
   
-      ![Account-manager-start](./Images/e1p2t4s8(1).png)
+      ![Account-manager-start](./Images/img-06.png)
     
       ![Account-manager-start](./Images/01/E1T4S8i.png)
 
 1. On the **Choose data destination** page, click **OneLake catalog (1)** and select the lakehouse **Lakehouse\_<inject key="DeploymentID" enableCopy="false"/> (2)**.
     
-    ![](./Images/Lake13(1).png)
+    ![](./Images/img-07.png)
 
-1. On the **Choose copy job mode** page, select **Full copy (1)** and click **Next (2)**.
+1. On the **Settings** page, select **Full copy (1)**. Under **Destination root folder**, select **Files (2)**, and then click **Next (3)**.
 
-    ![](./Images/Lake13(2).png)
+    ![](./Images/img-02.png)
 
 1. On the **Map to destination** page, set the following data destination options.
-   
-   - Select **Files (1)**
-   - Folder path: Click on **Browse (2)**, select **new_data (3)** and click **OK (4)**.
-   - File name: **sales.csv (5)**
 
-     ![08](./Images/p1t4p10(1).png)
+   - Folder path: Click on **Browse (1)**, select **new_data (2)** and click **OK (3)**.
+   - File name: **sales.csv (4)**
+
+     ![08](./Images/img-08.png)
    
    - File format: **DelimitedText (6)**
    - Expand the **File format settings**
@@ -176,19 +173,19 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
    - Row delimiter: **Line feed (\n) (8)**
    - Click **Next (9)**
 
-     ![08](./Images/p1t4p10(2).png)
+     ![08](./Images/img-09.png)
 
 1. On the **Review + save** page, review the details of your copy operation and then select **Save**.
 
-    ![08](./Images/p1t4p10(3).png)
+    ![08](./Images/img-10.png)
 
-1. A new pipeline containing a **Copy data** activity is created, as shown here:
+1. A new pipeline containing a **Copy job** activity is created, as shown here:
 
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/E1T3S13.png)
+    ![Screenshot of a pipeline with a Copy Data activity.](./Images/img-11.png)
 
 1. Click on the **Copy job (1)**, then select the **Settings (2)** tab, from the Connection dropdown **(3)**, select **Browse all (4)**.
 
-    ![08](./Images/p1t4p10(4).png)
+    ![08](./Images/img-12.png)
 
 1. On **Choose a data source to get started**, click on **Copy job**.
 
@@ -204,7 +201,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
 1. Under the **Home** tab, click on **Run**.
 
-    ![08](./Images/p1t4p10(9).png)
+    ![08](./Images/img-13.png)
 
 1. On the **Save and run?** pop-up, click **Save and run**.
 
@@ -212,7 +209,7 @@ In this task, you'll create a pipeline to automate data workflows. Using the Cop
 
 1. When the pipeline starts to run, you can monitor its status in the **Output** pane under the pipeline designer. Use the **&#8635;** (*Refresh*) icon to refresh the status, and wait until it has been successfully updated.
 
-    ![Screenshot of a pipeline with a Copy Data activity.](./Images/p1t4p10(11).png)
+    ![Screenshot of a pipeline with a Copy Data activity.](./Images/img-14.png)
 
 1. On the **Workspaces** page, select **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)** to open the lakehouse.  
 
@@ -248,9 +245,9 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
     ![](./Images/01/E1T5S5.png)  
 
-1. Select the previously created **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** then click **Continue (2)**.
+1. Select the previously created **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** then click **Add (2)**.
  
-    ![](./Images/E1T5S5-1108.png) 
+    ![](./Images/img-15.png) 
 
 1. Select the existing cell in the notebook, clear the default code, and replace it with the **variable declaration (1)** below. Then click **&#9655; Run (2)** to execute the cell.
 
@@ -378,6 +375,8 @@ In this task, you'll create a visual query in Power BI using Power Query. Start 
    - Click **OK (5)**
 
      ![](./Images/p1t7p5.png)
+
+     >**Note:** If you are unable to select **Column**, click **OK** and proceed to the next steps.
 
 1. When you're done, the results pane under the visual query shows the number of line items for each sales order.
 
