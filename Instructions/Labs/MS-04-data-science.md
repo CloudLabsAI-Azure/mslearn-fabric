@@ -29,7 +29,7 @@ In this task, you will create a lakehouse and upload files to facilitate data st
 
    ![](./Images/E4T1S2-1208.png)
 
-1. On the Upload files page, click on the **Browse (1)** option to upload the file. Go to the **`C:\LabFiles\Files` (2)** location, select the **churn.csv (3)** file, and click on **Open (4)**. Then click on **Upload (5)**.   
+1. On the Upload files page, click on the **Browse (1)** option to upload the file. Go to the **`C:\LabFiles\Files` (2)** location, select the **churn.csv (3)** file, and click on **Open (4)**. Then click on **Upload (5)**. Close the pane.
 
    ![](./Images/e4p5t1p3.png)
 
@@ -82,9 +82,9 @@ In this task, you will load data into a dataframe to prepare for model training.
     ![](./Images/01/E1T5S5.png)  
 
 
-1. Select the lakehouse named **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Connect (2)**.
+1. Select the lakehouse named **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Add (2)**.
  
-    ![](./Images/E4T3S2-1208.png) 
+    ![](./Images/img-15.png) 
 
 1. Once after connecting to the existing lakehouse, we should be able to see the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** under **Data Items**.
    
@@ -321,7 +321,7 @@ In this task, you will save the best-performing machine learning model after com
 
 In this task, you will save your notebook with a meaningful name to preserve your work after training and evaluating the models. Additionally, you will end the Spark session to free up resources and finalize your data processing environment.
 
-1. Select **Notebook 1** from the left navigation pane that you created in the notebook menu bar.
+1. Select **Notebook_1** from the left navigation pane that you created in the notebook menu bar.
 
    ![](./Images/Note4.png)
 

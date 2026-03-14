@@ -49,6 +49,7 @@ In this task, you will create a lakehouse to organize and analyze your data file
    - **Name:** Enter **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**
 
    - Click on **Create (2)**
+   - Uncheck the **Lakehouse schemas** checkbox
 
      ![](./Images/E1T3S5-1.png)
 
@@ -64,7 +65,7 @@ In this task, you will create a lakehouse to organize and analyze your data file
 
     ![](./Images/p6t1p6.png)
 
-1. Click on **Upload** after adding the `orders` folder.
+1. Click on **Upload** after adding the `orders` folder. Close the pane.
 
     ![](./Images/p6t1p7.png)
 
@@ -94,9 +95,9 @@ In this task, you will create a notebook to work with data in Apache Spark. Note
 
     ![](./Images/01/E1T5S5.png)  
 
-1. Select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** from the options and click on **Connect (2)**.
+1. Select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** from the options and click on **Add (2)**.
     
-    ![](./Images/E5T2S4-1208.png)
+    ![](./Images/img-16.png)
 
     > **Note:** If required, reload the page to get the files and folders.
 

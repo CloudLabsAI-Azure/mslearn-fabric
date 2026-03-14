@@ -95,7 +95,7 @@ To adjust the zoom level for the environment page, click the A↕ : 100% icon lo
 
 ## Let's Get Started with Power BI Portal
 
-1. In the Lab VM, click on the **Microsoft Edge** browser, which is available on the desktop.
+1. In the Lab VM, double-click on the **Microsoft Edge** browser, which is available on the desktop.
 
    ![04](./Images/labvm.png)
 
